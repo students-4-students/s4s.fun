@@ -61,9 +61,22 @@ a {
 }
 
 .links-container {
-    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
 }
 
 .links-container img {
-    display: inline-block;
+    height: 80px;
+}
+
+@media screen and (min-width: 500px) {
+    .links-container {
+        gap: 36px;
+    }
+
+    .links-container img {
+        height: 100px;
+    }
 }
