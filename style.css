@@ -55,7 +55,15 @@ a {
     text-decoration: none;
 }
 
-a:hover {
+.underline-hover:hover {
     color: #7C3AED;
     text-decoration: underline;
+}
+
+.links-container {
+    text-align: center;
+}
+
+.links-container img {
+    display: inline-block;
 }
