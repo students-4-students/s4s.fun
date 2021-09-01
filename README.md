@@ -6,11 +6,11 @@
   <h1 align="center">Students 4 Students</h1>
 
   <p align="center">
-    <a href="https://github.com/students-4-students/prog/blob/main/LICENSE">
-        <img src="https://img.shields.io/github/license/students-4-students/prog.svg?style=flat" alt="Licence">
+    <a href="https://github.com/students-4-students/students-4-students.github.io/blob/main/LICENSE">
+        <img src="https://img.shields.io/github/license/students-4-students/students-4-students.github.io.svg?style=flat" alt="Licence">
     </a>
-    <a href="https://github.com/students-4-students/prog/graphs/contributors">
-        <img src="https://img.shields.io/github/contributors/students-4-students/prog.svg?style=flat" alt="Contributions">
+    <a href="https://github.com/students-4-students/students-4-students.github.io/graphs/contributors">
+        <img src="https://img.shields.io/github/contributors/students-4-students/students-4-students.github.io.svg?style=flat" alt="Contributions">
     </a>
   </p>
 
