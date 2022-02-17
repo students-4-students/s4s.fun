@@ -130,3 +130,38 @@ a {
 .external-link-lg {
     height: 120px;
 }
+
+.pictures-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-auto-rows: 1fr;
+    gap: 20px;
+    margin-bottom: 1em;
+}
+
+.picture {
+    background-color: #eee;
+    background-size: cover;
+    background-position: center;
+    padding-bottom: calc(2 / 3 * 100%);
+}
+
+.stat {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    line-height: 1.2;
+
+    font-size: 36px;
+    text-align: center;
+}
+
+.stat span {
+    color: #555784;
+    font-size: 64px;
+}
+
+.credits {
+    color: #777;
+}
