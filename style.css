@@ -54,23 +54,29 @@ section {
 
 .hero-drop-shadow {
     position: absolute;
-    background: conic-gradient(
+    background-image:
+    radial-gradient(
+        circle at 10px 10px,
+        rgba(83, 87, 132, 0) 0%,
+        rgba(83, 87, 132, 1) 30%
+    ),
+    conic-gradient(
         from 0.25turn at 10px 10px,
         transparent
 
-        10deg,
+        15deg,
         transparent,
 
-        10deg,
+        15deg,
         #43456c,
 
-        80deg,
+        75deg,
         #43456c,
 
-        80deg,
+        75deg,
         transparent
-
-    );
+    )
+    ;
     width: max(100vw, 100vh);
     height: max(100vw, 100vh);
     z-index: 1;
