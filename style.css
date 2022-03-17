@@ -243,3 +243,12 @@ a {
 .credits {
     color: #777;
 }
+
+.agepoly-logo {
+    padding: 20px;
+    text-align: right;
+}
+
+.agepoly-logo img {
+    width: 150px;
+}
