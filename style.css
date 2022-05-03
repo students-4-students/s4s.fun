@@ -244,6 +244,11 @@ a {
     color: #777;
 }
 
+.credits a {
+    color: inherit;
+    text-decoration: underline;
+}
+
 .agepoly-logo {
     padding: 20px;
     text-align: right;
