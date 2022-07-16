@@ -19,6 +19,10 @@ body {
     --separator: rgba(163, 96, 94, .3);
 }
 
+sup {
+    top: -.4em;
+}
+
 .theme-primary {
     --background: #515582;
     --headings: #eed4f1;
@@ -48,10 +52,6 @@ h1 {
 h1 strong {
     color: var(--headings);
     font-weight: 700;
-}
-
-h1 sup {
-    top: -.4em;
 }
 
 h2 {
@@ -290,6 +290,26 @@ h4 {}
 /**********************************************************************************************************************/
 /* Hero section */
 /**********************************************************************************************************************/
+
+.hero-logo {
+    display: flex;
+    line-height: 1;
+}
+
+.hero-logo img {
+    width: 80px;
+    margin-right: 18px;
+}
+
+.hero-wordmark {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.hero-wordmark span {
+    color: var(--headings);
+    display: block;
+}
 
 .hero-bullet {
     display: flex;
