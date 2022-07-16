@@ -25,4 +25,4 @@
 Tes contributions sont les bienvenues ! N’hésite pas à créer un *fork* du dépôt, puis à créer une *pull request* pour suggérer des modifications.
 
 ## Licence
-Ce dépôt et son contenu sont publiés sous licence MIT. Consulte le fichier `LICENSE` pour plus d’informations.
+Ce dépôt et son contenu, à l’exception des ressources graphiques, sont publiés sous licence MIT. Consulte le fichier `LICENSE` pour plus d’informations.
