@@ -1,6 +1,6 @@
 <p align="center">
   <a href="https://github.com/students-4-students/students-4-students.github.io">
-    <img src="https://user-images.githubusercontent.com/7029582/131712137-d42857bc-7291-4265-aa30-a315fbcacab3.png" alt="Logo" width="80" height="80">
+    <img src="assets/icons/favicon.png" alt="Logo" width="80" height="80">
   </a>
 
   <h1 align="center">Students 4 Students</h1>
