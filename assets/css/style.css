@@ -471,20 +471,20 @@ h3 {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: bottom right;
+    background-image: url(../illustrations/hero@0.5x.webp);
+}
+
+.no-webp .section-hero-illustration {
     background-image: url(../illustrations/hero@0.5x.png);
-    background-image: image-set(
-        "../illustrations/hero@0.5x.webp" type("image/webp"),
-        "hero@0.../illustrations/hero@0.5x.jpg" type("image/jpeg")
-    );
 }
 
 @media screen and (min-width: 400px) {
     .section-hero-illustration {
+        background-image: url(../illustrations/hero.webp);
+    }
+
+    .no-webp .section-hero-illustration {
         background-image: url(../illustrations/hero.png);
-        background-image: image-set(
-            "../illustrations/hero.webp" type("image/webp"),
-            "../illustrations/hero.jpg" type("image/jpeg")
-        );
     }
 }
 
@@ -571,20 +571,20 @@ h3 {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: bottom left;
+    background-image: url(../illustrations/presentation@0.5x.webp);
+}
+
+.no-webp .section-presentation-illustration {
     background-image: url(../illustrations/presentation@0.5x.png);
-    background-image: image-set(
-        "../illustrations/presentation@0.5x.webp" type("image/webp"),
-        "presentation@0.../illustrations/presentation@0.5x.jpg" type("image/jpeg")
-    );
 }
 
 @media screen and (min-width: 400px) {
     .section-presentation-illustration {
+        background-image: url(../illustrations/presentation.webp);
+    }
+
+    .no-webp .section-presentation-illustration {
         background-image: url(../illustrations/presentation.png);
-        background-image: image-set(
-            "../illustrations/presentation.webp" type("image/webp"),
-            "../illustrations/presentation.jpg" type("image/jpeg")
-        );
     }
 }
 
@@ -671,11 +671,11 @@ h3 {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: bottom 75%;
+    background-image: url(../illustrations/testimonials@0.5x.webp);
+}
+
+.no-webp .section-testimonials-illustration {
     background-image: url(../illustrations/testimonials@0.5x.jpg);
-    background-image: image-set(
-        "../illustrations/testimonials@0.5x.webp" type("image/webp"),
-        "testimonials@0.../illustrations/testimonials@0.5x.jpg" type("image/jpeg")
-    );
 }
 
 .section-testimonials-illustration::after {
@@ -690,21 +690,21 @@ h3 {
 
 @media screen and (min-width: 400px) {
     .section-testimonials-illustration {
+        background-image: url(../illustrations/testimonials.webp);
+    }
+
+    .no-webp .section-testimonials-illustration {
         background-image: url(../illustrations/testimonials.jpg);
-        background-image: image-set(
-            "../illustrations/testimonials.webp" type("image/webp"),
-            "../illustrations/testimonials.jpg" type("image/jpeg")
-        );
     }
 }
 
 @media screen and (min-width: 1200px) {
     .section-testimonials-illustration {
+        background-image: url(../illustrations/testimonials@2x.webp);
+    }
+
+    .no-webp .section-testimonials-illustration {
         background-image: url(../illustrations/testimonials@2x.jpg);
-        background-image: image-set(
-            "../illustrations/testimonials@2x.webp" type("image/webp"),
-            "testimonials@../illustrations/testimonials@2x.jpg" type("image/jpeg")
-        );
     }
 }
 
@@ -795,30 +795,30 @@ h3 {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: bottom left;
+    background-image: url(../illustrations/faq@0.5x.webp);
+}
+
+.no-webp .section-faq-illustration {
     background-image: url(../illustrations/faq@0.5x.jpg);
-    background-image: image-set(
-        "../illustrations/faq@0.5x.webp" type("image/webp"),
-        "faq@0.../illustrations/faq@0.5x.jpg" type("image/jpeg")
-    );
 }
 
 @media screen and (min-width: 400px) {
     .section-faq-illustration {
+        background-image: url(../illustrations/faq.webp);
+    }
+
+    .no-webp .section-faq-illustration {
         background-image: url(../illustrations/faq.jpg);
-        background-image: image-set(
-            "../illustrations/faq.webp" type("image/webp"),
-            "../illustrations/faq.jpg" type("image/jpeg")
-        );
     }
 }
 
 @media screen and (min-width: 1200px) {
     .section-faq-illustration {
+        background-image: url(../illustrations/faq@2x.webp);
+    }
+
+    .no-webp .section-faq-illustration {
         background-image: url(../illustrations/faq@2x.jpg);
-        background-image: image-set(
-            "../illustrations/faq@2x.webp" type("image/webp"),
-            "faq@../illustrations/faq@2x.jpg" type("image/jpeg")
-        );
     }
 }
 
