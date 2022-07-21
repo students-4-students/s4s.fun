@@ -400,6 +400,8 @@ h3 {
 
 .section-hero {
     padding-top: 48px;
+    width: 100%;
+    overflow: hidden;
 }
 
 .hero-logo {
@@ -410,6 +412,46 @@ h3 {
 .hero-logo img {
     width: 5em;
     margin-right: 1em;
+}
+
+.hero-drop-shadow {
+    position: absolute;
+    background-image: radial-gradient(
+        circle at 10px 10px,
+        rgba(81, 85, 130, 0) 0%,
+        rgba(81, 85, 130, 1) var(--drop-shadow-size)
+    ),
+    conic-gradient(
+        from 0.25turn at 10px 10px,
+        transparent 10deg,
+        transparent,
+        10deg,
+        #444669,
+        70deg,
+        #444669,
+        70deg,
+        transparent
+    );
+    width: max(100vw, 100vh);
+    height: max(100vw, 100vh);
+
+    --drop-shadow-size: 150vw;
+}
+
+@media screen and (min-width: 576px) {
+    .hero-drop-shadow {
+        --drop-shadow-size: 90vw;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .hero-drop-shadow {
+        --drop-shadow-size: 30vw;
+    }
+}
+
+.hero-contents {
+    position: relative;
 }
 
 .hero-wordmark {
