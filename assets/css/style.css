@@ -272,6 +272,13 @@ h3 {
     margin: 0 auto;
 }
 
+@supports(padding: max(0px, 0px)) {
+    .container {
+        padding-left: max(24px, env(safe-area-inset-left));
+        padding-right: max(24px, env(safe-area-inset-right));
+    }
+}
+
 @media screen and (min-width: 576px) {
     .container,
     .container-narrow {
