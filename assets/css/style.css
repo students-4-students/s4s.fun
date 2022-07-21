@@ -468,10 +468,10 @@ h3 {
     position: relative;
     margin-top: 40px;
     height: 90vw;
-    background-image: url(../illustrations/hero@0.5x.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: bottom right;
+    background-image: url(../illustrations/hero@0.5x.png);
 }
 
 @media screen and (min-width: 400px) {
@@ -560,10 +560,10 @@ h3 {
 
 .section-presentation-illustration {
     height: 90vw;
-    background-image: url(../illustrations/presentation@0.5x.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: bottom left;
+    background-image: url(../illustrations/presentation@0.5x.png);
 }
 
 @media screen and (min-width: 400px) {
@@ -652,10 +652,10 @@ h3 {
 .section-testimonials-illustration {
     position: relative;
     height: 90vw;
-    background-image: url(../illustrations/testimonials@0.5x.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: bottom 75%;
+    background-image: url(../illustrations/testimonials@0.5x.jpg);
 }
 
 .section-testimonials-illustration::after {
@@ -670,7 +670,13 @@ h3 {
 
 @media screen and (min-width: 400px) {
     .section-testimonials-illustration {
-        background-image: url(../illustrations/testimonials.png);
+        background-image: url(../illustrations/testimonials.jpg);
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .section-testimonials-illustration {
+        background-image: url(../illustrations/testimonials@2x.jpg);
     }
 }
 
@@ -758,15 +764,21 @@ h3 {
     position: relative;
     margin-top: 40px;
     height: 90vw;
-    background-image: url(../illustrations/faq@0.5x.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: bottom left;
+    background-image: url(../illustrations/faq@0.5x.jpg);
 }
 
 @media screen and (min-width: 400px) {
     .section-faq-illustration {
-        background-image: url(../illustrations/faq.png);
+        background-image: url(../illustrations/faq.jpg);
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .section-faq-illustration {
+        background-image: url(../illustrations/faq@2x.jpg);
     }
 }
 
@@ -777,7 +789,13 @@ h3 {
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(to bottom, var(--background) 0%, rgba(254, 248, 242, 80%) 30%, transparent 100%);
+    background: linear-gradient(to bottom, var(--background) 0%, rgba(254, 248, 242, 80%) 20%, transparent 100%);
+}
+
+@media screen and (min-width: 1400px) {
+    .section-faq-illustration::after {
+        background: linear-gradient(to bottom, var(--background) 0%, rgba(254, 248, 242, 80%) 15%, transparent 100%);
+    }
 }
 
 @media screen and (min-width: 576px) {
