@@ -3,210 +3,402 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
 
-    <title>Students 4 Students</title>
+    <title>Students 4 Students — Préparation gratuite à l’EPFL</title>
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" media="screen" href="https://cdn.rawgit.com/resir014/Clear-Sans-Webfont/v1.1.0/css/clear-sans.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="assets/css/normalize.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <meta name="theme-color" content="#515582">
+    <link rel="icon" href="assets/icons/favicon.png">
+    <link rel="apple-touch-icon" href="assets/icons/favicon.png">
+
+    <meta name="description" content="La semaine de préparation à la première année de l’EPFL gratuite et par les étudiant·e·s.">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Students 4 Students">
+    <meta name="twitter:description" content="La semaine de préparation à la première année de l’EPFL gratuite et par les étudiant·e·s.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://s4s.fun/">
+    <meta property="og:locale" content="fr">
+    <meta property="og:title" content="Students 4 Students">
+    <meta property="og:description" content="La semaine de préparation à la première année de l’EPFL gratuite et par les étudiant·e·s.">
+    <meta property="og:image" content="assets/seo/opengraph.png">
+    <meta property="og:image:alt" content="Students 4 Students : La semaine de préparation à la première année de l’EPFL gratuite et par les étudiant·e·s.">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="600">
+    <meta property="og:site_name" content="Students 4 Students">
+
+    <script>
+        /*! modernizr 3.6.0 (Custom Build) | MIT *
+         * https://modernizr.com/download/?-webp-setclasses !*/
+        !function(e,n,A){function o(e,n){return typeof e===n}function t(){var e,n,A,t,a,i,l;for(var f in r)if(r.hasOwnProperty(f)){if(e=[],n=r[f],n.name&&(e.push(n.name.toLowerCase()),n.options&&n.options.aliases&&n.options.aliases.length))for(A=0;A<n.options.aliases.length;A++)e.push(n.options.aliases[A].toLowerCase());for(t=o(n.fn,"function")?n.fn():n.fn,a=0;a<e.length;a++)i=e[a],l=i.split("."),1===l.length?Modernizr[l[0]]=t:(!Modernizr[l[0]]||Modernizr[l[0]]instanceof Boolean||(Modernizr[l[0]]=new Boolean(Modernizr[l[0]])),Modernizr[l[0]][l[1]]=t),s.push((t?"":"no-")+l.join("-"))}}function a(e){var n=u.className,A=Modernizr._config.classPrefix||"";if(c&&(n=n.baseVal),Modernizr._config.enableJSClass){var o=new RegExp("(^|\\s)"+A+"no-js(\\s|$)");n=n.replace(o,"$1"+A+"js$2")}Modernizr._config.enableClasses&&(n+=" "+A+e.join(" "+A),c?u.className.baseVal=n:u.className=n)}function i(e,n){if("object"==typeof e)for(var A in e)f(e,A)&&i(A,e[A]);else{e=e.toLowerCase();var o=e.split("."),t=Modernizr[o[0]];if(2==o.length&&(t=t[o[1]]),"undefined"!=typeof t)return Modernizr;n="function"==typeof n?n():n,1==o.length?Modernizr[o[0]]=n:(!Modernizr[o[0]]||Modernizr[o[0]]instanceof Boolean||(Modernizr[o[0]]=new Boolean(Modernizr[o[0]])),Modernizr[o[0]][o[1]]=n),a([(n&&0!=n?"":"no-")+o.join("-")]),Modernizr._trigger(e,n)}return Modernizr}var s=[],r=[],l={_version:"3.6.0",_config:{classPrefix:"",enableClasses:!0,enableJSClass:!0,usePrefixes:!0},_q:[],on:function(e,n){var A=this;setTimeout(function(){n(A[e])},0)},addTest:function(e,n,A){r.push({name:e,fn:n,options:A})},addAsyncTest:function(e){r.push({name:null,fn:e})}},Modernizr=function(){};Modernizr.prototype=l,Modernizr=new Modernizr;var f,u=n.documentElement,c="svg"===u.nodeName.toLowerCase();!function(){var e={}.hasOwnProperty;f=o(e,"undefined")||o(e.call,"undefined")?function(e,n){return n in e&&o(e.constructor.prototype[n],"undefined")}:function(n,A){return e.call(n,A)}}(),l._l={},l.on=function(e,n){this._l[e]||(this._l[e]=[]),this._l[e].push(n),Modernizr.hasOwnProperty(e)&&setTimeout(function(){Modernizr._trigger(e,Modernizr[e])},0)},l._trigger=function(e,n){if(this._l[e]){var A=this._l[e];setTimeout(function(){var e,o;for(e=0;e<A.length;e++)(o=A[e])(n)},0),delete this._l[e]}},Modernizr._q.push(function(){l.addTest=i}),Modernizr.addAsyncTest(function(){function e(e,n,A){function o(n){var o=n&&"load"===n.type?1==t.width:!1,a="webp"===e;i(e,a&&o?new Boolean(o):o),A&&A(n)}var t=new Image;t.onerror=o,t.onload=o,t.src=n}var n=[{uri:"data:image/webp;base64,UklGRiQAAABXRUJQVlA4IBgAAAAwAQCdASoBAAEAAwA0JaQAA3AA/vuUAAA=",name:"webp"},{uri:"data:image/webp;base64,UklGRkoAAABXRUJQVlA4WAoAAAAQAAAAAAAAAAAAQUxQSAwAAAABBxAR/Q9ERP8DAABWUDggGAAAADABAJ0BKgEAAQADADQlpAADcAD++/1QAA==",name:"webp.alpha"},{uri:"data:image/webp;base64,UklGRlIAAABXRUJQVlA4WAoAAAASAAAAAAAAAAAAQU5JTQYAAAD/////AABBTk1GJgAAAAAAAAAAAAAAAAAAAGQAAABWUDhMDQAAAC8AAAAQBxAREYiI/gcA",name:"webp.animation"},{uri:"data:image/webp;base64,UklGRh4AAABXRUJQVlA4TBEAAAAvAAAAAAfQ//73v/+BiOh/AAA=",name:"webp.lossless"}],A=n.shift();e(A.name,A.uri,function(A){if(A&&"load"===A.type)for(var o=0;o<n.length;o++)e(n[o].name,n[o].uri)})}),t(),a(s),delete l.addTest,delete l.addAsyncTest;for(var p=0;p<Modernizr._q.length;p++)Modernizr._q[p]();e.Modernizr=Modernizr}(window,document);
+    </script>
 </head>
 <body>
-    <div class="hero-right"></div>
-    <div class="hero">
+    <section class="section section-hero theme-primary">
+        <div class="container-wrapper-right">
+            <div class="container container-narrow">
+                <div class="hero-drop-shadow" role="presentation"></div>
+
+                <div class="hero-contents">
+                    <header class="hero-logo">
+                        <img src="assets/icons/logo.svg" alt="">
+                        <span class="hero-wordmark">Students <span>4 Students</span></span>
+                    </header>
+
+                    <h1>
+                        La semaine de préparation à la première année de l’EPFL
+                        <strong>gratuite</strong> et <strong>par les étudiant·e·s</strong>
+                    </h1>
+
+                    <div class="hero-bullets">
+                        <div class="hero-bullet">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                            </svg>
+
+                            9–15 septembre 2022
+                        </div>
+                        <div class="hero-bullet">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                            </svg>
+
+                            Campus EPFL
+                        </div>
+                        <div class="hero-bullet">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                            </svg>
+
+                            100% gratuit
+                        </div>
+                    </div>
+
+                    <div class="hero-registration">
+                        <div class="hero-registration-button hero-registration-button-disabled" aria-disabled="true" role="link">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M13 9l3 3m0 0l-3 3m3-3H8m13 0a9 9 0 11-18 0 9 9 0 0118 0z" />
+                            </svg>
+
+                            Inscris-toi
+                        </div>
+
+                        <p class="hero-registration-helper">
+                            Les inscriptions ouvrent le 1<sup>er</sup> août.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section-hero-illustration"></div>
+    </section>
+
+    <section class="section section-presentation">
+        <div class="container-wrapper-left">
+            <div class="container container-narrow">
+                <h2>Le principe</h2>
+
+                <p class="lead">
+                    Nous organisons une semaine qui te permet de te préparer pour le premier semestre de bachelor.
+                    Pendant la semaine, tu découvriras à quoi ressemble une journée habituelle à l’EPFL, tout en
+                    révisant certains sujets vus au gymnase/lycée. Cette semaine n’est pas du tout obligatoire et
+                    ta réussite durant le semestre ne dépend pas de ta participation.
+                </p>
+
+                <div class="presentation-features">
+                    <div class="presentation-feature">
+                        <div class="presentation-feature-icon" aria-hidden="true">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M4.871 4A17.926 17.926 0 003 12c0 2.874.673 5.59 1.871 8m14.13 0a17.926 17.926 0 001.87-8c0-2.874-.673-5.59-1.87-8M9 9h1.246a1 1 0 01.961.725l1.586 5.55a1 1 0 00.961.725H15m1-7h-.08a2 2 0 00-1.519.698L9.6 15.302A2 2 0 018.08 16H8" />
+                            </svg>
+                        </div>
+                        <h3>Prépare ton semestre</h3>
+                        <p>
+                            Nos cours et séances d’exercices te rappellent les bases utiles pour les matières du
+                            1<sup>er</sup>&nbsp;semestre (analyse, algèbre linéaire, physique et branches spécifiques à ta section).
+                        </p>
+                    </div>
+                    <div class="presentation-feature">
+                        <div class="presentation-feature-icon" aria-hidden="true">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
+                            </svg>
+                        </div>
+                        <h3>Fais-toi des potes</h3>
+                        <p>
+                            Quoi de mieux que d’être entouré·e de personnes entrant aussi en première année pour rencontrer du monde&nbsp;?
+                        </p>
+                    </div>
+                    <div class="presentation-feature">
+                        <div class="presentation-feature-icon" aria-hidden="true">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M11 5.882V19.24a1.76 1.76 0 01-3.417.592l-2.147-6.15M18 13a3 3 0 100-6M5.436 13.683A4.001 4.001 0 017 6h1.832c4.1 0 7.625-1.234 9.168-3v14c-1.543-1.766-5.067-3-9.168-3H7a3.988 3.988 0 01-1.564-.317z" />
+                            </svg>
+                        </div>
+                        <h3>Découvre l’EPFL</h3>
+                        <p>
+                            Avec ton expérience du campus, tu pourras&nbsp;—&nbsp;on l’espère&nbsp;—&nbsp;ne plus jamais te
+                            perdre dans les couloirs&nbsp;! Aussi, les ateliers découverte de la dernière journée te permettent
+                            de découvrir la vie associative de l’EPFL.
+                        </p>
+                    </div>
+                </div>
+
+                <p class="lead">
+                    Students 4 Students est organisée par des bénévoles, avec le soutien de l’EPFL et de
+                    l’<a class="lead-link" href="https://agepoly.ch">AGEPoly</a> (association générale des étudiant·e·s).
+                </p>
+            </div>
+        </div>
+
+        <div class="section-presentation-illustration"></div>
+    </section>
+
+    <section class="section section-testimonials theme-secondary">
         <div class="container">
-            <div class="row">
-                <div class="col-md-9 offset-md-1 col-lg-8 offset-lg-2">
-                    <div class="hero-inside">
-                        <div class="hero-drop-shadow"></div>
-                        <div class="hero-contents">
-                            <img src="assets/logo.svg" alt="">
-                            <h1>Students 4 Students</h1>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="container">
-        <div class="row">
-            <div class="col-md-9 offset-md-1 col-lg-8 offset-lg-2 lead lead-intro">
-                <p>
-                    Students 4 Students organise une semaine annuelle gratuite de préparation au premier semestre du bachelor de l’EPFL à la
-                    fin de l’été. Le but envers les participant·x·e·s est double :
-                </p>
-
-                <ul>
-                    <li>académique, en profitant d’une semaine de cours de prérentrée conçus pour faire face au mieux au BA1 ;</li>
-                    <li>social, en rencontrant des camarades motivé·x·e·s et en se faisant des ami·e·s pour le reste du semestre.</li>
-                </ul>
-
-                <p>
-                    Aussi, ce projet promeut un esprit d’entraide saine et respectueuse parmi les volées de première année qui est
-                    bénéfique sur tous les points. Elle vise également à donner motivation et confiance en soi en vue du semestre consécutif
-                    exigeant tout en rassemblant des infos et bons plans précieux. Enfin, elle permet aux BA1s d’en rencontrer d’autres
-                    ainsi que des étudiant·x·e·s des années supérieures, palliant alors la peur de l’arrivée à Lausanne en ne connaissant
-                    personne.
-                </p>
-
-                <p>
-                    L'édition de septembre 2021, en photos ci-dessous, était très bénéfique pour les participant·x·e·s et c'est pourquoi nous comptons 
-                    revivre l'aventure avec vous cette année.
-                </p>
-            </div>
+            <h2>Témoignages</h2>
         </div>
 
-        <section>
-            <div class="row">
-                <div class="col-md-9 offset-md-1 col-lg-8 offset-lg-2">
-                    <h2>F.A.Q</h2>
-                </div>
+        <div class="testimonials container container-columns">
+            <figure class="testimonial">
+                <blockquote>
+                    «&nbsp;Je trouve l'initiative très intéressante, ça aide beaucoup d’avoir des conseils de personnes
+                    qui sont passées par la même chose que nous. Ça nous permet de voir ce qui nous attend
+                    et ne pas commencer l'année à chaud.&nbsp;»
+                </blockquote>
 
-                <div class="col-md-9 offset-md-1 col-lg-8 offset-lg-2 lead lead-intro">
-                    <p>
-                        <b>&#x2022; Quand est-ce que se déroulera la semaine S4S de 2022 ?</b>
-                    </p>
+                <figcaption>
+                    <strong>Sofia</strong>
+                    <br>Étudiante en systèmes de communications
+                    <br>Participante à Students 4 Students 2021
+                </figcaption>
+            </figure>
+            <figure class="testimonial">
+                <blockquote>
+                    «&nbsp;Avec S4S, on apprend comment assister à des cours. En plus, le programme est concocté par
+                    des élèves qui savent en quoi consistent les programmes de toutes les sections de première année.&nbsp;»
+                </blockquote>
 
-                    <p>
-                        Elle se déroulera du 9 au 15 septembre 2022. 
-                    </p>
+                <figcaption>
+                    <strong>Wei-En</strong>
+                    <br>Étudiante en informatique
+                    <br>Participante à Students 4 Students 2021
+                </figcaption>
+            </figure>
+            <figure class="testimonial">
+                <blockquote>
+                    «&nbsp;Je trouve l'initiative très intéressante, ça aide beaucoup d’avoir des conseils de personnes
+                    qui sont passées par la même chose que nous. Ça nous permet de voir ce qui nous attend
+                    et ne pas commencer l'année à chaud.&nbsp;»
+                </blockquote>
 
-                    <p>
-                        <b>&#x2022; Ai-je besoin de participer à un tel stage de préparation avant le premier semestre pour réussir ?</b>
-                    </p>
+                <figcaption>
+                    <strong>Sloan</strong>
+                    <br>Étudiant en physique
+                    <br>Participant à Students 4 Students 2021
+                </figcaption>
+            </figure>
+        </div>
 
-                    <p>
-                        Cent fois non. Nous ne prétendons pas qu'en participant à quelconque semaine de stage, la qualité des cours qui y sont 
-                        proposés seule vous ferait réussir votre semestre. L'intérêt de la semaine réside tout autant dans les ami·x·e·s que vous 
-                        vous y ferez pour vous épauler tout le semestre qui suit.
-                    </p>
+        <div class="section-testimonials-illustration"></div>
+    </section>
 
-                    <p>
-                        <b>&#x2022; Qui organise S4S ?</b>
-                    </p>
+    <section class="section section-faq">
+        <div class="container">
+            <h2>FAQ</h2>
+        </div>
 
-                    <p>
-                        Nous sommes des étudiant·x·e·s et quelques doctorant·x·e·s de toutes sections et toutes années à l'EPFL (sauf, pour l'instant, 
-                        la section Architecture).
-                    </p>
-
-                    <p>
-                        <b>&#x2022; Comment pourrais-je manger lors de cette semaine ?</b>
-                    </p>
-
-                    <p>
-                        Les restaurants, cantines, et super marchés de l'EPFL seront ouverts à cette période.
-                    </p>
-
-                    <p>
-                        <b>&#x2022; Quel est le tarif de la semaine ?</b>
-                    </p>
-
-                    <p>
-                        Les cours et exercices sont gratuits. Nous étudions la possibilité de vous proposer des tarifs avantageux pour les midis dans 
-                        les cafettes de l'EPFL.
-                    </p>
-
-                    <p>
-                        <b>&#x2022; Quand les inscriptions ouvriront-elles ?</b>
-                    </p>
-
-                    <p>
-                        La date n'est pas encore fixée mais sera située en début août. Nous communiquerons la date précise quand nous l'aurons sur Instagram !
-                    </p>
-
-                    <p>
-                        <b>&#x2022; Comment s'inscrire ?</b>
-                    </p>
-
-                    <p>
-                        Lorsque les inscriptions ouvriront il sera possible de s'inscrire à partir de ce site même.
-                    </p>
-                </div>
-            </div>
-
-        </section>
-
-        <section>
-            <div class="row">
-                <div class="col-md-9 offset-md-1 col-lg-8 offset-lg-2">
-                    <h2>Rejoins la discussion</h2>
-                    <div class="row">
-
-                        <div class="col-md-4">
-                            <!-- Left of Instagram button--> 
-                        </div>
-
-                        <div class="col-md-4">
-                            <a class="external-link" href="https://instagram.com/s4s.epfl" style="--accent: #e271d0">
-                                Instagram
-                            </a>
-                        </div>
-
-                        <div class="col-md-4">
-                            <!-- Right of Instagram button--> 
-                        </div>
-                        
+        <div class="container container-columns">
+            <div>
+                <h3>Généralités</h3>
+                <details class="faq-question">
+                    <summary>
+                        Ai-je besoin de participer à un tel stage de préparation pour réussir&nbsp;?
+                    </summary>
+                    <div class="faq-answer">
+                        <p>
+                            Cent fois non. Nous ne prétendons pas qu’en participant à quelconque semaine de stage, la qualité
+                            des cours qui y sont proposés seule vous ferait réussir votre semestre. L’intérêt de la semaine
+                            réside tout autant dans les ami·e·s que vous vous y ferez pour vous épauler tout le semestre qui suit.
+                        </p>
                     </div>
-                </div>
+                </details>
+                <details class="faq-question">
+                    <summary>
+                        Comment pourrai-je manger&nbsp;?
+                    </summary>
+                    <div class="faq-answer">
+                        <p>
+                            Les restaurants, cantines et supermarchés de l’EPFL seront ouverts durant cette période.
+                        </p>
+                    </div>
+                </details>
+                <details class="faq-question">
+                    <summary>
+                        À quoi ressemble une journée type&nbsp;?
+                    </summary>
+                    <div class="faq-answer">
+                        <p>
+                            De 08:00 à 12:00 et de 13:00 à 15:00, tu auras des cours et séances d’exercices en lien
+                            avec les matières que tu auras dans ta section pendant le semestre.
+                        </p>
+                        <p>
+                            Lors des cours, des étudiant·e·s te rappellent des notions utiles pour bien commencer le semestre.
+                            Lors des séances d’exercices, tu résous des problèmes pour mettre en pratique tes connaissances.
+                        </p>
+                    </div>
+                </details>
+
+                <h3>Inscriptions</h3>
+                <details class="faq-question">
+                    <summary>
+                        Quand les inscriptions ouvriront-elles&nbsp;?
+                    </summary>
+                    <div class="faq-answer">
+                        <p>
+                            Les inscriptions ouvriront le 1<sup>er</sup> août.
+                        </p>
+                    </div>
+                </details>
+                <details class="faq-question">
+                    <summary>
+                        Comment s’inscrire&nbsp;?
+                    </summary>
+                    <div class="faq-answer">
+                        <p>
+                            Lorsque les inscriptions ouvriront, il sera possible de s'inscrire à partir de ce site même.
+                        </p>
+                    </div>
+                </details>
+                <details class="faq-question">
+                    <summary>
+                        Quel sont les tarifs de la semaine&nbsp;?
+                    </summary>
+                    <div class="faq-answer">
+                        <p>
+                            La participation aux cours, exercices et ateliers découverte est gratuite.
+                        </p>
+                    </div>
+                </details>
             </div>
-        </section>
-    </div>
 
-    <div class="container">
-        <section>
-            <div class="row">
-                <div class="col-md-9 offset-md-1 col-lg-8 offset-lg-2">
-                    <h2>Retour sur l’édition 2021</h2>
-                </div>
+            <div>
+                <h3>Est-ce que je peux participer à S4S…</h3>
+                <details class="faq-question">
+                    <summary>
+                        …si je suis mineur&nbsp;?
+                    </summary>
+                    <div class="faq-answer">
+                        <p>
+                            Oui, il n’y a pas besoin d’être majeur pour participer à Students 4 Students.
+                        </p>
+                    </div>
+                </details>
+                <details class="faq-question">
+                    <summary>
+                        …si j’entre en mathématiques ou physique&nbsp;?
+                    </summary>
+                    <div class="faq-answer">
+                        <p>
+                            Oui, les cours d’analyse avancée et d’algèbre linéaire avancée spécialement adaptés
+                            à ces sections t’aideront à bien te préparer.
+                        </p>
+                    </div>
+                </details>
+                <details class="faq-question">
+                    <summary>
+                        …si j’entre en architecture&nbsp;?
+                    </summary>
+                    <div class="faq-answer">
+                        <p>
+                            Malheureusement non, les cours proposés dans la section Architecture sont trop éloignés du
+                            tronc commun de cours des autres sections pour que Students 4 Students soit utile.
+                        </p>
+                    </div>
+                </details>
+                <details class="faq-question">
+                    <summary>
+                        …si j’entre au CMS&nbsp;?
+                    </summary>
+                    <div class="faq-answer">
+                        <p>
+                            Malheureusement non, les sujets abordés au CMS sont trop différents de ceux de bachelor pour que
+                            Students 4 Students soit utile. Au CMS, les cours ne supposent de ta part aucune connaissance
+                            qui n’est pas élémentaire au préalable.
+                        </p>
+                    </div>
+                </details>
+                <details class="faq-question">
+                    <summary>
+                        …si j’entre en master ou passerelle HES&nbsp;?
+                    </summary>
+                    <div class="faq-answer">
+                        <p>
+                            Malheureusement non, Students 4 Students s’adresse aux étudiant·e·s commençant leur bachelor.
+                        </p>
+                    </div>
+                </details>
+                <details class="faq-question">
+                    <summary>
+                        …si j’ai fait la MAN, le CMS ou redoublé&nbsp;?
+                    </summary>
+                    <div class="faq-answer">
+                        <p>
+                            Tu peux t’inscrire, mais la priorité sera mise sur les étudiant·e·s qui débutent à l’EPFL
+                            lors des acceptations.
+                        </p>
+                    </div>
+                </details>
+            </div>
+        </div>
+
+        <div class="section-faq-illustration"></div>
+    </section>
+
+    <footer class="section section-footer theme-primary">
+        <div class="container">
+            <div class="footer-partners">
+                <a class="footer-partner" href="https://www.epfl.ch/fr/">
+                    <img class="partner-epfl" src="assets/partners/epfl.svg" alt="Une association reconnue par l’EPFL">
+                </a>
+                <a class="footer-partner" href="https://agepoly.ch/">
+                    <img class="partner-agepoly" src="assets/partners/agepoly.svg" alt="AGEPoly">
+                </a>
             </div>
 
-            <div class="mt-4 mb-2">
-                <div class="pictures-grid">
-                    <div class="stat"><span>189</span> participant·x·e·s</div>
-                    <div class="picture" style="background-image: url(assets/2021-1.jpeg)"></div>
-                    <div class="picture" style="background-image: url(assets/2021-2.jpeg)"></div>
-                    <div class="picture" style="background-image: url(assets/2021-3.jpeg)"></div>
+            <div class="footer-social">
+                <a href="https://instagram.com/s4s.epfl" rel="noopener">
+                    <span class="footer-social-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24" role="img">
+                            <title>Instagram</title>
+                            <path d="M12.2373 2.36387C15.4414 2.36387 15.8209 2.37606 17.0863 2.43379C18.2563 2.48719 18.8917 2.68268 19.3146 2.84697C19.8746 3.06466 20.2744 3.32474 20.6943 3.74464C21.1142 4.16453 21.3743 4.56432 21.5919 5.1244C21.7563 5.5473 21.9518 6.18269 22.0052 7.35263C22.0629 8.61803 22.0751 8.99753 22.0751 12.2017C22.0751 15.4058 22.0629 15.7853 22.0052 17.0507C21.9518 18.2207 21.7563 18.8561 21.5919 19.279C21.3743 19.839 21.1142 20.2388 20.6943 20.6587C20.2744 21.0786 19.8746 21.3387 19.3146 21.5563C18.8917 21.7207 18.2563 21.9162 17.0863 21.9696C15.8211 22.0273 15.4416 22.0395 12.2373 22.0395C9.03294 22.0395 8.65344 22.0273 7.38827 21.9696C6.21829 21.9162 5.5829 21.7207 5.16005 21.5563C4.59992 21.3387 4.20013 21.0786 3.78023 20.6587C3.36034 20.2388 3.10026 19.839 2.88262 19.279C2.71828 18.8561 2.52279 18.2207 2.46939 17.0507C2.41166 15.7853 2.39946 15.4058 2.39946 12.2017C2.39946 8.99753 2.41166 8.61803 2.46939 7.35268C2.52279 6.18269 2.71828 5.5473 2.88262 5.1244C3.10026 4.56432 3.36034 4.16453 3.78023 3.74464C4.20013 3.32474 4.59992 3.06466 5.16005 2.84697C5.5829 2.68268 6.21829 2.48719 7.38823 2.43379C8.65363 2.37606 9.03313 2.36387 12.2373 2.36387ZM12.2373 0.20166C8.97825 0.20166 8.56965 0.215474 7.28972 0.273873C6.01241 0.332178 5.14014 0.535003 4.3768 0.831668C3.5877 1.13834 2.91848 1.54866 2.25137 2.21577C1.58425 2.88289 1.17393 3.5521 0.867265 4.3412C0.5706 5.10454 0.367774 5.97682 0.30947 7.25412C0.251071 8.534 0.237305 8.94266 0.237305 12.2017C0.237305 15.4607 0.251071 15.8694 0.30947 17.1492C0.367774 18.4266 0.5706 19.2988 0.867265 20.0622C1.17393 20.8512 1.58425 21.5205 2.25137 22.1876C2.91848 22.8547 3.5877 23.265 4.3768 23.5717C5.14014 23.8684 6.01241 24.0712 7.28972 24.1295C8.56965 24.1879 8.97825 24.2017 12.2373 24.2017C15.4963 24.2017 15.905 24.1879 17.1848 24.1295C18.4621 24.0712 19.3344 23.8684 20.0978 23.5717C20.8869 23.265 21.5561 22.8547 22.2232 22.1876C22.8903 21.5205 23.3006 20.8513 23.6073 20.0622C23.904 19.2988 24.1068 18.4266 24.1651 17.1492C24.2235 15.8694 24.2373 15.4607 24.2373 12.2017C24.2373 8.94266 24.2235 8.534 24.1651 7.25412C24.1068 5.97682 23.904 5.10454 23.6073 4.3412C23.3006 3.5521 22.8903 2.88289 22.2232 2.21577C21.5561 1.54866 20.8869 1.13834 20.0978 0.831668C19.3344 0.535003 18.4621 0.332178 17.1848 0.273873C15.905 0.215474 15.4963 0.20166 12.2373 0.20166ZM12.2373 6.0395C8.83402 6.0395 6.0751 8.79842 6.0751 12.2017C6.0751 15.6049 8.83402 18.3639 12.2373 18.3639C15.6405 18.3639 18.3995 15.6049 18.3995 12.2017C18.3995 8.79842 15.6405 6.0395 12.2373 6.0395ZM12.2373 16.2017C10.0282 16.2017 8.23726 14.4108 8.23726 12.2017C8.23726 9.99256 10.0282 8.20166 12.2373 8.20166C14.4464 8.20166 16.2373 9.99256 16.2373 12.2017C16.2373 14.4108 14.4464 16.2017 12.2373 16.2017ZM20.0829 5.79604C20.0829 6.59134 19.4382 7.23607 18.6429 7.23607C17.8476 7.23607 17.2029 6.59134 17.2029 5.79604C17.2029 5.00075 17.8476 4.35607 18.6429 4.35607C19.4382 4.35607 20.0829 5.00075 20.0829 5.79604Z" fill="currentColor"/>
+                        </svg>
+                    </span>
 
-                    <div class="picture" style="background-image: url(assets/2021-4.jpeg)"></div>
-                    <div class="stat"><span>68</span> bénévoles</div>
-                    <div class="picture" style="background-image: url(assets/2021-5.jpeg)"></div>
-                    <div class="picture" style="background-image: url(assets/2021-6.jpeg)"></div>
+                    @s4s.epfl
+                </a>
 
-                    <div class="picture" style="background-image: url(assets/2021-7.jpeg)"></div>
-                    <div class="picture" style="background-image: url(assets/2021-8.jpeg)"></div>
-                    <div class="stat"><span>3</span> salles</div>
-                    <div class="picture" style="background-image: url(assets/2021-9.jpeg)"></div>
+                <a href="mailto:contact@s4s.fun">
+                    <span class="footer-social-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" role="img">
+                            <title>E-mail</title>
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                        </svg>
+                    </span>
 
-                    <div class="picture" style="background-image: url(assets/2021-10.jpeg)"></div>
-                    <div class="picture" style="background-image: url(assets/2021-11.jpeg)"></div>
-                    <div class="picture" style="background-image: url(assets/2021-12.jpeg)"></div>
-                    <div class="stat"><span>7</span> matières</div>
-                </div>
-
-                <p class="credits">
-                    Photos : <a href="https://www.instagram.com/adrienbtr.photo">@adrienbtr.photo</a>
-                </p>
+                    contact@s4s.fun
+                </a>
             </div>
-        </section>
 
-        <section>
-            <div class="row">
-                <div class="col-md-9 offset-md-1 col-lg-8 offset-lg-2">
-                    <h2>Contact</h2>
-                    <p class="lead">
-                        <strong>Adresse mail :</strong> <a class="underline-hover" href="mailto:contact@s4s.fun">contact@s4s.fun</a>
-                    </p>
-                </div>
+            <div class="footer-credits">
+                Photos&nbsp;:
+                <a href="https://www.instagram.com/adrienbtr.photo" rel="noopener">@adrienbtr.photo</a>
             </div>
-        </section>
-    </div>
-
-    <footer class="agepoly-logo">
-        <a href="https://agepoly.ch">
-            <img src="assets/agepoly.png" alt="Commission AGEPoly">
-        </a>
+        </div>
     </footer>
 </body>
 </html>

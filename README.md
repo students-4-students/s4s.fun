@@ -1,6 +1,6 @@
 <p align="center">
   <a href="https://github.com/students-4-students/students-4-students.github.io">
-    <img src="https://user-images.githubusercontent.com/7029582/131712137-d42857bc-7291-4265-aa30-a315fbcacab3.png" alt="Logo" width="80" height="80">
+    <img src="assets/icons/favicon.png" alt="Logo" width="80" height="80">
   </a>
 
   <h1 align="center">Students 4 Students</h1>
@@ -25,4 +25,11 @@
 Tes contributions sont les bienvenues ! N’hésite pas à créer un *fork* du dépôt, puis à créer une *pull request* pour suggérer des modifications.
 
 ## Licence
-Ce dépôt et son contenu sont publiés sous licence MIT. Consulte le fichier `LICENSE` pour plus d’informations.
+Ce dépôt et son contenu, à l’exception des ressources graphiques, sont publiés sous licence MIT. Consulte le fichier `LICENSE` pour plus d’informations.
+
+## Crédits
+
+Ce site utilise les ressources graphiques suivantes :
+* Des photos prises par [Adrien Buttier](https://www.instagram.com/adrienbtr.photo/) pour Students 4 Students.
+* Les icônes [Heroicons](https://heroicons.com) conçues par [Steve Schoger](https://twitter.com/steveschoger) et publiées sous licence MIT
+* La police de caractères [General Sans](https://www.fontshare.com/fonts/general-sans) par [Indian Type Foundry](https://www.indiantypefoundry.com) et publiée sous licence ITF Free Font License.
