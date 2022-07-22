@@ -554,8 +554,8 @@ h3 {
         width: 48%;
         height: 100%;
         max-height: 750px;
-        background-size: contain;
-        background-position: bottom left;
+        background-size: 85vh;
+        background-position: top right;
     }
 
     .section-hero {
