@@ -554,7 +554,7 @@ h3 {
         width: 48%;
         height: 100%;
         max-height: 750px;
-        background-size: 85vh;
+        background-size: 1000px;
         background-position: top right;
     }
 
@@ -564,7 +564,11 @@ h3 {
     }
 }
 
-@media screen and (min-width: 1400px) {
+@media screen and (min-width: 2080px) {
+    .section-hero-illustration {
+        background-position: top left;
+    }
+
     .section-hero {
         padding-top: 8rem;
         padding-bottom: 14rem;
@@ -673,6 +677,10 @@ h3 {
 /**********************************************************************************************************************/
 /* Schedule section */
 /**********************************************************************************************************************/
+
+.section-schedule {
+    padding-bottom: 60rem;
+}
 
 /**********************************************************************************************************************/
 /* Testimonials section */
