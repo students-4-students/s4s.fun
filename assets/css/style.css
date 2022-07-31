@@ -679,7 +679,113 @@ h3 {
 /**********************************************************************************************************************/
 
 .section-schedule {
-    padding-bottom: 60rem;
+    padding-bottom: 6rem;
+}
+
+.schedule-section {
+    display: block;
+    width: 100%;
+	appearance: none;
+	-webkit-appearance: none;
+
+	background-color: rgba(0, 0, 0, .3);
+	background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' class='h-6 w-6' fill='none' viewBox='0 0 24 24' stroke='white' stroke-width='2'%3E%3Cpath stroke-linecap='round' stroke-linejoin='round' d='M8 9l4-4 4 4m0 6l-4 4-4-4' /%3E%3C/svg%3E");
+    background-size: 24px;
+    background-position: right 1rem center;
+    background-repeat: no-repeat;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 2rem;
+    padding-right: 3.5rem;
+    margin: 1rem 0;
+    border-radius: 10rem;
+    border: 0;
+
+	color: white;
+    font-family: inherit;
+    font-weight: 500;
+}
+
+.schedule-section:focus {
+    outline: none;
+    box-shadow: 0 0 0 4px rgba(255, 255, 255, .8);
+}
+
+.schedule {
+    margin: 3rem 0;
+    display: grid;
+    grid-template-rows: auto repeat(8, 1fr);
+    grid-template-columns: var(--gutter-width) repeat(2, 1fr) auto repeat(4, 1fr);
+    grid-auto-flow: column;
+    
+    --grid-gap: .3em;
+    gap: var(--grid-gap);
+
+    --gutter-width: 48px;
+    
+    font-size: 16px;
+}
+
+@media screen and (min-width: 576px) {
+    .schedule {
+        width: calc(100% + var(--gutter-width) + var(--grid-gap));
+        transform: translateX(calc(-1 * var(--gutter-width) - var(--grid-gap)));
+    }
+}
+
+.schedule-placeholder {
+    display: block;
+    background: white;
+    height: 1em;
+    margin-top: .4em;
+    border-radius: 36px;
+    opacity: .2;
+}
+
+.schedule-time-marker {
+    transform: translateY(-.5em);
+    padding-right: .5em;
+    
+	color: var(--muted);
+    font-size: 13px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Helvetica, Cantarell, Ubuntu, Roboto, Noto, Arial, sans-serif;
+    font-variant: tabular-nums;
+    text-align: center;
+}
+
+.schedule-day {
+    padding: .4em .6em;
+    margin: 0;
+    font-size: 1.2em;
+    text-align: center;
+}
+
+.schedule-course {
+    display: flex;
+    flex-direction: column;
+    background: rgba(0, 0, 0, .5);
+    grid-row: span 2;
+    padding: .8em;
+    border-radius: 8px;
+}
+
+.schedule-course-title {
+    margin-top: 0;
+    margin-bottom: .4em;
+    font-weight: 600;
+    line-height: 1.3;
+    margin-bottom: auto;
+}
+
+.schedule-course-type {
+    margin: 0;
+    padding-top: .4em;
+    font-weight: 500;
+    color: var(--headings);
+}
+
+.schedule-course-type .schedule-placeholder {
+    background-color: var(--headings);
 }
 
 /**********************************************************************************************************************/
