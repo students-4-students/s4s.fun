@@ -85,8 +85,16 @@ const sections = [
 /**********************************************************************************************************************/
 /* Initial state */
 /**********************************************************************************************************************/
+
+// Populate the select choices
 const sectionSelect = document.querySelector('.js-schedule-section');
 sectionSelect.innerHTML += sections.map(section => `<option>${section.name}</option>`).join('');
+
+// Set random placeholder widths
+Array.from(document.querySelectorAll('.schedule-placeholder')).forEach((placeholder) => {
+    const percentage = 50 + Math.random() * 50;
+    placeholder.style.setProperty('margin-right', `${100 - percentage}%`);
+});
 
 /**********************************************************************************************************************/
 /* Interaction */
