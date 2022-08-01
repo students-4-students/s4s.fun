@@ -739,7 +739,7 @@ h3 {
 .schedule-placeholder {
     display: block;
     background: white;
-    height: 1em;
+    height: .8em;
     margin-top: .4em;
     border-radius: 36px;
     opacity: .2;
@@ -764,12 +764,41 @@ h3 {
 }
 
 .schedule-course {
+    position: relative;
     display: flex;
     flex-direction: column;
     background: rgba(0, 0, 0, .5);
     grid-row: span 2;
     padding: .8em;
+    padding-top: 1.2em;
     border-radius: 8px;
+    overflow: hidden;
+    --course-accent: #d8b4fe;
+}
+
+.schedule-course::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: .5em;
+    display: block;
+    background: var(--course-accent);
+}
+
+.course-an { --course-accent: #6ee7b7; }
+.course-ana { --course-accent: #34d399; }
+.course-al { --course-accent: #7dd3fc; }
+.course-ala { --course-accent: #38bdf8; }
+.course-ph { --course-accent: #fde047; }
+.course-ai { --course-accent: #fca5a5; }
+.course-el { --course-accent: #d8b4fe; }
+.course-ch { --course-accent: #f9a8d4; }
+.course-ws { --course-accent: #5eead4; }
+
+.course-ws.schedule-course::before {
+    background: linear-gradient(to right, aquamarine, gold);
 }
 
 .schedule-course-title {
@@ -782,9 +811,16 @@ h3 {
 
 .schedule-course-type {
     margin: 0;
-    padding-top: .4em;
+    padding-top: .8em;
     font-weight: 500;
-    color: var(--headings);
+    color: var(--course-accent);
+}
+
+.schedule-course-type svg {
+    width: 1.4em;
+    height: 1.4em;
+    margin-right: .2em;
+    vertical-align: middle;
 }
 
 .schedule-course-type .schedule-placeholder {

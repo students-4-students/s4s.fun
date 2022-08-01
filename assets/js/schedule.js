@@ -16,11 +16,14 @@ const coursesNames = {
     ai: 'AICC',
     el: 'Électro&shy;technique',
     ch: 'Chimie',
+    
+    ws: 'Ateliers découverte',
 };
 
 const typeNames = {
-    c: 'Cours',
-    e: 'Exercices',
+    c: '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M7 12l3-3 3 3 4-4M8 21l4-4 4 4M3 4h18M4 4h16v12a1 1 0 01-1 1H5a1 1 0 01-1-1V4z"></svg> Cours',
+    e: '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z"></svg> Exercices',
+    w: '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"></svg> Activités',
 };
 
 const sections = [
@@ -107,7 +110,7 @@ const computeCourseHtml = (section, courseIndex) => {
         'PHe', 'ALc', 'ALe',
         'ANc', 'ANe', 'SPECc',
         'SPECe', 'ALc', 'ALe',
-        'PHc', 'PHe',
+        'PHc', 'PHe', 'WSw',
     ];
     
     const advancedSchedule = [
@@ -117,7 +120,7 @@ const computeCourseHtml = (section, courseIndex) => {
         'PHe', 'ALAc', 'ALAe',
         'ALAc', 'ALAe', 'ANAc',
         'ANAe', 'ALAc', 'ALAe',
-        'PHc', 'PHe',
+        'PHc', 'PHe', 'WSw',
     ];
 
     const schedule = section.advanced ? advancedSchedule : standardSchedule;
@@ -129,7 +132,7 @@ const computeCourseHtml = (section, courseIndex) => {
     }
     const typeCode = courseStr.substring(courseStr.length - 1, courseStr.length);
 
-    return `<div class="schedule-course">
+    return `<div class="schedule-course course-${courseCode}">
         <h4 class="schedule-course-title">${coursesNames[courseCode]}</h4>
         <div class="schedule-course-type">${typeNames[typeCode]}</div>
     </div>`;
