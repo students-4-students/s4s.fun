@@ -14,7 +14,7 @@ const coursesNames = {
     ph: 'Physique',
 
     ai: 'AICC',
-    el: 'Électro&shy;technique',
+    el: 'Électricité',
     ch: 'Chimie',
     
     ws: 'Ateliers découverte',
@@ -48,7 +48,7 @@ const sections = [
         specificCourse: 'el',
     },
     {
-        name: 'Génie électronique et électronique',
+        name: 'Génie électrique et électronique',
         specificCourse: 'el',
     },
     {
