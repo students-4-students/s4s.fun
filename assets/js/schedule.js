@@ -117,7 +117,7 @@ const computeCourseHtml = (section, courseIndex) => {
         'ANAc', 'ANAe',
         'ALAc', 'PHc', 'ALAe',
         
-        'PHe', 'ALAc', 'ALAe',
+        'PHe', 'ANAc', 'ANAe',
         'ALAc', 'ALAe', 'ANAc',
         'ANAe', 'ALAc', 'ALAe',
         'PHc', 'PHe', 'WSw',
