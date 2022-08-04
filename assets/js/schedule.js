@@ -16,7 +16,7 @@ const coursesNames = {
     ai: 'AICC',
     el: 'Électricité',
     ch: 'Chimie',
-    
+
     ws: 'Ateliers découverte',
 };
 
@@ -106,17 +106,17 @@ const computeCourseHtml = (section, courseIndex) => {
     const standardSchedule = [
         'ANc', 'ANe',
         'SPECc', 'PHc', 'SPECe',
-        
+
         'PHe', 'ALc', 'ALe',
         'ANc', 'ANe', 'SPECc',
         'SPECe', 'ALc', 'ALe',
         'PHc', 'PHe', 'WSw',
     ];
-    
+
     const advancedSchedule = [
         'ANAc', 'ANAe',
         'ALAc', 'PHc', 'ALAe',
-        
+
         'PHe', 'ANAc', 'ANAe',
         'ALAc', 'ALAe', 'ANAc',
         'ANAe', 'ALAc', 'ALAe',
@@ -142,21 +142,20 @@ sectionSelect.addEventListener('change', () => {
     const scheduleMessageElement = document.querySelector('.js-schedule-message');
     const scheduleElement = document.querySelector('.js-schedule');
     const newSection = sections[sectionSelect.selectedIndex - 1];
-    
+
     // Unavailable message
     if (newSection.message) {
         scheduleMessageElement.innerText = newSection.message;
         scheduleElement.setAttribute('style', 'display: none');
         return;
     }
-    
+
     scheduleMessageElement.innerText = '';
     scheduleElement.removeAttribute('style');
-    
+
     // Update courses
     const coursesElements = Array.from(document.querySelectorAll('.schedule-course:not(.js-skip)'));
     coursesElements.forEach((courseElement, courseIndex) => {
         courseElement.outerHTML = computeCourseHtml(newSection, courseIndex);
     });
 });
-
