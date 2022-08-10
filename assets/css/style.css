@@ -1093,6 +1093,13 @@ h3 {
     width: 13rem;
 }
 
+.partner-eltony {
+    display: block;
+    max-width:90px;
+    width: auto;
+    height: auto;
+}
+
 
 .footer-partner {
     text-decoration: none;
