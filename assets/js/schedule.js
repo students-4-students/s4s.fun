@@ -114,11 +114,11 @@ const computeCourseHtml = (section, courseIndex) => {
     ];
 
     const advancedSchedule = [
-        'ANAc', 'ANAe',
-        'ALAc', 'PHc', 'ALAe',
+        'ANAc', 'ALAc',
+        'ALAe', 'PHc', 'ANAe',
 
-        'PHe', 'ANAc', 'ANAe',
-        'ALAc', 'ALAe', 'ANAc',
+        'PHe', 'ANAc', 'ALAc',
+        'ALAe', 'ANAe', 'ANAc',
         'ANAe', 'ALAc', 'ALAe',
         'PHc', 'PHe', 'WSw',
     ];
