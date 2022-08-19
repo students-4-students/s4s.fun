@@ -839,10 +839,12 @@ h3 {
 /* Workshops section */
 /**********************************************************************************************************************/
 
-.workshops {
+.section-workshops .scroll-x-wrapper {
     position: relative;
     z-index: 5;
+}
 
+.workshops {
     padding: 2rem;
     display: grid;
     grid-auto-flow: column;
