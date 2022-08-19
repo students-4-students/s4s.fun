@@ -37,6 +37,14 @@ sup {
     --muted: #d9dae3;
 }
 
+.theme-light {
+    --background: #eaebf6;
+    --headings: #515582;
+    --text: #444669;
+    --muted: #d9dae3;
+    --separator: rgba(81, 85, 130, .3);
+}
+
 .theme-secondary {
     --background: #9d5e5c;
     --headings: #f9f4ee;
@@ -340,6 +348,11 @@ h3 {
     .container:not(.container-narrow) {
         max-width: 1200px;
     }
+}
+
+.scroll-x-wrapper {
+    width: 100%;
+    overflow-x: auto;
 }
 
 /**********************************************************************************************************************/
@@ -713,11 +726,6 @@ h3 {
     box-shadow: 0 0 0 4px rgba(255, 255, 255, .8);
 }
 
-.schedule-wrapper {
-    width: 100%;
-    overflow-x: auto;
-}
-
 .schedule {
     min-width: 90rem;
     max-width: 1200px;
@@ -825,6 +833,94 @@ h3 {
 
 .schedule-course-type .schedule-placeholder {
     background-color: var(--headings);
+}
+
+/**********************************************************************************************************************/
+/* Workshops section */
+/**********************************************************************************************************************/
+
+.section-workshops {
+    padding-bottom: 8rem;
+}
+
+.workshops {
+    padding: 2rem;
+    display: grid;
+    grid-auto-flow: column;
+    gap: 2rem;
+}
+
+.workshops-right-padding {
+    width: 2rem;
+}
+
+@media screen and (min-width: 576px) {
+    .workshops {
+        padding: 2rem 4rem;
+    }
+
+    .workshops-right-padding {
+        width: 2rem;
+    }
+}
+
+.workshop {
+    display: flex;
+    flex-direction: column;
+    width: 20rem;
+    background: white;
+    --workshop-padding: 1.2em;
+    padding: var(--workshop-padding);
+    border-radius: .5em;
+    border-top: .5em solid var(--headings);
+    overflow: hidden;
+}
+
+.workshop h3 {
+    font-size: 1.8rem;
+    margin-top: 0;
+}
+
+.workshop-description {
+    line-height: 1.4;
+    font-size: 1.6rem;
+    flex: 1;
+}
+
+.workshop-association {
+    font-size: 1.6rem;
+    font-weight: 500;
+    margin-top: .2em;
+    margin-bottom: .2em;
+}
+
+.workshop-association .lead-link {
+    color: inherit;
+}
+
+.workshop-bullets {
+    display: flex;
+    flex-direction: column;
+    gap: .8em;
+    margin: calc(-1 * var(--workshop-padding));
+    margin-top: 0;
+    padding: var(--workshop-padding);
+    background-color: #f8f8ff;
+    font-weight: 500;
+}
+
+.workshop-bullet {
+    padding-left: 1.6em;
+    position: relative;
+    align-items: center;
+    font-weight: 500;
+}
+
+.workshop-bullet svg {
+    position: absolute;
+    left: 0;
+    width: 1.2em;
+    height: 1.2em;
 }
 
 /**********************************************************************************************************************/
