@@ -877,6 +877,11 @@ h3 {
     overflow: hidden;
 }
 
+.workshop-image {
+    border-radius: .5em;
+    margin-bottom: 1rem;
+}
+
 .workshop h3 {
     font-size: 1.8rem;
     margin-top: 0;
