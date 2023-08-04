@@ -733,7 +733,7 @@ h3 {
     margin: 1rem auto;
     padding-right: calc(var(--gutter-width));
     display: grid;
-    grid-template-rows: auto repeat(8, 1fr);
+    grid-template-rows: auto repeat(11, 1fr);
     grid-template-columns: var(--gutter-width) repeat(7, 1fr);
     grid-auto-flow: column;
 
@@ -796,6 +796,11 @@ h3 {
     background: var(--course-accent);
 }
 
+.opening-speech {
+    --course-accent: #3b82f6;
+    background: rgba(0, 0, 0, 0.44);
+}
+
 .course-an { --course-accent: #6ee7b7; }
 .course-ana { --course-accent: #34d399; }
 .course-al { --course-accent: #7dd3fc; }
@@ -833,6 +838,10 @@ h3 {
 
 .schedule-course-type .schedule-placeholder {
     background-color: var(--headings);
+}
+
+.lunch-break {
+    grid-row: span 2;
 }
 
 /**********************************************************************************************************************/
