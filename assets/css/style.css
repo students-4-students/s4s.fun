@@ -882,7 +882,7 @@ h3 {
     right: 0;
     width: 24px;
     height: 24px;
-    background: url("../icons/chevron.svg") no-repeat center;
+    background: url("../icons/chevron-bleu.svg") no-repeat center;
     transition: .3s ease-in-out transform;
     transform: rotate(0);
 }
@@ -1169,6 +1169,7 @@ h3 {
     right: 0;
     width: 24px;
     height: 24px;
+    color: #814442;
     background: url(../icons/chevron.svg) no-repeat center;
     transition: .3s ease-in-out transform;
     transform: rotate(0);
