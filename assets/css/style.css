@@ -849,6 +849,53 @@ h3 {
 /* Workshops section */
 /**********************************************************************************************************************/
 
+.workshops-day {
+    border-bottom: 2px solid var(--separator);
+}
+
+.workshops-day:last-child {
+    border-bottom: none;
+}
+
+.workshops-day > summary {
+    position: relative;
+
+    display: flex;
+    align-items: center;
+    min-height: 48px;
+
+    list-style: none;
+    padding-top: .4em;
+    padding-bottom: .4em;
+    padding-right: 32px;
+
+    font-size: 1.6em;
+    font-weight: 500;
+    line-height: 1.3;
+
+    cursor: pointer;
+}
+
+.workshops-day > summary::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    width: 24px;
+    height: 24px;
+    background: url("../icons/chevron.svg") no-repeat center;
+    transition: .3s ease-in-out transform;
+    transform: rotate(0);
+}
+
+.workshops-day[open] > summary::after {
+    transform: rotate(180deg);
+}
+
+.workshops-day > summary::marker,
+.workshops-day > summary::-webkit-details-marker {
+    display: none;
+}
+
 .section-workshops .scroll-x-wrapper {
     position: relative;
     z-index: 5;
@@ -973,7 +1020,6 @@ h3 {
 @media screen and (min-width: 576px) {
     .section-workshops-illustration {
         height: 800px;
-        margin-top: -200px;
         background-position: center;
         background-size: cover;
     }
