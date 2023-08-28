@@ -18,7 +18,7 @@ const coursesNames = {
     ch: 'Chimie',
 
     we: 'Cérémonie d\'ouverture',
-    ws: 'Ateliers découverte',
+    ws: 'Workshops',
 };
 
 const typeNames = {
