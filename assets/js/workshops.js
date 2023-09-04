@@ -137,7 +137,7 @@ const workshops = {
             "bullets": [
                 {
                     "icon": "inscription",
-                    "title": "Les places sont limitées, nous te prions de t'inscrire <a class=\"lead-link\" href=\"https://go.epfl.ch/s4s-workshop-rolex\">ici.</a>"
+                    "title": "Les places sont limitées à 300 personnes, nous te prions de t'inscrire <a class=\"lead-link\" href=\"https://go.epfl.ch/s4s-workshop-rolex\">ici.</a>"
                 }
             ],
             "room": "Patio 5",
@@ -182,7 +182,7 @@ const workshops = {
             "bullets": [
                 {
                     "icon": "inscription",
-                    "title": "Les places sont limitées, nous te prions de t'inscrire <a class=\"lead-link\" href=\"https://go.epfl.ch/s4s-workshop-tokamak\">ici.</a>"
+                    "title": "Les places sont limitées à 100 personnes, nous te prions de t'inscrire <a class=\"lead-link\" href=\"https://go.epfl.ch/s4s-workshop-tokamak\">ici.</a>"
                 },
                 {
                     "icon": "info",
