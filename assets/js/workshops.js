@@ -133,7 +133,7 @@ const workshops = {
         {
             "title": "À la découverte du Rolex",
             "association": "biblio",
-            "description": "Ce bâtiment fait rêver plus d’un, alors rejoins ce workshop pour une course d’orientation dans tout le rolex ainsi ainsi que pour acquérir des méthodes pour apprendre à étudier.",
+            "description": "Ce bâtiment fait rêver plus d’un, alors rejoins ce workshop pour une course d’orientation dans tout le rolex ainsi que pour acquérir des méthodes pour apprendre à étudier.",
             "bullets": [
                 {
                     "icon": "inscription",
