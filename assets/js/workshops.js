@@ -15,7 +15,7 @@ const workshops = {
         {
             "title": "Développement de jeu vidéo",
             "association": "gamestar",
-            "description": "Tu as toujours voulu créer un jeu vidéo mais tu ne sais pas par où commencer ? Viens apprendre les bases en une après-midi avec Game* ! Entre game design, programmation et pixel art, des aspects variés du développement de jeu vidéo seront abordés de sorte à ce que tu puisses avoir un jeu fonctionnel en quelques heures !",
+            "description": "Tu as toujours voulu créer un jeu vidéo mais tu ne sais pas par où commencer ? Viens apprendre les bases en un après-midi avec Game* ! Lors de ce premier workshop, nous aborderons les principes de Game Design entre théorie et pratique.",
             "bullets": [
                 {
                     "icon": "warning",
@@ -111,7 +111,7 @@ const workshops = {
         {
             "title": "Développement de jeu vidéo",
             "association": "gamestar",
-            "description": "Tu as toujours voulu créer un jeu vidéo mais tu ne sais pas par où commencer ? Viens apprendre les bases en une après-midi avec Game* ! Entre game design, programmation et pixel art, des aspects variés du développement de jeu vidéo seront abordés de sorte à ce que tu puisses avoir un jeu fonctionnel en quelques heures !",
+            "description": "Tu as toujours voulu créer un jeu vidéo mais tu ne sais pas par où commencer ? Viens apprendre les bases en un après-midi avec Game* ! Lors de ce second workshop, nous aborderons les principes de Game Art entre théorie et pratique.",
             "bullets": [
                 {
                     "icon": "warning",
@@ -180,6 +180,10 @@ const workshops = {
             "association": "swissplasmacenter",
             "description": "Prêts à plonger dans le monde chaud (très chaud) de la fusion nucléaire ? 🌞🔥 Rejoignez-nous pour une aventure atomique au cœur même de l'EPFL, où nous explorerons le mystérieux et magnétique tokamak ! 🌪️💥 Attachez vos ceintures, car nous allons dévoiler les secrets de la fusion nucléaire.💡🧪 Montez à bord pour une excursion passionnante dans l'univers des plasmas chauffés, des champs magnétiques puissants et des chercheurs en folie, qui espèrent un jour révolutionner l'énergie. Laissez vos cerveaux curieux se déchaîner et préparez-vous à être éblouis, car la fusion n'a jamais été aussi cool (ou chaude) ! 🔬🚀",
             "bullets": [
+                {
+                    "icon": "warning",
+                    "title": "Ce workshop n'a plus de places disponibles. Si tu t'étais inscrit·e, check ta boîte mail pour voir si une confirmation d'inscription t'es parvenue."
+                },
                 {
                     "icon": "info",
                     "title": "Les inscrit·e·s seront divisé·e·s en deux groupes, chacun effectuant une visite de 1h30. La visite a lieu en anglais."
