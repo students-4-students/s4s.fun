@@ -181,16 +181,12 @@ const workshops = {
             "description": "Prêts à plonger dans le monde chaud (très chaud) de la fusion nucléaire ? 🌞🔥 Rejoignez-nous pour une aventure atomique au cœur même de l'EPFL, où nous explorerons le mystérieux et magnétique tokamak ! 🌪️💥 Attachez vos ceintures, car nous allons dévoiler les secrets de la fusion nucléaire.💡🧪 Montez à bord pour une excursion passionnante dans l'univers des plasmas chauffés, des champs magnétiques puissants et des chercheurs en folie, qui espèrent un jour révolutionner l'énergie. Laissez vos cerveaux curieux se déchaîner et préparez-vous à être éblouis, car la fusion n'a jamais été aussi cool (ou chaude) ! 🔬🚀",
             "bullets": [
                 {
-                    "icon": "inscription",
-                    "title": "Les places sont limitées à 100 personnes, nous te prions de t'inscrire <a class=\"lead-link\" href=\"https://go.epfl.ch/s4s-workshop-tokamak\">ici.</a>"
-                },
-                {
                     "icon": "info",
-                    "title": "La visite sera en anglais."
+                    "title": "Les inscrit·e·s seront divisé·e·s en deux groupes, chacun effectuant une visite de 1h30. La visite a lieu en anglais."
                 }
             ],
             "room": "&Agrave; venir",
-            "schedule": "14:00-16:00"
+            "schedule": "14:00-17:00"
         },
         {
             "title": "Jeux vidéos",
