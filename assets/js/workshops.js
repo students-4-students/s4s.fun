@@ -149,7 +149,13 @@ const workshops = {
             "title": "Initiation à la compétition mathématique",
             "association": "polympiads",
             "description": "Tu aimes les mathématiques et tu rêves de t’affirmer dans de grandes compétitions ? Polympiads est là pour t’initier dès la première semaine à des défis et problèmes de compétitions mathématiques !",
-            "room": "&Agrave; venir"
+            "bullets": [
+                {
+                    "icon": "info",
+                    "title": "Trouver l'endroit peut être compliqué, en cas de problème tu peux contacter <a class=\"lead-link\" href=\"https://t.me/ismail_bouhaj\">@ismail_bouhaj</a> sur Telegram."
+                }
+            ],
+            "room": "Bernoulli Center"
         },
         {
             "title": "Initiation au LaTex",
@@ -285,6 +291,7 @@ const roomUrls = {
     "CM 1 104": "https://plan.epfl.ch/?room==CM%201%20104",
     "RLC C1 820": "https://plan.epfl.ch/?room==RLC%20C1%20820",
     "Patio 5": "https://plan.epfl.ch/?dim_floor=1&lang=en&dim_lang=en&tree_groups=centres_nevralgiques%2Cmobilite_acces_grp%2Censeignement%2Ccommerces_et_services&baselayer_ref=grp_backgrounds&tree_group_layers_centres_nevralgiques=&tree_group_layers_mobilite_acces_grp=&tree_group_layers_enseignement=&tree_group_layers_commerces_et_services=&map_x=2533200&map_y=1152277&map_zoom=13",
+    "Bernoulli Center": "https://plan.epfl.ch/?room==GA%203%2034",
     "&Agrave; venir": ""
 }
 
