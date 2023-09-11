@@ -96,7 +96,7 @@ const workshops = {
                     "title": 'Le film s\'appelle <a class="lead-link" href="https://en.wikipedia.org/wiki/Summer_Ghost">Summer Ghost</a>.'
                 }
             ],
-            "room": "CM 1 221",
+            "room": "CE 1 1",
             "schedule": "16:00-17:15"
         },
         {
@@ -290,6 +290,7 @@ const roomUrls = {
     "CM 1 120": "https://plan.epfl.ch/?room==CM%201%20120",
     "CM 1 100": "https://plan.epfl.ch/?room==CM%201%20100",
     "CM 1 104": "https://plan.epfl.ch/?room==CM%201%20104",
+    "CE 1 1": "https://plan.epfl.ch/?room==CE%201%201",
     "RLC C1 820": "https://plan.epfl.ch/?room==RLC%20C1%20820",
     "Patio 5": "https://plan.epfl.ch/?dim_floor=1&lang=en&dim_lang=en&tree_groups=centres_nevralgiques%2Cmobilite_acces_grp%2Censeignement%2Ccommerces_et_services&baselayer_ref=grp_backgrounds&tree_group_layers_centres_nevralgiques=&tree_group_layers_mobilite_acces_grp=&tree_group_layers_enseignement=&tree_group_layers_commerces_et_services=&map_x=2533200&map_y=1152277&map_zoom=13",
     "Bernoulli Center": "https://www.google.com/maps/place/EPFL+Bernoulli+center/@46.5198032,6.5716923,15z/data=!4m2!3m1!1s0x0:0x3a4de4ac4fbd08c1?sa=X&ved=2ahUKEwiBhIO8gqv6AhXTi8MKHQD1AJIQ_BJ6BAhTEAU",
