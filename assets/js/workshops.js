@@ -122,13 +122,13 @@ const workshops = {
                     "title": "Nos deux workshops sont différents et indépendants l'un de l'autre."
                 }
             ],
-            "room": "CM 1 104"
+            "room": "CM 1 221"
         },
         {
             "title": "Jeux vidéos",
             "association": "ebou",
-            "description": "Retrouvez nous samedi et mardi à partir de 16h et jeudi à partir de 14h en CM 1221 où nous proposons des jeux vidéos variés avec du freeplay et surtout du fun ! Venez passer un bon moment avec vos potes !",
-            "room": "CM 1 221"
+            "description": "Retrouvez nous samedi et mardi à partir de 16h et jeudi à partir de 14h en CM 1 120 où nous proposons des jeux vidéos variés avec du freeplay et surtout du fun ! Venez passer un bon moment avec vos potes !",
+            "room": "CM 1 120"
         },
         {
             "title": "À la découverte du Rolex",
@@ -201,8 +201,8 @@ const workshops = {
         {
             "title": "Jeux vidéos",
             "association": "ebou",
-            "description": "Retrouvez nous samedi et mardi à partir de 16h et jeudi à partir de 14h en CM 1221 où nous proposons des jeux vidéos variés avec du freeplay et surtout du fun ! Venez passer un bon moment avec vos potes !",
-            "room": "CM 1 221",
+            "description": "Retrouvez nous samedi et mardi à partir de 16h et jeudi à partir de 14h en CM 1 120 où nous proposons des jeux vidéos variés avec du freeplay et surtout du fun ! Venez passer un bon moment avec vos potes !",
+            "room": "CM 1 120",
             "schedule": "14:00-18:00"
         },
         {
@@ -287,6 +287,7 @@ const associations = {
 
 const roomUrls = {
     "CM 1 221": "https://plan.epfl.ch/?room==CM%201%20221",
+    "CM 1 120": "https://plan.epfl.ch/?room==CM%201%20120",
     "CM 1 100": "https://plan.epfl.ch/?room==CM%201%20100",
     "CM 1 104": "https://plan.epfl.ch/?room==CM%201%20104",
     "RLC C1 820": "https://plan.epfl.ch/?room==RLC%20C1%20820",
