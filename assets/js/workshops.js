@@ -177,7 +177,7 @@ const workshops = {
             "title": "Jeux de société",
             "association": "ludopoly",
             "description": "Tu veux passer un bon moment en jouant à des jeux de société avec des étudiant·e·s comme toi ? Ne cherche plus, viens t’amuser avec LudoPoly qui mettra à votre disposition plusieurs jeux et qui sera ravie de vous donner des stickers !",
-            "room": "CM 1 104"
+            "room": "CM 1 120"
         }
     ],
     "Jeudi 14 septembre": [
