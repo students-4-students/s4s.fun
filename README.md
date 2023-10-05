@@ -17,7 +17,7 @@
   <p align="center">
     Site officiel de l’initiative Students 4 Students.
     <br />
-    <a href="https://s4s.fun/"><strong>Voir le site »</strong></a>
+    <a href="https://students4students.ch/"><strong>Voir le site »</strong></a>
   </p>
 </p>
 
