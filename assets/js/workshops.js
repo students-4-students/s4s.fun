@@ -260,7 +260,7 @@ const associations = {
     },
     "s4s": {
         "title": "S4S",
-        "url": "https://s4s.fun",
+        "url": "https://students4students.ch",
         "image": "assets/seo/opengraph.png"
     },
     "swissplasmacenter": {
