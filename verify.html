@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+
+    <title>Students 4 Students — Verification</title>
+
+    <link rel="stylesheet" href="assets/css/normalize.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <script>
+        /*! modernizr 3.6.0 (Custom Build) | MIT *
+         * https://modernizr.com/download/?-webp-setclasses !*/
+        !function (e, n, A) {
+            function o(e, n) {
+                return typeof e === n
+            }
+
+            function t() {
+                var e, n, A, t, a, i, l;
+                for (var f in r) if (r.hasOwnProperty(f)) {
+                    if (e = [], n = r[f], n.name && (e.push(n.name.toLowerCase()), n.options && n.options.aliases && n.options.aliases.length)) for (A = 0; A < n.options.aliases.length; A++) e.push(n.options.aliases[A].toLowerCase());
+                    for (t = o(n.fn, "function") ? n.fn() : n.fn, a = 0; a < e.length; a++) i = e[a], l = i.split("."), 1 === l.length ? Modernizr[l[0]] = t : (!Modernizr[l[0]] || Modernizr[l[0]] instanceof Boolean || (Modernizr[l[0]] = new Boolean(Modernizr[l[0]])), Modernizr[l[0]][l[1]] = t), s.push((t ? "" : "no-") + l.join("-"))
+                }
+            }
+
+            function a(e) {
+                var n = u.className, A = Modernizr._config.classPrefix || "";
+                if (c && (n = n.baseVal), Modernizr._config.enableJSClass) {
+                    var o = new RegExp("(^|\\s)" + A + "no-js(\\s|$)");
+                    n = n.replace(o, "$1" + A + "js$2")
+                }
+                Modernizr._config.enableClasses && (n += " " + A + e.join(" " + A), c ? u.className.baseVal = n : u.className = n)
+            }
+
+            function i(e, n) {
+                if ("object" == typeof e) for (var A in e) f(e, A) && i(A, e[A]); else {
+                    e = e.toLowerCase();
+                    var o = e.split("."), t = Modernizr[o[0]];
+                    if (2 == o.length && (t = t[o[1]]), "undefined" != typeof t) return Modernizr;
+                    n = "function" == typeof n ? n() : n, 1 == o.length ? Modernizr[o[0]] = n : (!Modernizr[o[0]] || Modernizr[o[0]] instanceof Boolean || (Modernizr[o[0]] = new Boolean(Modernizr[o[0]])), Modernizr[o[0]][o[1]] = n), a([(n && 0 != n ? "" : "no-") + o.join("-")]), Modernizr._trigger(e, n)
+                }
+                return Modernizr
+            }
+
+            var s = [], r = [], l = {
+                _version: "3.6.0",
+                _config: {classPrefix: "", enableClasses: !0, enableJSClass: !0, usePrefixes: !0},
+                _q: [],
+                on: function (e, n) {
+                    var A = this;
+                    setTimeout(function () {
+                        n(A[e])
+                    }, 0)
+                },
+                addTest: function (e, n, A) {
+                    r.push({name: e, fn: n, options: A})
+                },
+                addAsyncTest: function (e) {
+                    r.push({name: null, fn: e})
+                }
+            }, Modernizr = function () {
+            };
+            Modernizr.prototype = l, Modernizr = new Modernizr;
+            var f, u = n.documentElement, c = "svg" === u.nodeName.toLowerCase();
+            !function () {
+                var e = {}.hasOwnProperty;
+                f = o(e, "undefined") || o(e.call, "undefined") ? function (e, n) {
+                    return n in e && o(e.constructor.prototype[n], "undefined")
+                } : function (n, A) {
+                    return e.call(n, A)
+                }
+            }(), l._l = {}, l.on = function (e, n) {
+                this._l[e] || (this._l[e] = []), this._l[e].push(n), Modernizr.hasOwnProperty(e) && setTimeout(function () {
+                    Modernizr._trigger(e, Modernizr[e])
+                }, 0)
+            }, l._trigger = function (e, n) {
+                if (this._l[e]) {
+                    var A = this._l[e];
+                    setTimeout(function () {
+                        var e, o;
+                        for (e = 0; e < A.length; e++) (o = A[e])(n)
+                    }, 0), delete this._l[e]
+                }
+            }, Modernizr._q.push(function () {
+                l.addTest = i
+            }), Modernizr.addAsyncTest(function () {
+                function e(e, n, A) {
+                    function o(n) {
+                        var o = n && "load" === n.type ? 1 == t.width : !1, a = "webp" === e;
+                        i(e, a && o ? new Boolean(o) : o), A && A(n)
+                    }
+
+                    var t = new Image;
+                    t.onerror = o, t.onload = o, t.src = n
+                }
+
+                var n = [{
+                    uri: "data:image/webp;base64,UklGRiQAAABXRUJQVlA4IBgAAAAwAQCdASoBAAEAAwA0JaQAA3AA/vuUAAA=",
+                    name: "webp"
+                }, {
+                    uri: "data:image/webp;base64,UklGRkoAAABXRUJQVlA4WAoAAAAQAAAAAAAAAAAAQUxQSAwAAAABBxAR/Q9ERP8DAABWUDggGAAAADABAJ0BKgEAAQADADQlpAADcAD++/1QAA==",
+                    name: "webp.alpha"
+                }, {
+                    uri: "data:image/webp;base64,UklGRlIAAABXRUJQVlA4WAoAAAASAAAAAAAAAAAAQU5JTQYAAAD/////AABBTk1GJgAAAAAAAAAAAAAAAAAAAGQAAABWUDhMDQAAAC8AAAAQBxAREYiI/gcA",
+                    name: "webp.animation"
+                }, {
+                    uri: "data:image/webp;base64,UklGRh4AAABXRUJQVlA4TBEAAAAvAAAAAAfQ//73v/+BiOh/AAA=",
+                    name: "webp.lossless"
+                }], A = n.shift();
+                e(A.name, A.uri, function (A) {
+                    if (A && "load" === A.type) for (var o = 0; o < n.length; o++) e(n[o].name, n[o].uri)
+                })
+            }), t(), a(s), delete l.addTest, delete l.addAsyncTest;
+            for (var p = 0; p < Modernizr._q.length; p++) Modernizr._q[p]();
+            e.Modernizr = Modernizr
+        }(window, document);
+    </script>
+</head>
+<body>
+<section id="verified" class="section section-presentation" style="display: none">
+    <div class="container-wrapper-left">
+        <div class="container container-narrow">
+            <h2 style="color: green">Vérifié!</h2>
+        </div>
+    </div>
+</section>
+<section id="unverified" class="section section-presentation" style="display: none">
+    <div class="container-wrapper-left">
+        <div class="container container-narrow">
+            <h2 style="color: red">Invalide!</h2>
+            <p id="blacklisted" style="display: none">Votre accès à été retiré</p>
+        </div>
+    </div>
+</section>
+</body>
+</html>
+<script>
+    const code = new URL(window.location.href).searchParams.get('c');
+    function AsciStrToBuffer(string) {
+        const result = new Uint8Array(string.length);
+        for (let i = 0; i < string.length; i++) {
+            result[i] = string.charCodeAt(i);
+        }
+        return result.buffer;
+    }
+
+    const vector = "TIq7jqcVsaFo3Ti5VlVvzTqEvLDIblB7sJKYGaxKkRMWkaaE14P5aMLR4T5fsA35";
+    const accepted = [
+        "2c83d7f65defc50615056167c81263e6a9f85d79c5f1eab700e5940af5377855",
+        "3669d6504f2893a17341240787a7e5b45c3a43f2cec312213c2b52377c348891",
+        "8817d78c5c69fe153c44b8915bc09224bd3f628e6ff368b31408649ffad3c11d",
+        "6c4ced6c3034a211f9528d2429817db3a7cd2024d5dc5d20df19150f7b5fc6f4",
+        "f761dfa21973d9d3f2f42793c1906c84653d80668be4a4986b98b16433ecbc27",
+        "6cfe1d415efc72d98e9721965731c6d040e6140bd03ae0a3eb123c38ce0d874e",
+        "a48c4a50e7526043fc528ff858d41c0961e00c298a4baf895f144fb6d1b46c5b",
+        "c45eb6273d5b851c99fe8c3b745dc4f30cc51f25732d19167c9731776145b1d6",
+        "29b8b38ba4225d594f9edd2210aa89e76df2d049936cde5dcd9cac85f3251a57",
+        "402a34177174fa3c9884c7012f9d7626e7e44bdba18460067fc38ba2aa7e0700",
+        "bfc9f8ec2d729af30f86cf315eaec2a198bcbccf3cd6b7d42eb06ac443e4614e",
+        "2291dcf9cffdfe866ac5430fbd6736f9a8462d326503c4cb98eb94a529bab6a1",
+        "b8907e095506e02a0d8a1cc5376cca5e08c471e1e9054f317e806c7d39635bc3",
+        "217a793277d87955b6efdf16bce389311f5d847060894b321568a6d44a75fa14",
+        "585a7d3ba74b6d8c1b51364f0950b4139350b365614ff0e3c9bfe8f27efa4146",
+        "6951c52f05d32ed322580915c0668fe96f2d222ac116a85bf367c9246a9569b0",
+        "6812d6cd135adc40583bc51c32da8f245075cc3fd36381b4a4e6b265114bb2f1",
+        "69fb9b765866e7159dcfba1d5bc1ba1c8f0b0bbd01cf985d1f6de66b8c77e89c",
+        "7e73019019a31a4caaffd243bbcd8e4a4ae25e89a7ae3b3344ac2d76111f2f90",
+        "b22385607a5e72a65f1720ddd23974e407b435b555d95180928ee19b9d5371df",
+        "ccde7707c565320ca3399f8a4883739f0cfff9f7ee7d28a1a321c1b3f04dab2c",
+        "8a5cc9cc55e40c3d50790f0af10ca3ac01f2443977e7bd68fe49276348822156",
+        "c8ac5639ca17b840a0f4b8c323cae0ace0e4db938262be9751955eed9a0730b2",
+        "1e6feb80479e1c227ffbaed7dd70af103aa240e73ec401933ccab3d4d37706e8",
+        "3f95ab55f155daf71c41c73c38960b9e760ce8570130d2a74283e5ce8d48ee00",
+        "1c0b81407bab4e3e4072cf514c2a36bc1a308ea35bff2947af978f9f9af98486",
+        "2da1e09207723209249aa766b132f0009b537a3a825997b6bdac403158d5b594",
+        "b4d72b7f2de4dec28540b3b6059f6cdb3d56d9b5d693782fecc89db259ec1ae5",
+        "54c5e134ce6fd0308ea91fd2e30e9e8ead1d233cb1f0ad9acfae58f30824c1c7",
+        "583ecd1f897f6e80202423b4821bf54d99b8b21474a8e3adb2da9d11938b57d5",
+        "8844b4a31324c49da0e31a56353de2f16413ff416da2c6f8c85dca0e22c1384c",
+        "d8731db2a623275165dcf26e5d70bac1b5ee3b11352d9c5c84ac1bad4c9c15b5",
+        "8edbac74e0215e2a04adf083f5825e5ac877bf56e39cc184677ca35e3b9e66f1",
+        "dc86a79c5468892e8901222c7477e5e696f89d61cb81278df13ff71da8ec3430",
+        "3501d264bbcfbc8c5b24ee3fe59a9dfca03a34adcd6e79748974f0b41eac52b9",
+        "984a900e3b632a63cde9ea3e42730d28194b95bf3dabb3ff7c31ceb3066651a5",
+        "e07c7d25bb717f645be34af8335f2fab7e32b697175774b4e7d70d3f0f1c1ace",
+        "6ccfb6520bbe140ef2a42dbb56976196d512abeb16e01a41d60eaceacffb9c50",
+        "1f0a5516acc40117f765ff5054061c3bc5a71d12017e747e75d8c9dc7fe01cff",
+        "04c07b2e155bbe90b1d16cf407724d2db158c8beae074a0de864f2b1e4daa36a",
+        "d402178da915ac434a59232cc58d77a50a3597ae5d16e6a7096e63920776b524",
+        "e997808a52899d6984600561db17bbb414e0db06044ccea02f56704f39ff44b7",
+        "0749e95c22482e103dffc4251716cbb15ab85673550cffe0c4b726d2dc3cb2b2",
+        "f8551d4719f3cb99aec33fd9cad29dfb7c34d2465ae00549a9765db962d420b4",
+        "86d4c859df9ce6e634ec3125f7e783794ed437ebea6c242c9807ff0d21d9b399",
+        "1efdf24e79dd4ba37c73182dc222beff2ddf0fe74bd0633a33fb67d5bf88a9bd",
+        "36de605cc1db002f815b1f0d027433323fd7034167068011f674b62897417dfc",
+        "f535211362a797480a945b81d7a65a7b7adac3f03e298a1cb716954e0bacbacd",
+        "7a1b9e7e6a584972d82fdda682e298ee716c40e7ced862598cc82b3620f84da4",
+        "29abf91ada481e4a139684959198313229944f1f5baf3fb941287b647714f174",
+        "8ae0c65cd903edc545d5524bbbbe68602e5cbafdf82b3ac08cdb4c51574c6109",
+        "cb3de67d44a6ef06af9b8a3c4bbe368c7c773ece10de9b6a1afdc22663998159",
+        "6266351aa7675d848e373aa37323d66c8fba7f7ce6c49f24afdc38997b124c67",
+        "83f4ec72e5707f2519e3405d5a38909bbe3d5473fbd2ccf04248f1daf1d469b9",
+        "5cbef6f28c7044366579473470c00aa62a6c60e5e45bb31f7bef0933f4e17c64",
+        "5a7140176dc9c96b082993f536da1e17fbc75b40642205926f6eb995e67f4bc3",
+        "87188cb4da202c440dd610136316ea95a680d93e279b9ba83b189e9acd42a794",
+        "8464a522ce8aebc59cde03de797be94ad190f84544bc83aa92da966cb13addb7",
+        "50f219adfe95ddddab09b87708ba966973dd0cfab5d2b9be3a541eb965e289be",
+        "84bfb775f8a4c3f498ad6bcc6e2bf36544a893c553d2d1e827a0c2c9c6c89402"
+    ];
+    const blacklist = [];
+
+    function buf2hex(buffer) {
+        return [...new Uint8Array(buffer)]
+            .map(x => x.toString(16).padStart(2, '0'))
+            .join('');
+    }
+
+    crypto.subtle.digest(
+        "SHA-256",
+        AsciStrToBuffer(vector + code)
+    )
+        .then(function (hash) {
+            let element = buf2hex(hash);
+            if (blacklist.includes(element)) {
+                document.getElementById("verified").style.display = "none";
+                document.getElementById("unverified").style.display = "block";
+                document.getElementById("blacklisted").style.display = "block";
+
+            } else if (accepted.includes(element)) {
+
+                document.getElementById("verified").style.display = "block";
+                document.getElementById("unverified").style.display = "none";
+            } else {
+
+                document.getElementById("verified").style.display = "none";
+                document.getElementById("unverified").style.display = "block";
+            }
+        })
+        .catch(function (err) {
+            console.error(err);
+        });
+
+</script>
