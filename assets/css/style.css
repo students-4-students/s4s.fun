@@ -536,20 +536,20 @@ h3 {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: bottom right;
-    background-image: url(../illustrations/hero@0.5x.webp);
+    background-image: url(../illustrations/v2/hero@0.5x.webp);
 }
 
 .no-webp .section-hero-illustration {
-    background-image: url(../illustrations/hero@0.5x.png);
+    background-image: url(../illustrations/v2/hero@0.5x.png);
 }
 
 @media screen and (min-width: 400px) {
     .section-hero-illustration {
-        background-image: url(../illustrations/hero.webp);
+        background-image: url(../illustrations/v2/hero.webp);
     }
 
     .no-webp .section-hero-illustration {
-        background-image: url(../illustrations/hero.png);
+        background-image: url(../illustrations/v2/hero.png);
     }
 }
 
@@ -569,8 +569,8 @@ h3 {
         left: 0;
         width: 48%;
         height: 100%;
-        max-height: 750px;
-        background-size: 1000px;
+        max-height: 825px;
+        background-size: 1100px;
         background-position: top right;
     }
 
@@ -640,20 +640,20 @@ h3 {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: bottom left;
-    background-image: url(../illustrations/presentation@0.5x.webp);
+    background-image: url(../illustrations/v2/presentation@0.5x.webp);
 }
 
 .no-webp .section-presentation-illustration {
-    background-image: url(../illustrations/presentation@0.5x.png);
+    background-image: url(../illustrations/v2/presentation@0.5x.png);
 }
 
 @media screen and (min-width: 400px) {
     .section-presentation-illustration {
-        background-image: url(../illustrations/presentation.webp);
+        background-image: url(../illustrations/v2/presentation.webp);
     }
 
     .no-webp .section-presentation-illustration {
-        background-image: url(../illustrations/presentation.png);
+        background-image: url(../illustrations/v2/presentation.png);
     }
 }
 
@@ -1000,7 +1000,7 @@ h3 {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: bottom 75%;
-    background-image: url(../illustrations/workshops@0.5x.webp);
+    background-image: url(../illustrations/v2/workshops@0.5x.webp);
 }
 
 .section-workshops-illustration::after {
@@ -1015,13 +1015,13 @@ h3 {
 
 @media screen and (min-width: 400px) {
     .section-workshops-illustration {
-        background-image: url(../illustrations/workshops.webp);
+        background-image: url(../illustrations/v2/workshops.webp);
     }
 }
 
 @media screen and (min-width: 1200px) {
     .section-workshops-illustration {
-        background-image: url(../illustrations/workshops@2x.webp);
+        background-image: url(../illustrations/v2/workshops@2x.webp);
     }
 }
 
@@ -1079,11 +1079,11 @@ h3 {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: bottom 75%;
-    background-image: url(../illustrations/testimonials@0.5x.webp);
+    background-image: url(../illustrations/v2/testimonials@0.5x.webp);
 }
 
 .no-webp .section-testimonials-illustration {
-    background-image: url(../illustrations/testimonials@0.5x.jpg);
+    background-image: url(../illustrations/v2/testimonials@0.5x.jpg);
 }
 
 .section-testimonials-illustration::after {
@@ -1098,21 +1098,21 @@ h3 {
 
 @media screen and (min-width: 400px) {
     .section-testimonials-illustration {
-        background-image: url(../illustrations/testimonials.webp);
+        background-image: url(../illustrations/v2/testimonials.webp);
     }
 
     .no-webp .section-testimonials-illustration {
-        background-image: url(../illustrations/testimonials.jpg);
+        background-image: url(../illustrations/v2/testimonials.jpg);
     }
 }
 
 @media screen and (min-width: 1200px) {
     .section-testimonials-illustration {
-        background-image: url(../illustrations/testimonials@2x.webp);
+        background-image: url(../illustrations/v2/testimonials@2x.webp);
     }
 
     .no-webp .section-testimonials-illustration {
-        background-image: url(../illustrations/testimonials@2x.jpg);
+        background-image: url(../illustrations/v2/testimonials@2x.jpg);
     }
 }
 
@@ -1204,30 +1204,30 @@ h3 {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: bottom left;
-    background-image: url(../illustrations/faq@0.5x.webp);
+    background-image: url(../illustrations/v2/faq@0.5x.webp);
 }
 
 .no-webp .section-faq-illustration {
-    background-image: url(../illustrations/faq@0.5x.jpg);
+    background-image: url(../illustrations/v2/faq@0.5x.jpg);
 }
 
 @media screen and (min-width: 400px) {
     .section-faq-illustration {
-        background-image: url(../illustrations/faq.webp);
+        background-image: url(../illustrations/v2/faq.webp);
     }
 
     .no-webp .section-faq-illustration {
-        background-image: url(../illustrations/faq.jpg);
+        background-image: url(../illustrations/v2/faq.jpg);
     }
 }
 
 @media screen and (min-width: 1200px) {
     .section-faq-illustration {
-        background-image: url(../illustrations/faq@2x.webp);
+        background-image: url(../illustrations/v2/faq@2x.webp);
     }
 
     .no-webp .section-faq-illustration {
-        background-image: url(../illustrations/faq@2x.jpg);
+        background-image: url(../illustrations/v2/faq@2x.jpg);
     }
 }
 
@@ -1311,6 +1311,10 @@ h3 {
     width: 7rem;
 }
 
+.partner-together {
+    width: 8rem;
+}
+
 .footer-partner {
     text-decoration: none;
 }
@@ -1357,6 +1361,7 @@ h3 {
 .footer-credits a {
     color: var(--text);
 }
+
 
 /**********************************************************************************************************************/
 /* Intbee banner */
