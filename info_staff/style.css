@@ -1,0 +1,59 @@
+figure {
+    display: flex;
+}
+
+.logos {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.flex {
+    display: flex;
+    flex-direction: row;
+    column-gap: 5%;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.flex-col {
+    display: flex;
+    flex-direction: column;
+}
+
+.subjects {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.comite {
+    border-radius: 20px;
+}
+
+.photos-ext {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+
+.photos-int {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+
+.rc {
+    height: 150px;
+    border-radius: 20px;
+    vertical-align: middle;
+}
+
+h4 {
+    flex-grow: 2;
+}
+
+.qr {
+    height: 200px;
+    border-radius: 20px;
+}
