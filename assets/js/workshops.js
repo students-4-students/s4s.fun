@@ -11,213 +11,292 @@ const defaultSchedule = "16:00-18:00";
 
 // Contient la liste des workshops ayant lieu
 const workshops = {
-    "Vendredi 8 septembre": [
+    "Jeudi 29 Aout": [
         {
-            "title": "Développement de jeu vidéo",
-            "association": "gamestar",
-            "description": "Tu as toujours voulu créer un jeu vidéo mais tu ne sais pas par où commencer ? Viens apprendre les bases en un après-midi avec Game* ! Lors de ce premier workshop, nous aborderons les principes de Game Design entre théorie et pratique.",
-            "bullets": [
-                {
-                    "icon": "warning",
-                    "title": "Ordinateur personnel, papier et stylo nécessaires"
-                },
-                {
-                    "icon": "info",
-                    "title": "Nos deux workshops sont différents et indépendants l'un de l'autre."
-                }
-            ],
-            "room": "CM 1 221"
-        },
-        {
-            "title": "Jeu de balle",
-            "association": "pese",
-            "description": "Envie de te défouler en faisant un peu de sport ? Rejoins le PESE et amuse-toi en visant des objets avec des balles !",
-            "room": "CM 1 100"
-        }
-    ],
-    "Samedi 9 septembre": [
-        {
-            "title": "Jeux vidéos",
-            "association": "ebou",
-            "description": "Retrouvez nous samedi et mardi à partir de 16h et jeudi à partir de 14h en CM 1221 où nous proposons des jeux vidéos variés avec du freeplay et surtout du fun ! Venez passer un bon moment avec vos potes !",
-            "room": "CM 1 221"
-        },
-        {
-            "title": "Introduction à la programmation",
-            "association": "clic",
-            "description": "Bonsoir ! Tu veux voir à quoi ça ressemble la programmation ? Et bien la CLIC, l'association des étudiants en IC, est là pour te montrer la programmation sous un angle original : la génération procédurale. Nous allons voir ce que sont des L-Systems tout en apprenant à faire du JavaScript. T’as rien compris ? C’est normal, on est là pour t’expliquer :) \n" +
-                "\n" +
-                "Lors de la première heure, nous verrons les bases de la programmation. Afin d'illustrer les concepts, nous vous montrerons aussi ce que sont des L-Systems. \n" +
-                "Durant la deuxième heure, nous vous aiderons à prendre en main un langage de programmation, le JavaScript, afin de mettre en pratique ce que vous aurez vu durant la première heure. La troisième heure sera quand à elle consacrée à des approfondissements sur les L-Systems (et donc plus de code :) ).",
-            "bullets": [
-                {
-                    "icon": "warning",
-                    "title": "Pas besoin de connaissances en informatique ou d'une installation quelconque, mais ramène ton ordinateur personnel."
-                }
-            ],
-            "room": "CM 1 100",
-            "schedule": "16:00-19:00"
-        },
-        {
-            "title": "Fresque du climat",
-            "association": "zeg",
-            "description": "Une sensibilisation ludique et interactive aux enjeux climatiques à travers un atelier collaboratif de trois heures. Plus d'infos sur le site de <a href=\"https://fresqueduclimat.org/\" class=\"lead-link\">la Fresque</a>.",
-            "bullets": [
-                {
-                    "icon": "inscription",
-                    "title": "Pour nous donner une idée du nombre de participant·e·s, inscris-toi <a class=\"lead-link\" href=\"https://go.epfl.ch/inscriptionFresque\">ici</a>"
-                }
-            ],
-            "room": "CM 1 104",
-            "schedule": "16:00-19:00"
-        }
-    ],
-    "Lundi 11 septembre": [
-        {
-            "title": "Introduction à Shell et à Git",
-            "association": "gnu",
-            "description": "Découvre les commandes de base du shell Unix pour pouvoir utiliser efficacement tout programme sur tout type d'ordinateur, puis découvre Git, le logiciel de collaboration et de versionnage de code le plus populaire. Ce logiciel libre et décentralisé te permet de gérer efficacement tout projet individuel ou collaboratif.",
-            "bullets": [
-                {
-                    "icon": "warning",
-                    "title": "Ordinateur personnel nécessaire"
-                }
-            ],
-            "room": "CM 1 100"
-        },
-        {
-            "title": "Film d'animation japonais",
-            "association": "polyjapan",
-            "description": "Viens baigner dans un univers asiatique en regardant un film d’animation japonaise ! \n" +
-                "Trois lycéens, qui se sont rencontré sur internet (Tomoya, Aoi et Ryo), se rendent sur un aéroport abandonné où un fantôme est réputé apparaître selon certaines conditions. Conformément à cette légende urbaine, Ayane apparaît: « Je ne vois pas tout le monde. Seulement ceux qui essaient de caresser la mort… ». Les trois amis rentrent chez eux, mais Tomoya décide de retourner auprès d’Ayane. Débute alors une dangereuse relation qu’il tente de dissimuler à ses amis.",
-            "bullets": [
-                {
-                    "icon": "info",
-                    "title": 'Le film s\'appelle <a class="lead-link" href="https://en.wikipedia.org/wiki/Summer_Ghost">Summer Ghost</a>.'
-                }
-            ],
-            "room": "CE 1 1",
-            "schedule": "16:00-17:15"
-        },
-        {
-            "title": "Jeu d’échec et Puzzles",
-            "association": "dameblanche",
-            "description": "Tu es passionné·e d’échecs et tu veux jouer des parties contre des nouveaux étudiant·e·s comme toi dans la bonne humeur ? \n" +
-                "Tu veux simplement résoudre des puzzles ou apprendre comment le faire ? Viens rencontrer La Dame Blanche qui sera ravie de te rencontrer autour du jeu d’échecs et pour contribuer à la résolution de leurs puzzles avec tes potes !",
-            "room": "CM 1 104"
-        }
-    ],
-    "Mardi 12 septembre": [
-        {
-            "title": "Développement de jeu vidéo",
-            "association": "gamestar",
-            "description": "Tu as toujours voulu créer un jeu vidéo mais tu ne sais pas par où commencer ? Viens apprendre les bases en un après-midi avec Game* ! Lors de ce second workshop, nous aborderons les principes de Game Art entre théorie et pratique.",
-            "bullets": [
-                {
-                    "icon": "warning",
-                    "title": "Ordinateur personnel, papier et stylo nécessaires"
-                },
-                {
-                    "icon": "info",
-                    "title": "Nos deux workshops sont différents et indépendants l'un de l'autre."
-                }
-            ],
-            "room": "CM 1 221"
-        },
-        {
-            "title": "Jeux vidéos",
-            "association": "ebou",
-            "description": "Retrouvez nous samedi et mardi à partir de 16h et jeudi à partir de 14h en CM 1 120 où nous proposons des jeux vidéos variés avec du freeplay et surtout du fun ! Venez passer un bon moment avec vos potes !",
-            "room": "CM 1 120"
-        },
-        {
-            "title": "À la découverte du Rolex",
-            "association": "biblio",
-            "description": "Ce bâtiment fait rêver plus d’un, alors rejoins ce workshop pour une course d’orientation dans tout le rolex ainsi que pour acquérir des méthodes pour apprendre à étudier.",
-            "bullets": [
-                {
-                    "icon": "inscription",
-                    "title": "Les places sont limitées à 300 personnes, nous te prions de t'inscrire <a class=\"lead-link\" href=\"https://go.epfl.ch/s4s-workshop-rolex\">ici.</a>"
-                }
-            ],
-            "room": "Patio 5",
-            "schedule": "15:45-17:30"
-        }
-    ],
-    "Mercredi 13 septembre": [
-        {
-            "title": "Initiation à la compétition mathématique",
-            "association": "polympiads",
-            "description": "Tu aimes les mathématiques et tu rêves de t’affirmer dans de grandes compétitions ? Polympiads est là pour t’initier dès la première semaine à des défis et problèmes de compétitions mathématiques !",
-            "bullets": [
-                {
-                    "icon": "info",
-                    "title": "Trouver l'endroit peut être compliqué, en cas de problème tu peux contacter <a class=\"lead-link\" href=\"https://t.me/ismail_bouhaj\">@ismail_bouhaj</a> sur Telegram."
-                }
-            ],
-            "room": "Bernoulli Center"
-        },
-        {
-            "title": "Initiation au LaTex",
-            "association": "gnu",
-            "description": "Gnugen revient pour t’initier à l’apprentissage du LaTeX, un outil qui te sera sans doute très puissant et important pour tes études d’ingénierie !",
-            "bullets": [
-                {
-                    "icon": "warning",
-                    "title": "Ordinateur personnel nécessaire."
-                },
-                {
-                    "icon": "info",
-                    "title": "L'atelier se fera en français/anglais."
-                }
-            ],
-            "room": "CM 1 221"
-        },
-        {
-            "title": "Jeux de société",
-            "association": "ludopoly",
-            "description": "Tu veux passer un bon moment en jouant à des jeux de société avec des étudiant·e·s comme toi ? Ne cherche plus, viens t’amuser avec LudoPoly qui mettra à votre disposition plusieurs jeux et qui sera ravie de vous donner des stickers !",
-            "room": "CM 1 120"
-        }
-    ],
-    "Jeudi 14 septembre": [
-        {
-            "title": "Visite d'un réacteur expérimental à Fusion : Le Tokamak",
+            "title": "Visite du Swiss Plasma Center",
             "association": "swissplasmacenter",
-            "description": "Prêts à plonger dans le monde chaud (très chaud) de la fusion nucléaire ? 🌞🔥 Rejoignez-nous pour une aventure atomique au cœur même de l'EPFL, où nous explorerons le mystérieux et magnétique tokamak ! 🌪️💥 Attachez vos ceintures, car nous allons dévoiler les secrets de la fusion nucléaire.💡🧪 Montez à bord pour une excursion passionnante dans l'univers des plasmas chauffés, des champs magnétiques puissants et des chercheurs en folie, qui espèrent un jour révolutionner l'énergie. Laissez vos cerveaux curieux se déchaîner et préparez-vous à être éblouis, car la fusion n'a jamais été aussi cool (ou chaude) ! 🔬🚀",
+            "description": "La fusion, source d’énergie durable. \nLa fusion est le processus primordial qui génère l’énergie au cœur du soleil et des autres étoiles. La maîtrise de cette source d’énergie sur terre apportera une contribution significative à la crise énergétique sous la forme d’une production d’électricité massive et respectueuse de l’environnement.\nLe Swiss Plasma Center de l’EPFL participe au développement de cette source d’énergie prometteuse, en collaboration avec les principaux laboratoires du monde entier. Il possède la plus grande installation de l’EPFL, un ‘tokamak’ unique au monde.\nLa visite débutera par une présentation des principes de base de la fusion, de leur mise en œuvre, de la situation actuelle de la recherche et des étapes encore nécessaires pour parvenir à injecter de l’électricité dans le réseau. Elle se poursuivra par la visite proprement dite des installations du Centre, notamment de ce ‘tokamak’ ainsi que d’une petite installation de démonstration appelée Helios.\nLa visite s’adresse à tous les étudiants quelle que soit la section choisie.",
             "bullets": [
                 {
                     "icon": "warning",
-                    "title": "Ce workshop n'a plus de places disponibles. Si tu t'étais inscrit·e, check ta boîte mail pour voir si une confirmation d'inscription t'es parvenue."
+                    "title": "Inscriptions jusqu'au 18 août (environ)"
                 },
                 {
-                    "icon": "info",
-                    "title": "Les inscrit·e·s seront divisé·e·s en deux groupes, chacun effectuant une visite de 1h30. La visite a lieu en anglais."
+                    "icon": "warning",
+                    "title": "Limitation: 50 étudiants max. par créneaux (4 créneaux)"
                 }
             ],
-            "room": "&Agrave; venir",
-            "schedule": "14:00-17:00"
+            "schedule": "Je 29.8 à 14h00 et 16h00, Ma 3.9 à 16h00, Me 4.9 à 16h00"
         },
         {
-            "title": "Jeux vidéos",
+            "title": "Présentation des projets MAKE et visite du SPOT",
+            "association": "SPOT - Projet Make",
+            "description": "Viens découvrir le SPOT (Student Prototyping and Outreach Tank), où les projets des étudiants prennent vie. Tu visiteras les ateliers d’électronique, d’impression 3D et de mécanique. Tu pourras également discuter avec les membres de plusieurs projets MAKE, qui te raconteront leur expérience et ce qu’ils font au SPOT. \n",
+            "schedule": "Jeudi 29 août de 14h à 18h \n" +
+                "2 créneaux : 14h à 16h et 16h à 18h\n",
+            "bullets": [
+                {
+                    "icon": "warning",
+                    "title": "Limitation: 60 étudiants max. par créneaux (2 créneaux)"
+                }
+            ]
+        },
+        {
+            "title": "Jeux d’adresse",
+            "association": "pese",
+            "description": "Petite envie de penser à autre chose et de défier vos potes? Le Pôle des Evènements Sportifs Etudiants (PESE) vous propose des jeux d'adresse et d'autres défis sportifs avec quelques lots à la clé...",
+            "schedule": "Jeudi 29 août à partir de 13h30"
+        },
+        {
+            "title": "Viens passer un moment fun avec Ebou",
             "association": "ebou",
-            "description": "Retrouvez nous samedi et mardi à partir de 16h et jeudi à partir de 14h en CM 1 120 où nous proposons des jeux vidéos variés avec du freeplay et surtout du fun ! Venez passer un bon moment avec vos potes !",
-            "room": "CM 1 120",
-            "schedule": "14:00-18:00"
+            "description": "Ici, c'est le coin détente ! Viens passer jouer à des jeux retro, switch ou PCs dans notre salle ! Une occasion pour nous de vous faire découvrir des petits jeux fun, et te permettre de montrer à tes potes que tu es supérieur à eux sur Nidhogg. Ou de discuter de tes pronostics pour les prochains Worlds de LoL. On sera ravi de t'accueillir pour de la bonne ambiance, du freeplay et de la détente !\n",
+            "schedule": "Du jeudi 29 août au jeudi 5 septembre à partir de 16h"
+        }
+    ],
+    "Vendredi 30 Aout": [
+        {
+            "title": "Formation Mécanique par Xplore",
+            "association": "Xplore",
+            "description": "La mécanique est le squelette et les muscles de l’ingénierie, pourquoi la mécanique est indispensable et où est-ce que vous pouvez en faire à l’EPFL ? Introduction à Fusion360, à Prusa slicer et à l’impression 3D à travers un projet interactif. - Loïc Delineau d’EPFL Xplore",
+            "schedule": "Vendredi 30 Août 16h00 à 18h00"
         },
         {
-            "title": "Jeux de société",
-            "association": "ludopoly",
-            "description": "Tu veux passer un bon moment en jouant à des jeux de société avec des étudiant·e·s comme toi ? Ne cherche plus, viens t’amuser avec LudoPoly qui mettra à votre disposition plusieurs jeux et qui sera ravie de vous donner des stickers !",
-            "room": "CM 1 221",
-            "schedule": "14:00-18:00"
+            "title": "Apprendre à la vitesse de l’éclair (même si t’as la flemme)",
+            "association": "Thomas K",
+            "description": "Les études, ça n’a pas besoin d’être une corvée. Découvre les méthodes scientifiques pour apprendre sur le long terme, en profondeur et avec plaisir, tout en gardant du temps pour toi et pour ta vie sociale. Je vais t’aider à créer ton propre système flexible et durable qui t’aidera pendant toutes tes études et même après. On verra notamment :\n" +
+                "\n" +
+                "- Comment gérer et optimiser son temps en 2 min par jour sans se mettre la pression\n" +
+                "- La méthode pour prendre des notes pour qu’elles soient prêtes à réviser sans effort\n" +
+                "- Les fondements scientifiques pour apprendre de façon efficiente et comment les mettre en pratique\n" +
+                "- Les stratégies pour concilier travail sérieux et vie sociale\n" +
+                "- Les ingrédients pour créer des habitudes qui te soutiennent, sans que ça ne soit une punition\n" +
+                "\n" +
+                "Et plein d’autres stratégies concrètes pour optimiser ta vie d’étudiant !\n" +
+                "\n" +
+                "Je vais te partager mes années d’expérience à expérimenter avec plein de méthodes et à lire la recherche scientifique sur le sujet, pour que tu puisses partir avec les meilleurs outils dès le début et ne pas faire les mêmes erreurs que moi.\n" +
+                "\n" +
+                "Tu peux avoir un avant goût sur [ma chaîne YouTube](https://www.youtube.com/@th0mask) et en apprendre plus sur moi et mes méthodes sur la [page de présentation de ma formation](https://go.thomask.fr/turbolearn/) (qui couvre les mêmes sujets que cet atelier gratuit).\n",
+            "schedule": "Jeudi 5 et Vendredi 30"
+        },
+        {
+            "title": "Initiation aux olympiades de mathématiques",
+            "association": "polympiads",
+            "description": "Tu es passionné(e) par les mathématiques ? Tu aimes relever des challenges et résoudre des problèmes complexes ?  Alors ce workshop est fait pour toi ! \n" +
+                "Viens découvrir Polympiads autour de défis captivants inspirés d'olympiades internationales. Tu pourras tester tes compétences, échanger avec d'anciens participants de l'IMC (International Mathematics Competition) et profiter d'un environnement stimulant et convivial, parfait pour rencontrer d'autres fervents amateurs de mathématiques.\n",
+            "schedule": "Vendredi 30 août à partir de 16h"
+        },
+        {
+            "title": "Introduction à Git",
+            "association": "gnu",
+            "description": "Viens découvrir Git ! Un outil pratique pour travailler sur des projets de prog à\n" +
+                "plusieurs (ou seul) sans que cela ne devienne la pagaille. Au programme une\n" +
+                "présentation suivie d'un workshop pour prendre tes marques avec ce super outil. Il y\n" +
+                "aura également une petite introduction à quelques commandes pratiques du terminal\n" +
+                "d'ordinateur qui rendent l'utilisation de Git plus rapide.",
+            "schedule": "Vendredi 30 août à partir de 16h"
+        },
+        {
+            "title": "Viens passer un moment fun avec Ebou",
+            "association": "ebou",
+            "description": "Ici, c'est le coin détente ! Viens passer jouer à des jeux retro, switch ou PCs dans notre salle ! Une occasion pour nous de vous faire découvrir des petits jeux fun, et te permettre de montrer à tes potes que tu es supérieur à eux sur Nidhogg. Ou de discuter de tes pronostics pour les prochains Worlds de LoL. On sera ravi de t'accueillir pour de la bonne ambiance, du freeplay et de la détente !\n",
+            "schedule": "Du jeudi 29 août au jeudi 5 septembre à partir de 16h"
+        }
+    ],
+    "Samedi 31 Aout": [
+        {
+            "title": "Formation Electronique par Xplore",
+            "association": "Xplore",
+            "description": "L’électronique est le système nerveux de l’ingénierie, pourquoi l’électronique est indispensable et où est-ce que vous pouvez en faire à l’EPFL ? Introduction à Arduino, KiCAD, Spice et à la soudure électronique à travers un projet interactif. - Loïc Delineau d’EPFL Xplore",
+            "schedule": "Samedi 31 Août"
+        },
+        {
+            "title": "Viens passer un moment fun avec Ebou",
+            "association": "ebou",
+            "description": "Ici, c'est le coin détente ! Viens passer jouer à des jeux retro, switch ou PCs dans notre salle ! Une occasion pour nous de vous faire découvrir des petits jeux fun, et te permettre de montrer à tes potes que tu es supérieur à eux sur Nidhogg. Ou de discuter de tes pronostics pour les prochains Worlds de LoL. On sera ravi de t'accueillir pour de la bonne ambiance, du freeplay et de la détente !\n",
+            "schedule": "Du jeudi 29 août au jeudi 5 septembre à partir de 16h"
+        }
+    ],
+    "Lundi 2 Septembre": [
+        {
+            "title": "Les Limites de l’Etre Humain",
+            "association": "Xplore",
+            "description": "Est-ce que vous pouvez travailler 100h par semaine pendant 1 an ? Comment y arriver et comment finir à l’Hospital en essayant. Example concret illustré par un étudiant qui a redoublé chaque année de son Bachelor…",
+            "schedule": "Lundi 2 Septembre"
+        },
+        {
+            "title": "Orientation, présentation des sections",
+            "association": "s4s",
+            "description": "Tu veux en savoir plus sur ta section, les cours qui t'attendent? Ou bien tu hésites entre plusieurs sections? Viens discuter avec des étudiants des différentes sections de bachelor et de master, qui seront présents pour répondre à tes questions.",
+            "schedule": "Lundi 2 septembre et Jeudi 5 septembre"
+        },
+        {
+            "title": "Viens passer un moment fun avec Ebou",
+            "association": "ebou",
+            "description": "Ici, c'est le coin détente ! Viens passer jouer à des jeux retro, switch ou PCs dans notre salle ! Une occasion pour nous de vous faire découvrir des petits jeux fun, et te permettre de montrer à tes potes que tu es supérieur à eux sur Nidhogg. Ou de discuter de tes pronostics pour les prochains Worlds de LoL. On sera ravi de t'accueillir pour de la bonne ambiance, du freeplay et de la détente !\n",
+            "schedule": "Du jeudi 29 août au jeudi 5 septembre à partir de 16h"
+        }
+    ],
+    "Mardi 3 Septembre": [
+        {
+            "title": "Visite du Swiss Plasma Center",
+            "association": "swissplasmacenter",
+            "description": "La fusion, source d’énergie durable. \nLa fusion est le processus primordial qui génère l’énergie au cœur du soleil et des autres étoiles. La maîtrise de cette source d’énergie sur terre apportera une contribution significative à la crise énergétique sous la forme d’une production d’électricité massive et respectueuse de l’environnement.\nLe Swiss Plasma Center de l’EPFL participe au développement de cette source d’énergie prometteuse, en collaboration avec les principaux laboratoires du monde entier. Il possède la plus grande installation de l’EPFL, un ‘tokamak’ unique au monde.\nLa visite débutera par une présentation des principes de base de la fusion, de leur mise en œuvre, de la situation actuelle de la recherche et des étapes encore nécessaires pour parvenir à injecter de l’électricité dans le réseau. Elle se poursuivra par la visite proprement dite des installations du Centre, notamment de ce ‘tokamak’ ainsi que d’une petite installation de démonstration appelée Helios.\nLa visite s’adresse à tous les étudiants quelle que soit la section choisie.",
+            "bullets": [
+                {
+                    "icon": "warning",
+                    "title": "Inscriptions jusqu'au 18 août (environ)"
+                },
+                {
+                    "icon": "warning",
+                    "title": "Limitation: 50 étudiants max. par créneaux (4 créneaux)"
+                }
+            ],
+            "schedule": "Je 29.8 à 14h00 et 16h00, Ma 3.9 à 16h00, Me 4.9 à 16h00"
+        },
+        {
+            "title": "Initiation à la programmation compétitive",
+            "association": "polympiads",
+            "description": "Le monde de la programmation t’intrigue et tu aimerais en découvrir plus ? Tu rêves de participer aux compétitions internationales de programmation mais tu ne sais pas par où commencer ? Alors ne manque surtout pas le prochain workshop de Polympiads ! Que tu sois débutant ou programmeur expérimenté, divers problèmes plus ou moins complexes sauront mettre à l’épreuve tes compétences. De plus, tu pourras échanger avec d’anciens participants de l’ICPC pour découvrir leurs expériences et leurs parcours.\n",
+            "schedule": "Mardi 3 septembre à partir de 16h"
+        },
+        {
+            "title": "Jeux de rôle et de société",
+            "association": "jdrpoly",
+            "description": "-Vous en faites pas, j'ai un plan.\n" +
+                "-Vas-y, fais ton jet.\n" +
+                "*Échec critique*\n" +
+                "-... bon, est ce que quelqu'un à un plan?\n" +
+                "\n" +
+                "Si le jeu de rôle (et tout ses aléas) vous intéresse, alors JDR-Poly est la commission pour vous! Que vous soyez adepte, néophyte ou simplement curieux, vous trouverez dans nos one-shots de quoi plaire à tout le monde.\n" +
+                "Au programme également, une de nos fameuses parties de Loups-garous à ambiance, et des jeux de plateaux.\n" +
+                "\n" +
+                "Venez nombreux, nos MJs raffolent de chaos et de bonne humeur!\n" +
+                "\n" +
+                "Pour l’organisation: Veuillez contacter eve@jdrpoly.ch pour faire des jeux de rôles!!\n" +
+                "\n",
+            "schedule": "Mardi 3"
+        },
+        {
+            "title": "Apprendre à utiliser l’information scientifique",
+            "association": "Apprendre à étudier Rolex",
+            "description": "Workshop en 2 parties. 1) En équipe, partez à la découverte des différents espaces et collections de la Bibliothèque avec la chasse au trésor « À la conquête du Rolex Learning Center ». 2) Le LAB « Évaluer la fiabilité des sources » vous permettra d’identifier les différentes méthodes et techniques à mettre en place pour la recherche et l’utilisation de d’information scientifique, et l’évaluation de la fiabilité des sources dont vous aurez besoin pendant vos études.",
+            "schedule": "Mardi 3 septembre, 15h30 – 18h (il faut être devant le rolex à 15h30)"
+        },
+        {
+            "title": "Viens passer un moment fun avec Ebou",
+            "association": "ebou",
+            "description": "Ici, c'est le coin détente ! Viens passer jouer à des jeux retro, switch ou PCs dans notre salle ! Une occasion pour nous de vous faire découvrir des petits jeux fun, et te permettre de montrer à tes potes que tu es supérieur à eux sur Nidhogg. Ou de discuter de tes pronostics pour les prochains Worlds de LoL. On sera ravi de t'accueillir pour de la bonne ambiance, du freeplay et de la détente !\n",
+            "schedule": "Du jeudi 29 août au jeudi 5 septembre à partir de 16h"
+        }
+    ],
+    "Mercredi 4 Septembre": [
+        {
+            "title": "Visite du Swiss Plasma Center",
+            "association": "swissplasmacenter",
+            "description": "La fusion, source d’énergie durable. \nLa fusion est le processus primordial qui génère l’énergie au cœur du soleil et des autres étoiles. La maîtrise de cette source d’énergie sur terre apportera une contribution significative à la crise énergétique sous la forme d’une production d’électricité massive et respectueuse de l’environnement.\nLe Swiss Plasma Center de l’EPFL participe au développement de cette source d’énergie prometteuse, en collaboration avec les principaux laboratoires du monde entier. Il possède la plus grande installation de l’EPFL, un ‘tokamak’ unique au monde.\nLa visite débutera par une présentation des principes de base de la fusion, de leur mise en œuvre, de la situation actuelle de la recherche et des étapes encore nécessaires pour parvenir à injecter de l’électricité dans le réseau. Elle se poursuivra par la visite proprement dite des installations du Centre, notamment de ce ‘tokamak’ ainsi que d’une petite installation de démonstration appelée Helios.\nLa visite s’adresse à tous les étudiants quelle que soit la section choisie.",
+            "bullets": [
+                {
+                    "icon": "warning",
+                    "title": "Inscriptions jusqu'au 18 août (environ)"
+                },
+                {
+                    "icon": "warning",
+                    "title": "Limitation: 50 étudiants max. par créneaux (4 créneaux)"
+                }
+            ],
+            "schedule": "Je 29.8 à 14h00 et 16h00, Ma 3.9 à 16h00, Me 4.9 à 16h00"
+        }, {
+            "title": "Tania LAFORE",
+            "association": "Tania LAFORE",
+            "description": "Tu entres dans l'univers de l'EPFL, prêt pour un voyage à la fois passionnant et parfois stressant. Le changement, la charge de travail et les enjeux te demanderont une réelle adaptation. Viens découvrir les capacités de ton cerveau et les pièges à éviter pour réussir ce nouveau défi. Explore et amuse-toi avec des outils pratiques et des expériences captivantes. L'objectif est de te fournir des clés pour réussir ton parcours, en découvrant des techniques scientifiquement reconnues, simples et efficaces, pour mieux gérer ton parcours et passer un moment ludique à la découverte de tes capacités mentales.\n" +
+                "Tania Lafore, autrice du livre \"Surmonter le stress et l'anxiété\", te plongera dans le monde de la gestion mentale.\n",
+            "schedule": "Mercredi 4",
+            "room": "CE 1 6"
+        },
+        {
+            "title": "Projection animation japonaise",
+            "association": "PJ",
+            "description": "Viens faire un détour par le Japon en regardant les 3 premiers épisodes de la série : Gekkan Shoujo Nozaki-kun !\n" +
+                "Chiyo Sakura est une lycéenne qui est tombée follement amoureuse de son camarade Umetarou Nozaki. Se parant de courage, notre héroïne décide de confesser ses sentiments à l’immuable Umetarou mais ce dernier lui donne un étrange autographe en retour.\n" +
+                "\n" +
+                "Il s’avère que Umetarou est en fait un mangaka célèbre travaillant sous le nom Sakiko Yumeno!\n" +
+                "\n" +
+                "S'ensuit une série de situations loufoques dans lesquelles Chiyo essaie tant bien que mal d’aider Umetarou dans son travail de mangaka tout en essayant de lui faire remarquer ses sentiments. \n",
+            "schedule": "Mercredi 4"
+        },
+        {
+            "title": "Atelier Speedrun",
+            "association": "clic",
+            "description": "T'es-tu déjà demandé combien de temps il faut pour finir un jeu vidéo ? Viens découvrir le speedrun, une pratique qui consiste à atteindre un objectif en un minimum de temps. Qui sera le premier à arriver en haut de la montagne ?",
+            "schedule": "Mercredi 4 Septembre"
+        },
+        {
+            "title": "Viens passer un moment fun avec Ebou",
+            "association": "ebou",
+            "description": "Ici, c'est le coin détente ! Viens passer jouer à des jeux retro, switch ou PCs dans notre salle ! Une occasion pour nous de vous faire découvrir des petits jeux fun, et te permettre de montrer à tes potes que tu es supérieur à eux sur Nidhogg. Ou de discuter de tes pronostics pour les prochains Worlds de LoL. On sera ravi de t'accueillir pour de la bonne ambiance, du freeplay et de la détente !\n",
+            "schedule": "Du jeudi 29 août au jeudi 5 septembre à partir de 16h"
+        }
+    ],
+    "Jeudi 5 Septembre": [
+        {
+            "title": "Apprendre à la vitesse de l’éclair (même si t’as la flemme)",
+            "association": "Thomas K",
+            "description": "Les études, ça n’a pas besoin d’être une corvée. Découvre les méthodes scientifiques pour apprendre sur le long terme, en profondeur et avec plaisir, tout en gardant du temps pour toi et pour ta vie sociale. Je vais t’aider à créer ton propre système flexible et durable qui t’aidera pendant toutes tes études et même après. On verra notamment :\n" +
+                "\n" +
+                "- Comment gérer et optimiser son temps en 2 min par jour sans se mettre la pression\n" +
+                "- La méthode pour prendre des notes pour qu’elles soient prêtes à réviser sans effort\n" +
+                "- Les fondements scientifiques pour apprendre de façon efficiente et comment les mettre en pratique\n" +
+                "- Les stratégies pour concilier travail sérieux et vie sociale\n" +
+                "- Les ingrédients pour créer des habitudes qui te soutiennent, sans que ça ne soit une punition\n" +
+                "\n" +
+                "Et plein d’autres stratégies concrètes pour optimiser ta vie d’étudiant !\n" +
+                "\n" +
+                "Je vais te partager mes années d’expérience à expérimenter avec plein de méthodes et à lire la recherche scientifique sur le sujet, pour que tu puisses partir avec les meilleurs outils dès le début et ne pas faire les mêmes erreurs que moi.\n" +
+                "\n" +
+                "Tu peux avoir un avant goût sur [ma chaîne YouTube](https://www.youtube.com/@th0mask) et en apprendre plus sur moi et mes méthodes sur la [page de présentation de ma formation](https://go.thomask.fr/turbolearn/) (qui couvre les mêmes sujets que cet atelier gratuit).\n",
+            "schedule": "Jeudi 5 et Vendredi 30"
+        },
+        {
+            "title": "Orientation, présentation des sections",
+            "association": "s4s",
+            "description": "Tu veux en savoir plus sur ta section, les cours qui t'attendent? Ou bien tu hésites entre plusieurs sections? Viens discuter avec des étudiants des différentes sections de bachelor et de master, qui seront présents pour répondre à tes questions.",
+            "schedule": "Lundi 2 septembre et Jeudi 5 septembre"
+        },
+        {
+            "title": "l’IA, la découverte concrète",
+            "association": "clic",
+            "description": "Apprends à créer une intelligence artificielle pour jouer aux dames, un jeu de plateau simple, en utilisant des algorithmes de prise de décision.\n" +
+                "À la fin, votre IA pourra participer à une compétition contre celles des autres participants, pour déterminer laquelle est la plus efficace !\n",
+            "schedule": "Jeudi 5"
+        },
+        {
+            "title": "Viens passer un moment fun avec Ebou",
+            "association": "ebou",
+            "description": "Ici, c'est le coin détente ! Viens passer jouer à des jeux retro, switch ou PCs dans notre salle ! Une occasion pour nous de vous faire découvrir des petits jeux fun, et te permettre de montrer à tes potes que tu es supérieur à eux sur Nidhogg. Ou de discuter de tes pronostics pour les prochains Worlds de LoL. On sera ravi de t'accueillir pour de la bonne ambiance, du freeplay et de la détente !\n",
+            "schedule": "Du jeudi 29 août au jeudi 5 septembre à partir de 16h"
+        }
+    ],
+    "Inconnus": [
+        {
+            "title": "Biocapteurs à l’EPFL",
+            "association": "BioSense",
+            "description": "Venez rencontrer BioSense EPFL ! Chez BioSense, nous pensons et rêvons aux biosenseurs, et nous en réalisons même des prototypes ! Chaque année, une équipe de 10 à 15 étudiants participe à la compétition SensUs qui se tient aux Pays-Bas. C’est une opportunité incroyable pour acquérir une expérience pratique, réaliser des projets de semestres personnalisés, rencontrer des personnes du monde entier et obtenir une première expérience dans le domaine des sciences de la santé (certaines équipes ont même fini par créer leur propre startup !).\n" +
+                "\n" +
+                "Après la présentation de la compétition de cette année (qui s'est tenue la semaine dernière!), certains des membres actuels de l'équipe seront heureux de répondre à toutes vos questions ! Nous avons hâte de vous retrouver ! 💚",
+            "schedule": "inconnu"
         }
     ]
-}
+};
 
 // La liste des associations proposant des workshops avec certaines informations
 // redondantes qui peuvent alors être omises de la liste des workshops
 const associations = {
+    "Xplore": {
+        "title": "Xplore",
+        "url": "",
+        "image": ""
+    },
     "gamestar": {
         "title": "Game*",
         "url": "https://clic.epfl.ch/commissions/game-star",
@@ -311,10 +390,11 @@ const bulletIcons = {
 
 /**********************************************************************************************************************/
 /* Affichage des workshops */
+
 /**********************************************************************************************************************/
 function computeWorkshopHtml(workshop) {
-    let association = associations[workshop["association"]];
-    let imageName = workshop["image"] ?? association["image"];
+    let association = associations[workshop["association"]] ?? [];
+    let imageName = workshop["image"] ?? association["image"] ?? "";
     let imageSrc = imageName.includes("/") ? imageName : "assets/illustrations/" + imageName;
     let title = workshop["title"];
     let associationUrl = workshop["url"] ?? association["url"];
@@ -337,37 +417,36 @@ function computeWorkshopHtml(workshop) {
     }
 
     return `<article class="workshop">
-         <img class="workshop-image" src="`+imageSrc+`" alt="" />
-         <h3>`+title+`</h3>
-         <p class="workshop-association">
+         <img class="workshop-image" src="` + imageSrc + `" alt="" />
+         <h3>` + title + `</h3>` + (associationTitle === undefined ? "" :
+        `<p class="workshop-association">
              par
-             <a href="`+associationUrl+`" class="lead-link">`+associationTitle+`</a>
-         </p>
-
-         <p class="workshop-description">
-             `+description+`
+             <a href="` + associationUrl + `" class="lead-link">` + associationTitle + `</a>
+         </p>`) + `<p class="workshop-description">
+             ` + description + `
          </p>
 
          <div class="workshop-bullets">
-             `+points+`
-            <div class="workshop-bullet">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
-                </svg>
-
-                <a` + ( roomUrl === "" ? `` : ` href="`+roomUrl+`"`) + ` class="lead-link">`+room+`</a>
-            </div>
+             ` + points + `
+<!--            <div class="workshop-bullet">-->
+<!--                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true">-->
+<!--                    <path stroke-linecap="round" stroke-linejoin="round" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />-->
+<!--                    <path stroke-linecap="round" stroke-linejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />-->
+<!--                </svg>-->
+<!---->
+<!--                // <a` + (roomUrl === "" ? `` : ` href="` + roomUrl + `"`) + ` class="lead-link">` + room + `</a>-->
+<!--            </div>-->
             <div class="workshop-bullet">
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true">
                     <path stroke-linecap="round" stroke-linejoin="round" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
                 </svg>
 
-                   `+schedule+`
+                   ` + schedule + `
             </div>
         </div>
     </article>`
 }
+
 function computeDayHtml(dayTitle) {
     let day = workshops[dayTitle];
     let workshopsHtml = "";
@@ -376,17 +455,18 @@ function computeDayHtml(dayTitle) {
     }
     return `<details class="workshops-day">
                 <summary>
-                    `+dayTitle+`
+                    ` + dayTitle + `
                 </summary>
                 <div class="scroll-x-wrapper">
                     <div class="workshops">
-                        `+workshopsHtml+`
+                        ` + workshopsHtml + `
 
                         <div class="workshops-right-padding"></div>
                     </div>
                 </div>
             </details>`;
 }
+
 function computeWorkshopsContainerInnerHtml() {
     let result = "";
     for (const key of Object.keys(workshops)) {
@@ -395,4 +475,8 @@ function computeWorkshopsContainerInnerHtml() {
     return result;
 }
 
-document.getElementById("workshops-container").innerHTML = computeWorkshopsContainerInnerHtml();
+if (window.location.href.endsWith("debug")) {
+    document.getElementById("workshops-container").innerHTML = computeWorkshopsContainerInnerHtml();
+} else {
+    document.getElementById("workshops-container").innerHTML = "Ce contenu sera visible ici tout bientôt"
+}
