@@ -19,7 +19,7 @@ const workshops = {
             "bullets": [
                 {
                     "icon": "warning",
-                    "title": "Inscriptions jusqu'au 18 août (environ)"
+                    "title": "Inscriptions terminées"
                 },
                 {
                     "icon": "warning",
@@ -145,7 +145,7 @@ const workshops = {
             "bullets": [
                 {
                     "icon": "warning",
-                    "title": "Inscriptions jusqu'au 18 août (environ)"
+                    "title": "Inscriptions terminées"
                 },
                 {
                     "icon": "warning",
@@ -198,7 +198,7 @@ const workshops = {
             "bullets": [
                 {
                     "icon": "warning",
-                    "title": "Inscriptions jusqu'au 18 août (environ)"
+                    "title": "Inscriptions terminées"
                 },
                 {
                     "icon": "warning",
@@ -271,22 +271,20 @@ const workshops = {
             "schedule": "Jeudi 5"
         },
         {
+            "title": "Biocapteurs à l’EPFL",
+            "association": "BioSense",
+            "description": "Venez rencontrer BioSense EPFL ! Chez BioSense, nous pensons et rêvons aux biosenseurs, et nous en réalisons même des prototypes ! Chaque année, une équipe de 10 à 15 étudiants participe à la compétition SensUs qui se tient aux Pays-Bas. C’est une opportunité incroyable pour acquérir une expérience pratique, réaliser des projets de semestres personnalisés, rencontrer des personnes du monde entier et obtenir une première expérience dans le domaine des sciences de la santé (certaines équipes ont même fini par créer leur propre startup !).\n" +
+                "\n" +
+                "Après la présentation de la compétition de cette année (qui s'est tenue la semaine dernière!), certains des membres actuels de l'équipe seront heureux de répondre à toutes vos questions ! Nous avons hâte de vous retrouver ! 💚",
+            "schedule": "Jeudi 5"
+        },
+        {
             "title": "Viens passer un moment fun avec Ebou",
             "association": "ebou",
             "description": "Ici, c'est le coin détente ! Viens passer jouer à des jeux retro, switch ou PCs dans notre salle ! Une occasion pour nous de vous faire découvrir des petits jeux fun, et te permettre de montrer à tes potes que tu es supérieur à eux sur Nidhogg. Ou de discuter de tes pronostics pour les prochains Worlds de LoL. On sera ravi de t'accueillir pour de la bonne ambiance, du freeplay et de la détente !\n",
             "schedule": "Du jeudi 29 août au jeudi 5 septembre à partir de 16h"
         }
     ],
-    "Inconnus": [
-        {
-            "title": "Biocapteurs à l’EPFL",
-            "association": "BioSense",
-            "description": "Venez rencontrer BioSense EPFL ! Chez BioSense, nous pensons et rêvons aux biosenseurs, et nous en réalisons même des prototypes ! Chaque année, une équipe de 10 à 15 étudiants participe à la compétition SensUs qui se tient aux Pays-Bas. C’est une opportunité incroyable pour acquérir une expérience pratique, réaliser des projets de semestres personnalisés, rencontrer des personnes du monde entier et obtenir une première expérience dans le domaine des sciences de la santé (certaines équipes ont même fini par créer leur propre startup !).\n" +
-                "\n" +
-                "Après la présentation de la compétition de cette année (qui s'est tenue la semaine dernière!), certains des membres actuels de l'équipe seront heureux de répondre à toutes vos questions ! Nous avons hâte de vous retrouver ! 💚",
-            "schedule": "inconnu"
-        }
-    ]
 };
 
 // La liste des associations proposant des workshops avec certaines informations
@@ -475,8 +473,4 @@ function computeWorkshopsContainerInnerHtml() {
     return result;
 }
 
-if (window.location.href.endsWith("debug")) {
-    document.getElementById("workshops-container").innerHTML = computeWorkshopsContainerInnerHtml();
-} else {
-    document.getElementById("workshops-container").innerHTML = "Ce contenu sera visible ici tout bientôt"
-}
+document.getElementById("workshops-container").innerHTML = computeWorkshopsContainerInnerHtml();
