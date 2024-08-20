@@ -119,6 +119,12 @@ const workshops = {
     ],
     "Lundi 2 Septembre": [
         {
+            "title": "Arcanite vous aide",
+            "association": "arcanite",
+            "description": "Alumnis dans différentes sections, nous avons tou·te·s été confronté·e·s à des situations où les profs et assistant·e·s présentent un concept déstabilisant mais, en plus de cela, le font en utilisant des outils numériques que personne n'avait pris le temps de nous montrer avant. Travaillant maintenant chez Arcanite, une entreprise d'informatique fondée par des anciens de l'EPFL, nous avons constaté que ces outils étaient non seulement utiles pendant nos études mais sont en fait utilisés couramment presque partout. Nous vous proposons donc une introduction en douceur à divers outils numériques afin que vous ayez une bouée à laquelle vous accrocher quand vous serez lâché·e·s en pleine mer à essayer de suivre des profs un peu pressé·e·s.",
+            "schedule": "Lundi 2"
+        },
+        {
             "title": "Les Limites de l’Etre Humain",
             "association": "Xplore",
             "description": "Est-ce que vous pouvez travailler 100h par semaine pendant 1 an ? Comment y arriver et comment finir à l’Hospital en essayant. Example concret illustré par un étudiant qui a redoublé chaque année de son Bachelor…",
