@@ -178,7 +178,7 @@ const workshops = {
         },
         {
             "title": "Les Limites de l’Etre Humain",
-            "img": "Explore-3.png",
+            "img": "Xplore-3.png",
             "association": "Xplore",
             "description": "Est-ce que vous pouvez travailler 100h par semaine pendant 1 an ? Comment y arriver et comment finir à l’Hospital en essayant. Example concret illustré par un étudiant qui a redoublé chaque année de son Bachelor…",
             "schedule": "Lundi 2 Septembre"
@@ -237,7 +237,7 @@ const workshops = {
         },
         {
             "title": "Initiation à la programmation compétitive",
-            "img": "polympiades_math.png",
+            "img": "polympiades_prog.png",
             "association": "polympiads",
             "description": "Le monde de la programmation t’intrigue et tu aimerais en découvrir plus ? Tu rêves de participer aux compétitions internationales de programmation mais tu ne sais pas par où commencer ? Alors ne manque surtout pas le prochain workshop de Polympiads ! Que tu sois débutant ou programmeur expérimenté, divers problèmes plus ou moins complexes sauront mettre à l’épreuve tes compétences. De plus, tu pourras échanger avec d’anciens participants de l’ICPC pour découvrir leurs expériences et leurs parcours.\n",
             "schedule": "Mardi 3 septembre à partir de 16h"
