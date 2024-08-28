@@ -44,6 +44,13 @@ const workshops = {
             ]
         },
         {
+            "title": "Présentation MAKE & EPFL Xplore",
+            "img": "xplore4.jpg",
+            "association": "Xplore",
+            "description": "Les associations MAKE sont les « startups étudiantes » de l’EPFL qui participent aux compétitions mondiales d’ingénierie ! Comment en rejoindre une ? Combien de temps ça prend ? Quand est-ce que vous devriez y participer ? - Loïc Delineau d’EPFL Xplore",
+            "schedule": "Jeudi 29 août, 16h-18h"
+        },
+        {
             "title": "Jeux d’adresse",
             "img": "PESE.png",
             "association": "pese",
@@ -177,9 +184,9 @@ const workshops = {
             "schedule": "Lundi 2"
         },
         {
-            "title": "Les Limites de l’Etre Humain",
+            "title": "Loïc Delineau - Les Limites de l’Etre Humain",
             "img": "Xplore-3.png",
-            "association": "Xplore",
+            "association": "Loïc Delineau",
             "description": "Est-ce que vous pouvez travailler 100h par semaine pendant 1 an ? Comment y arriver et comment finir à l’Hospital en essayant. Example concret illustré par un étudiant qui a redoublé chaque année de son Bachelor…",
             "schedule": "Lundi 2 Septembre"
         },
