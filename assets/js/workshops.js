@@ -98,19 +98,14 @@ const workshops = {
             "title": "Apprendre à la vitesse de l’éclair (même si t’as la flemme)",
             "img": "ThomasK.jpg",
             "association": "Thomas K",
-            "description": "Les études, ça n’a pas besoin d’être une corvée. Découvre les méthodes scientifiques pour apprendre sur le long terme, en profondeur et avec plaisir, tout en gardant du temps pour toi et pour ta vie sociale. Je vais t’aider à créer ton propre système flexible et durable qui t’aidera pendant toutes tes études et même après. On verra notamment :\n" +
-                "\n" +
-                "- Comment gérer et optimiser son temps en 2 min par jour sans se mettre la pression\n" +
-                "- La méthode pour prendre des notes pour qu’elles soient prêtes à réviser sans effort\n" +
-                "- Les fondements scientifiques pour apprendre de façon efficiente et comment les mettre en pratique\n" +
-                "- Les stratégies pour concilier travail sérieux et vie sociale\n" +
-                "- Les ingrédients pour créer des habitudes qui te soutiennent, sans que ça ne soit une punition\n" +
-                "\n" +
-                "Et plein d’autres stratégies concrètes pour optimiser ta vie d’étudiant !\n" +
-                "\n" +
-                "Je vais te partager mes années d’expérience à expérimenter avec plein de méthodes et à lire la recherche scientifique sur le sujet, pour que tu puisses partir avec les meilleurs outils dès le début et ne pas faire les mêmes erreurs que moi.\n" +
-                "\n" +
-                "Tu peux avoir un avant goût sur [ma chaîne YouTube](https://www.youtube.com/@th0mask) et en apprendre plus sur moi et mes méthodes sur la [page de présentation de ma formation](https://go.thomask.fr/turbolearn/) (qui couvre les mêmes sujets que cet atelier gratuit).\n",
+            "description": "Crée ton organisation qui te soutiendra pendant toutes tes études et après : apprendre plus vite, gérer ton temps, prendre soin de toi… Je te donne toutes les techniques pour réussir !\n"
+            +"Entre les révisions, la prise de notes, la vie sociale, tes passions, tes finances, tu auras le Starter Pack EPFL complet !",
+            "bullets": [
+                {
+                    "icon": "warning",
+                    "title": "par Thomas K https://www.youtube.com/@th0mask"
+                }
+            ],
             "schedule": "Jeudi 5 et Vendredi 30"
         },
         {
@@ -366,19 +361,14 @@ const workshops = {
             "title": "Apprendre à la vitesse de l’éclair (même si t’as la flemme)",
             "img": "ThomasK.jpg",
             "association": "Thomas K",
-            "description": "Les études, ça n’a pas besoin d’être une corvée. Découvre les méthodes scientifiques pour apprendre sur le long terme, en profondeur et avec plaisir, tout en gardant du temps pour toi et pour ta vie sociale. Je vais t’aider à créer ton propre système flexible et durable qui t’aidera pendant toutes tes études et même après. On verra notamment :\n" +
-                "\n" +
-                "- Comment gérer et optimiser son temps en 2 min par jour sans se mettre la pression\n" +
-                "- La méthode pour prendre des notes pour qu’elles soient prêtes à réviser sans effort\n" +
-                "- Les fondements scientifiques pour apprendre de façon efficiente et comment les mettre en pratique\n" +
-                "- Les stratégies pour concilier travail sérieux et vie sociale\n" +
-                "- Les ingrédients pour créer des habitudes qui te soutiennent, sans que ça ne soit une punition\n" +
-                "\n" +
-                "Et plein d’autres stratégies concrètes pour optimiser ta vie d’étudiant !\n" +
-                "\n" +
-                "Je vais te partager mes années d’expérience à expérimenter avec plein de méthodes et à lire la recherche scientifique sur le sujet, pour que tu puisses partir avec les meilleurs outils dès le début et ne pas faire les mêmes erreurs que moi.\n" +
-                "\n" +
-                "Tu peux avoir un avant goût sur [ma chaîne YouTube](https://www.youtube.com/@th0mask) et en apprendre plus sur moi et mes méthodes sur la [page de présentation de ma formation](https://go.thomask.fr/turbolearn/) (qui couvre les mêmes sujets que cet atelier gratuit).\n",
+            "description": "Crée ton organisation qui te soutiendra pendant toutes tes études et après : apprendre plus vite, gérer ton temps, prendre soin de toi… Je te donne toutes les techniques pour réussir !\n"
+            +"Entre les révisions, la prise de notes, la vie sociale, tes passions, tes finances, tu auras le Starter Pack EPFL complet !",
+            "bullets": [
+                {
+                    "icon": "warning",
+                    "title": "par Thomas K https://www.youtube.com/@th0mask"
+                }
+            ],
             "schedule": "Jeudi 5 et Vendredi 30"
         },
         {
