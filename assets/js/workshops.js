@@ -76,7 +76,7 @@ const workshops = {
                     "title": "JDRPoly fait aussi un autre workshop le mardi 3"
                 }
             ],
-            "schedule": "Jeudi 29 14-16h"
+            "schedule": "Jeudi 29 16h"
         },
         {
             "title": "Viens passer un moment fun avec Ebou",
@@ -271,7 +271,7 @@ const workshops = {
         {
             "title": "Apprendre à utiliser l’information scientifique",
             "img": "apprendreàétudierRolex.jpg",
-            "association": "Apprendre à étudier Rolex",
+            "association": "Rolex",
             "description": "Workshop en 2 parties. 1) En équipe, partez à la découverte des différents espaces et collections de la Bibliothèque avec la chasse au trésor « À la conquête du Rolex Learning Center ». 2) Le LAB « Évaluer la fiabilité des sources » vous permettra d’identifier les différentes méthodes et techniques à mettre en place pour la recherche et l’utilisation de d’information scientifique, et l’évaluation de la fiabilité des sources dont vous aurez besoin pendant vos études.",
             "bullets": [
                 {
@@ -337,7 +337,7 @@ const workshops = {
         {
             "title": "Atelier Speedrun",
             "img": "CLIC-GAME.png",
-            "association": "clic",
+            "association": "Game*",
             "description": "T'es-tu déjà demandé combien de temps il faut pour finir un jeu vidéo ? Viens découvrir le speedrun, une pratique qui consiste à atteindre un objectif en un minimum de temps. Qui sera le premier à arriver en haut de la montagne ?",
             "schedule": "Mercredi 4 Septembre"
         },
@@ -516,11 +516,11 @@ const bulletIcons = {
 
 /**********************************************************************************************************************/
 function computeWorkshopHtml(workshop) {
-    let association = associations[workshop["association"]] ?? [];
+    let association = associations[workshop["association"]] ?? {'title':workshop["association"]};
     let imageName = workshop["img"] ? ("assets/workshops/" + workshop.img) : (association["image"] ?? "");
     let imageSrc = imageName.includes("/") ? imageName : "assets/illustrations/" + imageName;
     let title = workshop["title"];
-    let associationUrl = workshop["url"] ?? association["url"];
+    let associationUrl = workshop["url"] ?? association["url"] ?? "#1";
     let associationTitle = association["title"];
     let description = workshop["description"].replaceAll("\n", "<br />");
     let room = workshop["room"];
@@ -544,7 +544,7 @@ function computeWorkshopHtml(workshop) {
          <h3>` + title + `</h3>` + (associationTitle === undefined ? "" :
         `<p class="workshop-association">
              par
-             <a href="` + associationUrl + `" class="lead-link">` + associationTitle + `</a>
+             <a href="` + associationUrl + `" class="lead-link"`+(associationUrl === "#1"?"style='pointer-events: none;cursor: default;text-decoration: none;color: black;'":"")+`>` + associationTitle + `</a>
          </p>`) + `<p class="workshop-description">
              ` + description + `
          </p>
