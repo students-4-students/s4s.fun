@@ -11,7 +11,7 @@ const defaultSchedule = "16:00-18:00";
 
 // Contient la liste des workshops ayant lieu
 const workshops = {
-    "Jeudi 29 Aout": [
+    "Jeudi 29 août": [
         {
             "title": "Visite du Swiss Plasma Center",
             "img": "Tokamak.jpeg",
@@ -86,7 +86,7 @@ const workshops = {
             "schedule": "Du jeudi 29 août au jeudi 5 septembre à partir de 16h. Sauf le jeudi 29 à partir de 13h30"
         },
     ],
-    "Vendredi 30 Aout": [
+    "Vendredi 30 août": [
         {
             "title": "Formation Mécanique par Xplore",
             "img": "Xplore-1.png",
@@ -135,7 +135,7 @@ const workshops = {
             "schedule": "Du jeudi 29 août au jeudi 5 septembre à partir de 16h. Sauf le jeudi 29 à partir de 13h30"
         }
     ],
-    "Samedi 31 Aout": [
+    "Samedi 31 août": [
         {
             "title": "Formation Electronique par Xplore",
             "img": "Xplore-2.png",
@@ -170,7 +170,7 @@ const workshops = {
             "schedule": "Du jeudi 29 août au jeudi 5 septembre à partir de 16h. Sauf le jeudi 29 à partir de 13h30"
         }
     ],
-    "Lundi 2 Septembre": [
+    "Lundi 2 septembre": [
         {
             "title": "Arcanite vous aide",
             "img": "Arcanite.png",
@@ -183,14 +183,14 @@ const workshops = {
             "img": "Xplore-3.png",
             "association": "Loïc Delineau",
             "description": "Est-ce que vous pouvez travailler 100h par semaine pendant 1 an ? Comment y arriver et comment finir à l’Hospital en essayant. Example concret illustré par un étudiant qui a redoublé chaque année de son Bachelor…",
-            "schedule": "Lundi 2 Septembre"
+            "schedule": "Lundi 2 septembre"
         },
         {
             "title": "Orientation, présentation des sections",
             "img": "s4s.png",
             "association": "s4s",
             "description": "Tu veux en savoir plus sur ta section, les cours qui t'attendent? Ou bien tu hésites entre plusieurs sections? Viens discuter avec des étudiants des différentes sections de bachelor et de master, qui seront présents pour répondre à tes questions.",
-            "schedule": "Lundi 2 septembre et Jeudi 5 septembre"
+            "schedule": "Lundi 2 septembre et jeudi 5 septembre"
         },
         {
             "title": "Fresque du Climat",
@@ -219,7 +219,7 @@ const workshops = {
             "schedule": "Du jeudi 29 août au jeudi 5 septembre à partir de 16h. Sauf le jeudi 29 à partir de 13h30"
         }
     ],
-    "Mardi 3 Septembre": [
+    "Mardi 3 septembre": [
         {
             "title": "Visite du Swiss Plasma Center",
             "img": "Tokamak.jpeg",
@@ -296,7 +296,7 @@ const workshops = {
             "schedule": "Du jeudi 29 août au jeudi 5 septembre à partir de 16h. Sauf le jeudi 29 à partir de 13h30"
         }
     ],
-    "Mercredi 4 Septembre": [
+    "Mercredi 4 septembre": [
         {
             "title": "Visite du Swiss Plasma Center",
             "img": "Tokamak.jpeg",
@@ -339,7 +339,7 @@ const workshops = {
             "img": "CLIC-GAME.png",
             "association": "Game*",
             "description": "T'es-tu déjà demandé combien de temps il faut pour finir un jeu vidéo ? Viens découvrir le speedrun, une pratique qui consiste à atteindre un objectif en un minimum de temps. Qui sera le premier à arriver en haut de la montagne ?",
-            "schedule": "Mercredi 4 Septembre"
+            "schedule": "Mercredi 4 septembre"
         },
         {
             "title": "Jeux de société",
@@ -356,7 +356,7 @@ const workshops = {
             "schedule": "Du jeudi 29 août au jeudi 5 septembre à partir de 16h. Sauf le jeudi 29 à partir de 13h30"
         }
     ],
-    "Jeudi 5 Septembre": [
+    "Jeudi 5 septembre": [
         {
             "title": "Apprendre à la vitesse de l’éclair (même si t’as la flemme)",
             "img": "ThomasK.jpg",
