@@ -90,7 +90,7 @@ Array.from(document.querySelectorAll('.schedule-placeholder')).forEach((placehol
 //FORMAT is important: "<day name> <day of month> <start hour>h[minutes]-<end hour>h[minutes]"
 const COURSES = {
     "ceremony": {
-        "name": "Cérémonie d'ouverture",
+        "name": "Cérémonie d’ouverture",
         "presentations": ["jeu 29 8h-9h"]
     },
     "snack":{
@@ -98,7 +98,7 @@ const COURSES = {
         "breaks": ["ven 30 15h30-16h", "sam 31 15h30-16h", "lun 2 15h30-16h", "mar 3 15h30-16h", "mer 4 15h30-16h", "jeu 5 15h30-16h"],
     },
     "cms-ceremony": {
-        "name": "Cérémonie d'ouverture",
+        "name": "Cérémonie d’ouverture",
         "presentations": ["jeu 29 9h-10h"]
     },
     "workshop_learn2study": {
