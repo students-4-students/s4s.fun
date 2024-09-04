@@ -83,6 +83,12 @@ const workshops = {
             "img": "Ebou.png",
             "association": "ebou",
             "description": "Ici, c'est le coin détente ! Viens passer jouer à des jeux retro, switch ou PCs dans notre salle ! Une occasion pour nous de vous faire découvrir des petits jeux fun, et te permettre de montrer à tes potes que tu es supérieur à eux sur Nidhogg. Ou de discuter de tes pronostics pour les prochains Worlds de LoL. On sera ravi de t'accueillir pour de la bonne ambiance, du freeplay et de la détente !\n",
+            "bullets": [
+                {
+                    "icon": "warning",
+                    "title": "Annulé le mercredi 4 et jeudi 5 septembre"
+                }
+            ],
             "schedule": "Du jeudi 29 août au jeudi 5 septembre à partir de 16h. Sauf le jeudi 29 à partir de 13h30"
         },
     ],
@@ -132,6 +138,12 @@ const workshops = {
             "img": "Ebou.png",
             "association": "ebou",
             "description": "Ici, c'est le coin détente ! Viens passer jouer à des jeux retro, switch ou PCs dans notre salle ! Une occasion pour nous de vous faire découvrir des petits jeux fun, et te permettre de montrer à tes potes que tu es supérieur à eux sur Nidhogg. Ou de discuter de tes pronostics pour les prochains Worlds de LoL. On sera ravi de t'accueillir pour de la bonne ambiance, du freeplay et de la détente !\n",
+            "bullets": [
+                {
+                    "icon": "warning",
+                    "title": "Annulé le mercredi 4 et jeudi 5 septembre"
+                }
+            ],
             "schedule": "Du jeudi 29 août au jeudi 5 septembre à partir de 16h. Sauf le jeudi 29 à partir de 13h30"
         }
     ],
@@ -167,6 +179,12 @@ const workshops = {
             "img": "Ebou.png",
             "association": "ebou",
             "description": "Ici, c'est le coin détente ! Viens passer jouer à des jeux retro, switch ou PCs dans notre salle ! Une occasion pour nous de vous faire découvrir des petits jeux fun, et te permettre de montrer à tes potes que tu es supérieur à eux sur Nidhogg. Ou de discuter de tes pronostics pour les prochains Worlds de LoL. On sera ravi de t'accueillir pour de la bonne ambiance, du freeplay et de la détente !\n",
+            "bullets": [
+                {
+                    "icon": "warning",
+                    "title": "Annulé le mercredi 4 et jeudi 5 septembre"
+                }
+            ],
             "schedule": "Du jeudi 29 août au jeudi 5 septembre à partir de 16h. Sauf le jeudi 29 à partir de 13h30"
         }
     ],
@@ -216,6 +234,12 @@ const workshops = {
             "img": "Ebou.png",
             "association": "ebou",
             "description": "Ici, c'est le coin détente ! Viens passer jouer à des jeux retro, switch ou PCs dans notre salle ! Une occasion pour nous de vous faire découvrir des petits jeux fun, et te permettre de montrer à tes potes que tu es supérieur à eux sur Nidhogg. Ou de discuter de tes pronostics pour les prochains Worlds de LoL. On sera ravi de t'accueillir pour de la bonne ambiance, du freeplay et de la détente !\n",
+            "bullets": [
+                {
+                    "icon": "warning",
+                    "title": "Annulé le mercredi 4 et jeudi 5 septembre"
+                }
+            ],
             "schedule": "Du jeudi 29 août au jeudi 5 septembre à partir de 16h. Sauf le jeudi 29 à partir de 13h30"
         }
     ],
@@ -293,6 +317,12 @@ const workshops = {
             "img": "Ebou.png",
             "association": "ebou",
             "description": "Ici, c'est le coin détente ! Viens passer jouer à des jeux retro, switch ou PCs dans notre salle ! Une occasion pour nous de vous faire découvrir des petits jeux fun, et te permettre de montrer à tes potes que tu es supérieur à eux sur Nidhogg. Ou de discuter de tes pronostics pour les prochains Worlds de LoL. On sera ravi de t'accueillir pour de la bonne ambiance, du freeplay et de la détente !\n",
+            "bullets": [
+                {
+                    "icon": "warning",
+                    "title": "Annulé le mercredi 4 et jeudi 5 septembre"
+                }
+            ],
             "schedule": "Du jeudi 29 août au jeudi 5 septembre à partir de 16h. Sauf le jeudi 29 à partir de 13h30"
         }
     ],
@@ -348,13 +378,6 @@ const workshops = {
             "description": "Passe quand tu veux pour jouer à des jeux de société avec d’autres! Nous proposons de nombreux jeux : Love Letter, Skull King, etc. Viens, joue, rigole et profite !",
             "schedule": "Du samedi 31 août au jeudi 5 septembre à partir de 16h"
         },
-        {
-            "title": "Viens passer un moment fun avec Ebou",
-            "img": "Ebou.png",
-            "association": "ebou",
-            "description": "Ici, c'est le coin détente ! Viens passer jouer à des jeux retro, switch ou PCs dans notre salle ! Une occasion pour nous de vous faire découvrir des petits jeux fun, et te permettre de montrer à tes potes que tu es supérieur à eux sur Nidhogg. Ou de discuter de tes pronostics pour les prochains Worlds de LoL. On sera ravi de t'accueillir pour de la bonne ambiance, du freeplay et de la détente !\n",
-            "schedule": "Du jeudi 29 août au jeudi 5 septembre à partir de 16h. Sauf le jeudi 29 à partir de 13h30"
-        }
     ],
     "Jeudi 5 septembre": [
         {
@@ -402,13 +425,6 @@ const workshops = {
             "description": "Passe quand tu veux pour jouer à des jeux de société avec d’autres! Nous proposons de nombreux jeux : Love Letter, Skull King, etc. Viens, joue, rigole et profite !",
             "schedule": "Du samedi 31 août au jeudi 5 septembre à partir de 16h"
         },
-        {
-            "title": "Viens passer un moment fun avec Ebou",
-            "img": "Ebou.png",
-            "association": "ebou",
-            "description": "Ici, c'est le coin détente ! Viens passer jouer à des jeux retro, switch ou PCs dans notre salle ! Une occasion pour nous de vous faire découvrir des petits jeux fun, et te permettre de montrer à tes potes que tu es supérieur à eux sur Nidhogg. Ou de discuter de tes pronostics pour les prochains Worlds de LoL. On sera ravi de t'accueillir pour de la bonne ambiance, du freeplay et de la détente !\n",
-            "schedule": "Du jeudi 29 août au jeudi 5 septembre à partir de 16h. Sauf le jeudi 29 à partir de 13h30"
-        }
     ],
 };
 
