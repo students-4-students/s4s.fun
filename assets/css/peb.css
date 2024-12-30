@@ -125,22 +125,85 @@
 }
 
 .hero-registration-button {
-    display: inline-flex;
+    display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #FF4081;
-    padding: 14px 28px;
-    font-size: 1.3em;
-    border-radius: 8px;
+    text-align: center;
+    padding: 16px 40px;
+    font-size: 1.2em;
+    border-radius: 6px;
     color: #FFFFFF;
-    transition: background-color 0.3s ease, transform 0.3s ease;
-    border: 1px solid transparent;
-    gap: 8px;
     text-decoration: none;
+    font-weight: 600;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: none;
+    background-color: #1D3557;
+    min-width: 450px;
+    justify-content: center;
+}
+
+.hero-registration-button-2 {
+    background-color: #FF4081;
+    min-width: 250px;
 }
 
 .hero-registration-button:hover {
-    background-color: #1D3557;
+    transform: translateY(-6px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+.hero-registration-button-2:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+.hero-icon {
+    margin-right: 12px;
+    transition: transform 0.4s ease, opacity 0.6s ease;
+}
+
+.hero-registration-button:hover .hero-icon,
+.hero-registration-button-2:hover .hero-icon {
+    transform: translateX(6px);
+    opacity: 1;
+    stroke: #1D3557;
+}
+
+.hero-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 2em;
+    width: 100%;
+    justify-content: center;
+}
+
+.hero-registration-button p,
+.hero-registration-button-2 p {
+    margin: 0;
+    transition: opacity 0.5s ease, transform 0.4s ease;
+}
+
+.hero-registration-button:hover p,
+.hero-registration-button-2:hover p {
+    transform: translateX(8px);
+}
+
+.hero-registration-button svg,
+.hero-registration-button-2 svg {
+    opacity: 0;
+    transform: translateX(-10px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.hero-registration-button:hover svg,
+.hero-registration-button-2:hover svg {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.hero-registration-button:hover {
+    background-color: #FF4081;
     transform: translateY(-2px);
 }
 
@@ -150,27 +213,22 @@
     transition: opacity 0.3s ease, transform 0.3s ease;
 }
 
-.hero-registration-button svg.hidden {
-    opacity: 0;
-    transform: translateX(-24px);
-}
-
 .hero-registration-button:hover svg {
     opacity: 1;
     transform: translateX(0);
 }
 
-.button-drive {
+.button-drive, .button-register {
     margin-right: 30px;
     text-align: center;
     transition: transform 0.3s ease;
 }
 
-.hero-registration-button:hover .button-drive {
+.hero-registration-button:hover .button-drive, .hero-registration-button:hover .button-register {
     transform: translateX(8px);
 }
 
-.hero-registration-button svg.hidden + .button-drive {
+.hero-registration-button svg.hidden + .button-drive, .hero-registration-button svg.hidden + .button-register {
     transform: translateX(-12px);
 }
 
@@ -185,6 +243,7 @@
     border-radius: 5px;
     width: 140%;
     box-sizing: border-box;
+    margin-left: 10%;
 }
 
 .warning-icon {
@@ -210,19 +269,10 @@
     text-decoration: underline;
 }
 
-.hero-drop-shadow {
-    background-image: radial-gradient(
-        circle at 10px 10px,
-        rgba(29, 53, 87, 0) 0%,
-        rgba(255, 64, 129, 0.1) var(--drop-shadow-size)
-    );
-}
-
 .presentation-feature-icon {
     display: flex;
     align-items: center;
     justify-content: center;
-
     width: 8rem;
     height: 8rem;
     color: #000000;
