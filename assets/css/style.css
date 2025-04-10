@@ -502,14 +502,20 @@ h3 {
     align-items: center;
     justify-content: center;
     height: 60px;
-    border-radius: 60px;
-
+    border-radius: 40px;
     color: #464870;
     background: #fff;
-    font-size: 2.4rem;
+    font-size: 2.2rem;
     font-weight: 700;
     text-decoration: none;
     user-select: none;
+    padding: 15px 40px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hero-registration-button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
 .hero-registration-button svg {
