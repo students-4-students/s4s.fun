@@ -1308,11 +1308,11 @@ h3 {
 }
 
 .partner-epfl {
-    width: 9rem;
+    width: 10rem;
 }
 
 .partner-agepoly {
-    width: 13rem;
+    width: 14rem;
 }
 
 .partner-eltonymate {
@@ -1321,6 +1321,14 @@ h3 {
 
 .partner-together {
     width: 8rem;
+}
+
+.partner-talendo {
+    width: 10rem;
+}
+
+.partner-arcanite {
+    width: 11rem;
 }
 
 .footer-partner {
