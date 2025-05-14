@@ -1336,8 +1336,11 @@ h3 {
 }
 
 .partner-activfitness {
-    width: 12rem;
-    
+    width: 12rem;   
+}
+
+.partner-payot {
+    width: 14rem;
 }
 
 .footer-partner {
