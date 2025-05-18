@@ -51,6 +51,12 @@ sup {
     --text: #ffffff;
 }
 
+.theme-tertiary {
+    --background: #862A4A;
+    --headings: #f9f4ee;
+    --text: #ffffff;
+}
+
 h1 {
     font-size: 3.2rem;
     font-weight: 600;
@@ -492,20 +498,122 @@ h3 {
     margin-right: .5em;
 }
 
-.hero-registration {
-    text-align: center;
-    padding: 1em 0;
+.section-forms {
+    color: #fff;
+    padding: 100px 0 0 0;
+}
+
+.section-forms::after {
+    content: '';
+    display: block;
+    background-image: url('../illustrations/s4s_committee_2025_pink.png');
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    margin-top: 50px;
+  }
+
+.registration-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-top: 2rem;
+    padding-bottom: 50px
+}
+
+.registration-item {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.registration-text {
+    flex: 1;
+    min-width: 200px;
+    max-width: 600px;
+    font-size: 1.2em;
+}
+
+.warning-box {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-top: 50px;
+    padding: 14px 18px;
+    border: 1px solid #EED4F1;
+    background-color: #e0e3ff;
+    border-radius: 5px;
+    width: 100%;
+    max-width: 800px;
+    box-sizing: border-box;
+    margin-left: auto;
+    margin-right: auto;
+    transition: transform 0.3s ease;
+}
+
+.warning-box:hover {
+    transform: translateY(-5px);
+}
+
+.warning-icon {
+    width: 42px;
+    height: 42px;
+    flex-shrink: 0;
+}
+
+.warning-text {
+    font-size: 1.8rem;
+    font-weight: normal;
+    color: #333;
+    line-height: 1.5;
+    flex-grow: 1;
+}
+
+.warning-text a {
+    color: #0073e6;
+    text-decoration: none;
+}
+
+.warning-text a:hover {
+    text-decoration: underline;
+}
+
+#scroll-to-bottom {
+    color: #FF4081;
+    transition: all 0.3s ease;
+}
+  
+#scroll-to-bottom:hover {
+    background-color: #ffa2da;
+    border-radius: 3px;
+}
+
+@media (max-width: 480px) {
+    .warning-box {
+        padding: 10px 15px;
+    }
+
+    .warning-icon {
+        width: 40px;
+        height: 40px;
+    }
+
+    .warning-text {
+        font-size: 1.2rem;
+    }
 }
 
 .hero-registration-button {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 60px;
-    border-radius: 40px;
+    height: 40px;
+    border-radius: 12px;
     color: #464870;
     background: #fff;
-    font-size: 2.2rem;
+    font-size: 2rem;
     font-weight: 700;
     text-decoration: none;
     user-select: none;

@@ -76,31 +76,22 @@
                             100% gratuit
                         </div>
                     </div>
-
-                    <div class="hero-registration">
-                        <a class="hero-registration-button" href="https://go.epfl.ch/s4s-drive-2024" rel="noopener">
-                            <svg style="display:none" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true">
-                                <path stroke-linecap="round" stroke-linejoin="round" d="M13 9l3 3m0 0l-3 3m3-3H8m13 0a9 9 0 11-18 0 9 9 0 0118 0z" />
-                            </svg>
-                            Drive public S4S
-                        </a>
-                    </div>
-
-                    <div class="hero-registration">
-                        <a class="hero-registration-button" href="http://go.epfl.ch/s4s-rc" rel="noopener">
-                            <svg style="display:none" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true">
-                                <path stroke-linecap="round" stroke-linejoin="round" d="M13 9l3 3m0 0l-3 3m3-3H8m13 0a9 9 0 11-18 0 9 9 0 0118 0z" />
-                            </svg>
-                            Candidature RC
-                        </a>
-                    </div>
-                    <div class="hero-registration">
-                        <a class="hero-registration-button" href="http://go.epfl.ch/s4s-rc" rel="noopener">
-                            <svg style="display:none" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true">
-                                <path stroke-linecap="round" stroke-linejoin="round" d="M13 9l3 3m0 0l-3 3m3-3H8m13 0a9 9 0 11-18 0 9 9 0 0118 0z" />
-                            </svg>
-                            Candidature Équipier
-                        </a>
+                    <div class="warning-box">
+                        <svg fill="#7d82b8" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 478.125 478.125" xml:space="preserve" class="warning-icon">
+                            <g>
+                                <circle cx="239.904" cy="314.721" r="35.878"></circle>
+                                <path d="M256.657,127.525h-31.9c-10.557,0-19.125,8.645-19.125,19.125v101.975c0,10.48,8.645,19.125,19.125,19.125h31.9 c10.48,0,19.125-8.645,19.125-19.125V146.65C275.782,136.17,267.138,127.525,256.657,127.525z"></path>
+                                <path d="M239.062,0C106.947,0,0,106.947,0,239.062s106.947,239.062,239.062,239.062c132.115,0,239.062-106.947,239.062-239.062 S371.178,0,239.062,0z M239.292,409.734c-94.171,0-170.595-76.348-170.595-170.596c0-94.248,76.347-170.595,170.595-170.595 s170.595,76.347,170.595,170.595C409.887,333.387,333.464,409.734,239.292,409.734z"></path>
+                            </g>
+                        </svg>
+                        <p class="warning-text">
+                            Les inscriptions devraient ouvrir la fin du mois de <strong>Juillet</strong>. Restez donc connectés à nos réseaux sociaux, accessibles <strong id="scroll-to-bottom">en bas de page !</strong>
+                        </p>
+                        <script>
+                            document.getElementById('scroll-to-bottom').addEventListener('click', function() {
+                                window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' });
+                            });                              
+                        </script>
                     </div>
                 </div>
             </div>
@@ -108,6 +99,40 @@
 
         <div class="section-hero-illustration"></div>
     </section>
+
+    <section class="section section-forms theme-tertiary">
+        <div class="container">
+            <h2>Formulaires</h2>
+        </div>
+        <div class="container">
+          <div class="registration-container">
+            <div class="registration-item">
+              <div class="registration-text">
+                <p>(Re)plongez au cœur de la préparation de l'édition 2024 de S4S.</p>
+              </div>
+              <a class="hero-registration-button" href="https://go.epfl.ch/s4s-drive-2024" rel="noopener">
+                Accéder au Drive public S4S 2024
+              </a>
+            </div>
+            <div class="registration-item">
+              <div class="registration-text">
+                <p>Contribuez à la bonne organisation des cours en devenant Référent·e de Cours.</p>
+              </div>
+              <a class="hero-registration-button" href="https://go.epfl.ch/s4s-rc-equipier" rel="noopener">
+                Candidature RC
+              </a>
+            </div>
+            <div class="registration-item">
+              <div class="registration-text">
+                <p>Rejoignez l'équipe et soutenez les pôles dans l'organisation de la semaine.</p>
+              </div>
+              <a class="hero-registration-button" href="https://go.epfl.ch/s4s-rc-equipier" rel="noopener">
+                Candidature Équipier
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>      
 
     <!-- <section class="section section-schedule theme-dark">
         <div class="container">
