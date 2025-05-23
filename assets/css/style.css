@@ -511,7 +511,7 @@ h3 {
     background-position: center;
     height: 400px;
     margin-top: 50px;
-  }
+}
 
 .registration-container {
     display: flex;
@@ -625,6 +625,36 @@ h3 {
     transform: scale(1.05);
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
+
+@media (min-width: 1200px) {
+    .section-forms::after {
+      height: 500px; /* adjust the height for large screens */
+    }
+  }
+  
+  @media (max-width: 992px) {
+    .section-forms::after {
+      height: 400px; /* adjust the height for medium screens */
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .section-forms::after {
+      height: 300px; /* adjust the height for small screens */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .section-forms::after {
+      height: 200px; /* adjust the height for extra small screens */
+    }
+  }
+  
+  @media (max-width: 320px) {
+    .section-forms::after {
+      height: 150px; /* adjust the height for very small screens */
+    }
+  }
 
 .hero-registration-button svg {
     color: #6368A2;
@@ -1440,7 +1470,7 @@ h3 {
 }
 
 .partner-holycow {
-    width: 15rem;
+    width: 16rem;
 }
 
 .partner-activfitness {
@@ -1448,6 +1478,18 @@ h3 {
 }
 
 .partner-payot {
+    width: 14rem;
+}
+
+.partner-chezmario {
+    width: 13rem;
+}
+
+.partner-nonstop_gym {
+    width: 12rem;
+}
+
+.partner-grimper-ch {
     width: 14rem;
 }
 
