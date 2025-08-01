@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sponsors — Students 4 Students</title>
+  <link rel="stylesheet" href="assets/css/normalize.css">
+  <link rel="stylesheet" href="assets/css/sponsors.css">
+  <link rel="icon" href="assets/icons/logo.svg">
+  <script>
+    window.addEventListener('DOMContentLoaded', function() {
+      const cards = document.querySelectorAll('.sponsor-card.animated-card');
+      const baseDelay = 0.3; // seconds
+      const step = 0.1; // seconds
+      cards.forEach((card, i) => {
+        card.style.animationDelay = (baseDelay + i * step) + 's';
+      });
+    });
+  </script>
+</head>
+<body>
+  <section class="section section-hero theme-primary">
+      <div class="container-wrapper-right">
+          <div class="container container-narrow">
+              <div class="hero-drop-shadow" role="presentation"></div>
+              <div class="hero-contents">
+                  <header class="hero-logo">
+                      <img src="assets/icons/logo.svg" alt="">
+                      <span class="hero-wordmark">Students <span>4 Students</span></span>
+                  </header>
+
+                  <h1>
+                      La semaine de préparation à la première année de l’EPFL
+                      <strong>gratuite</strong> et <strong>par les étudiant·e·s</strong>
+                  </h1>
+
+                  <div class="hero-bullets">
+                      <div class="hero-bullet">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                              <path stroke-linecap="round" stroke-linejoin="round" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                          </svg>
+
+                          Du 27 Août au 4 Septembre 2025
+                      </div>
+                      <div class="hero-bullet">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                              <path stroke-linecap="round" stroke-linejoin="round" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                              <path stroke-linecap="round" stroke-linejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                          </svg>
+
+                          Campus EPFL
+                      </div>
+                      <div class="hero-bullet">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                              <path stroke-linecap="round" stroke-linejoin="round" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                          </svg>
+
+                          100% gratuit
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </section>
+  <div class="sponsors-list">
+    <!-- Deduplicated sponsor cards with multiple tags -->
+    <div class="sponsor-card animated-card">
+      <a href="https://www.epfl.ch/fr/" target="_blank" rel="noopener">
+        <img src="assets/partners/epfl.svg" alt="EPFL" class="sponsor-logo">
+      </a>
+      <div class="sponsor-tags-row">
+        <span class="sponsor-tag sponsor-tag--week">Semaine S4S</span>
+        <span class="sponsor-tag sponsor-tag--peb">PEB</span>
+        <span class="sponsor-tag sponsor-tag--bee">IntBee</span>
+      </div>
+      <div class="sponsor-desc">Sponsor description placeholder.</div>
+    </div>
+    <div class="sponsor-card animated-card">
+      <a href="https://agepoly.ch/" target="_blank" rel="noopener">
+        <img src="assets/partners/agepoly-true.png" alt="AGEPoly" class="sponsor-logo">
+      </a>
+      <div class="sponsor-tags-row">
+        <span class="sponsor-tag sponsor-tag--week">Semaine S4S</span>
+        <span class="sponsor-tag sponsor-tag--peb">PEB</span>
+        <span class="sponsor-tag sponsor-tag--bee">IntBee</span>
+      </div>
+      <div class="sponsor-desc">Sponsor description placeholder.</div>
+    </div>
+    <div class="sponsor-card animated-card">
+      <a href="https://totem.ch/" target="_blank" rel="noopener">
+        <img src="assets/partners/totem-true.png" alt="Totem" class="sponsor-logo">
+      </a>
+      <div class="sponsor-tags-row">
+        <span class="sponsor-tag sponsor-tag--week">Semaine S4S</span>
+        <span class="sponsor-tag sponsor-tag--peb">PEB</span>
+        <span class="sponsor-tag sponsor-tag--bee">IntBee</span>
+      </div>
+      <div class="sponsor-desc">Sponsor description placeholder.</div>
+    </div>
+    <div class="sponsor-card animated-card">
+      <a href="https://www.eltonymate.com/fr/" target="_blank" rel="noopener">
+        <img src="assets/partners/eltonymate-true.svg" alt="El Tony Mate" class="sponsor-logo">
+      </a>
+      <div class="sponsor-tags-row">
+        <span class="sponsor-tag sponsor-tag--peb">PEB</span>
+        <span class="sponsor-tag sponsor-tag--bee">IntBee</span>
+      </div>
+      <div class="sponsor-desc">Sponsor description placeholder.</div>
+    </div>
+    <div class="sponsor-card animated-card">
+      <a href="https://andros.ch/fr/" target="_blank" rel="noopener">
+        <img src="assets/partners/andros-true.svg" alt="Andros" class="sponsor-logo">
+      </a>
+      <div class="sponsor-tags-row">
+        <span class="sponsor-tag sponsor-tag--peb">PEB</span>
+        <span class="sponsor-tag sponsor-tag--bee">IntBee</span>
+      </div>
+      <div class="sponsor-desc">Sponsor description placeholder.</div>
+    </div>
+    <div class="sponsor-card animated-card">
+      <a href="https://vidy.ch/" target="_blank" rel="noopener">
+        <img src="assets/partners/vidy-true.webp" alt="Théâtre Vidy" class="sponsor-logo">
+      </a>
+      <div class="sponsor-tags-row">
+        <span class="sponsor-tag sponsor-tag--bee">IntBee</span>
+      </div>
+      <div class="sponsor-desc">Sponsor description placeholder.</div>
+    </div>
+    <div class="sponsor-card animated-card">
+      <a href="https://talendo.ch/" target="_blank" rel="noopener">
+        <img src="assets/partners/talendo-true.webp" alt="Talendo" class="sponsor-logo">
+      </a>
+      <div class="sponsor-tags-row">
+        <span class="sponsor-tag sponsor-tag--week">Semaine S4S</span>
+      </div>
+      <div class="sponsor-desc">Sponsor description placeholder.</div>
+    </div>
+    <div class="sponsor-card animated-card">
+      <a href="https://arcanite.ch/" target="_blank" rel="noopener">
+        <img src="assets/partners/arcanite-true.png" alt="Arcanite" class="sponsor-logo">
+      </a>
+      <div class="sponsor-tags-row">
+        <span class="sponsor-tag sponsor-tag--week">Semaine S4S</span>
+      </div>
+      <div class="sponsor-desc">Sponsor description placeholder.</div>
+    </div>
+    <div class="sponsor-card animated-card">
+      <a href="https://www.bicworld.com/" target="_blank" rel="noopener">
+        <img src="assets/partners/bic-true.png" alt="Bic" class="sponsor-logo">
+      </a>
+      <div class="sponsor-tags-row">
+        <span class="sponsor-tag sponsor-tag--week">Semaine S4S</span>
+      </div>
+      <div class="sponsor-desc">Sponsor description placeholder.</div>
+    </div>
+    <div class="sponsor-card animated-card">
+      <a href="https://holycow.ch/" target="_blank" rel="noopener">
+        <img src="assets/partners/holy-cow.png" alt="Holy Cow" class="sponsor-logo">
+      </a>
+      <div class="sponsor-tags-row">
+        <span class="sponsor-tag sponsor-tag--week">Semaine S4S</span>
+      </div>
+      <div class="sponsor-desc">Sponsor description placeholder.</div>
+    </div>
+    <div class="sponsor-card animated-card">
+      <a href="https://www.activfitness.ch/" target="_blank" rel="noopener">
+        <img src="assets/partners/activ_fitness-true.png" alt="Activ Fitness" class="sponsor-logo">
+      </a>
+      <div class="sponsor-tags-row">
+        <span class="sponsor-tag sponsor-tag--week">Semaine S4S</span>
+      </div>
+      <div class="sponsor-desc">Sponsor description placeholder.</div>
+    </div>
+    <div class="sponsor-card animated-card">
+      <a href="https://www.payot.ch/" target="_blank" rel="noopener">
+        <img src="assets/partners/payot-true.svg" alt="Payot" class="sponsor-logo">
+      </a>
+      <div class="sponsor-tags-row">
+        <span class="sponsor-tag sponsor-tag--week">Semaine S4S</span>
+      </div>
+      <div class="sponsor-desc">Sponsor description placeholder.</div>
+    </div>
+    <div class="sponsor-card animated-card">
+      <a href="https://chezmario.ch/" target="_blank" rel="noopener">
+        <img src="assets/partners/chez-mario-true.png" alt="ChezMario" class="sponsor-logo">
+      </a>
+      <div class="sponsor-tags-row">
+        <span class="sponsor-tag sponsor-tag--week">Semaine S4S</span>
+      </div>
+      <div class="sponsor-desc">Sponsor description placeholder.</div>
+    </div>
+    <div class="sponsor-card animated-card">
+      <a href="https://nonstopgym.com/" target="_blank" rel="noopener">
+        <img src="assets/partners/non-stop-gym-true.png" alt="Non Stop Gym" class="sponsor-logo">
+      </a>
+      <div class="sponsor-tags-row">
+        <span class="sponsor-tag sponsor-tag--week">Semaine S4S</span>
+      </div>
+      <div class="sponsor-desc">Sponsor description placeholder.</div>
+    </div>
+    <div class="sponsor-card animated-card">
+      <a href="https://grimper.ch/" target="_blank" rel="noopener">
+        <img src="assets/partners/grimper-ch-true.webp" alt="grimper.ch" class="sponsor-logo">
+      </a>
+      <div class="sponsor-tags-row">
+        <span class="sponsor-tag sponsor-tag--week">Semaine S4S</span>
+      </div>
+      <div class="sponsor-desc">Sponsor description placeholder.</div>
+    </div>
+    <div class="sponsor-card animated-card">
+      <a href="https://brio-energydrink.ch/" target="_blank" rel="noopener">
+        <img src="assets/partners/brio-mate-true.svg" alt="Brio Mate" class="sponsor-logo">
+      </a>
+      <div class="sponsor-tags-row">
+        <span class="sponsor-tag sponsor-tag--peb">PEB</span>
+      </div>
+      <div class="sponsor-desc">Sponsor description placeholder.</div>
+    </div>
+    <div class="sponsor-card animated-card">
+      <a href="https://www.coop.ch/fr/" target="_blank" rel="noopener">
+        <img src="assets/partners/coop-true.webp" alt="Coop" class="sponsor-logo">
+      </a>
+      <div class="sponsor-tags-row">
+        <span class="sponsor-tag sponsor-tag--peb">PEB</span>
+      </div>
+      <div class="sponsor-desc">Sponsor description placeholder.</div>
+    </div>
+    <div class="sponsor-card animated-card">
+      <a href="https://satellite.bar/" target="_blank" rel="noopener">
+        <img src="assets/partners/sat-true.png" alt="Satellite" class="sponsor-logo">
+      </a>
+      <div class="sponsor-tags-row">
+        <span class="sponsor-tag sponsor-tag--bee">IntBee</span>
+      </div>
+      <div class="sponsor-desc">Sponsor description placeholder.</div>
+    </div>
+    <div class="sponsor-card animated-card">
+      <a href="https://lausanne.lasergame-evolution.fr/" target="_blank" rel="noopener">
+        <img src="assets/partners/laser-game.webp" alt="Laser Game" class="sponsor-logo">
+      </a>
+      <div class="sponsor-tags-row">
+        <span class="sponsor-tag sponsor-tag--bee">IntBee</span>
+      </div>
+      <div class="sponsor-desc">Sponsor description placeholder.</div>
+    </div>
+  </div>
+  
+  <div class="sponsors-contact">
+    <p>Vous souhaitez devenir sponsor ou en savoir plus ?<br>
+    Contactez-nous à <a href="mailto:s4s@epfl.ch">s4s@epfl.ch</a></p>
+  </div>
+</body>
+</html>
