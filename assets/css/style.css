@@ -605,6 +605,38 @@ h3 {
     }
 }
 
+.hero-form-button {
+    display: flex;
+    margin-top: 4rem;
+    align-items: center;
+    justify-content: center;
+    height: 70px;
+    border-radius: 9999px;
+    background-color: #ffffff;
+    color: #464870;
+    font-size: 1.7rem;
+    font-weight: 700;
+    text-decoration: none;
+    user-select: none;
+    padding: 0 40px;
+    border: 1px solid #464870;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease, color 0.3s ease;
+}
+
+.hero-form-button:hover,
+.hero-form-button:focus {
+    background-color: #9a9cc9;
+    color: #ffffff;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(70, 72, 112, 0.25);
+}
+
+.hero-form-button:active {
+    transform: translateY(0);
+    box-shadow: 0 4px 8px rgba(70, 72, 112, 0.1);
+}
+
 .hero-registration-button {
     display: flex;
     align-items: center;
