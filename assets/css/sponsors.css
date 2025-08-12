@@ -10,7 +10,6 @@ body {
     font-family: 'General Sans Variable', 'General Sans', -apple-system, BlinkMacSystemFont,
         'Segoe UI', 'Helvetica Neue', Helvetica, Cantarell, Ubuntu, Roboto, Noto, Arial, sans-serif;
     font-size: 1.6rem;
-    background: #f7f7fb;
 }
 
 :root {
@@ -18,16 +17,12 @@ body {
     --text: #814442;
     --headings: #a3605e;
     --separator: rgba(163, 96, 94, .3);
+    /* Missing palette variables used below */
     --primary: #545784;
     --primary-dark: #434569;
     --primary-light: #7C81C8;
     --secondary: #FF66B3;
-    --sm: 576px;
-    --md: 768px;
-    --lg: 992px;
-    --xl: 1200px;
-    --xxl: 1400px;
-    --divider-height: 25px;
+    --secondary-bg: #FFD1E6; /* lighter tint for dots/badges */
 }
 
 sup {
@@ -135,46 +130,162 @@ h3 {
 }
 
 /**********************************************************************************************************************/
-/* Media Queries for Typography */
+/* General Sans */
 /**********************************************************************************************************************/
 
-@media screen and (min-width: 576px) {
-    html {
-        font-size: 75%;
-    }
+@font-face {
+    font-family: 'General Sans Variable';
+    src: url('../fonts/GeneralSans-Variable.woff2') format('woff2'),
+    url('../fonts/GeneralSans-Variable.woff') format('woff'),
+    url('../fonts/GeneralSans-Variable.ttf') format('truetype');
+    font-weight: 200 700;
+    font-display: swap;
+    font-style: normal;
 }
 
-@media screen and (min-width: 768px) {
-    html {
-        font-size: 85%;
-    }
-    
-    :root {
-        --divider-height: 32px;
-    }
+@font-face {
+    font-family: 'General Sans Variable';
+    src: url('../fonts/GeneralSans-VariableItalic.woff2') format('woff2'),
+    url('../fonts/GeneralSans-VariableItalic.woff') format('woff'),
+    url('../fonts/GeneralSans-VariableItalic.ttf') format('truetype');
+    font-weight: 200 700;
+    font-display: swap;
+    font-style: italic;
 }
 
-@media screen and (min-width: 992px) {
-    :root {
-        --divider-height: 40px;
-    }
+@font-face {
+    font-family: 'General Sans';
+    src: url('../fonts/GeneralSans-Extralight.woff2') format('woff2'),
+    url('../fonts/GeneralSans-Extralight.woff') format('woff'),
+    url('../fonts/GeneralSans-Extralight.ttf') format('truetype');
+    font-weight: 200;
+    font-display: swap;
+    font-style: normal;
 }
 
-@media screen and (min-width: 1200px) {
-    :root {
-        --divider-height: 60px;
-    }
+@font-face {
+    font-family: 'General Sans';
+    src: url('../fonts/GeneralSans-ExtralightItalic.woff2') format('woff2'),
+    url('../fonts/GeneralSans-ExtralightItalic.woff') format('woff'),
+    url('../fonts/GeneralSans-ExtralightItalic.ttf') format('truetype');
+    font-weight: 200;
+    font-display: swap;
+    font-style: italic;
 }
 
-@media screen and (min-width: 1400px) {
-    :root {
-        --divider-height: 80px;
-    }
+@font-face {
+    font-family: 'General Sans';
+    src: url('../fonts/GeneralSans-Light.woff2') format('woff2'),
+    url('../fonts/GeneralSans-Light.woff') format('woff'),
+    url('../fonts/GeneralSans-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-display: swap;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'General Sans';
+    src: url('../fonts/GeneralSans-LightItalic.woff2') format('woff2'),
+    url('../fonts/GeneralSans-LightItalic.woff') format('woff'),
+    url('../fonts/GeneralSans-LightItalic.ttf') format('truetype');
+    font-weight: 300;
+    font-display: swap;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'General Sans';
+    src: url('../fonts/GeneralSans-Regular.woff2') format('woff2'),
+    url('../fonts/GeneralSans-Regular.woff') format('woff'),
+    url('../fonts/GeneralSans-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-display: swap;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'General Sans';
+    src: url('../fonts/GeneralSans-Italic.woff2') format('woff2'),
+    url('../fonts/GeneralSans-Italic.woff') format('woff'),
+    url('../fonts/GeneralSans-Italic.ttf') format('truetype');
+    font-weight: 400;
+    font-display: swap;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'General Sans';
+    src: url('../fonts/GeneralSans-Medium.woff2') format('woff2'),
+    url('../fonts/GeneralSans-Medium.woff') format('woff'),
+    url('../fonts/GeneralSans-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-display: swap;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'General Sans';
+    src: url('../fonts/GeneralSans-MediumItalic.woff2') format('woff2'),
+    url('../fonts/GeneralSans-MediumItalic.woff') format('woff'),
+    url('../fonts/GeneralSans-MediumItalic.ttf') format('truetype');
+    font-weight: 500;
+    font-display: swap;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'General Sans';
+    src: url('../fonts/GeneralSans-Semibold.woff2') format('woff2'),
+    url('../fonts/GeneralSans-Semibold.woff') format('woff'),
+    url('../fonts/GeneralSans-Semibold.ttf') format('truetype');
+    font-weight: 600;
+    font-display: swap;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'General Sans';
+    src: url('../fonts/GeneralSans-SemiboldItalic.woff2') format('woff2'),
+    url('../fonts/GeneralSans-SemiboldItalic.woff') format('woff'),
+    url('../fonts/GeneralSans-SemiboldItalic.ttf') format('truetype');
+    font-weight: 600;
+    font-display: swap;
+    font-style: italic;
+}
+
+
+@font-face {
+    font-family: 'General Sans';
+    src: url('../fonts/GeneralSans-Bold.woff2') format('woff2'),
+    url('../fonts/GeneralSans-Bold.woff') format('woff'),
+    url('../fonts/GeneralSans-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-display: swap;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'General Sans';
+    src: url('../fonts/GeneralSans-BoldItalic.woff2') format('woff2'),
+    url('../fonts/GeneralSans-BoldItalic.woff') format('woff'),
+    url('../fonts/GeneralSans-BoldItalic.ttf') format('truetype');
+    font-weight: 700;
+    font-display: swap;
+    font-style: italic;
 }
 
 /**********************************************************************************************************************/
 /* Containers */
 /**********************************************************************************************************************/
+
+:root {
+    --sm: 576px;
+    --md: 768px;
+    --lg: 992px;
+    --xl: 1200px;
+    --xxl: 1400px;
+}
 
 .container,
 .container-wide {
@@ -194,6 +305,16 @@ h3 {
     .container,
     .container-narrow {
         max-width: 550px;
+    }
+
+    html {
+        font-size: 75%;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    html {
+        font-size: 85%;
     }
 }
 
@@ -241,9 +362,42 @@ h3 {
     }
 }
 
+.scroll-x-wrapper {
+    width: 100%;
+    overflow-x: auto;
+}
+
 /**********************************************************************************************************************/
 /* Sections */
 /**********************************************************************************************************************/
+
+:root {
+    --divider-height: 25px;
+}
+
+@media screen and (min-width: 768px) {
+    :root {
+        --divider-height: 32px;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    :root {
+        --divider-height: 40px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    :root {
+        --divider-height: 60px;
+    }
+}
+
+@media screen and (min-width: 1400px) {
+    :root {
+        --divider-height: 80px;
+    }
+}
 
 .section {
     position: relative;
@@ -352,41 +506,93 @@ h3 {
 
 .section-hero-illustration {
     position: relative;
-    right: 0;
-    top: 0;
-    width: 50%;
-    height: 100%;
-    background-image: url('../illustrations/hero.svg');
-    background-size: contain;
+    margin-top: 40px;
+    height: 90vw;
+    background-size: cover;
     background-repeat: no-repeat;
-    background-position: right center;
-    pointer-events: none;
+    background-position: bottom right;
+    background-image: url(../illustrations/v2/hero@0.5x.webp);
 }
 
-@media screen and (max-width: 991px) {
+.no-webp .section-hero-illustration {
+    background-image: url(../illustrations/v2/hero@0.5x.png);
+}
+
+@media screen and (min-width: 400px) {
     .section-hero-illustration {
-        display: none;
+        background-image: url(../illustrations/v2/hero.webp);
+    }
+
+    .no-webp .section-hero-illustration {
+        background-image: url(../illustrations/v2/hero.png);
     }
 }
 
-@keyframes fadeIn {
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
+@media screen and (min-width: 576px) {
+    .section-hero-illustration {
+        height: 450px;
+        background-position: top left;
+        background-size: 600px;
+        margin-top: 0;
+    }
 }
 
+@media screen and (min-width: 992px) {
+    .section-hero-illustration {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 48%;
+        height: 100%;
+        max-height: 825px;
+        background-size: 1100px;
+        background-position: top right;
+    }
+
+    .section-hero {
+        padding-top: 4rem;
+        padding-bottom: 8rem;
+    }
+}
+
+@media screen and (min-width: 2080px) {
+    .section-hero-illustration {
+        background-position: top left;
+    }
+
+    .section-hero {
+        padding-top: 8rem;
+        padding-bottom: 14rem;
+    }
+}
+    /* Simple fade/slide-in used by sponsor cards */
+    @keyframes fadeIn {
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+
+
+/**********************************************************************************************************************/
+/* Sponsor Specific Styles */
+/**********************************************************************************************************************/
 
 .sponsors-list {
-  background-color: #f7f7fb;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 2.5rem;
-  width: 100%;
-  margin-bottom: 3rem;
-  padding-top: 3em;
-  padding-bottom: 3em;
+    display: flex;
+    background-color: white;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2.4rem; /* a bit tighter to fit 3–4 per row */
+    width: 100%;
+    margin-bottom: 3.5rem; /* was 3rem */
+    padding-top: 4em; /* was 3em */
+    padding-bottom: 4em; /* was 3em */
+}
+
+.sponsors-list::before {
+    background-color: white;
 }
 
 
@@ -394,18 +600,28 @@ h3 {
   background: none;
   border-radius: 1.2rem;
   box-shadow: none;
-  padding: 1.2rem 1.2rem 1rem 1.2rem;
+  padding: 2rem 2rem 1.6rem 2rem; /* slightly larger padding */
   display: flex;
   flex-direction: column;
   align-items: center;
-  min-width: 180px;
-  max-width: 220px;
-  min-height: 200px;
+  flex: 1 1 320px;
+  min-width: 500px;
+  max-width: 800px;
+  min-height: 260px;
   position: relative;
   opacity: 0;
   transform: translateY(40px);
   animation: fadeIn 0.7s cubic-bezier(.4,0,.2,1) forwards;
   animation-delay: 0.5s;
+}
+
+/* Fallback when user prefers reduced motion or animations are unavailable */
+@media (prefers-reduced-motion: reduce) {
+    .sponsor-card {
+        animation: none !important;
+        opacity: 1 !important;
+        transform: none !important;
+    }
 }
 
 
@@ -417,16 +633,16 @@ h3 {
   justify-content: center;
   gap: 0.4em 0.5em;
   margin-bottom: 0.7rem;
-  width: 100%;
+    width: 100%; /* let tags span the card width */
 }
 
 
 .sponsor-logo {
-  width: 150px;
-  height: 150px;
+    width: 200px; /* was 180px */
+    height: 200px; /* was 180px */
   object-fit: contain;
-  margin-bottom: 1.2rem;
-  margin-top: 0.2rem;
+    margin-bottom: 1.4rem;
+    margin-top: 0.3rem;
   transition: .2s ease-in-out transform;
 }
 
@@ -439,9 +655,9 @@ h3 {
   align-items: center;
   background: var(--tag-color, #e0e0e0);
   color: #fff;
-  font-size: 0.93rem;
+  font-size: 1.05rem; /* was 0.93rem */
   font-weight: 600;
-  padding: 0.2em 1em 0.2em 0.8em;
+  padding: 0.3em 1.1em 0.3em 0.9em; /* slightly larger */
   border-radius: 999px;
   margin-bottom: 0.2rem;
   box-shadow: 0 1px 4px 0 rgba(0,0,0,0.04);
@@ -453,8 +669,8 @@ h3 {
 .sponsor-tag::before {
   content: "";
   display: inline-block;
-  width: 0.7em;
-  height: 0.7em;
+  width: 0.8em; /* was 0.7em */
+  height: 0.8em; /* was 0.7em */
   border-radius: 50%;
   background: #888;
   margin-right: 0.6em;
@@ -463,59 +679,281 @@ h3 {
 }
 
 .sponsor-tag--bee {
-  background: #FFC105 !important;
+  background: #FFC105 ;
 }
 .sponsor-tag--bee::before {
-  background: #FFF7AE !important;
+  background: #FFF7AE ;
 }
 
 .sponsor-tag--week {
-  background: var(--primary-light) !important;
+  background: var(--primary-light) ;
 }
 .sponsor-tag--week::before {
-  background: var(--primary-dark) !important;
+  background: var(--primary-dark) ;
 }
 
 .sponsor-tag--peb {
-  background: var(--secondary) !important;
+  background: var(--secondary) ;
 }
 .sponsor-tag--peb::before {
-  background: var(--secondary-bg) !important;
+  background: var(--secondary-bg) ;
 }
 
 
 .sponsor-desc {
-  font-size: 1.25rem;
   color: #444;
   text-align: center;
-  margin-top: 0.5rem;
-  min-height: 3.5em;
+  font-size: 1.5rem; 
+  margin-top: 0.4rem;
   opacity: 0.85;
 }
 
-.sponsors-contact {
-  background-color: var(--primary-dark);
-  text-align: center;
-  color: #fff;
-  font-size: 1.2rem;
-  font-weight: 600;
-  width: 100%;
-  padding-bottom: 3em;
-}
-
-.sponsors-contact a {
-  color: var(--primary-light);
-  text-decoration: underline;
+/* Thin divider between tags and description */
+.sponsor-tags-row + .sponsor-desc {
+    border-top: 1px solid var(--separator);
+    padding-top: 0.8rem;
 }
 
 @media (max-width: 700px) {
   .sponsors-list {
     flex-direction: column;
     align-items: center;
-    gap: 1.5rem;
+    gap: 1.8rem; /* slightly more to fit larger cards */
   }
   .sponsor-card {
-    min-width: 220px;
-    max-width: 95vw;
+        min-width: 260px;
+        max-width: 92vw;
   }
+    .sponsor-logo {
+        width: 180px;
+        height: 180px;
+    }
+}
+
+
+/**********************************************************************************************************************/
+/* NavBar Styles */
+/**********************************************************************************************************************/
+
+.navbar {
+    display: flex;;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--background);
+    color: white;
+    padding: 10px 20px;
+}
+
+.menu-left, .menu-right, .logo {
+    display: flex;
+    align-items: center;
+}
+
+.hamburger {
+    display: none;
+    cursor: pointer;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 40px;
+    height: 35px;
+}
+
+.hamburger span {
+    background-color: white;
+    height: 4px;
+    width: 100%;
+    border-radius: 2px;
+    transition: all 0.3s ease;
+}
+
+.mobile-menu {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 100; /* stays above navbar when open */
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: width 0.5s ease;
+    padding-top: 60px;
+}
+
+.mobile-menu a {
+    padding: 15px 25px;
+    text-decoration: none;
+    font-size: 22px;
+    color: white;
+    display: block;
+    transition: color 0.3s ease;
+}
+
+.mobile-menu a:hover {
+    color: #ddd;
+}
+
+.mobile-menu .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+    .menu-left, .menu-right .cta-button {
+        display: none;
+    }
+
+    .menu-right .hamburger {
+        display: flex;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .mobile-menu {
+        display: none;
+    }
+}
+
+a {
+    color: var(--text);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #ddd;
+}
+
+.navbar a:not(.cta-button) {
+    padding: 10px 15px;
+    margin: 0 5px;
+    transition: background-color 0.3s ease;
+}
+
+.navbar a:not(.cta-button):hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 5px;
+}
+
+/* Dropdown menu styles */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-toggle {
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  background-color:#434569;
+  top: 140%;
+  min-width: 170px;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+  z-index: 10;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.dropdown-menu a {
+  color: var(--text, #333);
+  padding: 12px 16px;
+  display: block;
+  text-align: left;
+  text-decoration: none;
+  background: none;
+  transition: background 0.2s, color 0.2s;
+}
+
+.dropdown-menu a:hover {
+  background-color: rgba(0,0,0,0.05);
+  color: var(--headings, #000);
+}
+
+.dropdown:hover .dropdown-menu,
+.dropdown:focus-within .dropdown-menu {
+  display: block;
+}
+
+.dropdown-toggle:after {
+  content: '';
+}
+
+.section-footer {
+    display: flex;
+    justify-content:space-evenly;
+    padding: 4% 5% 4% 5%;
+}
+
+/* Ensure footer links align text vertically with their circular icons */
+.section-footer a {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.6rem;
+    line-height: 1.2;
+    color: white;
+}
+
+.section-footer .footer-contact-icon {
+    flex: 0 0 40px; /* prevent shrinking and keep fixed circle size */
+    width: 40px;
+    height: 40px;
+}
+
+.section-footer a svg {
+    display: block; /* avoid baseline whitespace shifting vertical centering */
+}
+
+.footer-div {
+    padding: 2% 2% 2% 2%;
+    min-width: 260px;
+}
+
+.footer-div a {
+    display: flex;
+    align-items: center;
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    margin: .6rem 0;
+}
+
+.footer-contact-icon {
+    background: #444669;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px; /* smaller */
+    height: 40px; /* smaller */
+    border-radius: 50%;
+    margin-right: .5em;
+    transition: .15s ease-in-out background-color;
+}
+
+.footer-div-title {
+    color: var(--headings);
+    font-weight: 700;
+    margin-bottom: 2.9rem; /* more space to separate */
+    font-size: 2.1rem; /* a bit bigger */
+    text-align: left; /* centered */
+}
+
+.footer-div a:hover .footer-contact-icon {
+    background: #5a5c86;
+}
+
+.footer-div a svg {
+    color: white;
+}
+
+@media (max-width: 700px) {
+    .section-footer {
+        flex-direction: column;
+        gap: 1.2rem;
+    }
 }
