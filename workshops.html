@@ -9,6 +9,7 @@
 
   <link rel="stylesheet" href="assets/css/normalize.css">
   <link rel="stylesheet" href="assets/css/workshops.css">
+  <link rel="stylesheet" href="assets/css/navbar.css">
 
     <meta name="theme-color" content="#515582">
     <link rel="icon" href="assets/icons/favicon.png">
@@ -38,18 +39,18 @@
 <body>
   <nav class="navbar theme-primary">
       <div class="menu-left">
-          <a href="#">Accueil</a>
+          <a href="welcome.html">Accueil</a>
           <div class="dropdown">
             <a href="#" class="dropdown-toggle">Événements <i class="fa fa-caret-down"></i></a>
             <div class="dropdown-menu">
-              <a href="#">S4S Week</a>
-              <a href="#">PEB</a>
-              <a href="#">IntBee</a>
+              <a href="index.html">S4S Week</a>
+              <a href="peb.html">PEB</a>
+              <a href="intbee.html">IntBee</a>
             </div>
           </div>
-          <a style="background-color: rgba(255, 255, 255, 0.3);border-radius: 5px;" href="#">Workshops</a>
-          <a href="#">Sponsors</a>
-          <a href="#">À propos</a>
+          <a style="background-color: rgba(255, 255, 255, 0.3);border-radius: 5px;" href="workshops.html">Workshops</a>
+          <a href="sponsors.html">Sponsors</a>
+          <a href="about.html">À propos</a>
       </div>
       <div class="menu-right">
           <div class="hamburger" onclick="toggleMobileMenu()">
@@ -61,11 +62,18 @@
     </nav>
     <div id="mobileMenu" class="mobile-menu">
         <a href="#" class="closebtn" onclick="toggleMobileMenu()">&times;</a>
-        <a href="#">Accueil</a>
-        <a href="#">Événements</a>
-        <a href="#">Workshops</a>
-        <a href="#">Sponsors</a>
-        <a href="#">À propos</a>
+        <a href="welcome.html">Accueil</a>
+        <div class="mobile-dropdown">
+          <a href="#" class="mobile-dropdown-toggle" onclick="toggleMobileDropdown(event)">Événements <span class="mobile-caret">▼</span></a>
+          <div class="mobile-dropdown-menu">
+            <a href="index.html">S4S Week</a>
+            <a href="peb.html">PEB</a>
+            <a href="intbee.html">IntBee</a>
+          </div>
+        </div>
+        <a href="workshops.html">Workshops</a>
+        <a href="sponsors.html">Sponsors</a>
+        <a href="about.html">À propos</a>
     </div>
     <script>
       function toggleMobileMenu() {
@@ -76,16 +84,15 @@
           menu.style.width = "100%";
         }
       }
+
+      function toggleMobileDropdown(event) {
+        event.preventDefault();
+        const toggle = event.currentTarget;
+        const dropdown = toggle.nextElementSibling;
+        dropdown.classList.toggle('open');
+        toggle.querySelector('.mobile-caret').classList.toggle('open');
+      }
     </script>
-  <div id="mobileMenu" class="mobile-menu">
-      <a href="#" class="closebtn" onclick="toggleMobileMenu()">&times;</a>
-      <a href="#">Home</a>
-      <a href="#">Events</a>
-      <a href="#">Workshops</a>
-      <a href="#">Sponsors</a>
-      <a href="#">About</a>
-      <a href="#" class="cta-button">Contact Us</a>
-  </div>
   <script>
     function toggleMobileMenu() {
       const menu = document.getElementById("mobileMenu");
@@ -108,7 +115,7 @@
           </header>
           
           <h1>
-            Découvrez les <strong>workshops</strong> de la semaine S4S
+            Découvrez les <strong>workshops</strong> de la <a href="index.html" class="lead-link">semaine S4S</a>
           </h1>
           
           <div class="hero-bullets">
@@ -139,7 +146,7 @@
   </section>
   <section class="section workshops-main">
     <div class="workshops-list">
-      <div class="workshop-card polylan" >
+      <div class="workshop-card polylan" data-link="https://polylan.ch/" >
         <span class="workshop-date">12/09</span>
         <span class="workshop-name">PolyLAN</span>
         <span class="workshop-title">PolyLAN-Demo</span>
@@ -149,7 +156,7 @@
           Des jeux vidéo de tous genres seront au programme, du casual au compétitif.
         </p>
       </div>
-      <div class="workshop-card dlai">
+      <div class="workshop-card dlai" data-link="https://www.epfl.ch/labs/lpbs/make-designing-life-with-ai/">
         <span class="workshop-date">03/09</span>
         <span class="workshop-name">Designing Life with AI</span>
         <span class="workshop-title">Présentation et quiz.</span>
@@ -160,7 +167,7 @@
           À l’occasion de la Welcome Week, nous proposerons le mercredi 3 septembre 2025 une présentation de nos activités, notre mode de fonctionnement et les possibilités de vous impliquer, avant de conclure par un quiz.
         </p>
       </div>
-      <div class="workshop-card bsa">
+      <div class="workshop-card bsa" data-link="https://www.bsaepfl.ch/">
         <span class="workshop-date">12/09</span>
         <span class="workshop-name">Blockchain Student Association </span>
         <span class="workshop-title">Introduction aux blockchains.</span>
@@ -174,7 +181,7 @@
           Pour plus d’info sur le hackathon à 20&nbsp;000&nbsp;$&nbsp;: https://hackathon.bsaepfl.ch/
         </p>
       </div>
-      <div class="workshop-card igem" >
+      <div class="workshop-card igem" data-link="https://make.epfl.ch/projects/28/make-igem-28">
         <span class="workshop-date">12/09</span>
         <span class="workshop-name">iGEM</span>
         <span class="workshop-title">Découvrez la biologie synthétique avec le projet MAKE iGEM.</span>
@@ -186,7 +193,7 @@
           Lors de cette session interactive, vous découvrirez le domaine de la biologie synthétique, le concours iGEM ainsi que notre projet. L’expérience se poursuit dans notre laboratoire, où vous pourrez participer à des expériences pratiques&nbsp;!
         </p>
       </div>
-      <div class="workshop-card epphil" >
+      <div class="workshop-card epphil" data-link="https://www.epfl.ch/campus/associations/epphilo/ep%CF%86l/">
         <span class="workshop-date">12/09</span>
         <span class="workshop-name">EPΦL</span>
         <span class="workshop-title">Maté Philo - goûter philosophique.</span>
@@ -199,7 +206,7 @@
           - Notre vision du monde doit-elle quelque chose au langage ?
         </p>
       </div>
-      <div class="workshop-card je">
+      <div class="workshop-card je" data-link="https://je.epfl.ch/en">
         <span class="workshop-date">12/09</span>
         <span class="workshop-name">Junior Entreprise</span>
         <span class="workshop-title">JE découvre.</span>
@@ -209,9 +216,9 @@
           En parallèle, un jeu de questions/réponses sur la JE EPFL permet de découvrir l’association de façon ludique, avec quelques goodies à la clé.
         </p>
       </div>
-      <div class="workshop-card sic" >
+      <div class="workshop-card sic" data-link="https://epfl-sic.ch/">
         <span class="workshop-date">12/09</span>
-        <span class="workshop-name">SIC</span>
+        <span class="workshop-name">The Sustainable Innovation Challenge</span>
         <span class="workshop-title">Questions pour un écolo - Atelier création - Eco-Lanta - SIC Sérigraphie.</span>
         <p class="workshop-description" hidden>
           🌿 Tu t'intéresses à la durabilité, tu te demandes comment agir pour notre planète en tant qu'étudiant·e&nbsp;? Viens découvrir la Sustainable Innovation Challenge, l'association de l’unique challenge de durabilité dans toute l’Europe&nbsp;!<br><br>
@@ -220,7 +227,7 @@
           Viens jouer, discuter, créer et apprendre comment on peut agir pour un futur plus durable.
         </p>
       </div>
-      <div class="workshop-card gnugen">
+      <div class="workshop-card gnugen" data-link="https://gnugen.ch/en/">
         <span class="workshop-date">12/09</span>
         <span class="workshop-name">GNUgen</span>
         <span class="workshop-title">Avoir une vie numérique plus libre et sécurisée.</span>
@@ -230,7 +237,7 @@
           When you start your studies at EPFL, you make digital choices, and in particular software choices, that will have a lasting impact. Ideally, this software should be free, secure and respectful of your privacy. It's not always easy to find such tools, but don't be afraid, we're here to help! Come and discover how to access your emails, browse the internet, manage your digital life at EPFL – and above all, why it's important!
         </p>
       </div>
-      <div class="workshop-card genorobotics">
+      <div class="workshop-card genorobotics" data-link="make.epfl.ch/projects/14/make-genorobotics-14">
         <span class="workshop-date">12/09</span>
         <span class="workshop-name">GenoRobotics</span>
         <span class="workshop-title">Découverte des enjeux de la crise de la biodiversité.</span>
@@ -251,7 +258,7 @@
            Rejoins-nous et découvre comment toi aussi tu peux contribuer, de manière concrète et interdisciplinaire, à la protection de la biodiversité&nbsp;! 🌱
         </p>
       </div>
-      <div class="workshop-card escape-epfl" >
+      <div class="workshop-card escape-epfl" data-link="https://www.epfl.ch/campus/associations/escapepfl/fr/escapeepfl/" >
         <span class="workshop-date">12/09</span>
         <span class="workshop-name">EscapEPFL</span>
         <span class="workshop-title">Casse-têtes et jeux de logique par EscapEPFL.</span>
@@ -261,7 +268,7 @@
           Profitez de ce moment pour échanger avec les membres passionnés de l’association EscapEPFL, qui se réjouissent de vous accueillir et de partager avec vous leur univers ludique.
         </p>
       </div>
-      <div class="workshop-card polympiads" >
+      <div class="workshop-card polympiads" data-link="https://www.polympiads.ch/">
         <span class="workshop-date">12/09</span>
         <span class="workshop-name">Polympiads</span>
         <span class="workshop-title">Initiation aux olympiades de mathématiques.</span>
@@ -281,7 +288,7 @@
           Ne refaites pas mes erreurs.
         </p>
       </div>
-      <div class="workshop-card zeg" >
+      <div class="workshop-card zeg" data-link="https://zeroemission.group/">
         <span class="workshop-date">12/09</span>
         <span class="workshop-name">Zero Emission Group</span>
         <span class="workshop-title">Fresque du climat.</span>
@@ -291,7 +298,7 @@
           Cet atelier sera animé par Zero Emission Group, l’association écologique et apolitique de l’EPFL. L’objectif de notre association est double&nbsp;: sensibiliser et faire passer à l’action.
         </p>
       </div>
-      <div class="workshop-card clic" >
+      <div class="workshop-card clic" data-link="https://clic.epfl.ch/">
         <span class="workshop-date">12/09</span>
         <span class="workshop-name">CLIC</span>
         <span class="workshop-title">Programmation pratique&nbsp;: jeu de dames.</span>
@@ -300,7 +307,7 @@
           À la fin, ton IA pourra participer à une compétition contre celles des autres participant·e·s, pour déterminer laquelle est la plus efficace&nbsp;!
         </p>
       </div>
-      <div class="workshop-card polyjapan" >
+      <div class="workshop-card polyjapan" data-link="https://www.epfl.ch/campus/associations/polyjapan/">
         <span class="workshop-date">12/09</span>
         <span class="workshop-name">PolyJapan</span>
         <span class="workshop-title">Projection d’un film d'animation.</span>
@@ -308,7 +315,7 @@
           Porco Rosso, pilote d'hydravion en Italie dont la tête, du jour au lendemain, s'est transformée en celle d'un cochon. 🐷 Sa mission : arrêter les pirates du ciel qui terrorisent les bateaux de croisière et rétablir l'ordre, avec l'aide de la mécanicienne Fio Piccolo et son amie Madame Gina. Plongez-vous dans une Italie de 1920, avec un film rempli de rebondissements et de charme comme nous réservent toujours les films de Studio Ghibli. ✨
         </p>
       </div>
-      <div class="workshop-card frequence-banane">
+      <div class="workshop-card frequence-banane" data-link="https://www.frequencebanane.ch/">
         <span class="workshop-date">12/09</span>
         <span class="workshop-name">Fréquence Banane</span>
         <span class="workshop-title">Visite des studios de Fréquence Banane / Initiation à la radio.</span>
@@ -326,7 +333,7 @@
           Est-ce qu’on peut vraiment trouver du travail après sans en faire une&nbsp;?
         </p>
       </div>
-      <div class="workshop-card paolo-ricci" >
+      <div class="workshop-card paolo-ricci" data-link="https://people.epfl.ch/paolo.ricci">
         <span class="workshop-date">12/09</span>
         <span class="workshop-name">Paolo Ricci</span>
         <span class="workshop-title">Comment peut-on allumer une étoile sur Terre et produire de l’énergie ?</span>
@@ -336,7 +343,7 @@
           La présentation donnera un aperçu des principes ainsi que de l’état de la recherche de cette source d'énergie.
         </p>
       </div>
-      <div class="workshop-card david-strutt">
+      <div class="workshop-card david-strutt" data-link="https://people.epfl.ch/david.strutt?lang=en">
         <span class="workshop-date">28/07</span>
         <span class="workshop-name">David Strütt</span>
         <span class="workshop-title">Rigueur mathématique et langage courant : Une union problématique.</span>
@@ -344,7 +351,7 @@
           Introduction ludique sur la grammaire mathématique, l’importance des définitions, l’écriture de preuve et son lien avec la théorie des jeux.
         </p>
       </div>
-      <div class="workshop-card francesco">
+      <div class="workshop-card francesco" data-link="https://people.epfl.ch/francesco.mondada">
         <span class="workshop-date">28/07</span>
         <span class="workshop-name">Francesco Mondada</span>
         <span class="workshop-title">Rigueur mathématique et langage courant : Une union problématique.</span>
@@ -354,7 +361,7 @@
           Cette présentation aborde quelques-unes de ces questions en montrant comment les compétences d’un·e étudiant·e sont construites pour arriver au… projet de rêve à la fin du master.
         </p>
       </div>
-      <div class="workshop-card pierre">
+      <div class="workshop-card pierre" data-link="https://people.epfl.ch/pierre.dillenbourg">
         <span class="workshop-date">12/09</span>
         <span class="workshop-name">Pierre Dillenbourg</span>
         <span class="workshop-title">Pourquoi les utilisateurs font des erreurs ?</span>
@@ -364,7 +371,7 @@
           Dans ce cours, je vous ferai percevoir votre charge cognitive lors de tâches assez simples.
         </p>
       </div>
-      <!--<div class="workshop-card gamestar">
+      <!--<div class="workshop-card gamestar" data-link="https://clic.epfl.ch/commissions/game-star">
         <span class="workshop-date">28/07</span>
         <span class="workshop-name">GameStar</span>
         <span class="workshop-title">Soon.</span>
@@ -372,7 +379,7 @@
           Soon.
         </p>
       </div>
-      <div class="workshop-card jdrpoly">
+      <div class="workshop-card jdrpoly" data-link="https://jdrpoly.ch/">
         <span class="workshop-date">12/09</span>
         <span class="workshop-name">JDRPoly</span>
         <span class="workshop-title">Soon.</span>
@@ -380,7 +387,7 @@
           Soon.
         </p>
       </div>
-      <div class="workshop-card robopoly">
+      <div class="workshop-card robopoly data-link="https://www.epfl.ch/campus/associations/robopoly/en/1408-2/">
         <span class="workshop-date">12/09</span>
         <span class="workshop-name">RoboPoly</span>
         <span class="workshop-title">Soon.</span>
@@ -391,8 +398,13 @@
     </div>
     <div id="workshop-modal" class="modal">
         <div class="modal-content"> 
-            <span class="close-btn">&times;</span>
+            <span class="close-btn" aria-label="Fermer" title="Fermer">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+            </span>
             <div class="modal-header"></div>
+            <a id="modal-link" class="modal-link-icon" href="#" target="_blank" rel="noopener" style="display:none" title="Plus d'infos" aria-label="Plus d'infos">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4"/><path d="M12 8h.01"/></svg>
+            </a>
             <div class="modal-body" id="modal-body"></div>
         </div>
     </div>
@@ -401,6 +413,7 @@
         const modal = document.getElementById('workshop-modal');
         const modalBody = document.getElementById('modal-body');
         const closeBtn = document.querySelector('.close-btn');
+
 
         document.querySelectorAll('.workshop-card').forEach(card => {
             card.addEventListener('click', (e) => {
@@ -415,18 +428,30 @@
                 const image = beforeStyle.getPropertyValue('background-image');
                 header.style.backgroundImage = image;
 
-        modalBody.innerHTML = `
-          <h2>${name}</h2>
-          <p>${title || 'Plus de détails bientôt...'}</p>
-          ${description ? `<div class=\"workshop-description-modal\">${description}</div>` : ''}
-        `;
+                // Handle modal link icon
+                const link = card.getAttribute('data-link');
+                const modalLink = document.getElementById('modal-link');
+                if (link) {
+                  modalLink.href = link;
+                  modalLink.style.display = 'flex';
+                } else {
+                  modalLink.href = '#';
+                  modalLink.style.display = 'none';
+                }
+
+                modalBody.innerHTML = `
+                  <h2>${name}</h2>
+                  <p>${title || 'Plus de détails bientôt...'}</p>
+                  ${description ? `<div class=\"workshop-description-modal\">${description}</div>` : ''}
+                `;
                 modal.style.display = 'flex';
             });
         });
 
-        closeBtn.addEventListener('click', () => {
-            modal.style.display = 'none';
-        });
+
+    closeBtn.addEventListener('click', () => {
+      modal.style.display = 'none';
+    });
 
         window.addEventListener('click', (e) => {
             if (e.target === modal) modal.style.display = 'none';

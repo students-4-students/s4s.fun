@@ -9,20 +9,21 @@
 
   <link rel="stylesheet" href="assets/css/normalize.css">
   <link rel="stylesheet" href="assets/css/sponsors.css">
+  <link rel="stylesheet" href="assets/css/navbar.css">
 
     <meta name="theme-color" content="#515582">
     <link rel="icon" href="assets/icons/favicon.png">
     <link rel="apple-touch-icon" href="assets/icons/favicon.png">
 
-    <meta name="description" content="La semaine de préparation à la première année de l’EPFL gratuite et par les étudiant·e·s.">
+    <meta name="description" content="Découvrez nos sponsors!">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Students 4 Students">
-    <meta name="twitter:description" content="La semaine de préparation à la première année de l’EPFL gratuite et par les étudiant·e·s.">
+    <meta name="twitter:description" content="Découvrez nos sponsors!">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://students4students.ch/">
     <meta property="og:locale" content="fr">
     <meta property="og:title" content="Students 4 Students">
-    <meta property="og:description" content="La semaine de préparation à la première année de l’EPFL gratuite et par les étudiant·e·s.">
+    <meta property="og:description" content="Découvrez nos sponsors!">
     <meta property="og:image" content="https://students4students.ch/assets/seo/opengraph.png">
     <meta property="og:image:alt" content="Students 4 Students : La semaine de préparation à la première année de l’EPFL gratuite et par les étudiant·e·s.">
     <meta property="og:image:width" content="1200">
@@ -37,35 +38,42 @@
 </head>
 <body>
     <nav class="navbar theme-primary">
-        <div class="menu-left">
-            <a href="#">Accueil</a>
-            <div class="dropdown">
-              <a href="#" class="dropdown-toggle">Événements <i class="fa fa-caret-down"></i></a>
-              <div class="dropdown-menu">
-                <a href="#">S4S Week</a>
-                <a href="#">PEB</a>
-                <a href="#">IntBee</a>
-              </div>
+      <div class="menu-left">
+          <a href="welcome.html">Accueil</a>
+          <div class="dropdown">
+            <a href="#" class="dropdown-toggle">Événements <i class="fa fa-caret-down"></i></a>
+            <div class="dropdown-menu">
+              <a href="index.html">S4S Week</a>
+              <a href="peb.html">PEB</a>
+              <a href="intbee.html">IntBee</a>
             </div>
-            <a href="#">Workshops</a>
-            <a style="background-color: rgba(255, 255, 255, 0.3);border-radius: 5px;" href="#">Sponsors</a>
-            <a href="#">À propos</a>
-        </div>
-        <div class="menu-right">
-            <div class="hamburger" onclick="toggleMobileMenu()">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-        </div>
+          </div>
+          <a href="workshops.html">Workshops</a>
+          <a style="background-color: rgba(255, 255, 255, 0.3);border-radius: 5px;" href="sponsors.html">Sponsors</a>
+          <a href="about.html">À propos</a>
+      </div>
+      <div class="menu-right">
+          <div class="hamburger" onclick="toggleMobileMenu()">
+              <span></span>
+              <span></span>
+              <span></span>
+          </div>
+      </div>
     </nav>
     <div id="mobileMenu" class="mobile-menu">
         <a href="#" class="closebtn" onclick="toggleMobileMenu()">&times;</a>
-        <a href="#">Accueil</a>
-        <a href="#">Événements</a>
-        <a href="#">Workshops</a>
-        <a href="#">Sponsors</a>
-        <a href="#">À propos</a>
+        <a href="welcome.html">Accueil</a>
+        <div class="mobile-dropdown">
+          <a href="#" class="mobile-dropdown-toggle" onclick="toggleMobileDropdown(event)">Événements <span class="mobile-caret">▼</span></a>
+          <div class="mobile-dropdown-menu">
+            <a href="index.html">S4S Week</a>
+            <a href="peb.html">PEB</a>
+            <a href="intbee.html">IntBee</a>
+          </div>
+        </div>
+        <a href="workshops.html">Workshops</a>
+        <a href="sponsors.html">Sponsors</a>
+        <a href="about.html">À propos</a>
     </div>
     <script>
       function toggleMobileMenu() {
@@ -76,7 +84,25 @@
           menu.style.width = "100%";
         }
       }
+
+      function toggleMobileDropdown(event) {
+        event.preventDefault();
+        const toggle = event.currentTarget;
+        const dropdown = toggle.nextElementSibling;
+        dropdown.classList.toggle('open');
+        toggle.querySelector('.mobile-caret').classList.toggle('open');
+      }
     </script>
+  <script>
+    function toggleMobileMenu() {
+      const menu = document.getElementById("mobileMenu");
+      if (menu.style.width === "100%") {
+        menu.style.width = "0";
+      } else {
+        menu.style.width = "100%";
+      }
+    }
+  </script>
     <section class="section section-hero theme-primary">
         <div class="container-wrapper-right">
             <div class="container container-narrow">
@@ -95,7 +121,7 @@
                         Vous souhaitez devenir sponsor ?<br>
                         <a class="lead-link" href="mailto:s4s@epfl.ch">Nous écrire</a>
                         ·
-                        <a class="lead-link" href="assets/documents/Dossier_Sponso_VF_Prospects_Final.pdf" target="_blank" rel="noopener">Dossier de sponsoring</a>
+                        <a class="lead-link" href="assets/documents/dossier-sponso.pdf" target="_blank" rel="noopener">Dossier de sponsoring</a>
                       </p>
 
                     <!--<div class="hero-bullets">
@@ -174,7 +200,7 @@
             <span class="sponsor-tag sponsor-tag--peb">PEB</span>
             <span class="sponsor-tag sponsor-tag--bee">IntBee</span>
           </div>
-          <div class="sponsor-desc">Sponsor description placeholder.</div>
+          <div class="sponsor-desc">El tony est sans doute la boisson la plus populaire sur le campus de l’epfl. Cette boisson rafraîchissante et revigorante est un bon allié en période intensive en offrant une alternative aux sodas et au café.</div>
         </div>
         <div class="sponsor-card animated-card">
           <a href="https://andros.ch/fr/" target="_blank" rel="noopener">
@@ -184,7 +210,7 @@
             <span class="sponsor-tag sponsor-tag--peb">PEB</span>
             <span class="sponsor-tag sponsor-tag--bee">IntBee</span>
           </div>
-          <div class="sponsor-desc">Sponsor description placeholder.</div>
+          <div class="sponsor-desc">Andros est aujourd’hui une marque référence dans sa proposition de jus de fruit ou de desserts fruités. De quoi vous accompagner tout au long de la journée.</div>
         </div>
         <div class="sponsor-card animated-card">
           <a href="https://vidy.ch/" target="_blank" rel="noopener">
@@ -214,7 +240,7 @@
             <span class="sponsor-tag sponsor-tag--week">Semaine S4S</span>
           </div>
           <div class="sponsor-desc">
-            Soon
+            Le cube est l’une des salles d’escalade de lausanne, connu pour un mur unique en forme de cube au milieu de la salle, la salle est très grande et offre une grande diversité de voies pour tous niveaux.
           </div>
         </div>
         <div class="sponsor-card animated-card">
@@ -224,7 +250,9 @@
           <div class="sponsor-tags-row">
             <span class="sponsor-tag sponsor-tag--peb">PEB</span>
           </div>
-          <div class="sponsor-desc">Sponsor description placeholder.</div>
+          <div class="sponsor-desc">
+            Avec sa proposition de boisson organique, brio maté se distingue de ses concurrents en offrant une boisson boostante et originale.
+          </div>
         </div>
         <div class="sponsor-card animated-card">
           <a href="https://www.bicworld.com/" target="_blank" rel="noopener">
@@ -288,7 +316,9 @@
           <div class="sponsor-tags-row">
             <span class="sponsor-tag sponsor-tag--bee">IntBee</span>
           </div>
-          <div class="sponsor-desc">Sponsor description placeholder.</div>
+          <div class="sponsor-desc">
+            Sat, c’est le bar de l’EPFL, cette association étudiante située en plein coeur du campus.
+          </div>
         </div>
         <div class="sponsor-card animated-card">
           <a href="https://nonstopgym.com/" target="_blank" rel="noopener">
@@ -330,7 +360,7 @@
           <div class="sponsor-tags-row">
             <span class="sponsor-tag sponsor-tag--peb">PEB</span>
           </div>
-          <div class="sponsor-desc">Sponsor description placeholder.</div>
+          <div class="sponsor-desc">La Coop est l’un des plus grands réseaux de distribution en Suisse, fort d'une histoire de plus de 160 ans. Ce qui n'était au départ qu'une petite coopérative de consommation est aujourd'hui un groupe d'envergure internationale opérant dans le commerce de détail et le commerce de gros.</div>
         </div>
         <div class="sponsor-card animated-card">
           <a href="https://chezmario.ch/" target="_blank" rel="noopener">
@@ -350,7 +380,7 @@
           <div class="sponsor-tags-row">
             <span class="sponsor-tag sponsor-tag--bee">IntBee</span>
           </div>
-          <div class="sponsor-desc">Sponsor description placeholder.</div>
+          <div class="sponsor-desc">Dans un environnement à la fois obscur et déroutant, constitué de cloisons, de zones réfléchissantes, d'obstacles en tous genres. Fonctionnant en individuel ou jusqu'à 6 équipes simultanément, le Laser Game Evolution offre la possibilité de faire des tournois et de lier les équipiers par des stratégies de contournement, de techniques de tir ou encore de noms de zones.</div>
         </div>
         
     </section>      
