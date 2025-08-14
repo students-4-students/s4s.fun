@@ -39,9 +39,9 @@
 <body>
     <nav class="navbar theme-primary">
       <div class="menu-left">
-          <a href="welcome.html">Accueil</a>
+          <a href="index.html">Accueil</a>
           <div class="dropdown">
-            <a href="#" class="dropdown-toggle">Événements <i class="fa fa-caret-down"></i></a>
+            <a href="#" class="dropdown-toggle" >Événements  <span class="dropdown-caret">&#9660;</span></a>
             <div class="dropdown-menu">
               <a href="index.html">S4S Week</a>
               <a href="peb.html">PEB</a>
@@ -50,7 +50,7 @@
           </div>
           <a href="workshops.html">Workshops</a>
           <a style="background-color: rgba(255, 255, 255, 0.3);border-radius: 5px;" href="sponsors.html">Sponsors</a>
-          <a href="about.html">À propos</a>
+          <!--<a href="about.html">À propos</a>-->
       </div>
       <div class="menu-right">
           <div class="hamburger" onclick="toggleMobileMenu()">
@@ -62,7 +62,7 @@
     </nav>
     <div id="mobileMenu" class="mobile-menu">
         <a href="#" class="closebtn" onclick="toggleMobileMenu()">&times;</a>
-        <a href="welcome.html">Accueil</a>
+  <a href="index.html">Accueil</a>
         <div class="mobile-dropdown">
           <a href="#" class="mobile-dropdown-toggle" onclick="toggleMobileDropdown(event)">Événements <span class="mobile-caret">▼</span></a>
           <div class="mobile-dropdown-menu">
@@ -73,7 +73,7 @@
         </div>
         <a href="workshops.html">Workshops</a>
         <a href="sponsors.html">Sponsors</a>
-        <a href="about.html">À propos</a>
+  <!--<a href="about.html">À propos</a>-->
     </div>
     <script>
       function toggleMobileMenu() {
@@ -156,233 +156,280 @@
     </section>
 
     <section class="section sponsors-list">
-        <div class="sponsor-card animated-card">
-          <a href="https://www.epfl.ch/fr/" target="_blank" rel="noopener">
-            <img src="assets/partners/EPFL-Association-blc.png" alt="EPFL" class="sponsor-logo">
-          </a>
-          <div class="sponsor-tags-row">
-            <span class="sponsor-tag sponsor-tag--week">Semaine S4S</span>
-            <span class="sponsor-tag sponsor-tag--peb">PEB</span>
-            <span class="sponsor-tag sponsor-tag--bee">IntBee</span>
+        <div class="sponsor-card-row">
+          <div class="sponsor-card animated-card">
+            <a href="https://www.epfl.ch/fr/" target="_blank" rel="noopener">
+              <img src="assets/partners/EPFL-Association-blc.png" alt="EPFL" class="sponsor-logo">
+            </a>
+            <div class="sponsor-tags-row">
+              <span class="sponsor-tag sponsor-tag--week">Semaine S4S</span>
+              <span class="sponsor-tag sponsor-tag--peb">PEB</span>
+              <span class="sponsor-tag sponsor-tag--bee">IntBee</span>
+            </div>
+            <div class="sponsor-desc">Sponsor description placeholder.</div>
           </div>
-          <div class="sponsor-desc">Sponsor description placeholder.</div>
-        </div>
-        <div class="sponsor-card animated-card">
-          <a href="https://agepoly.ch/" target="_blank" rel="noopener">
-            <img src="assets/partners/agepoly-true.png" alt="AGEPoly" class="sponsor-logo">
-          </a>
-          <div class="sponsor-tags-row">
-            <span class="sponsor-tag sponsor-tag--week">Semaine S4S</span>
-            <span class="sponsor-tag sponsor-tag--peb">PEB</span>
-            <span class="sponsor-tag sponsor-tag--bee">IntBee</span>
-          </div>
-          <div class="sponsor-desc">Sponsor description placeholder.</div>
-        </div>
-        <div class="sponsor-card animated-card">
-          <a href="https://totem.ch/" target="_blank" rel="noopener">
-            <img src="assets/partners/totem-true.png" alt="Totem" class="sponsor-logo">
-          </a>
-          <div class="sponsor-tags-row">
-            <span class="sponsor-tag sponsor-tag--week">Semaine S4S</span>
-            <span class="sponsor-tag sponsor-tag--peb">PEB</span>
-            <span class="sponsor-tag sponsor-tag--bee">IntBee</span>
-          </div>
-          <div class="sponsor-desc">
-            TOTEM est un espace urbain spécialisé en escalade, qui promeut une vie sportive aux étudiant.e.s.
-            De par son accessibilité, le partenaire favorise à la fois l’intégration des étudiant.e.s dans une communauté conviviale et décontractée, et met en avant de rester en forme, physique et mentale, pendant les études.
+          <div class="sponsor-card animated-card">
+            <a href="https://agepoly.ch/" target="_blank" rel="noopener">
+              <img src="assets/partners/agepoly-true.png" alt="AGEPoly" class="sponsor-logo">
+            </a>
+            <div class="sponsor-tags-row">
+              <span class="sponsor-tag sponsor-tag--week">Semaine S4S</span>
+              <span class="sponsor-tag sponsor-tag--peb">PEB</span>
+              <span class="sponsor-tag sponsor-tag--bee">IntBee</span>
+            </div>
+            <div class="sponsor-desc">Sponsor description placeholder.</div>
           </div>
         </div>
-        <div class="sponsor-card animated-card">
-          <a href="https://www.eltonymate.com/fr/" target="_blank" rel="noopener">
-            <img src="assets/partners/eltonymate-true.svg" alt="El Tony Mate" class="sponsor-logo">
-          </a>
-          <div class="sponsor-tags-row">
-            <span class="sponsor-tag sponsor-tag--peb">PEB</span>
-            <span class="sponsor-tag sponsor-tag--bee">IntBee</span>
+        <span class="sponsor-row-separator"></span>
+        <div class="sponsor-card-row">
+          <div class="sponsor-card animated-card">
+            <a href="https://www.eltonymate.com/fr/" target="_blank" rel="noopener">
+              <img src="assets/partners/eltonymate-true.svg" alt="El Tony Mate" class="sponsor-logo">
+            </a>
+            <div class="sponsor-tags-row">
+              <span class="sponsor-tag sponsor-tag--peb">PEB</span>
+              <span class="sponsor-tag sponsor-tag--bee">IntBee</span>
+            </div>
+            <div class="sponsor-desc">
+              <span class="readmore-short">El tony est sans doute la boisson la plus populaire sur le campus de l’epfl. Cette boisson rafraîchissante et revigorante est un bon allié en période intensive...</span>
+              <span class="readmore-full" style="display:none;">El tony est sans doute la boisson la plus populaire sur le campus de l’epfl. Cette boisson rafraîchissante et revigorante est un bon allié en période intensive en offrant une alternative aux sodas et au café.</span>
+              <span class="readmore-btn" onclick="toggleReadMore(this)">Lire plus</span>
+            </div>
           </div>
-          <div class="sponsor-desc">El tony est sans doute la boisson la plus populaire sur le campus de l’epfl. Cette boisson rafraîchissante et revigorante est un bon allié en période intensive en offrant une alternative aux sodas et au café.</div>
-        </div>
-        <div class="sponsor-card animated-card">
-          <a href="https://andros.ch/fr/" target="_blank" rel="noopener">
-            <img src="assets/partners/andros-true.svg" alt="Andros" class="sponsor-logo">
-          </a>
-          <div class="sponsor-tags-row">
-            <span class="sponsor-tag sponsor-tag--peb">PEB</span>
-            <span class="sponsor-tag sponsor-tag--bee">IntBee</span>
+          <div class="sponsor-card animated-card">
+            <a href="https://andros.ch/fr/" target="_blank" rel="noopener">
+              <img src="assets/partners/andros-true.svg" alt="Andros" class="sponsor-logo">
+            </a>
+            <div class="sponsor-tags-row">
+              <span class="sponsor-tag sponsor-tag--peb">PEB</span>
+              <span class="sponsor-tag sponsor-tag--bee">IntBee</span>
+            </div>
+            <div class="sponsor-desc">
+              Andros est aujourd’hui une marque référence dans sa proposition de jus de fruit ou de desserts fruités. De quoi vous accompagner tout au long de la journée.
+            </div>
           </div>
-          <div class="sponsor-desc">Andros est aujourd’hui une marque référence dans sa proposition de jus de fruit ou de desserts fruités. De quoi vous accompagner tout au long de la journée.</div>
-        </div>
-        <div class="sponsor-card animated-card">
-          <a href="https://vidy.ch/" target="_blank" rel="noopener">
-            <img src="assets/partners/vidy-true.webp" alt="Théâtre Vidy" class="sponsor-logo">
-          </a>
-          <div class="sponsor-tags-row">
-            <span class="sponsor-tag sponsor-tag--bee">IntBee</span>
+          <div class="sponsor-card animated-card">
+            <a href="https://brio-energydrink.ch/" target="_blank" rel="noopener">
+              <img src="assets/partners/brio-mate-true.svg" alt="Brio Mate" class="sponsor-logo">
+            </a>
+            <div class="sponsor-tags-row">
+              <span class="sponsor-tag sponsor-tag--peb">PEB</span>
+            </div>
+            <div class="sponsor-desc">
+              Avec sa proposition de boisson organique, brio maté se distingue de ses concurrents en offrant une boisson boostante et originale.
+            </div>
           </div>
-          <div class="sponsor-desc">Sponsor description placeholder.</div>
-        </div>
-        <div class="sponsor-card animated-card">
-          <a href="https://talendo.ch/" target="_blank" rel="noopener">
-            <img src="assets/partners/talendo-true.webp" alt="Talendo" class="sponsor-logo">
-          </a>
-          <div class="sponsor-tags-row">
-            <span class="sponsor-tag sponsor-tag--week">Semaine S4S</span>
-          </div>
-          <div class="sponsor-desc">
-            Talendo est une agence spécialisée dans la conception et l’organisation d’événements et de salons professionnels dédiés aux étudiant.e.s. Grâce à son expertise, Talendo crée un lien dynamique entre le monde académique et le marché du travail, facilitant l’insertion professionnelle et l’épanouissement des talents au sein des entreprises.
-          </div>
-        </div>
-        <div class="sponsor-card animated-card">
-          <a href="https://lecube.ch/" target="_blank" rel="noopener">
-            <img src="assets/partners/le-cube-true.jpeg" alt="Le Cube" class="sponsor-logo">
-          </a>
-          <div class="sponsor-tags-row">
-            <span class="sponsor-tag sponsor-tag--week">Semaine S4S</span>
-          </div>
-          <div class="sponsor-desc">
-            Le cube est l’une des salles d’escalade de lausanne, connu pour un mur unique en forme de cube au milieu de la salle, la salle est très grande et offre une grande diversité de voies pour tous niveaux.
-          </div>
-        </div>
-        <div class="sponsor-card animated-card">
-          <a href="https://brio-energydrink.ch/" target="_blank" rel="noopener">
-            <img src="assets/partners/brio-mate-true.svg" alt="Brio Mate" class="sponsor-logo">
-          </a>
-          <div class="sponsor-tags-row">
-            <span class="sponsor-tag sponsor-tag--peb">PEB</span>
-          </div>
-          <div class="sponsor-desc">
-            Avec sa proposition de boisson organique, brio maté se distingue de ses concurrents en offrant une boisson boostante et originale.
+          <div class="sponsor-card animated-card">
+            <a href="https://rivella.ch/fr/" target="_blank" rel="noopener">
+              <img src="assets/partners/rivella-true.png" alt="Rivella" class="sponsor-logo">
+            </a>
+            <div class="sponsor-tags-row">
+              <span class="sponsor-tag sponsor-tag--week">Semaine S4S</span>
+            </div>
+            <div class="sponsor-desc">
+              Rivella est le plus grand producteur de boissons rafraîchissantes suisse. Également soucieux de participer à la durabilité de leurs produits, ils offrent des eaux vitaminées et boissons destinées à la consommation de tous.
+            </div>
           </div>
         </div>
-        <div class="sponsor-card animated-card">
-          <a href="https://www.bicworld.com/" target="_blank" rel="noopener">
-            <img src="assets/partners/bic-true.png" alt="Bic" class="sponsor-logo">
-          </a>
-          <div class="sponsor-tags-row">
-            <span class="sponsor-tag sponsor-tag--week">Semaine S4S</span>
+        <span class="sponsor-row-separator"></span>
+        <div class="sponsor-card-row">
+          <div class="sponsor-card animated-card">
+            <a href="https://totem.ch/" target="_blank" rel="noopener">
+              <img src="assets/partners/totem-true.png" alt="Totem" class="sponsor-logo">
+            </a>
+            <div class="sponsor-tags-row">
+              <span class="sponsor-tag sponsor-tag--week">Semaine S4S</span>
+              <span class="sponsor-tag sponsor-tag--peb">PEB</span>
+              <span class="sponsor-tag sponsor-tag--bee">IntBee</span>
+            </div>
+            <div class="sponsor-desc">
+              <span class="readmore-short">TOTEM est un espace urbain spécialisé en escalade, qui promeut une vie sportive aux étudiant.e.s. De par son accessibilité, le partenaire favorise à la fois...</span>
+              <span class="readmore-full" style="display:none;">TOTEM est un espace urbain spécialisé en escalade, qui promeut une vie sportive aux étudiant.e.s. De par son accessibilité, le partenaire favorise à la fois l’intégration des étudiant.e.s dans une communauté conviviale et décontractée, et met en avant de rester en forme, physique et mentale, pendant les études.</span>
+              <span class="readmore-btn" onclick="toggleReadMore(this)">Lire plus</span>
+            </div>
           </div>
-          <div class="sponsor-desc">
-            BIC est une entreprise connue à l’internationale pour sa gamme de produits d’écriture essentiels pour les étudiants. La variété d’offres de papeterie permet d’accompagner tout élève de la maternelle aux études supérieures.            
+          <div class="sponsor-card animated-card">
+            <a href="https://lecube.ch/" target="_blank" rel="noopener">
+              <img src="assets/partners/le-cube-true.jpeg" alt="Le Cube" class="sponsor-logo">
+            </a>
+            <div class="sponsor-tags-row">
+              <span class="sponsor-tag sponsor-tag--week">Semaine S4S</span>
+            </div>
+            <div class="sponsor-desc">
+              <span class="readmore-short">Le cube est l’une des salles d’escalade de lausanne, connu pour un mur unique en forme de cube au milieu de la salle, la salle est très grande et offre une grande...</span>
+              <span class="readmore-full" style="display:none;">Le cube est l’une des salles d’escalade de lausanne, connu pour un mur unique en forme de cube au milieu de la salle, la salle est très grande et offre une grande diversité de voies pour tous niveaux.</span>
+              <span class="readmore-btn" onclick="toggleReadMore(this)">Lire plus</span>
+            </div>
           </div>
-        </div>
-        <div class="sponsor-card animated-card">
-          <a href="https://rivella.ch/fr/" target="_blank" rel="noopener">
-            <img src="assets/partners/rivella-true.png" alt="Rivella" class="sponsor-logo">
-          </a>
-          <div class="sponsor-tags-row">
-            <span class="sponsor-tag sponsor-tag--week">Semaine S4S</span>
+          <div class="sponsor-card animated-card">
+            <a href="https://grimper.ch/" target="_blank" rel="noopener">
+              <img src="assets/partners/grimper-ch-true.webp" alt="grimper.ch" class="sponsor-logo">
+            </a>
+            <div class="sponsor-tags-row">
+              <span class="sponsor-tag sponsor-tag--week">Semaine S4S</span>
+            </div>
+            <div class="sponsor-desc">
+              <span class="readmore-short">Grimper.ch possède plusieurs salles d’escalade, et depuis 3 ans, leur 6ème salle à ouvert au palais de Beaulieu, en plein Lausanne. Assez proche du...</span>
+              <span class="readmore-full" style="display:none;">Grimper.ch possède plusieurs salles d’escalade, et depuis 3 ans, leur 6ème salle à ouvert au palais de Beaulieu, en plein Lausanne. Assez proche du métro, cette nouvelle salle offre un large choix de voies adaptées à tout le monde, débutant comme plus expérimenté, une belle opportunité de faire une pratique sportive en parallèle de ses études!</span>
+              <span class="readmore-btn" onclick="toggleReadMore(this)">Lire plus</span>
+            </div>
           </div>
-          <div class="sponsor-desc">
-            Rivella est le plus grand producteur de boissons rafraîchissantes suisse. Également soucieux de participer à la durabilité de leurs produits, ils offrent des eaux vitaminées et boissons destinées à la consommation de tous.
+          <div class="sponsor-card animated-card">
+            <a href="https://www.activfitness.ch/" target="_blank" rel="noopener">
+              <img src="assets/partners/activ_fitness-true.png" alt="Activ Fitness" class="sponsor-logo">
+            </a>
+            <div class="sponsor-tags-row">
+              <span class="sponsor-tag sponsor-tag--week">Semaine S4S</span>
+            </div>
+            <div class="sponsor-desc">
+              <span class="readmore-short">Activ fitness est la première firme de salle de sport en suisse, avec 3 salles à Lausanne et une à la gare de Renens. Elle propose des tarifs adaptés aux étudiants et des...</span>
+              <span class="readmore-full" style="display:none;">Activ fitness est la première firme de salle de sport en suisse, avec 3 salles à Lausanne et une à la gare de Renens. Elle propose des tarifs adaptés aux étudiants et des équipements de grande qualité.</span>
+              <span class="readmore-btn" onclick="toggleReadMore(this)">Lire plus</span>
+            </div>
           </div>
-        </div>
-        <div class="sponsor-card animated-card">
-          <a href="https://holycow.ch/" target="_blank" rel="noopener">
-            <img src="assets/partners/holy-cow-true.png" alt="Holy Cow" class="sponsor-logo">
-          </a>
-          <div class="sponsor-tags-row">
-            <span class="sponsor-tag sponsor-tag--week">Semaine S4S</span>
-          </div>
-          <div class="sponsor-desc">
-            Holy Cow, c’est le fast food suisse. Ils réinventent le concept initial en utilisant des produits suisses de qualité. Holy Cow possède plusieurs magasins sur Lausanne et surtout un en face de l’epfl, avec un agrandissement très récent, c’est un super endroit pour regarder des événements sportifs ou passer un bon moment dans le bar Taphouse, la partie bar du restaurant, et toujours avec des prix spécial étudiant.
-          </div>
-        </div>
-        <div class="sponsor-card animated-card">
-          <a href="https://www.activfitness.ch/" target="_blank" rel="noopener">
-            <img src="assets/partners/activ_fitness-true.png" alt="Activ Fitness" class="sponsor-logo">
-          </a>
-          <div class="sponsor-tags-row">
-            <span class="sponsor-tag sponsor-tag--week">Semaine S4S</span>
-          </div>
-          <div class="sponsor-desc">
-            Activ fitness est la première firme de salle de sport en suisse, avec 3 salles à Lausanne et une à la gare de Renens. Elle propose des tarifs adaptés aux étudiants et des équipements de grande qualité.
-          </div>
-        </div>
-        <div class="sponsor-card animated-card">
-          <a href="https://www.payot.ch/" target="_blank" rel="noopener">
-            <img src="assets/partners/payot-true.svg" alt="Payot" class="sponsor-logo">
-          </a>
-          <div class="sponsor-tags-row">
-            <span class="sponsor-tag sponsor-tag--week">Semaine S4S</span>
-          </div>
-          <div class="sponsor-desc">
-            La librairie payot est une librairie historique de Lausanne, fondée en 1877, elle continue de vivre en proposant un très large choix de livres, qui s’étendent sur 2 étages, de quoi trouver les livres qu’il faut pour vous aider dans vos études.
-          </div>
-        </div>
-        <div class="sponsor-card animated-card">
-          <a href="https://satellite.bar/" target="_blank" rel="noopener">
-            <img src="assets/partners/sat-true.png" alt="Satellite" class="sponsor-logo">
-          </a>
-          <div class="sponsor-tags-row">
-            <span class="sponsor-tag sponsor-tag--bee">IntBee</span>
-          </div>
-          <div class="sponsor-desc">
-            Sat, c’est le bar de l’EPFL, cette association étudiante située en plein coeur du campus.
-          </div>
-        </div>
-        <div class="sponsor-card animated-card">
-          <a href="https://nonstopgym.com/" target="_blank" rel="noopener">
-            <img src="assets/partners/non-stop-gym-true.png" alt="Non Stop Gym" class="sponsor-logo">
-          </a>
-          <div class="sponsor-tags-row">
-            <span class="sponsor-tag sponsor-tag--week">Semaine S4S</span>
-          </div>
-          <div class="sponsor-desc">
-            Non stop gym propose des équipements de qualité à des prix raisonnables, le tout à proximité de l’epfl avec un salle à Ecublens, et 3 salles en plein lausanne.
+          <div class="sponsor-card animated-card">
+            <a href="https://nonstopgym.com/" target="_blank" rel="noopener">
+              <img src="assets/partners/non-stop-gym-true.png" alt="Non Stop Gym" class="sponsor-logo">
+            </a>
+            <div class="sponsor-tags-row">
+              <span class="sponsor-tag sponsor-tag--week">Semaine S4S</span>
+            </div>
+            <div class="sponsor-desc">
+              Non stop gym propose des équipements de qualité à des prix raisonnables, le tout à proximité de l’epfl avec un salle à Ecublens, et 3 salles en plein lausanne.
+            </div>
           </div>
         </div>
-        <div class="sponsor-card animated-card">
-          <a href="https://grimper.ch/" target="_blank" rel="noopener">
-            <img src="assets/partners/grimper-ch-true.webp" alt="grimper.ch" class="sponsor-logo">
-          </a>
-          <div class="sponsor-tags-row">
-            <span class="sponsor-tag sponsor-tag--week">Semaine S4S</span>
+        <span class="sponsor-row-separator"></span>
+        <div class="sponsor-card-row">
+          <div class="sponsor-card animated-card">
+            <a href="https://talendo.ch/" target="_blank" rel="noopener">
+              <img src="assets/partners/talendo-true.webp" alt="Talendo" class="sponsor-logo">
+            </a>
+            <div class="sponsor-tags-row">
+              <span class="sponsor-tag sponsor-tag--week">Semaine S4S</span>
+            </div>
+            <div class="sponsor-desc">
+              <span class="readmore-short">Talendo est une agence spécialisée dans la conception et l’organisation d’événements et de salons professionnels dédiés aux étudiant.e.s. Grâce à son...</span>
+              <span class="readmore-full" style="display:none;">Talendo est une agence spécialisée dans la conception et l’organisation d’événements et de salons professionnels dédiés aux étudiant.e.s. Grâce à son expertise, Talendo crée un lien dynamique entre le monde académique et le marché du travail, facilitant l’insertion professionnelle et l’épanouissement des talents au sein des entreprises.</span>
+              <span class="readmore-btn" onclick="toggleReadMore(this)">Lire plus</span>
+            </div>
           </div>
-          <div class="sponsor-desc">
-            Grimper.ch possède plusieurs salles d’escalade, et depuis 3 ans, leur 6ème salle à ouvert au palais de Beaulieu, en plein Lausanne. Assez proche du métro, cette nouvelle salle offre un large choix de voies adaptées à tout le monde, débutant comme plus expérimenté, une belle opportunité de faire une pratique sportive en parallèle de ses études!
+          <div class="sponsor-card animated-card">
+            <a href="https://www.bicworld.com/" target="_blank" rel="noopener">
+              <img src="assets/partners/bic-true.png" alt="Bic" class="sponsor-logo">
+            </a>
+            <div class="sponsor-tags-row">
+              <span class="sponsor-tag sponsor-tag--week">Semaine S4S</span>
+            </div>
+            <div class="sponsor-desc">
+              <span class="readmore-short">BIC est une entreprise connue à l’internationale pour sa gamme de produits d’écriture essentiels pour les étudiants. La variété d’offres de papeterie...</span>
+              <span class="readmore-full" style="display:none;">BIC est une entreprise connue à l’internationale pour sa gamme de produits d’écriture essentiels pour les étudiants. La variété d’offres de papeterie permet d’accompagner tout élève de la maternelle aux études supérieures.</span>
+              <span class="readmore-btn" onclick="toggleReadMore(this)">Lire plus</span>
+            </div>
+          </div>
+          <div class="sponsor-card animated-card">
+            <a href="https://www.payot.ch/" target="_blank" rel="noopener">
+              <img src="assets/partners/payot-true.svg" alt="Payot" class="sponsor-logo">
+            </a>
+            <div class="sponsor-tags-row">
+              <span class="sponsor-tag sponsor-tag--week">Semaine S4S</span>
+            </div>
+            <div class="sponsor-desc">
+              <span class="readmore-short">La librairie payot est une librairie historique de Lausanne, fondée en 1877, elle continue de vivre en proposant un très large choix de livres, qui s’étendent sur 2 étages, de quoi...</span>
+              <span class="readmore-full" style="display:none;">La librairie payot est une librairie historique de Lausanne, fondée en 1877, elle continue de vivre en proposant un très large choix de livres, qui s’étendent sur 2 étages, de quoi trouver les livres qu’il faut pour vous aider dans vos études.</span>
+              <span class="readmore-btn" onclick="toggleReadMore(this)">Lire plus</span>
+            </div>
+          </div>
+          <div class="sponsor-card animated-card">
+            <a href="https://arcanite.ch/" target="_blank" rel="noopener">
+              <img src="assets/partners/arcanite-true.png" alt="Arcanite" class="sponsor-logo">
+            </a>
+            <div class="sponsor-tags-row">
+              <span class="sponsor-tag sponsor-tag--week">Semaine S4S</span>
+            </div>
+            <div class="sponsor-desc">
+              <span class="readmore-short">Arcanite est une entreprise qui excelle dans la fourniture de solutions numériques modernes, proposant une gamme de services allant de l’infrastructure IT sur mesure à la...</span>
+              <span class="readmore-full" style="display:none;">Arcanite est une entreprise qui excelle dans la fourniture de solutions numériques modernes, proposant une gamme de services allant de l’infrastructure IT sur mesure à la consultation en data et en intelligence artificielle (IA). Exploitant diverses technologies de pointe, principalement en open source, elle conçoit des solutions robustes et maintenables.  Elle s’intéresse également à l’expérience professionnelle des étudiant.e.s en leur proposant des stages et jobs pendant l’année.</span>
+              <span class="readmore-btn" onclick="toggleReadMore(this)">Lire plus</span>
+            </div>
           </div>
         </div>
-        <div class="sponsor-card animated-card">
-          <a href="https://arcanite.ch/" target="_blank" rel="noopener">
-            <img src="assets/partners/arcanite-true.png" alt="Arcanite" class="sponsor-logo">
-          </a>
-          <div class="sponsor-tags-row">
-            <span class="sponsor-tag sponsor-tag--week">Semaine S4S</span>
+        <span class="sponsor-row-separator"></span>
+        <div class="sponsor-card-row">
+          <div class="sponsor-card animated-card">
+            <a href="https://satellite.bar/" target="_blank" rel="noopener">
+              <img src="assets/partners/sat-true.png" alt="Satellite" class="sponsor-logo">
+            </a>
+            <div class="sponsor-tags-row">
+              <span class="sponsor-tag sponsor-tag--bee">IntBee</span>
+            </div>
+            <div class="sponsor-desc">
+              Sat, c’est le bar de l’EPFL, cette association étudiante située en plein coeur du campus.
+            </div>
           </div>
-          <div class="sponsor-desc">
-            Arcanite est une entreprise qui excelle dans la fourniture de solutions numériques modernes, proposant une gamme de services allant de l’infrastructure IT sur mesure à la consultation en data et en intelligence artificielle (IA). Exploitant diverses technologies de pointe, principalement en open source, elle conçoit des solutions robustes et maintenables.  Elle s’intéresse également à l’expérience professionnelle des étudiant.e.s en leur proposant des stages et jobs pendant l’année.
+          <div class="sponsor-card animated-card">
+            <a href="https://www.coop.ch/fr/" target="_blank" rel="noopener">
+              <img src="assets/partners/coop-true.webp" alt="Coop" class="sponsor-logo">
+            </a>
+            <div class="sponsor-tags-row">
+              <span class="sponsor-tag sponsor-tag--peb">PEB</span>
+            </div>
+            <div class="sponsor-desc">
+              <span class="readmore-short">La Coop est l’un des plus grands réseaux de distribution en Suisse, fort d'une histoire de plus de 160 ans. Ce qui n'était au départ qu'une petite coopérative de...</span>
+              <span class="readmore-full" style="display:none;">La Coop est l’un des plus grands réseaux de distribution en Suisse, fort d'une histoire de plus de 160 ans. Ce qui n'était au départ qu'une petite coopérative de consommation est aujourd'hui un groupe d'envergure internationale opérant dans le commerce de détail et le commerce de gros.</span>
+              <span class="readmore-btn" onclick="toggleReadMore(this)">Lire plus</span>
+            </div>
+          </div>
+          <div class="sponsor-card animated-card">
+            <a href="https://holycow.ch/" target="_blank" rel="noopener">
+              <img src="assets/partners/holy-cow-true.png" alt="Holy Cow" class="sponsor-logo">
+            </a>
+            <div class="sponsor-tags-row">
+              <span class="sponsor-tag sponsor-tag--week">Semaine S4S</span>
+            </div>
+            <div class="sponsor-desc">
+              <span class="readmore-short">Holy Cow, c’est le fast food suisse. Ils réinventent le concept initial en utilisant des produits suisses de qualité. Holy Cow possède plusieurs magasins sur Lausanne...</span>
+              <span class="readmore-full" style="display:none;">Holy Cow, c’est le fast food suisse. Ils réinventent le concept initial en utilisant des produits suisses de qualité. Holy Cow possède plusieurs magasins sur Lausanne et surtout un en face de l’epfl, avec un agrandissement très récent, c’est un super endroit pour regarder des événements sportifs ou passer un bon moment dans le bar Taphouse, la partie bar du restaurant, et toujours avec des prix spécial étudiant.</span>
+              <span class="readmore-btn" onclick="toggleReadMore(this)">Lire plus</span>
+            </div>
+          </div>
+          <div class="sponsor-card animated-card">
+            <a href="https://chezmario.ch/" target="_blank" rel="noopener">
+              <img src="assets/partners/chez-mario-true.png" alt="ChezMario" class="sponsor-logo">
+            </a>
+            <div class="sponsor-tags-row">
+              <span class="sponsor-tag sponsor-tag--week">Semaine S4S</span>
+            </div>
+            <div class="sponsor-desc">
+              Chez Mario est un restaurant italien historique situé en plein cœur de Lausanne, qui a toujours accueilli les étudiants à bras ouverts. Tout est fait à partir de produits frais et les étudiants seront toujours les bienvenus.
+            </div>
           </div>
         </div>
-        <div class="sponsor-card animated-card">
-          <a href="https://www.coop.ch/fr/" target="_blank" rel="noopener">
-            <img src="assets/partners/coop-true.webp" alt="Coop" class="sponsor-logo">
-          </a>
-          <div class="sponsor-tags-row">
-            <span class="sponsor-tag sponsor-tag--peb">PEB</span>
+        <span class="sponsor-row-separator"></span>
+        <div class="sponsor-card-row">
+          <div class="sponsor-card animated-card">
+            <a href="https://vidy.ch/" target="_blank" rel="noopener">
+              <img src="assets/partners/vidy-true.webp" alt="Théâtre Vidy" class="sponsor-logo">
+            </a>
+            <div class="sponsor-tags-row">
+              <span class="sponsor-tag sponsor-tag--bee">IntBee</span>
+            </div>
+            <div class="sponsor-desc">Sponsor description placeholder.</div>
           </div>
-          <div class="sponsor-desc">La Coop est l’un des plus grands réseaux de distribution en Suisse, fort d'une histoire de plus de 160 ans. Ce qui n'était au départ qu'une petite coopérative de consommation est aujourd'hui un groupe d'envergure internationale opérant dans le commerce de détail et le commerce de gros.</div>
+          <div class="sponsor-card animated-card">
+            <a href="https://lausanne.lasergame-evolution.fr/" target="_blank" rel="noopener">
+              <img src="assets/partners/laser-game.webp" alt="Laser Game" class="sponsor-logo">
+            </a>
+            <div class="sponsor-tags-row">
+              <span class="sponsor-tag sponsor-tag--bee">IntBee</span>
+            </div>
+            <div class="sponsor-desc">
+              <span class="readmore-short">Dans un environnement à la fois obscur et déroutant, constitué de cloisons, de zones réfléchissantes, d'obstacles en tous genres. Fonctionnant en individuel ou jusqu'à 6 équipes simultanément, le Laser Game Evolution offre...</span>
+              <span class="readmore-full" style="display:none;">Dans un environnement à la fois obscur et déroutant, constitué de cloisons, de zones réfléchissantes, d'obstacles en tous genres. Fonctionnant en individuel ou jusqu'à 6 équipes simultanément, le Laser Game Evolution offre la possibilité de faire des tournois et de lier les équipiers par des stratégies de contournement, de techniques de tir ou encore de noms de zones.</span>
+              <span class="readmore-btn" onclick="toggleReadMore(this)">Lire plus</span>
+            </div>
+          </div>
         </div>
-        <div class="sponsor-card animated-card">
-          <a href="https://chezmario.ch/" target="_blank" rel="noopener">
-            <img src="assets/partners/chez-mario-true.png" alt="ChezMario" class="sponsor-logo">
-          </a>
-          <div class="sponsor-tags-row">
-            <span class="sponsor-tag sponsor-tag--week">Semaine S4S</span>
-          </div>
-          <div class="sponsor-desc">
-            Chez Mario est un restaurant italien historique situé en plein cœur de Lausanne, qui a toujours accueilli les étudiants à bras ouverts. Tout est fait à partir de produits frais et les étudiants seront toujours les bienvenus.
-          </div>
-        </div>
-        <div class="sponsor-card animated-card">
-          <a href="https://lausanne.lasergame-evolution.fr/" target="_blank" rel="noopener">
-            <img src="assets/partners/laser-game.webp" alt="Laser Game" class="sponsor-logo">
-          </a>
-          <div class="sponsor-tags-row">
-            <span class="sponsor-tag sponsor-tag--bee">IntBee</span>
-          </div>
-          <div class="sponsor-desc">Dans un environnement à la fois obscur et déroutant, constitué de cloisons, de zones réfléchissantes, d'obstacles en tous genres. Fonctionnant en individuel ou jusqu'à 6 équipes simultanément, le Laser Game Evolution offre la possibilité de faire des tournois et de lier les équipiers par des stratégies de contournement, de techniques de tir ou encore de noms de zones.</div>
-        </div>
-        
     </section>      
     <script>
       (function() {
@@ -392,27 +439,21 @@
         function assignRowDelays() {
           const list = document.querySelector('.sponsors-list');
           if (!list) return;
-          const cards = Array.from(list.querySelectorAll('.sponsor-card'));
-          if (!cards.length) return;
-
-          // Group cards by their row using offsetTop
-          const rows = new Map();
-          for (const card of cards) {
-            const top = card.offsetTop;
-            const group = rows.get(top) || [];
-            group.push(card);
-            rows.set(top, group);
-          }
-
-          const tops = Array.from(rows.keys()).sort((a, b) => a - b);
+          const rows = Array.from(list.querySelectorAll('.sponsor-card-row'));
           const base = 0.15; // seconds
           const rowStep = 0.32; // seconds per row
 
-          tops.forEach((top, rowIndex) => {
+          rows.forEach((row, rowIndex) => {
             const delay = (base + rowIndex * rowStep).toFixed(3) + 's';
-            rows.get(top).forEach(card => {
+            const cards = Array.from(row.querySelectorAll('.sponsor-card'));
+            cards.forEach(card => {
               card.style.animationDelay = delay;
             });
+            // Animate separator after the row
+            const separator = row.nextElementSibling;
+            if (separator && separator.classList.contains('sponsor-row-separator')) {
+              separator.style.animationDelay = (base + (rowIndex + 1) * rowStep).toFixed(3) + 's';
+            }
           });
         }
 
@@ -431,6 +472,20 @@
         window.addEventListener('load', assignRowDelays);
         window.addEventListener('resize', debounce(assignRowDelays, 150));
       })();
+      function toggleReadMore(btn) {
+        var container = btn.parentElement;
+        var shortText = container.querySelector('.readmore-short');
+        var fullText = container.querySelector('.readmore-full');
+        if (fullText.style.display === 'none') {
+          fullText.style.display = '';
+          shortText.style.display = 'none';
+          btn.textContent = 'Lire moins.';
+        } else {
+          fullText.style.display = 'none';
+          shortText.style.display = '';
+          btn.textContent = 'Lire plus.';
+        }
+      }
     </script>
     <section class="section section-footer theme-primary">
       <a href="https://instagram.com/s4s.epfl" rel="noopener">

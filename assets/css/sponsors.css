@@ -118,11 +118,13 @@ h3 {
 .lead-link::before {
     background: var(--separator);
     width: 100%;
+    border-radius: 20em;
 }
 
 .lead-link::after {
     background: var(--headings);
-    transition: .1s ease-in-out width;
+    transition: .2s ease-in-out width;
+    border-radius: 20em;
 }
 
 .lead-link:hover::after {
@@ -401,7 +403,7 @@ h3 {
 
 .section {
     position: relative;
-    background: var(--background);
+    background-color: var(--background);
     color: var(--text);
     padding-top: 24px;
 }
@@ -417,7 +419,7 @@ h3 {
     height: var(--divider-height);
 
     clip-path: polygon(0% 80%, 0 100%, 100% 100%, 100% 80%, 100% 0%);
-    background: var(--background);
+    background-color: var(--background);
     pointer-events: none;
 }
 
@@ -584,17 +586,13 @@ h3 {
     background-color: white;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 2.4rem; /* a bit tighter to fit 3–4 per row */
-    width: 100%;
-    margin-bottom: 3.5rem; /* was 3rem */
-    padding-top: 4em; /* was 3em */
-    padding-bottom: 4em; /* was 3em */
+    margin-bottom: 3.5rem;
+    padding: 4em 1em;
 }
 
 .sponsors-list::before {
     background-color: white;
 }
-
 
 .sponsor-card {
   background: none;
@@ -605,14 +603,36 @@ h3 {
   flex-direction: column;
   align-items: center;
   flex: 1 1 320px;
-  min-width: 500px;
-  max-width: 800px;
   min-height: 260px;
+  min-width: 400px;
+  max-width: 600px;
   position: relative;
   opacity: 0;
   transform: translateY(40px);
-  animation: fadeIn 0.7s cubic-bezier(.4,0,.2,1) forwards;
+  animation: fadeIn 0.5s cubic-bezier(.4,0,.2,1) forwards;
   animation-delay: 0.5s;
+}
+
+.sponsor-card-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 2.5rem;
+  margin-bottom: 2.5rem;
+  margin-top: 2.5em;
+  width: 100%;
+  padding-left: 8em;
+  padding-right: 8em;
+}
+
+@media (max-width: 700px) {
+  .sponsor-card-row {
+    padding-left: 0;
+    padding-right: 0;
+    justify-content: center;
+    align-items: center;
+  }
 }
 
 /* Fallback when user prefers reduced motion or animations are unavailable */
@@ -622,6 +642,15 @@ h3 {
         opacity: 1 !important;
         transform: none !important;
     }
+}
+
+.sponsor-row-separator {
+    width: 90%;
+    height: 3px;
+    background-color: var(--separator);
+    opacity: 0.5;
+    border-radius: 25em;
+    margin-top: 2em;
 }
 
 
@@ -706,6 +735,20 @@ h3 {
   font-size: 1.5rem; 
   margin-top: 0.4rem;
   opacity: 0.85;
+}
+.readmore-short {
+    display: inline;
+}
+
+.readmore-btn {
+    display: inline-block;
+    color: var(--primary);
+    cursor: pointer;
+    transition: background 0.2s;
+    font-style: italic;
+}
+.readmore-btn:hover {
+    color: var(--headings, #434569);
 }
 
 /* Thin divider between tags and description */

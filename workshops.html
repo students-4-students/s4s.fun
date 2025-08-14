@@ -39,9 +39,9 @@
 <body>
   <nav class="navbar theme-primary">
       <div class="menu-left">
-          <a href="welcome.html">Accueil</a>
+          <a href="index.html">Accueil</a>
           <div class="dropdown">
-            <a href="#" class="dropdown-toggle">Événements <i class="fa fa-caret-down"></i></a>
+            <a href="#" class="dropdown-toggle">Événements <span class="dropdown-caret">&#9660;</span></a>
             <div class="dropdown-menu">
               <a href="index.html">S4S Week</a>
               <a href="peb.html">PEB</a>
@@ -50,7 +50,7 @@
           </div>
           <a style="background-color: rgba(255, 255, 255, 0.3);border-radius: 5px;" href="workshops.html">Workshops</a>
           <a href="sponsors.html">Sponsors</a>
-          <a href="about.html">À propos</a>
+          <!--<a href="about.html">À propos</a>-->
       </div>
       <div class="menu-right">
           <div class="hamburger" onclick="toggleMobileMenu()">
@@ -62,7 +62,7 @@
     </nav>
     <div id="mobileMenu" class="mobile-menu">
         <a href="#" class="closebtn" onclick="toggleMobileMenu()">&times;</a>
-        <a href="welcome.html">Accueil</a>
+  <a href="index.html">Accueil</a>
         <div class="mobile-dropdown">
           <a href="#" class="mobile-dropdown-toggle" onclick="toggleMobileDropdown(event)">Événements <span class="mobile-caret">▼</span></a>
           <div class="mobile-dropdown-menu">
@@ -73,7 +73,7 @@
         </div>
         <a href="workshops.html">Workshops</a>
         <a href="sponsors.html">Sponsors</a>
-        <a href="about.html">À propos</a>
+  <!--<a href="about.html">À propos</a>-->
     </div>
     <script>
       function toggleMobileMenu() {
@@ -148,8 +148,8 @@
     <div class="workshops-list">
       <div class="workshop-card polylan" data-link="https://polylan.ch/" >
         <span class="workshop-date">12/09</span>
-        <span class="workshop-name">PolyLAN</span>
-        <span class="workshop-title">PolyLAN-Demo</span>
+        <span class="workshop-name"><span class="workshop-name-text">PolyLAN</span></span>
+        <span class="workshop-title"><span class="workshop-title-text">PolyLAN-Demo</span></span>
         <p class="workshop-description" hidden>
           PolyLAN-Demo est une LAN miniature à l'image du grand évènement (PolyLAN) organisé par l'association.<br>
           Venez discuter avec les comités présents et en apprendre plus sur la LAN, que ce soit d'un point de vue technique ou d'ambiance.<br>
@@ -343,6 +343,14 @@
           La présentation donnera un aperçu des principes ainsi que de l’état de la recherche de cette source d'énergie.
         </p>
       </div>
+      <div class="workshop-card gamestar" data-link="https://clic.epfl.ch/commissions/game-star">
+        <span class="workshop-date">28/07</span>
+        <span class="workshop-name">GameStar</span>
+        <span class="workshop-title">Soon.</span>
+        <p class="workshop-description" hidden>
+          Soon.
+        </p>
+      </div>
       <div class="workshop-card david-strutt" data-link="https://people.epfl.ch/david.strutt?lang=en">
         <span class="workshop-date">28/07</span>
         <span class="workshop-name">David Strütt</span>
@@ -371,15 +379,17 @@
           Dans ce cours, je vous ferai percevoir votre charge cognitive lors de tâches assez simples.
         </p>
       </div>
-      <!--<div class="workshop-card gamestar" data-link="https://clic.epfl.ch/commissions/game-star">
-        <span class="workshop-date">28/07</span>
-        <span class="workshop-name">GameStar</span>
-        <span class="workshop-title">Soon.</span>
+      <div class="workshop-card camille" data-link="https://people.epfl.ch/camille.goemans?lang=en">
+        <span class="workshop-date">12/09</span>
+        <span class="workshop-name">Camille Goemans</span>
+        <span class="workshop-title">Sneak peek into microbiology: the human microbiota and antibiotics.</span>
         <p class="workshop-description" hidden>
-          Soon.
+          In this lecture, we will dive into the microbial world to understand how microbes that live in our bodies support our health. We will explore the roles of these microbes and how an imbalance in the microbiota can lead to diseases.<br>
+          During this lecture, we will also discuss the role of antibiotics, and how antibiotic resistance is one of the major global threats that humanity faces according to the world health organization.
         </p>
       </div>
-      <div class="workshop-card jdrpoly" data-link="https://jdrpoly.ch/">
+      
+      <!--<div class="workshop-card jdrpoly" data-link="https://jdrpoly.ch/">
         <span class="workshop-date">12/09</span>
         <span class="workshop-name">JDRPoly</span>
         <span class="workshop-title">Soon.</span>
@@ -440,25 +450,29 @@
                 }
 
                 modalBody.innerHTML = `
-                  <h2>${name}</h2>
-                  <p>${title || 'Plus de détails bientôt...'}</p>
                   ${description ? `<div class=\"workshop-description-modal\">${description}</div>` : ''}
                 `;
                 modal.style.display = 'flex';
+                document.body.style.overflow = 'hidden';
             });
         });
 
 
     closeBtn.addEventListener('click', () => {
       modal.style.display = 'none';
+      document.body.style.overflow = '';
     });
 
         window.addEventListener('click', (e) => {
-            if (e.target === modal) modal.style.display = 'none';
+            if (e.target === modal) {
+                modal.style.display = 'none';
+                document.body.style.overflow = '';
+            }
         });
         window.addEventListener('keydown', (e) => {
             if (e.key === 'Escape' && modal.style.display === 'flex') {
                 modal.style.display = 'none';
+                document.body.style.overflow = '';
             }
         });
     </script>

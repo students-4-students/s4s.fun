@@ -121,21 +121,38 @@ a:hover {
 }
 
 .dropdown-toggle {
-  cursor: pointer;
-  transition: background-color 0.3s ease;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    display: flex;
+    align-items: center;
+}
+
+.dropdown-caret {
+        margin-left: 10px;
+        display: inline-block;
+        transition: transform 0.2s;
+        font-size: 0.8em;
+}
+
+.dropdown-caret.open {
+    transform: rotate(180deg);
 }
 
 .dropdown-menu {
-  display: none;
-  position: absolute;
-  background-color: var(--background);
-  top: 140%;
-  min-width: 170px;
-  box-shadow: 0 8px 16px rgba(0,0,0,0.15);
-  z-index: 10;
-  border-radius: 5px;
-  overflow: hidden;
-  padding: 12px 8px;
+    display: block;
+    position: absolute;
+    background-color: var(--background);
+    top: 140%;
+    min-width: 170px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+    z-index: 10;
+    border-radius: 5px;
+    overflow: hidden;
+    padding: 12px 8px;
+    opacity: 0;
+    pointer-events: none;
+    transform: translateY(10px) scaleY(0.95);
+    transition: opacity 0.25s cubic-bezier(.4,0,.2,1), transform 0.4s cubic-bezier(.4,0,.2,1);
 }
 
 .dropdown-menu a {
@@ -155,12 +172,18 @@ a:hover {
 
 .dropdown:hover .dropdown-menu,
 .dropdown:focus-within .dropdown-menu {
-  display: block;
+    opacity: 1;
+    pointer-events: auto;
+    transform: translateY(0) scaleY(1);
 }
 
-.dropdown-toggle:after {
-  content: '';
+/* Flip arrow when dropdown is open (hover/focus) */
+.dropdown:hover .dropdown-caret,
+.dropdown:focus-within .dropdown-caret {
+    transform: rotate(180deg);
 }
+
+/* Removed default after, use .dropdown-caret instead */
 
 /* Mobile menu dropdown for workshops page */
 .mobile-dropdown {

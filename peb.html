@@ -40,9 +40,9 @@
 <body>
 <nav class="navbar theme-primary">
     <div class="menu-left">
-        <a href="welcome.html">Accueil</a>
+    <a href="index.html">Accueil</a>
         <div class="dropdown">
-        <a style="background-color: rgba(0, 0, 0, 0.3);border-radius: 5px;" href="#" class="dropdown-toggle">Événements <i class="fa fa-caret-down"></i></a>
+        <a style="background-color: rgba(0, 0, 0, 0.3);border-radius: 5px;" href="#" class="dropdown-toggle">Événements <span class="dropdown-caret">&#9660;</span></a>
         <div class="dropdown-menu">
             <a href="index.html">S4S Week</a>
             <a style="background-color: rgba(0, 0, 0, 0.3);border-radius: 5px;" href="peb.html">PEB</a>
@@ -51,7 +51,7 @@
         </div>
         <a href="workshops.html">Workshops</a>
         <a href="sponsors.html">Sponsors</a>
-        <a href="about.html">À propos</a>
+    <!--<a href="about.html">À propos</a>-->
     </div>
     <div class="menu-right">
         <div class="hamburger" onclick="toggleMobileMenu()">
@@ -63,7 +63,7 @@
 </nav>
 <div id="mobileMenu" class="mobile-menu">
     <a href="#" class="closebtn" onclick="toggleMobileMenu()">&times;</a>
-    <a href="welcome.html">Accueil</a>
+    <a href="index.html">Accueil</a>
     <div class="mobile-dropdown">
         <a href="#" class="mobile-dropdown-toggle" onclick="toggleMobileDropdown(event)">Événements <span class="mobile-caret">▼</span></a>
         <div class="mobile-dropdown-menu">
@@ -74,7 +74,7 @@
     </div>
     <a href="workshops.html">Workshops</a>
     <a href="sponsors.html">Sponsors</a>
-    <a href="about.html">À propos</a>
+    <!--<a href="about.html">À propos</a>-->
 </div>
 <script>
     function toggleMobileMenu() {
