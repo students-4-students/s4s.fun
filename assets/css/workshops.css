@@ -603,7 +603,7 @@ h3 {
 @media (width > 600px) {
     /* Explicit sizing by workshop type */
     .workshops-list .workshop-card.polylan,
-    .workshops-list .workshop-card.clic {
+    .workshops-list .workshop-card.arcanite {
         grid-row: span 2;  /* 2 rows */
         grid-column: span 2; /* 2 columns */
     }
@@ -616,7 +616,9 @@ h3 {
     .workshops-list .workshop-card.polympiads,
     .workshops-list .workshop-card.epphil,
     .workshops-list .workshop-card.david-strutt,
-    .workshops-list .workshop-card.camille {
+    .workshops-list .workshop-card.camille,
+    .workshops-list .workshop-card.polyjapan,
+    .workshops-list .workshop-card.cctc {
         grid-column: span 2;
     }
 
@@ -625,7 +627,8 @@ h3 {
     .workshops-list .workshop-card.je,
     .workshops-list .workshop-card.escape-epfl,
     .workshops-list .workshop-card.francesco,
-    .workshops-list .workshop-card.paolo-ricci {
+    .workshops-list .workshop-card.paolo-ricci,
+    .workshops-list .workshop-card.jdrpoly {
         grid-row: span 2;
     }
 }
@@ -901,6 +904,27 @@ h3 {
 .workshop-card.gamestar::before {
   background-image: url("../workshops/images/gamestar-workshop.png");
   background-size: 260px 240px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.workshop-card.jdrpoly::before {
+  background-image: url("../workshops/images/jdrpoly-workshop.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 20% 50%;
+}
+
+.workshop-card.arcanite::before {
+  background-image: url("../workshops/images/arcanite-workshop.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.workshop-card.cctc::before {
+    background-image: url("../workshops/images/cctc-workshop.jpeg");
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
