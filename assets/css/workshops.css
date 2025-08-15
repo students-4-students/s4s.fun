@@ -582,7 +582,11 @@ h3 {
   grid-column: main;
   padding: 1.25rem;
   min-block-size: 100vh;
-  margin-bottom: 10em;
+  background-color: white;
+}
+
+.workshops-main::before {
+    background-color: white;
 }
 
 .workshops-list {
@@ -592,6 +596,8 @@ h3 {
     grid-auto-rows: 240px;
     grid-auto-flow: dense;
     gap: 12px;
+    padding-top: 2em;
+    padding-bottom: 2em;
 }
 
 @media (width > 600px) {
@@ -627,9 +633,7 @@ h3 {
 
 .workshop-card {
   border-radius: 0.4em;
-  border-style: solid;
-  border-width: 0.1em;
-  box-shadow: 0 2px 12px 0 rgba(60,60,120,0.08);
+  box-shadow: 0 2px 12px 0 rgba(60,60,120,0.1);
   text-align: left;
   transition: box-shadow 0.2s, transform 0.2s, background-size 0.5s ease;
   cursor: pointer;
@@ -701,6 +705,7 @@ h3 {
 }
 
 .workshop-date {
+    display: none;
   font-size: 0.98em;
   font-weight: 600;
   margin-left: 1em;
@@ -914,6 +919,14 @@ h3 {
     line-height: 1.5;
 }
 
+.workshop-modal-name {
+    color: #515582;
+}
+
+.workshop-modal-title {
+    color: #515582;
+}
+
 .modal {
   display: none; /* Hidden by default */
   position: fixed;
@@ -956,7 +969,7 @@ h3 {
   background-repeat: no-repeat;
   background-position: center;
   border-radius: 0.7em 0.7em 0 0;
-    flex: 0 0 180px;
+  flex: 0 0 300px;
 }
 
 

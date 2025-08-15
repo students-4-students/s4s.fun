@@ -142,7 +142,7 @@ a:hover {
     display: block;
     position: absolute;
     background-color: var(--background);
-    top: 140%;
+    top: 100%;
     min-width: 170px;
     box-shadow: 0 8px 16px rgba(0,0,0,0.15);
     z-index: 10;

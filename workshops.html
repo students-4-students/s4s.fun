@@ -346,7 +346,7 @@
       <div class="workshop-card gamestar" data-link="https://clic.epfl.ch/commissions/game-star">
         <span class="workshop-date">28/07</span>
         <span class="workshop-name">GameStar</span>
-        <span class="workshop-title">Soon.</span>
+        <span class="workshop-title">Workshop introduction au développement de jeu vidéo.</span>
         <p class="workshop-description" hidden>
           Soon.
         </p>
@@ -450,7 +450,9 @@
                 }
 
                 modalBody.innerHTML = `
-                  ${description ? `<div class=\"workshop-description-modal\">${description}</div>` : ''}
+                    ${name ? `<h2 class=\"workshop-modal-name\">${name}</h2>` : ''}<br>
+                    ${title ? `<div class=\"workshop-modal-title\">${title}</div>` : ''}<br>
+                    ${description ? `<div class=\"workshop-description-modal\">${description}</div>` : ''}
                 `;
                 modal.style.display = 'flex';
                 document.body.style.overflow = 'hidden';
