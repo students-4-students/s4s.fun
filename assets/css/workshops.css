@@ -875,7 +875,7 @@ h3 {
 
 .workshop-card.polyjapan::before {  
   background-image: url("../workshops/images/polyjapan-workshop.png");
-  background-size: cover;
+  background-size: 90%;
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -919,7 +919,7 @@ h3 {
   background-image: url("../workshops/images/arcanite-workshop.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: 10% 50%;
 }
 
 .workshop-card.cctc::before {
