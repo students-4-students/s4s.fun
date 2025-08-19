@@ -11,65 +11,66 @@ const typeNames = {
     p: '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M7.5 8.25h9m-9 3H12m-9.75 1.51c0 1.6 1.123 2.994 2.707 3.227 1.129.166 2.27.293 3.423.379.35.026.67.21.865.501L12 21l2.755-4.133a1.14 1.14 0 01.865-.501 48.172 48.172 0 003.423-.379c1.584-.233 2.707-1.626 2.707-3.228V6.741c0-1.602-1.123-2.995-2.707-3.228A48.394 48.394 0 0012 3c-2.392 0-4.744.175-7.043.513C3.373 3.746 2.25 5.14 2.25 6.741v6.018z" /></svg> Présentation',
     r: '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M7.5 8.25h9m-9 3H12m-9.75 1.51c0 1.6 1.123 2.994 2.707 3.227 1.129.166 2.27.293 3.423.379.35.026.67.21.865.501L12 21l2.755-4.133a1.14 1.14 0 01.865-.501 48.172 48.172 0 003.423-.379c1.584-.233 2.707-1.626 2.707-3.228V6.741c0-1.602-1.123-2.995-2.707-3.228A48.394 48.394 0 0012 3c-2.392 0-4.744.175-7.043.513C3.373 3.746 2.25 5.14 2.25 6.741v6.018z" /></svg> Questions',
     w: '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"></svg> Activités',
-    b: '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"></svg> Pause'
+    b: '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"></svg> Pause',
+    s: '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"></svg> Surprise',
 };
 
 const sections = [
     {
         name: 'Architecture',
-        message: 'Désolé, Students 4 Students ne s’adresse pas aux étudiant·e·s en architecture.',
+        message: 'Le programme de l’architecture sera bientôt disponible. Merci de votre patience.',
     },
     {
         name: 'Chimie et génie chimique',
-        courses: ["ceremony", "workshop_learn2study", "ws", "snack", "pm", "al", "pr", "an", "ch"],
+        courses: ["opening", "ws", "snack", "pm", "al", "pr", "an", "ch", "surprise"]
     },
     {
         name: 'CMS',
-        courses: ["cms-ceremony", "cms-workshop_calculs", "ws", "snack", "cms-pr", "cms-raq", "cms-pg", "cms-al", "cms-ga", "cms-an"],
+        courses: ["opening", "cms-ca", "ws", "snack", "cms-pr", "cms-raq", "cms-pg", "cms-al", "cms-ga", "cms-an", "surprise"]
     },
     {
         name: 'Génie civil',
-        courses: ["ceremony", "workshop_learn2study", "ws", "snack", "pm", "al", "pr", "an", "ch"],
+        courses: ["opening", "ws", "snack", "pm", "al", "pr", "an", "ch", "surprise"]
     },
     {
         name: 'Génie mécanique',
-        courses: ["ceremony", "workshop_learn2study", "ws", "snack", "pm", "al", "pr", "an", "el"],
+        courses: ["opening", "ws", "snack", "pm", "al", "pr", "an", "el", "surprise"]
     },
     {
         name: 'Génie électrique et électronique',
-        courses: ["ceremony", "workshop_learn2study", "ws", "snack", "pm", "al", "pr", "an", "el"],
+        courses: ["opening", "ws", "snack", "pm", "al", "pr", "an", "el", "surprise"]
     },
     {
         name: 'Informatique',
-        courses: ["ceremony", "workshop_learn2study", "ws", "snack", "pm", "al", "pr", "an", "ai"],
+        courses: ["opening", "ws", "snack", "pm", "al", "pr", "an", "ai", "surprise"]
     },
     {
         name: 'Matériaux',
-        courses: ["ceremony", "workshop_learn2study", "ws", "snack", "pm", "al", "pr", "an", "ch"],
+        courses: ["opening", "ws", "snack", "pm", "al", "pr", "an", "ch", "surprise"]
     },
     {
         name: 'Mathématiques',
-        courses: ["ceremony", "workshop_learn2study", "ws", "snack", "pm", "ala", "pr", "ana"],
+        courses: ["opening", "ws", "snack", "pm", "ala", "pr", "ana", "surprise"]
     },
     {
         name: 'Microtechnique',
-        courses: ["ceremony", "workshop_learn2study", "ws", "snack", "pm", "al", "pr", "an", "el"],
+        courses: ["opening", "ws", "snack", "pm", "al", "pr", "an", "el", "surprise"]
     },
     {
         name: 'Physique',
-        courses: ["ceremony", "workshop_learn2study", "ws", "snack", "pm", "ala", "pr", "ana"],
+        courses: ["opening", "ws", "snack", "pm", "ala", "pr", "ana", "surprise"]
     },
     {
         name: 'Sciences du vivant',
-        courses: ["ceremony", "workshop_learn2study", "ws", "snack", "pm", "al", "pr", "an", "ch"],
+        courses: ["opening", "ws", "snack", "pm", "al", "pr", "an", "ch", "surprise"]
     },
     {
         name: 'Sciences et ingénierie de l’environnement',
-        courses: ["ceremony", "workshop_learn2study", "ws", "snack", "pm", "al", "pr", "an", "ch"],
+        courses: ["opening", "ws", "snack", "pm", "al", "pr", "an", "ch", "surprise"]
     },
     {
         name: 'Systèmes de communication',
-        courses: ["ceremony", "workshop_learn2study", "ws", "snack", "pm", "al", "pr", "an", "ai"],
+        courses: ["opening", "ws", "snack", "pm", "al", "pr", "an", "ai", "surprise"]
     },
 ];
 
@@ -89,115 +90,111 @@ Array.from(document.querySelectorAll('.schedule-placeholder')).forEach((placehol
 
 //FORMAT is important: "<day name> <day of month> <start hour>h[minutes]-<end hour>h[minutes]"
 const COURSES = {
-    "ceremony": {
-        "name": "Cérémonie d’ouverture",
-        "presentations": ["jeu 29 8h-9h"]
+    "opening": {
+        "name": "Journée d'ouverture",
+        "presentations": ["mer 27 8h15-19h"]
     },
     "snack":{
         "name": "Goûter",
-        "breaks": ["ven 30 15h30-16h", "sam 31 15h30-16h", "lun 2 15h30-16h", "mar 3 15h30-16h", "mer 4 15h30-16h", "jeu 5 15h30-16h"],
+        "breaks": ["jeu 28 15h30-16h", "ven 29 15h30-16h", "sam 30 15h30-16h", "lun 1 15h30-16h", "mar 2 15h30-16h", "mer 3 15h30-16h"],
     },
-    "cms-ceremony": {
-        "name": "Cérémonie d’ouverture",
-        "presentations": ["jeu 29 9h-10h"]
-    },
-    "workshop_learn2study": {
-        "name": "Workshop apprendre à étudier",
-        "activities": ["jeu 29 9h-12h"],
-    },
-    "cms-workshop_calculs": {
-        "name": "Workshop rappels calculs algébriques",
-        "activities": ["jeu 29 10h-12h"],
+    "cms-ca": {
+        "name": "Calcul algébrique",
+        "courses": ["jeu 28 8h15-10h"],
     },
     "cms-raq": {
         "name": "R.A.Q",
-        "raq": ["mer 4 13h30-15h30"],
+        "raq": ["mar 2 13h45-15h30"],
     },
     "ws": {
         "name": "Workshops",
-        "activities": ["jeu 29 13h30-19h",
-            "ven 30 16h-19h",
-            "sam 31 16h-19h",
-            "lun 2 16h-19h",
-            "mar 3 16h-19h",
-            "mer 4 16h-19h",
-            "jeu 5 16h-19h",
+        "activities": ["mer 27 13h45-19h",
+            "jeu 28 16h-19h",
+            "ven 29 16h-19h",
+            "sam 30 16h-19h",
+            "lun 1 16h-19h",
+            "mar 2 16h-19h",
+            "mer 3 16h-19h",
         ]
     },
     "an": {
         "name": "Analyse",
-        "courses": ["sam 31 10h-12h", "mar 3 10h-12h"],
-        "exercices": ["sam 31 13h30-15h30", "mar 3 13h30-15h30"]
+        "courses": ["jeu 28 8h15-10h", "lun 1 8h15-10h"],
+        "exercices": ["ven 29 13h45-15h30", "lun 1 13h45-15h30"]
     },
     "ana": {
         "name": "Analyse avancée",
-        "courses": ["sam 31 10h-12h", "mar 3 10h-12h", "mer 4 10h-12h"],
-        "exercices": ["sam 31 13h30-15h30", "mar 3 13h30-15h30", "mer 4 13h30-15h30"]
+        "courses": ["jeu 28 8h15-10h", "lun 1 8h15-10h", "mer 3 8h15-10h"],
+        "exercices": ["ven 29 13h45-15h30", "lun 1 13h45-15h30", "mer 3 13h45-15h30"]
     },
     "al": {
         "name": "Algèbre linéaire",
-        "courses": ["ven 30 10h-12h", "mer 4 10h-12h"],
-        "exercices": ["ven 30 13h30-15h30", "mer 4 13h30-15h30"]
+        "courses": ["jeu 28 10h-12h", "mar 2 10h-12h"],
+        "exercices": ["jeu 28 13h45-15h30", "mar 2 13h45-15h30"]
     },
     "ala": {
         "name": "Algèbre linéaire avancée",
-        "courses": ["ven 30 10h-12h", "lun 2 10h-12h", "jeu 5 8h-10h"],
-        "exercices": ["ven 30 13h30-15h30", "lun 2 13h30-15h30", "jeu 5 13h30-15h30"]
+        "courses": ["jeu 28 10h-12h", "sam 30 10h-12h", "mar 2 10h-12h"],
+        "exercices": ["jeu 28 13h45-15h30", "sam 30 13h45-15h30", "mar 2 13h45-15h30"]
     },
     "el": {
         "name": "Électricité",
-        "courses": ["lun 2 10h-12h", "jeu 5 8h-10h"],
-        "exercices": ["lun 2 13h30-15h30", "jeu 5 13h30-15h30"]
+        "courses": ["sam 30 10h-12h", "mer 3 8h15-10h"],
+        "exercices": ["sam 30 13h45-15h30", "mer 3 13h45-15h30"]
     },
     "pm": {
         "name": "Physique mécanique",
-        "courses": ["ven 30 8h-10h", "mar 3 8h-10h"],
-        "exercices": ["lun 2 8h-10h", "mer 4 8h-10h"]
+        "courses": ["lun 1 10h-12h", "ven 29 10h-12h"],
+        "exercices": ["sam 30 8h15-10h", "mar 2 8h15-10h"]
     },
     "pr": {
         "name": "Programmation",
         "courses": [],
-        "exercices": ["sam 31 8h-10h", "jeu 5 10h-12h"]
+        "exercices": ["ven 29 8h15-10h", "mer 3 10h-12h"]
     },
     "ai": {
         "name": "AICC",
-        "courses": ["lun 2 10h-12h", "jeu 5 8h-10h"],
-        "exercices": ["lun 2 13h30-15h30", "jeu 5 13h30-15h30"]
+        "courses": ["sam 30 10h-12h", "mer 3 8h15-10h"],
+        "exercices": ["sam 30 13h45-15h30", "mer 3 13h45-15h30"]
     },
     "ch": {
         "name": "Chimie",
-        "courses": ["lun 2 10h-12h", "jeu 5 8h-10h"],
-        "exercices": ["lun 2 13h30-15h30", "jeu 5 13h30-15h30"]
+        "courses": ["sam 30 10h-12h", "mer 3 8h15-10h"],
+        "exercices": ["sam 30 13h45-15h30", "mer 3 13h45-15h30"]
     },
     "cms-an": {
         "name": "Analyse (CMS)",
-        "courses": ["sam 31 10h-12h", "lun 2 8h-10h", "mar 3 10h-12h"],
-        "exercices": ["lun 2 13h30-15h30", "mar 3 13h30-15h30"]
+        "courses": ["jeu 28 10h-12h", "mar 2 8h15-10h"],
+        "exercices": ["jeu 28 13h45-15h30", "mar 2 10h-12h"]
     },
     "cms-al": {
         "name": "Algèbre (CMS)",
-        "courses": ["ven 30 8h-10h", "sam 31 8h-10h"],
-        "exercices": ["ven 30 13h30-15h30", "sam 31 13h30-15h30"]
+        "courses": ["lun 1 8h15-10h", "sam 30 10h-12h"],
+        "exercices": ["lun 1 10h-12h", "sam 30 13h45-15h30"]
     },
     "cms-ga": {
         "name": "Géométrie analytique (CMS)",
-        "courses": ["lun 2 10h-12h"],
-        "exercices": ["mar 3 8h-10h"]
+        "courses": ["ven 29 10h-12h"],
+        "exercices": ["ven 29 13h45-15h30"]
     },
     "cms-pg": {
         "name": "Physique générale (CMS)",
-        "courses": ["mer 4 8h-10h", "jeu 5 8h-10h"],
-        "exercices": ["mer 4 10h-12h", "jeu 5 13h30-15h30"]
+        "courses": ["sam 30 8h15-10h", "mer 3 8h15-10h"],
+        "exercices": ["lun 1 13h45-15h30", "mer 3 13h45-15h30"]
     },
     "cms-pr": {
         "name": "Programmation",
-        "exercices": ["ven 30 10h-12h", "jeu 5 10h-12h"]
+        "exercices": ["ven 29 8-10h", "mer 3 10h-12h"]
+    },
+    "surprise": {
+        "name": "Surprise",
+        "surprise": ["jeu 4 8h15-19h"]
     }
 }
 
-const DAYS = ["jeu 29", "ven 30", "sam 31", "lun 2", "mar 3", "mer 4", "jeu 5"];
-const TIMES = ["8h", "9h", "10h", "11h", "12h", "13h30", "14h30", "15h30", "16h", "19h"];
-const ALL_TIMES = ["8h", "9h", "10h", "11h", "12h", "13h30", "14h30", "15h30", "16h", "19h"]
+const DAYS = ["mer 27", "jeu 28", "ven 29", "sam 30", "lun 1", "mar 2", "mer 3", "jeu 4"]
+const TIMES = ["8h15", "9h", "10h", "11h", "12h", "13h45", "14h30", "15h30", "16h", "19h"];
+const ALL_TIMES = ["8h15", "9h", "10h", "11h", "12h", "13h45", "14h30", "15h30", "16h", "19h"];
 /**********************************************************************************************************************/
 
 /* Interaction */
@@ -224,7 +221,8 @@ function findCourse(section, search_day, search_time) {
         { key: 'presentations', type: 'p' },
         { key: 'activities', type: 'w' },
         { key: 'breaks', type: 'b' },
-        { key: 'raq', type: 'r' }
+        { key: 'raq', type: 'r' },
+        { key: 'surprise', type: 's' },
     ];
     for (let c of section.courses) {
         const course = COURSES[c];
@@ -299,12 +297,6 @@ sectionSelect.addEventListener('change', () => {
 
 
 DAYS.forEach(value => {
-    if (value.startsWith("lun")) {
-        scheduleElement.innerHTML += `
-            <h3 class="schedule-day">dim 1</h3>
-            <div style="grid-row: span 10"></div>
-        `;
-    }
     scheduleElement.innerHTML += `
              <h3 class="schedule-day">${value}</h3>
              <article class="schedule-course">

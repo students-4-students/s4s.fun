@@ -994,6 +994,8 @@ h3 {
 .course-ch { --course-accent: #f9a8d4; }
 .course-ws { --course-accent: #5eead4; }
 
+.course-surprise { --course-accent: linear-gradient(to right, gold, purple); }
+
 .course-ws.schedule-course::before {
     background: linear-gradient(to right, aquamarine, gold);
 }
