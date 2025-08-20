@@ -617,9 +617,12 @@ h3 {
     .workshops-list .workshop-card.epphil,
     .workshops-list .workshop-card.david-strutt,
     .workshops-list .workshop-card.camille,
-    .workshops-list .workshop-card.polyjapan,
-    .workshops-list .workshop-card.cctc {
+    .workshops-list .workshop-card.polyjapan {
         grid-column: span 2;
+    }
+
+    .workshops-list .workshop-card.cctc {
+        grid-column: span 3;
     }
 
     /* 2x1 (two rows, one column) */
@@ -629,6 +632,10 @@ h3 {
     .workshops-list .workshop-card.francesco,
     .workshops-list .workshop-card.paolo-ricci,
     .workshops-list .workshop-card.jdrpoly {
+        grid-row: span 2;
+    }
+
+    .workshops-list .workshop-card.racing-team {
         grid-row: span 2;
     }
 }
@@ -700,7 +707,6 @@ h3 {
     padding: 8px 18px;
     color: white;
     text-shadow: 0 2px 8px rgba(0,0,0,0.7);
-    -webkit-text-stroke: 1px rgba(0,0,0,0.7);
     width: 100%;
     background: linear-gradient(135deg, rgba(0,0,0,0.5) 0%, rgba(0,0,0,0.05) 100%);
     box-sizing: border-box;
@@ -708,7 +714,6 @@ h3 {
 }
 
 .workshop-date {
-    display: none;
   font-size: 0.98em;
   font-weight: 600;
   margin-left: 1em;
@@ -923,7 +928,21 @@ h3 {
 }
 
 .workshop-card.cctc::before {
-    background-image: url("../workshops/images/cctc-workshop.jpeg");
+  background-image: url("../workshops/images/cctc-workshop.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.workshop-card.start::before {
+  background-image: url("../workshops/images/start-workshop.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.workshop-card.racing-team::before {
+  background-image: url("../workshops/images/racing-team-workshop.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -1066,6 +1085,7 @@ h3 {
     color: inherit;
     display: block;
 }
+
 
 .section-footer {
     display: flex;
