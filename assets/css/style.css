@@ -57,6 +57,14 @@ sup {
     --text: #ffffff;
 }
 
+.theme-quaternary {
+    --background: #3C6E71;
+    --headings: #FFFFFF;
+    --text: #F2F2F2;
+    --muted: #A9C1C1;
+    --separator: rgba(60, 110, 113, .3);
+}
+
 h1 {
     font-size: 3.2rem;
     font-weight: 600;
