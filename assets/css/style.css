@@ -1002,6 +1002,14 @@ h3 {
 .course-ch { --course-accent: #f9a8d4; }
 .course-ws { --course-accent: #5eead4; }
 
+.course-pt { --course-accent: #f59e0b; }
+.course-geo { --course-accent: #3b82f6; }
+.course-tb { --course-accent: #16a34a; }
+.course-m3D { --course-accent: #cf4ed8; }
+.course-expo { --course-accent: #ef4444; }
+.course-hat { --course-accent: #a6c144; }
+.course-math { --course-accent: #5cd2f6; }
+
 .course-surprise { --course-accent: linear-gradient(to right, gold, purple); }
 
 .course-ws.schedule-course::before {
