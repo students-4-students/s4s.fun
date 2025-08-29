@@ -623,20 +623,21 @@ h3 {
     .workshops-list .workshop-card.cctc,
     .workshops-list .workshop-card.jdrxludo,
     .workshops-list .workshop-card.alumni,
-    .workshops-list .workshop-card.ludopoly {
+    .workshops-list .workshop-card.ludopoly,
+    .workshops-list .workshop-card.musical,
+    .workshops-list .workshop-card.mobots {
         grid-column: span 2;
     }
+
 
     .workshops-list .workshop-card.igem,
     .workshops-list .workshop-card.je,
     .workshops-list .workshop-card.escape-epfl,
     .workshops-list .workshop-card.francesco,
     .workshops-list .workshop-card.paolo-ricci,
-    .workshops-list .workshop-card.loic1 {
-        grid-row: span 2;
-    }
-
-    .workshops-list .workshop-card.racing-team {
+    .workshops-list .workshop-card.loic1,
+    .workshops-list .workshop-card.racing-team,
+    .workshops-list .workshop-card.rock {
         grid-row: span 2;
     }
 }
@@ -647,6 +648,7 @@ h3 {
   box-shadow: 0 2px 12px 0 rgba(60,60,120,0.1);
   text-align: left;
   transition: box-shadow 0.2s, transform 0.2s, background-size 0.5s ease;
+    will-change: transform, opacity;
   cursor: pointer;
   display: flex;
   flex-direction: column;
@@ -666,7 +668,7 @@ h3 {
   background-position: center;
   background-image: url("../workshops/logos-asso/placeholder.svg");
   transition: transform 0.5s ease, filter 0.3s ease;
-  filter: brightness(0.8);
+  filter: brightness(0.9);
 }
 
 .workshop-card:hover::before {
@@ -678,6 +680,7 @@ h3 {
   box-shadow: 0 8px 24px 0 rgba(60,60,120,0.18);
   transform: scale(1.03) translateY(-2px);
   color: white;
+    will-change: transform, opacity;
 }
 .workshop-card:hover .workshop-name {
   transform: translateY(-1em);
@@ -706,7 +709,7 @@ h3 {
     left: 0;
     z-index: 1;
     padding: 8px 18px;
-    color: white;
+    color: rgb(224, 224, 224);
     text-shadow: 0 2px 8px rgba(0,0,0,0.7);
     width: 100%;
     background: linear-gradient(135deg, rgba(0,0,0,0.5) 0%, rgba(0,0,0,0.05) 100%);
@@ -825,14 +828,14 @@ h3 {
 
 .workshop-card.je::before {
   background-image: url("../workshops/images/je-workshop.png");
-  background-size: cover;
+  background-size: 107% 100%;
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .workshop-card.loic1::before {
   background-image: url("../workshops/images/loic-delineau-workshop-1.png");
-  background-size: cover;
+  background-size: 100% 100%;
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -1007,6 +1010,34 @@ h3 {
 
 .workshop-card.archi::before {
   background-image: url("../workshops/images/archi-workshop.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center; 
+}
+
+.workshop-card.montagne::before {
+  background-image: url("../workshops/images/montagne-workshop.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center; 
+}
+
+.workshop-card.rock::before {
+  background-image: url("../workshops/images/rock-workshop.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center; 
+}
+
+.workshop-card.musical::before {
+  background-image: url("../workshops/images/musical-workshop.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center; 
+}
+
+.workshop-card.mobots::before {
+  background-image: url("../workshops/images/mobots-workshop.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center; 
