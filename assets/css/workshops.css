@@ -592,8 +592,8 @@ h3 {
 .workshops-list {
     display: grid;
     /* Use pixel-based sizing to avoid rem-driven breakpoints changing min width */
-    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-    grid-auto-rows: 240px;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-auto-rows: 250px;
     grid-auto-flow: dense;
     gap: 12px;
     padding-top: 2em;
@@ -621,7 +621,9 @@ h3 {
     .workshops-list .workshop-card.camille,
     .workshops-list .workshop-card.polyjapan,
     .workshops-list .workshop-card.cctc,
-    .workshops-list .workshop-card.jdrxludo {
+    .workshops-list .workshop-card.jdrxludo,
+    .workshops-list .workshop-card.alumni,
+    .workshops-list .workshop-card.ludopoly {
         grid-column: span 2;
     }
 
@@ -629,7 +631,8 @@ h3 {
     .workshops-list .workshop-card.je,
     .workshops-list .workshop-card.escape-epfl,
     .workshops-list .workshop-card.francesco,
-    .workshops-list .workshop-card.paolo-ricci {
+    .workshops-list .workshop-card.paolo-ricci,
+    .workshops-list .workshop-card.loic1 {
         grid-row: span 2;
     }
 
@@ -939,6 +942,13 @@ h3 {
   background-position: center;
 }
 
+.workshop-card.yves::before {
+  background-image: url("../workshops/images/yves-lecture.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
 .workshop-card.racing-team::before {
   background-image: url("../workshops/images/racing-team-workshop.png");
   background-size: cover;
@@ -965,6 +975,41 @@ h3 {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+}
+
+.workshop-card.esther::before {
+  background-image: url("../workshops/images/esther-workshop.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center; 
+}
+
+.workshop-card.alumni::before {
+  background-image: url("../workshops/images/alumni-workshop.png");
+  background-size: 90%;
+  background-repeat: no-repeat;
+  background-position: center; 
+}
+
+.workshop-card.orientation::before {
+  background-image: url("../workshops/images/orientation-workshop.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center; 
+}
+
+.workshop-card.ludopoly::before {
+  background-image: url("../workshops/images/ludopoly-workshop.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center; 
+}
+
+.workshop-card.archi::before {
+  background-image: url("../workshops/images/archi-workshop.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center; 
 }
 
 /* Hidden inline description that is only used for the modal */
