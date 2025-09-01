@@ -9,6 +9,7 @@
 
     <link rel="stylesheet" href="assets/css/normalize.css">
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/navbar.css">
 
     <meta name="theme-color" content="#515582">
     <link rel="icon" href="assets/icons/favicon.png">
@@ -36,6 +37,70 @@
     </script>
 </head>
 <body>
+    <nav class="navbar theme-primary">
+      <div class="menu-left">
+          <a href="index.html">Accueil</a>
+          <div class="dropdown">
+            <a style="background-color: rgba(255, 255, 255, 0.3);border-radius: 5px;" href="#" class="dropdown-toggle">Événements <span class="dropdown-caret">&#9660;</span></a>
+            <div class="dropdown-menu">
+              <a style="background-color: rgba(255, 255, 255, 0.3);border-radius: 5px;" href="index.html">S4S Week</a>
+              <a href="peb.html">PEB</a>
+              <a href="intbee.html">IntBee</a>
+            </div>
+          </div>
+          <a href="workshops.html">Workshops</a>
+          <a href="sponsors.html">Sponsors</a>
+          <!--<a href="about.html">À propos</a>-->
+      </div>
+      <div class="menu-right">
+          <div class="hamburger" onclick="toggleMobileMenu()">
+              <span></span>
+              <span></span>
+              <span></span>
+          </div>
+      </div>
+    </nav>
+    <div id="mobileMenu" class="mobile-menu">
+        <a href="#" class="closebtn" onclick="toggleMobileMenu()">&times;</a>
+    <a href="index.html">Accueil</a>
+        <div class="mobile-dropdown">
+          <a href="#" class="mobile-dropdown-toggle" onclick="toggleMobileDropdown(event)">Événements <span class="mobile-caret">▼</span></a>
+          <div class="mobile-dropdown-menu">
+            <a href="index.html">S4S Week</a>
+            <a href="peb.html">PEB</a>
+            <a href="intbee.html">IntBee</a>
+          </div>
+        </div>
+        <a href="workshops.html">Workshops</a>
+        <a href="sponsors.html">Sponsors</a>
+    <!--<a href="about.html">À propos</a>-->
+    </div>
+    <script>
+      function toggleMobileMenu() {
+        const menu = document.getElementById("mobileMenu");
+        if (menu.style.width === "100%") {
+          menu.style.width = "0";
+        } else {
+          menu.style.width = "100%";
+        }
+      }
+
+      function toggleMobileDropdown(event) {
+        event.preventDefault();
+        const toggle = event.currentTarget;
+        const dropdown = toggle.nextElementSibling;
+        dropdown.classList.toggle('open');
+        toggle.querySelector('.mobile-caret').classList.toggle('open');
+    }
+        function toggleMobileMenu() {
+        const menu = document.getElementById("mobileMenu");
+        if (menu.style.width === "100%") {
+            menu.style.width = "0";
+        } else {
+            menu.style.width = "100%";
+        }
+        }
+    </script>
     <section class="section section-hero theme-primary">
         <div class="container-wrapper-right">
             <div class="container container-narrow">
@@ -144,7 +209,7 @@
                 <h2>Workshops</h2>
 
                 <p class="lead">
-                    Chaque jour après les cours, détends-toi en participant à l’un des nombreux workshops
+                    Chaque jour après les cours, détends-toi en participant à l’un des nombreux <a href="workshops.html" class="lead-link">workshops</a>
                     organisés par des associations actives sur le campus.<br>
                     Les inscriptions se feront quelques jours avant le workshop directement sur ton compte S4S-Connect.
                     Plus d'informations à ce sujet seront communiquées prochainement.
