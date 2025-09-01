@@ -113,6 +113,7 @@ h3 {
     bottom: -.15em;
     height: .2em;
     z-index: 0;
+    border-radius: 15em;
 }
 
 .lead-link::before {
