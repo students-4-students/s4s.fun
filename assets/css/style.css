@@ -515,7 +515,7 @@ h3 {
 .section-forms::after {
     content: '';
     display: block;
-    background-image: url('../illustrations/s4s_committee_2025_pink.png');
+    background-image: url('../illustrations/s4s_committee_2025_pink.webp');
     background-size: cover;
     background-position: center;
     height: 400px;
@@ -593,7 +593,7 @@ h3 {
     color: #FF4081;
     transition: all 0.3s ease;
 }
-  
+
 #scroll-to-bottom:hover {
     background-color: #ffa2da;
     border-radius: 3px;
@@ -672,25 +672,25 @@ h3 {
       height: 500px; /* adjust the height for large screens */
     }
   }
-  
+
   @media (max-width: 992px) {
     .section-forms::after {
       height: 400px; /* adjust the height for medium screens */
     }
   }
-  
+
   @media (max-width: 768px) {
     .section-forms::after {
       height: 300px; /* adjust the height for small screens */
     }
   }
-  
+
   @media (max-width: 480px) {
     .section-forms::after {
       height: 200px; /* adjust the height for extra small screens */
     }
   }
-  
+
   @media (max-width: 320px) {
     .section-forms::after {
       height: 150px; /* adjust the height for very small screens */
@@ -1533,7 +1533,7 @@ h3 {
 }
 
 .partner-activfitness {
-    width: 12rem;   
+    width: 12rem;
 }
 
 .partner-payot {
