@@ -5,6 +5,7 @@
     --muted: #F2F2F2;
     --primary: #FF4081;
     --secondary: #1D3557;
+    --thirdary: #ff8bb1;
 }
 
 .theme-primary {
@@ -137,7 +138,7 @@
     font-weight: 600;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     border: none;
-    background-color: #1D3557;
+    background-color: var(--primary);
     min-width: 450px;
     justify-content: center;
 }
@@ -146,10 +147,6 @@
     min-width: 350px;
 }
 
-.hero-registration-button-2 {
-    background-color: #FF4081;
-    min-width: 200px;
-}
 
 .hero-registration-button:hover {
     transform: translateY(-6px);
@@ -195,6 +192,7 @@
 .hero-registration-button:hover {
     transform: translateY(-6px);
     box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+    color: white;
 }
 
 .hero-icon {
@@ -213,7 +211,7 @@
     stroke: #fff;
 }
 
-.hero-registration-button p {
+.hero-registration-button-2 p {
     margin: 0;
     transition: transform 0.4s ease;
 }
@@ -253,7 +251,6 @@
 }
 
 .button-drive, .button-register {
-    margin-right: 30px;
     text-align: center;
     transition: transform 0.3s ease;
 }
@@ -264,6 +261,11 @@
 
 .hero-registration-button svg.hidden + .button-drive, .hero-registration-button svg.hidden + .button-register {
     transform: translateX(-12px);
+}
+
+.hero-registration-button-closed:hover p{
+    transform: translateX(0) !important;
+    transition: none;
 }
 
 .warning-box {
@@ -277,7 +279,8 @@
     border-radius: 5px;
     width: 140%;
     box-sizing: border-box;
-    margin-left: 10%;
+    margin-left: 0;
+    margin-right: 0;
 }
 
 .warning-icon {
@@ -331,20 +334,157 @@
 
 .date-text {
     line-height: 1.4;
-}
-
-.partner-brio {
-    width: 9rem;
-}
-
-.partner-coop {
-    width: 10rem;
-}
-
-.partner-eltonymate {
-    width: 8rem;
+    text-align: left;
 }
 
 .partner-andros {
     width: 10rem;
+}
+
+.partner-redbull {
+    width: 10rem;
+}
+
+/* --- SCHEDULE TABLE STYLES --- */
+
+.table-responsive {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    padding-bottom: 20px;
+    margin-top: 20px;
+}
+
+.schedule-table {
+    border-collapse: separate;
+    border-spacing: 10px;
+    width: 100%;
+    min-width: 800px;
+}
+
+/* Headers */
+.schedule-table th {
+    text-transform: uppercase;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    padding-bottom: 15px;
+    color: rgba(255, 255, 255, 0.8);
+    text-align: left;
+    vertical-align: bottom;
+    border-bottom: 3px solid var(--primary);
+}
+
+.corner-cell {
+    width: 40px;
+    border-bottom: none !important;
+}
+
+/* Sidebar Categories */
+.category-cell {
+    color: #fff;
+    font-weight: bold;
+    text-transform: uppercase;
+    width: 140px;
+    vertical-align: middle;
+    text-align: right;
+    padding-right: 20px;
+    font-size: 1rem;
+    border-right: 2px solid var(--thirdary);
+}
+
+/* Data Cards */
+.card-cell {
+    background-color: rgba(0, 0, 0, 0.25);
+    color: #fff;
+    border-radius: 8px;
+    padding: 15px;
+    vertical-align: top;
+    height: 80px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    transition: transform 0.2s, background-color 0.2s;
+    min-width: 130px;
+    /* Use Primary Pink for card borders */
+    border: 1px solid var(--primary);
+}
+
+.card-cell:hover {
+    transform: translateY(-3px);
+    background-color: rgba(255, 255, 255, 0.05);
+    box-shadow: 0 8px 12px rgba(0,0,0,0.2);
+}
+
+/* Empty Slots */
+.empty-cell {
+    background-color: transparent;
+    border: 2px dashed var(--thirdary);
+    opacity: 0.3;
+    border-radius: 8px;
+}
+
+/* Text Styles inside Cards */
+.subject {
+    display: block;
+    font-weight: 600;
+    font-size: 1.25rem;
+    line-height: 1.3;
+}
+
+.sub-detail {
+    display: block;
+    font-size: 1rem;
+    margin-top: 4px;
+    color: var(--thirdary); /* Light pink for sub-text */
+    font-style: italic;
+}
+
+/* --- MOBILE LANDSCAPE OPTIMIZATIONS --- */
+@media screen and (max-width: 950px) and (orientation: landscape) {
+    
+    .table-responsive {
+        margin-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    .schedule-table {
+        min-width: 600px; 
+        border-spacing: 6px; 
+    }
+
+    .category-cell {
+        width: 100px; 
+        font-size: 0.8rem;
+        padding-right: 10px;
+        line-height: 1.2;
+    }
+
+    .schedule-table th {
+        font-size: 0.8rem;
+        padding-bottom: 8px;
+        letter-spacing: 0.5px;
+    }
+
+    .card-cell {
+        height: auto; 
+        min-height: 60px;
+        padding: 8px 10px; 
+        min-width: 110px; 
+    }
+
+    .subject {
+        font-size: 0.95rem; 
+        margin-bottom: 2px;
+    }
+
+    .sub-detail {
+        font-size: 0.75rem;
+        line-height: 1.2;
+    }
+    
+    .empty-cell {
+        border-width: 1px;
+    }
+    
+    .container-wide {
+        padding: 0 60px;
+        max-width: 100%;
+    }
 }

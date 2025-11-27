@@ -124,8 +124,7 @@ function toggleMobileMenu() {
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true">
                             <path stroke-linecap="round" stroke-linejoin="round" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
                         </svg>
-
-                        <p class="date-text">Du 6 au 9 Janvier 2025<br>De 16h45 à 19h</p>
+                        <p class="date-text">Du 6 au 9 Janvier 2026<br>Le 2 Janvier (CMS)<br>De 16h45 à 19h</p>
                     </div>
                     <div class="hero-bullet">
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true">
@@ -145,14 +144,17 @@ function toggleMobileMenu() {
                     </div>
                 </div>
 
-                <div class="hero-buttons">
+                <!-- <div class="hero-buttons">
                     <a class="hero-registration-button hero-registration-button-2" href="https://forms.gle/XTUz3wGVeBFRXB51A">
                         <svg class="hero-icon 2" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true">
                             <path stroke-linecap="round" stroke-linejoin="round" d="M13 9l3 3m0 0l-3 3m3-3H8m13 0a9 9 0 11-18 0 9 9 0 0118 0z" />
                         </svg>
                         <p class="button-register">S'inscrire</p>
                     </a>
-                </div>                                
+                </div>      -->
+                <div class="hero-buttons">
+                    <p class="hero-registration-button hero-registration-button-closed button-register">Les inscriptions ne sont pas ouvertes</p>
+                </div>                             
 
                 <div class="warning-box">
                     <svg fill="#FFC105" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 478.125 478.125" xml:space="preserve" class="warning-icon">
@@ -163,7 +165,7 @@ function toggleMobileMenu() {
                         </g>
                     </svg>
                     <p class="warning-text">
-                        En cas d'erreur <strong>"autorisation nécessaire"</strong>, connectez-vous d'abord à <a href="http://gdrive.epfl.ch">http://gdrive.epfl.ch</a> avec vos identifiants EPFL (Gaspar), puis réessayez.
+                        En cas d'erreur <strong>"autorisation nécessaire"</strong>, connectez-vous d'abord à <a href="http://gdrive.epfl.ch" target="_blank">http://gdrive.epfl.ch</a> avec vos identifiants EPFL (Gaspar), puis réessayez.
                     </p>                    
                 </div>
             </div>
@@ -172,69 +174,79 @@ function toggleMobileMenu() {
 </section>
 
 <section class="section section-presentation">
-    <div class="container-wrapper-left">
-        <div class="container container-narrow">
-            <h2>Déroulement</h2>
-
-            <div class="presentation-features">
-                <div class="presentation-feature">
-                    <div class="presentation-feature-icon" aria-hidden="true">
-                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-                            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
-                            <g id="SVGRepo_iconCarrier">
-                                <path d="M17.5291 7.77C17.4591 7.76 17.3891 7.76 17.3191 7.77C15.7691 7.72 14.5391 6.45 14.5391 4.89C14.5391 3.3 15.8291 2 17.4291 2C19.0191 2 20.3191 3.29 20.3191 4.89C20.3091 6.45 19.0791 7.72 17.5291 7.77Z" fill="#000000"></path>
-                                <path d="M20.7916 14.7004C19.6716 15.4504 18.1016 15.7304 16.6516 15.5404C17.0316 14.7204 17.2316 13.8104 17.2416 12.8504C17.2416 11.8504 17.0216 10.9004 16.6016 10.0704C18.0816 9.8704 19.6516 10.1504 20.7816 10.9004C22.3616 11.9404 22.3616 13.6504 20.7916 14.7004Z" fill="#000000"></path>
-                                <path d="M6.44016 7.77C6.51016 7.76 6.58016 7.76 6.65016 7.77C8.20016 7.72 9.43016 6.45 9.43016 4.89C9.43016 3.29 8.14016 2 6.54016 2C4.95016 2 3.66016 3.29 3.66016 4.89C3.66016 6.45 4.89016 7.72 6.44016 7.77Z" fill="#000000"></path>
-                                <path d="M6.55109 12.8506C6.55109 13.8206 6.76109 14.7406 7.14109 15.5706C5.73109 15.7206 4.26109 15.4206 3.18109 14.7106C1.60109 13.6606 1.60109 11.9506 3.18109 10.9006C4.25109 10.1806 5.76109 9.89059 7.18109 10.0506C6.77109 10.8906 6.55109 11.8406 6.55109 12.8506Z" fill="#000000"></path>
-                                <path d="M12.1208 15.87C12.0408 15.86 11.9508 15.86 11.8608 15.87C10.0208 15.81 8.55078 14.3 8.55078 12.44C8.56078 10.54 10.0908 9 12.0008 9C13.9008 9 15.4408 10.54 15.4408 12.44C15.4308 14.3 13.9708 15.81 12.1208 15.87Z" fill="#000000"></path>
-                                <path d="M8.87078 17.9406C7.36078 18.9506 7.36078 20.6106 8.87078 21.6106C10.5908 22.7606 13.4108 22.7606 15.1308 21.6106C16.6408 20.6006 16.6408 18.9406 15.1308 17.9406C13.4208 16.7906 10.6008 16.7906 8.87078 17.9406Z" fill="#000000"></path>
-                            </g>
-                        </svg>
-                    </div>
-                    <h3>Accueil des participants</h3>
-                    <p>
-                        Les participant·e·s sont accueilli·e·s et reçoivent les informations nécessaires pour bien commencer la session.
-                    </p>
-                </div>
-                <div class="presentation-feature">
-                    <div class="presentation-feature-icon" aria-hidden="true">
-                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
-                            <g id="SVGRepo_iconCarrier">
-                                <path d="M16.3445 8.93024L16.6889 6.09016L16.6889 6.09014C16.7692 5.4285 16.8093 5.09767 16.74 4.82267C16.6477 4.456 16.4231 4.14364 16.1158 3.95431C15.8853 3.81231 15.5764 3.76933 14.9587 3.68338C14.341 3.59742 14.0321 3.55444 13.7754 3.62863C13.433 3.72756 13.1414 3.96809 12.9647 4.29732C12.8321 4.54424 12.7489 5.23007 12.6687 5.89173L6.53714 5.03851C6.61739 4.37686 6.70057 3.69102 6.6313 3.41601C6.53895 3.04934 6.31439 2.73698 6.00703 2.54765C5.77651 2.40565 5.46765 2.36268 4.84993 2.27672C4.23222 2.19076 3.92336 2.14778 3.66662 2.22198C3.32429 2.3209 3.03268 2.56143 2.85592 2.89066C2.72336 3.13758 2.68323 3.46841 2.60299 4.13006L2.25853 6.97015C2.17828 7.6318 2.13816 7.96263 2.20742 8.23764C2.29978 8.60431 2.52433 8.91667 2.8317 9.106C3.06222 9.248 3.37107 9.29097 3.98878 9.37693L3.98879 9.37693L3.9888 9.37693C4.60651 9.46289 4.91537 9.50587 5.17211 9.43167C5.51443 9.33275 5.80605 9.09222 5.9828 8.76299C6.11537 8.51607 6.19855 7.83023 6.2788 7.16858L12.4103 8.0218C12.3301 8.68345 12.2469 9.36929 12.3162 9.6443C12.4085 10.011 12.6331 10.3233 12.9404 10.5127C13.171 10.6547 13.4798 10.6976 14.0975 10.7836L14.0975 10.7836L14.0975 10.7836C14.7153 10.8695 15.0241 10.9125 15.2809 10.8383C15.6232 10.7394 15.9148 10.4989 16.0915 10.1696C16.2241 9.92273 16.2642 9.59191 16.3445 8.93026L16.3445 8.93024Z" fill="#000000"></path>
-                                <path d="M7.76122 19.9255L7.0692 17.1591C6.90798 16.5146 6.82737 16.1924 6.86208 15.91C6.90836 15.5335 7.09239 15.192 7.37368 14.9608C7.58465 14.7874 7.88549 14.7011 8.48717 14.5284C9.08885 14.3557 9.3897 14.2694 9.65334 14.3066C10.0049 14.3561 10.3236 14.5533 10.5395 14.8546C10.7013 15.0805 10.8685 15.7486 11.0297 16.393L17.0021 14.6789C16.8408 14.0344 16.6737 13.3664 16.7084 13.084C16.7547 12.7075 16.9387 12.366 17.22 12.1348C17.431 11.9615 17.7318 11.8751 18.3335 11.7024C18.9352 11.5297 19.236 11.4434 19.4997 11.4806C19.8512 11.5301 20.17 11.7273 20.3858 12.0286C20.5477 12.2545 20.6283 12.5768 20.7895 13.2213L21.4815 15.9876C21.6428 16.6321 21.7234 16.9543 21.6887 17.2367C21.6424 17.6133 21.4584 17.9547 21.1771 18.1859C20.9661 18.3593 20.6653 18.4456 20.0636 18.6183L20.0636 18.6183L20.0636 18.6183C19.4619 18.791 19.161 18.8774 18.8974 18.8402C18.5459 18.7906 18.2271 18.5935 18.0113 18.2922C17.8494 18.0662 17.6823 17.3982 17.5211 16.7537L11.5487 18.4678C11.7099 19.1123 11.877 19.7803 11.8423 20.0627C11.796 20.4393 11.612 20.7807 11.3307 21.0119C11.1197 21.1853 10.8189 21.2716 10.2172 21.4443L10.2172 21.4443L10.2172 21.4443C9.61554 21.617 9.3147 21.7034 9.05105 21.6662C8.69952 21.6166 8.38077 21.4195 8.16493 21.1182C8.00305 20.8922 7.92244 20.57 7.76122 19.9255Z" fill="#000000"></path>
-                            </g>
-                        </svg>
-                    </div>
-                    <h3>Wrap-up interactif</h3>
-                    <p>
-                        Chaque matière est revue à travers un wrap-up d'environ 30 minutes, incluant des conseils, des méthodes de résolution, et des exercices typiques pour mieux se préparer.
-                    </p>
-                </div>
-                <div class="presentation-feature">
-                    <div class="presentation-feature-icon" aria-hidden="true">
-                        <svg fill="#000000" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 31.662 31.662" xml:space="preserve">
-                            <g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
-                            <g id="SVGRepo_iconCarrier">
-                                <g>
-                                    <g>
-                                        <path d="M13.193,13.308h4.496c0.23-1.27,0.906-2.364,1.863-3.159c0.004,0,0.009,0,0.015,0c0.797-0.027,1.836-0.237,2.821-0.966 c0.121-0.089,0.238-0.185,0.351-0.284c1.412-1.252,2.187-3.332,2.292-6.192c0.025-0.758-0.564-1.396-1.32-1.425 c-0.826-0.042-1.396,0.562-1.425,1.322c-0.084,2.161-0.602,3.664-1.506,4.349c-0.196,0.151-0.405,0.254-0.606,0.323 c-0.006,0.002-0.015,0.003-0.021,0.005c-0.595-0.568-1.418-0.845-1.974-0.845h-3.398h-3.397c-1.246,0-2.237,1.251-2.259,2.624 C11.201,9.567,12.811,11.246,13.193,13.308z"></path>
-                                        <ellipse cx="14.78" cy="3.195" rx="3.261" ry="3.195"></ellipse>
-                                        <path d="M14.359,21.546c0-2.479-1.068-3.526-2.55-3.526h-0.081H8.373c1.854-0.271,3.275-1.834,3.275-3.728 c0-2.08-1.72-3.768-3.847-3.768c-2.123,0-3.844,1.688-3.844,3.768c0,1.894,1.421,3.456,3.276,3.728H3.877H3.795 c-1.484,0-2.688,1.588-2.688,3.229v5.02h13.252V21.546z"></path>
-                                        <path d="M19.101,14.292c0,1.894,1.422,3.456,3.274,3.728h-3.22h-0.219c-1.485,0-2.618,1.588-2.618,3.229v5.02h13.15v-4.72 c0-2.45-1.029-3.481-2.481-3.506c-0.021,0-0.019-0.021-0.037-0.021h-3.438c1.855-0.271,3.277-1.834,3.277-3.729 c0-2.08-1.722-3.768-3.846-3.768C20.821,10.524,19.101,12.212,19.101,14.292z"></path>
-                                        <rect x="0.029" y="28.423" width="31.604" height="3.239"></rect>
-                                    </g>
-                                </g>
-                            </g>
-                        </svg>
-                    </div>
-                    <h3>Séance d'exercices avec assistant·e·s</h3>
-                    <p>
-                        Les participant·e·s peuvent poser leurs questions et travailler sur des exercices, accompagné·e·s par des assistant·e·s, dans un format similaire à une séance d'exercices classique.
-                    </p>
-                </div>
-            </div>
+    <div class="container container-wide">
+        <h2 style="color: #fff; margin-bottom: 30px;">Déroulement</h2>
+        
+        <div class="table-responsive">
+            <table class="schedule-table">
+                <thead>
+                    <tr>
+                        <th class="corner-cell"></th>
+                        <th class="date-col">Vendredi<br>02.01</th>
+                        <th class="date-col">Mardi<br>06.01</th>
+                        <th class="date-col">Mercredi<br>07.01</th>
+                        <th class="date-col">Jeudi<br>08.01</th>
+                        <th class="date-col">Vendredi<br>09.01</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="category-cell">Cours<br>Généraux</td>
+                        <td class="card-cell">
+                            <span class="subject">CMS</span>
+                            <span class="sub-detail">Réponses aux questions</span>
+                        </td>
+                        <td class="card-cell">
+                            <span class="subject">Analyse</span>
+                        </td>
+                        <td class="card-cell">
+                            <span class="subject">Physique</span>
+                        </td>
+                        <td class="card-cell">
+                            <span class="subject">Algèbre linéaire</span>
+                        </td>
+                        <td class="card-cell">
+                            <span class="subject">Cours spécifiques</span>
+                            <span class="sub-detail">AICC (IN & SC)</span>
+                            <span class="sub-detail">Élec (EL, GM & MT)</span>
+                            <span class="sub-detail">Chimie (CGC, GC, MX, SV & SIE)</span>
+                        </td>
+                    </tr>
+            
+                    <tr>
+                        <td class="category-cell">Cours<br>Avancés</td>
+                        <td class="empty-cell"></td>
+                        <td class="card-cell">
+                            <span class="subject">Analyse avancée</span>
+                        </td>
+                        <td class="card-cell">
+                            <span class="subject">Physique avancée</span>
+                            <span class="sub-detail">(PH & GM)</span>
+                        </td>
+                        <td class="card-cell">
+                            <span class="subject">Algèbre linéaire avancée</span>
+                        </td>
+                        <td class="empty-cell"></td>
+                    </tr>
+            
+                    <tr>
+                        <td class="category-cell">Cours en<br>Architecture</td>
+                        <td class="empty-cell"></td>
+                        <td class="card-cell">
+                            <span class="subject">Technologie du bâtiment</span>
+                        </td>
+                        <td class="card-cell">
+                            <span class="subject">Maths</span>
+                        </td>
+                        <td class="card-cell">
+                            <span class="subject">Maths</span>
+                        </td>
+                        <td class="card-cell">
+                            <span class="subject">Géométrie / Modélisation Numérique</span>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
         </div>
     </div>
 </section>
@@ -243,23 +255,17 @@ function toggleMobileMenu() {
     <div class="container container-narrow">
         <h3 class="footer-partners-title">Merci à nos partenaires!</h3>
         <div class="footer-partners">
-            <a class="footer-partner" href="https://www.epfl.ch/fr/">
-                <img class="partner-epfl" src="assets/partners/epfl.svg" alt="Une association reconnue par l’EPFL">
+            <a class="footer-partner" href="https://www.epfl.ch/fr/" target="_blank">
+                <img class="partner-epfl" src="assets/partners/PEB/epfl.svg" alt="Une association reconnue par l’EPFL">
             </a>
-            <a class="footer-partner" href="https://agepoly.ch/">
-                <img class="partner-agepoly" src="assets/partners/agepoly.svg" alt="AGEPoly">
+            <a class="footer-partner" href="https://agepoly.ch/" target="_blank">
+                <img class="partner-agepoly" src="assets/partners/PEB/agepoly.svg" alt="AGEPoly">
+            </a>
+            <a class="footer-partner" href="https://www.redbull.com/ch-fr/" target="_blank">
+                <img class="partner-redbull" src="assets/partners/PEB/redbull.svg" alt="redbull">
             </a>
             <a class="footer-partner" href="https://andros.ch/fr/">
-                <img class="partner-andros" src="assets/partners/andros.svg" alt="Andros">
-            </a>
-            <a class="footer-partner" href="https://www.eltonymate.com/fr/">
-                <img class="partner-eltonymate" src="assets/partners/eltonymate.svg" alt="El Tony Mate">
-            </a>
-            <a class="footer-partner" href="https://brio-energydrink.ch/">
-                <img class="partner-brio" src="assets/partners/brio.svg" alt="Brio Mate">
-            </a>
-            <a class="footer-partner" href="https://www.coop.ch/fr/">
-                <img class="partner-coop" src="assets/partners/coop.svg" alt="Coop">
+                <img class="partner-andros" src="assets/partners/PEB//andros.svg" alt="Andros">
             </a>
         </div>
 
