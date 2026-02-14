@@ -577,7 +577,7 @@ h3 {
     padding: 12px 25px;
     font-size: 1.2rem;
     border-radius: 8px;
-    color: #fff;
+    color: #000;
     text-decoration: none;
     font-weight: 600;
     transition: all 0.3s ease;
@@ -595,6 +595,7 @@ h3 {
 .hero-registration-button:hover {
     transform: translateY(-5px) scale(1.05);
     filter: brightness(1.01);
+    color: #000;
 }
 
 .hero-registration-button svg {
