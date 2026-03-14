@@ -43,9 +43,9 @@ permalink: /intbee
 <body>
 <nav class="navbar theme-primary">
     <div class="menu-left">
-    <a href="index.html">Accueil</a>
+        <a href="index.html">Accueil</a>
         <div class="dropdown">
-        <a style="background-color: rgba(255, 193, 5, 0.3);border-radius: 5px;" href="#" class="dropdown-toggle">Événements <span class="dropdown-caret">&#9660;</span></a>
+            <a style="background-color: rgba(255, 193, 5, 0.3);border-radius: 5px;" href="#" class="dropdown-toggle">Événements <span class="dropdown-caret">&#9660;</span></a>
         <div class="dropdown-menu">
             <a href="index.html">Semaine S4S</a>
             <a href="peb.html">PEB</a>
@@ -54,7 +54,7 @@ permalink: /intbee
         </div>
         <a href="workshops.html">Workshops</a>
         <a href="sponsors.html">Sponsors</a>
-    <!--<a href="about.html">À propos</a>-->
+        <!--<a href="about.html">À propos</a>-->
     </div>
     <div class="menu-right">
         <div class="hamburger" onclick="toggleMobileMenu()">
@@ -81,31 +81,29 @@ permalink: /intbee
 </div>
 <script>
     function toggleMobileMenu() {
-    const menu = document.getElementById("mobileMenu");
-    if (menu.style.width === "100%") {
-        menu.style.width = "0";
-    } else {
-        menu.style.width = "100%";
-    }
+        const menu = document.getElementById("mobileMenu");
+        if (menu.style.width === "100%") {
+            menu.style.width = "0";
+        } else {
+            menu.style.width = "100%";
+        }
     }
 
     function toggleMobileDropdown(event) {
-    event.preventDefault();
-    const toggle = event.currentTarget;
-    const dropdown = toggle.nextElementSibling;
-    dropdown.classList.toggle('open');
-    toggle.querySelector('.mobile-caret').classList.toggle('open');
+        event.preventDefault();
+        const toggle = event.currentTarget;
+        const dropdown = toggle.nextElementSibling;
+        dropdown.classList.toggle('open');
+        toggle.querySelector('.mobile-caret').classList.toggle('open');
     }
-</script>
-<script>
-function toggleMobileMenu() {
-    const menu = document.getElementById("mobileMenu");
-    if (menu.style.width === "100%") {
-    menu.style.width = "0";
-    } else {
-    menu.style.width = "100%";
+    function toggleMobileMenu() {
+        const menu = document.getElementById("mobileMenu");
+        if (menu.style.width === "100%") {
+        menu.style.width = "0";
+        } else {
+        menu.style.width = "100%";
+        }
     }
-}
 </script>
 <section class="section section-hero theme-primary">
     <div>
@@ -154,12 +152,23 @@ function toggleMobileMenu() {
                     <a class="hero-registration-button hero-registration-button-1" href="https://docs.google.com/forms/d/e/1FAIpQLScAlYqn21qzWyYI7FA5-Y1tkjeIuNlh0Rh_kowecuC76-NsHQ/viewform?usp=dialog">
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true">
                             <path stroke-linecap="round" stroke-linejoin="round" d="M13 9l3 3m0 0l-3 3m3-3H8m13 0a9 9 0 11-18 0 9 9 0 0118 0z" />
+                        </svg>
                         <p>Inscription participants</p>
                     </a>
                     <a class="hero-registration-button hero-registration-button-2" href="https://docs.google.com/forms/d/e/1FAIpQLSeAyW-GemKFAqbb9wQmdzvZiMr-sSJdu3FOCh3qOFiN5PZVHQ/viewform?usp=dialog">
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true">
                             <path stroke-linecap="round" stroke-linejoin="round" d="M13 9l3 3m0 0l-3 3m3-3H8m13 0a9 9 0 11-18 0 9 9 0 0118 0z" />
+                        </svg>
                         <p>Inscription staff</p>
+                    </a>
+                    <a class="hero-registration-button hero-see-integrals" href="https://go.epfl.ch/intbee-live-2026"
+                       style="background: #fd8022">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                             stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                  d="m15.75 10.5 4.72-4.72a.75.75 0 0 1 1.28.53v11.38a.75.75 0 0 1-1.28.53l-4.72-4.72M4.5 18.75h9a2.25 2.25 0 0 0 2.25-2.25v-9a2.25 2.25 0 0 0-2.25-2.25h-9A2.25 2.25 0 0 0 2.25 7.5v9a2.25 2.25 0 0 0 2.25 2.25Z"/>
+                        </svg>
+                        <p>Watch the live !</p>
                     </a>
                     <a class="hero-registration-button hero-see-integrals" href="https://go.epfl.ch/drive-intbee">
                         <p>See last year integrals</p>
