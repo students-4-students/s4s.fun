@@ -1395,6 +1395,10 @@ h3 {
     line-height: 1.4;
 }
 
+.link{
+    font-weight: 600;
+}
+
 .section-faq-illustration {
     position: relative;
     margin-top: 80px;
