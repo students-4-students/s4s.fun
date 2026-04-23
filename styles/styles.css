@@ -1,0 +1,261 @@
+/* ==================== */
+/* Theme Variables      */
+/* ==================== */
+
+:root {
+  --primary-purple: #41335f;
+  --primary-purple-dark: #312b48;
+  --primary-pink: #eed4f1;
+  --primary-pink-light: #f4eaf3;
+
+  --secondary-dark-red: #5a1f34;
+  --secondary-light-beige: #e6d6ca;
+  --secondary-beige: #dac6b0;
+  --secondary-purple: #7376c4;
+  --secondary-pink: #ff66b3;
+}
+
+/* ==================== */
+/* Base                 */
+/* ==================== */
+
+body {
+  font-family: 'GeneralSans/GeneralSans-Variable', sans-serif;
+  min-height: 100%;
+}
+
+html {
+  height: 100%;
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
+}
+
+section {
+  min-height: 100vh;
+  scroll-snap-align: start;
+}
+
+b {
+  font-weight: 600;
+  color: var(--secondary-pink);
+}
+
+/* ==================== */
+/* Navigation Layout    */
+/* ==================== */
+
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  min-height: 5rem;
+  padding: 0 2rem;
+  background-color: rgb(from var(--primary-pink) r g b / 50%);
+  backdrop-filter: blur(35px);
+  z-index: 10;
+}
+
+.nav-container {
+  display: flex;
+  gap: 1rem;
+  align-items: stretch;
+}
+
+.nav-container > a {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  padding: 0 0.15rem;
+  text-decoration: none;
+  color: var(--primary-purple);
+  font-weight: bold;
+  font-size: 1.125rem;
+}
+
+.nav-container.left > a {
+  position: relative;
+}
+
+/* ==================== */
+/* Navigation Interactions */
+/* ==================== */
+
+.dropdown-toggle {
+  position: relative;
+  display: flex;
+  align-items: center;
+  height: 100%;
+  padding: 0;
+  border: none;
+  background: none;
+  color: var(--primary-purple);
+  font-weight: bold;
+  font-size: 1.125rem;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.nav-container.left > a::after,
+.dropdown-toggle::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0.9rem;
+  height: 2px;
+  border-radius: 999px;
+  background-color: var(--secondary-pink);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.2s ease;
+}
+
+.nav-container.left > a:hover::after,
+.nav-container.left > a:focus-visible::after,
+.dropdown:hover .dropdown-toggle::after,
+.dropdown:focus-within .dropdown-toggle::after,
+.nav-container.left > a[aria-current='page']::after {
+  transform: scaleX(1);
+}
+
+.dropdown-toggle > svg {
+  margin-left: 0.5rem;
+  height: 1.5rem;
+  transform: rotate(0deg);
+  transform-origin: center;
+  transition: transform 0.2s ease;
+}
+
+/* ==================== */
+/* Dropdown             */
+/* ==================== */
+
+.dropdown {
+  position: relative;
+  height: 100%;
+}
+
+.dropdown::after {
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  height: 0.5rem;
+  pointer-events: auto;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: calc(100% + 0.5rem);
+  left: 0;
+  z-index: 20;
+  min-width: 10.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+  padding: 0.45rem;
+  border: 1px solid rgb(from var(--primary-purple) r g b / 12%);
+  border-radius: 0.8rem;
+  background-color: #fff;
+  box-shadow: 0 14px 30px rgb(from var(--primary-purple-dark) r g b / 16%);
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transform: translateY(-6px);
+  transition: opacity 0.2s ease, transform 0.2s ease, visibility 0.2s ease;
+}
+
+.dropdown-menu a {
+  padding: 0.55rem 0.7rem;
+  border-radius: 0.55rem;
+  color: var(--primary-purple);
+  font-weight: 600;
+  text-decoration: none;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.dropdown-menu a:hover {
+  background-color: var(--primary-pink-light);
+  color: var(--primary-purple-dark);
+}
+
+.dropdown:hover .dropdown-menu,
+.dropdown:focus-within .dropdown-menu {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+  transform: translateY(0);
+}
+
+.dropdown:hover .dropdown-toggle > svg,
+.dropdown:focus-within .dropdown-toggle > svg {
+  transform: rotate(180deg);
+}
+
+.logo {
+  height: 3rem;
+}
+
+/* ==================== */
+/* Hero Section         */
+/* ==================== */
+
+.hero {
+  display: flex;
+  align-items: center;
+  min-height: 100vh;
+  padding: 5rem 2rem 2rem;
+  background-image: url('../assets/img/header.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.section-content {
+  width: 100%;
+  min-height: 20rem;
+  background-color: rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(35px);
+  border-radius: 1rem;
+  padding: 2rem;
+}
+
+.content-left {
+  max-width: 45rem;
+}
+.content-right {
+  max-width: 45rem;
+  margin-left: auto;
+}
+
+.hero-title{
+  font-size: 3rem;
+  color: var(--primary-purple);
+  line-height: 1.2;
+  font-weight: 600;
+}
+
+.hero-list {
+  padding: 0;
+}
+
+.hero-list-item {
+  margin-top: 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  color: var(--primary-purple);
+  font-size: 1.25rem;
+  list-style-type: none;
+}
+
+.hero-list-icon {
+  width: 2rem;
+  height: 2rem;
+  color: var(--secondary-pink);
+}
