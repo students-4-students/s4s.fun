@@ -31,8 +31,14 @@ html {
 }
 
 section {
-  min-height: 100vh;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  padding: 2rem 2rem 2rem;
   scroll-snap-align: start;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 b {
@@ -206,14 +212,7 @@ nav {
 /* ==================== */
 
 .hero {
-  display: flex;
-  align-items: center;
-  min-height: 100vh;
-  padding: 5rem 2rem 2rem;
   background-image: url('../assets/img/header.png');
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 
 .section-content {
@@ -258,4 +257,42 @@ nav {
   width: 2rem;
   height: 2rem;
   color: var(--secondary-pink);
+}
+
+.hero-cta {
+  text-decoration: none;
+  display: block;
+  background-color: var(--secondary-pink);
+  color: #fff;
+  font-size: 1.25rem;
+  font-weight: 600;
+  padding: 1rem;
+  text-align: center;
+  border-radius: 3.25rem;
+  transition: background-color 0.2s ease, transform 0.15s ease;
+  border: 2px solid var(--secondary-pink);
+}
+
+.hero-cta:hover {
+  background-color: transparent;
+  color: var(--secondary-pink);
+}
+
+.hero-cta-secondary {
+  text-decoration: none;
+  display: block;
+  background-color: transparent;
+  color: var(--primary-purple);
+  font-size: 1.25rem;
+  font-weight: 600;
+  padding: 1rem;
+  text-align: center;
+  border-radius: 3.25rem;
+  border: 2px solid var(--primary-purple);
+  transition: background-color 0.2s ease, color 0.2s ease, transform 0.15s ease;
+}
+
+.hero-cta-secondary:hover {
+  background-color: var(--primary-purple);
+  color: #fff;
 }
