@@ -296,3 +296,24 @@ nav {
   background-color: var(--primary-purple);
   color: #fff;
 }
+
+
+/* ==================== */
+/* Principe Section     */
+/* ==================== */
+.principe {
+  background-image: url('../assets/img/bg1.png');
+}
+
+h2 {
+  font-family: 'Lobster', cursive;
+  font-size: 3rem;
+  color: var(--primary-purple);
+  margin: 0;
+}
+
+.section-text {
+  color: var(--primary-purple-dark);
+  font-size: 1.5rem;
+  line-height: 1.6;
+}
