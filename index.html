@@ -7,6 +7,11 @@
     <link rel="stylesheet" href="styles/styles.css">
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/fonts.css">
+    <link rel="icon" type="image/png" href="/assets/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg" />
+    <link rel="shortcut icon" href="/assets/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon.png" />
+    <link rel="manifest" href="/assets/site.webmanifest" />
 </head>
 <body>
     <header>
@@ -34,9 +39,10 @@
             </div>
         </nav>
     </header>
+
     <section class="hero">
         <div class="section-content content-left">
-            <h1 class="hero-title">La semaine de préparation à la première année de l’EPFL <b>gratuite</b> et <b>par les étudiant·e·s</b></h1>
+            <h1 class="hero-title">La semaine de préparation à la première année de l'EPFL <b>gratuite</b> et <b>par les étudiant·e·s</b></h1>
             <ul class="hero-list">
                 <li class="hero-list-item">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="hero-list-icon"><path fill-rule="evenodd" d="M6.75 2.25A.75.75 0 0 1 7.5 3v1.5h9V3A.75.75 0 0 1 18 3v1.5h.75a3 3 0 0 1 3 3v11.25a3 3 0 0 1-3 3H5.25a3 3 0 0 1-3-3V7.5a3 3 0 0 1 3-3H6V3a.75.75 0 0 1 .75-.75Zm13.5 9a1.5 1.5 0 0 0-1.5-1.5H5.25a1.5 1.5 0 0 0-1.5 1.5v7.5a1.5 1.5 0 0 0 1.5 1.5h13.5a1.5 1.5 0 0 0 1.5-1.5v-7.5Z" clip-rule="evenodd" /></svg>
@@ -45,28 +51,28 @@
                 <li class="hero-list-item">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="hero-list-icon"><path fill-rule="evenodd" d="m11.54 22.351.07.04.028.016a.76.76 0 0 0 .723 0l.028-.015.071-.041a16.975 16.975 0 0 0 1.144-.742 19.58 19.58 0 0 0 2.683-2.282c1.944-1.99 3.963-4.98 3.963-8.827a8.25 8.25 0 0 0-16.5 0c0 3.846 2.02 6.837 3.963 8.827a19.58 19.58 0 0 0 2.682 2.282 16.975 16.975 0 0 0 1.145.742ZM12 13.5a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z" clip-rule="evenodd" /></svg>
                     Campus EPFL
-                </li>   
+                </li>
                 <li class="hero-list-item">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="hero-list-icon"><path d="M10.464 8.746c.227-.18.497-.311.786-.394v2.795a2.252 2.252 0 0 1-.786-.393c-.394-.313-.546-.681-.546-1.004 0-.323.152-.691.546-1.004ZM12.75 15.662v-2.824c.347.085.664.228.921.421.427.32.579.686.579.991 0 .305-.152.671-.579.991a2.534 2.534 0 0 1-.921.42Z" /><path fill-rule="evenodd" d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25ZM12.75 6a.75.75 0 0 0-1.5 0v.816a3.836 3.836 0 0 0-1.72.756c-.712.566-1.112 1.35-1.112 2.178 0 .829.4 1.612 1.113 2.178.502.4 1.102.647 1.719.756v2.978a2.536 2.536 0 0 1-.921-.421l-.879-.66a.75.75 0 0 0-.9 1.2l.879.66c.533.4 1.169.645 1.821.75V18a.75.75 0 0 0 1.5 0v-.81a4.124 4.124 0 0 0 1.821-.749c.745-.559 1.179-1.344 1.179-2.191 0-.847-.434-1.632-1.179-2.191a4.122 4.122 0 0 0-1.821-.75V8.354c.29.082.559.213.786.393l.415.33a.75.75 0 0 0 .933-1.175l-.415-.33a3.836 3.836 0 0 0-1.719-.755V6Z" clip-rule="evenodd" /></svg>
                     100% gratuit
                 </li>
             </ul>
-            <div style="margin-top: 2rem; display: flex; flex-direction: column; gap: 1rem;">
-                <a href="/inscription.html" class="hero-cta"">S'inscrire</a>
-                <a href="/inscription.html" class="hero-cta-secondary"">Staffer</a>
+            <div class="hero-cta-group">
+                <a href="/inscription.html" class="hero-cta">S'inscrire</a>
+                <a href="/inscription.html" class="hero-cta-secondary">Staffer</a>
             </div>
-
-            <div style="margin-top: 2rem; display: flex; flex-direction: row; align-items: center; justify-content: space-between;">
-                <img src="assets/logos/EPFL-Association.svg" alt="Une assiociation reconnue par l'EPFL" style="height: 6rem;">
-                <img src="assets/logos/agep.svg" alt="Soutenu par l'AGEPoly" style="height: 3rem;">
+            <div class="hero-logos">
+                <img src="assets/logos/EPFL-Association.svg" alt="Une association reconnue par l'EPFL">
+                <img src="assets/logos/agep.svg" alt="Soutenu par l'AGEPoly">
             </div>
         </div>
     </section>
+
     <section class="principe">
         <div class="section-content content-right">
-            <h2 class="section-title">Le principe</h2>
-            <p class="section-text">Prépare-toi pour ton bachelor avec cette semaine <b>100% gratuite</b>, organisée par des étudiant·e·s bénévoles, <b>soutenue par l’EPFL et l’AGEPoly!</b> </p>
-            <p class="section-text"> Au programme : </p>
+            <h2>Le principe</h2>
+            <p class="section-text">Prépare-toi pour ton bachelor avec cette semaine <b>100% gratuite</b>, organisée par des étudiant·e·s bénévoles, <b>soutenue par l'EPFL et l'AGEPoly!</b></p>
+            <p class="section-text">Au programme :</p>
             <ul class="section-text">
                 <li>Des révisions pour assurer tes bases du 1er semestre (maths, physique, etc.)</li>
                 <li>La découverte du campus pour ne plus t'y perdre</li>
@@ -75,10 +81,299 @@
             <p class="section-text">Et surtout, c'est l'occasion idéale pour te faire tes premiers potes avant la rentrée.</p>
         </div>
     </section>
-    <section class="hero">
-        <div class="hero-content">
-            
+
+    <section class="workshops">
+        <div class="workshop-outer" aria-hidden="true">
+            <div class="workshop-grid">
+                <img src="assets/img/workshop1.png" alt="">
+                <img src="assets/img/workshop2.png" alt="">
+                <img src="assets/img/workshop3.png" alt="">
+                <img src="assets/img/workshop4.png" alt="">
+                <img src="assets/img/workshop5.png" alt="">
+                <img src="assets/img/workshop6.png" alt="">
+                <img src="assets/img/workshop7.png" alt="">
+                <img src="assets/img/workshop8.png" alt="">
+                <img src="assets/img/workshop9.png" alt="">
+                <img src="assets/img/workshop10.png" alt="">
+                <img src="assets/img/workshop1.png" alt="">
+                <img src="assets/img/workshop2.png" alt="">
+                <img src="assets/img/workshop3.png" alt="">
+                <img src="assets/img/workshop4.png" alt="">
+                <img src="assets/img/workshop5.png" alt="">
+                <img src="assets/img/workshop6.png" alt="">
+                <img src="assets/img/workshop7.png" alt="">
+                <img src="assets/img/workshop8.png" alt="">
+                <img src="assets/img/workshop9.png" alt="">
+                <img src="assets/img/workshop10.png" alt="">
+            </div>
+        </div>
+        <div class="section-content">
+            <h2>S4S, c'est pas que des cours !</h2>
+            <p class="section-text">
+                Après l'effort, place à la vie de campus ! Fais le plein d'inspiration lors de nos <b>tables rondes et conférences</b>, ou détends-toi en participant aux <b>workshops</b> animés par les associations étudiantes. C'est l'occasion parfaite pour rencontrer des <b>potes!</b>
+                Et pour passer une bonne soirée, rejoins-nous autour d'<b>une bonne fondue</b>. Venez nombreux, on s'occupe du fromage !
+            </p>
         </div>
     </section>
+
+    <section class="temoignages">
+        <div class="section-content content-right">
+            <h2>Témoignages</h2>
+            <div class="temoignage-container">
+                <p class="section-text">Je trouve l'initiative très intéressante, ça aide beaucoup d'avoir des conseils de personnes qui sont passées par la même chose que nous. Ça nous permet de voir ce qui nous attend et ne pas commencer l'année à chaud.</p>
+                <p class="temoignage-name">Sofia, Étudiante en systèmes de communications</p>
+            </div>
+            <div class="temoignage-container">
+                <p class="section-text">Avec S4S, on apprend comment assister à des cours. En plus, le programme est concocté par des élèves qui savent en quoi consistent les programmes de toutes les sections de première année.</p>
+                <p class="temoignage-name">Wei-En, Étudiante en informatique</p>
+            </div>
+            <div class="temoignage-container">
+                <p class="section-text">C'est une super initiative, ça apporte certaines bases pour la rentrée. Même si nous avons déjà vu certaines notions présentées, ça nous fait des rappels et des bases solides pour commencer l'année sereinement.</p>
+                <p class="temoignage-name">Sloan, Étudiant en physique</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="faq">
+        <div class="section-content">
+            <h2>FAQ</h2>
+            <div class="faq-container">
+                <div>
+                    <h3 class="faq-group-title">Généralités</h3>
+                    <div class="faq-item">
+                        <button class="faq-question" aria-expanded="false">
+                            <span class="faq-question-text">Ai-je besoin de participer à un tel stage de préparation pour réussir ?</span>
+                            <svg class="faq-chevron" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20" aria-hidden="true">
+                                <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="m6.75 9.75 5.25 5.25 5.25-5.25" />
+                            </svg>
+                        </button>
+                        <div class="faq-answer">
+                            <p class="section-text">Cent fois non. Nous ne prétendons pas qu'en participant à une quelconque semaine de stage, la qualité des cours qui y sont proposés seule vous ferait réussir votre semestre. L'intérêt de la semaine réside tout autant dans les ami·e·s que vous vous y ferez pour vous épauler tout le semestre qui suit.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question" aria-expanded="false">
+                            <span class="faq-question-text">Comment pourrais-je manger ?</span>
+                            <svg class="faq-chevron" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20" aria-hidden="true">
+                                <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="m6.75 9.75 5.25 5.25 5.25-5.25" />
+                            </svg>
+                        </button>
+                        <div class="faq-answer">
+                            <p class="section-text">Les restaurants, cantines et supermarchés de l'EPFL seront ouverts durant cette période.<br>Des micros-ondes sont disponibles sur le campus.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question" aria-expanded="false">
+                            <span class="faq-question-text">À quoi ressemble une journée type ?</span>
+                            <svg class="faq-chevron" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20" aria-hidden="true">
+                                <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="m6.75 9.75 5.25 5.25 5.25-5.25" />
+                            </svg>
+                        </button>
+                        <div class="faq-answer">
+                            <p class="section-text">De 08:15 à 12:00 et de 13:45 à 15:30, tu auras des cours et séances d'exercices en lien avec les matières que tu auras dans ta section pendant le semestre.<br>Lors des cours, des étudiant·e·s te rappellent des notions utiles pour bien commencer le semestre. Lors des séances d'exercices, tu résous des problèmes pour mettre en pratique tes connaissances.<br>À partir de 15:30 se tiendront des workshops mis en place par d'autres associations étudiantes de l'EPFL.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question" aria-expanded="false">
+                            <span class="faq-question-text">Quels sont les tarifs de la semaine ?</span>
+                            <svg class="faq-chevron" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20" aria-hidden="true">
+                                <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="m6.75 9.75 5.25 5.25 5.25-5.25" />
+                            </svg>
+                        </button>
+                        <div class="faq-answer">
+                            <p class="section-text">La participation aux cours, exercices et workshops est gratuite. Nous ne pouvons malheureusement pas fournir les repas durant la semaine. Le prix d'un repas dans une cafette de l'EPFL oscille en général de 8 à 12 francs.<br>Voir la réponse à "Comment pourrai-je manger ?"</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question" aria-expanded="false">
+                            <span class="faq-question-text">Quand est-ce que les inscriptions ouvrent ?</span>
+                            <svg class="faq-chevron" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20" aria-hidden="true">
+                                <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="m6.75 9.75 5.25 5.25 5.25-5.25" />
+                            </svg>
+                        </button>
+                        <div class="faq-answer">
+                            <p class="section-text">Les inscriptions ouvriront début août. Pour ne pas rater l'ouverture des inscriptions, n'hésite pas à nous suivre sur Instagram <a href="https://www.instagram.com/s4s.epfl/" target="_blank">@s4s.epfl</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="faq-group-title">Est-ce que je peux participer à S4S…</h3>
+                    <div class="faq-item">
+                        <button class="faq-question" aria-expanded="false">
+                            <span class="faq-question-text">…si je suis mineur ?</span>
+                            <svg class="faq-chevron" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20" aria-hidden="true">
+                                <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="m6.75 9.75 5.25 5.25 5.25-5.25" />
+                            </svg>
+                        </button>
+                        <div class="faq-answer">
+                            <p class="section-text">Oui, il n'y a pas besoin d'être majeur pour participer à Students 4 Students.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question" aria-expanded="false">
+                            <span class="faq-question-text">…si j'entre en mathématiques ou physique ?</span>
+                            <svg class="faq-chevron" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20" aria-hidden="true">
+                                <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="m6.75 9.75 5.25 5.25 5.25-5.25" />
+                            </svg>
+                        </button>
+                        <div class="faq-answer">
+                            <p class="section-text">Oui, les cours d'analyse avancée et d'algèbre linéaire avancée spécialement adaptés à ces sections t'aideront à bien te préparer.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question" aria-expanded="false">
+                            <span class="faq-question-text">…si j'entre en architecture ?</span>
+                            <svg class="faq-chevron" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20" aria-hidden="true">
+                                <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="m6.75 9.75 5.25 5.25 5.25-5.25" />
+                            </svg>
+                        </button>
+                        <div class="faq-answer">
+                            <p class="section-text">En 2025, pour la première fois, Student 4 Student accueille 100 architectes ! Alors n'hésite pas à nous rejoindre si tu veux faire partie de l'aventure.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question" aria-expanded="false">
+                            <span class="faq-question-text">…si j'entre au CMS ?</span>
+                            <svg class="faq-chevron" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20" aria-hidden="true">
+                                <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="m6.75 9.75 5.25 5.25 5.25-5.25" />
+                            </svg>
+                        </button>
+                        <div class="faq-answer">
+                            <p class="section-text">Tout comme lors des éditions précédentes, alors n'hésite pas à nous rejoindre !</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question" aria-expanded="false">
+                            <span class="faq-question-text">…si j'entre en master ou passerelle HES ?</span>
+                            <svg class="faq-chevron" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20" aria-hidden="true">
+                                <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="m6.75 9.75 5.25 5.25 5.25-5.25" />
+                            </svg>
+                        </button>
+                        <div class="faq-answer">
+                            <p class="section-text">Malheureusement non, Students 4 Students s'adresse aux étudiant·e·s commençant leur Bachelor ou CMS.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question" aria-expanded="false">
+                            <span class="faq-question-text">…si j'ai fait la MAN, le CMS ou redoublé ?</span>
+                            <svg class="faq-chevron" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20" aria-hidden="true">
+                                <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="m6.75 9.75 5.25 5.25 5.25-5.25" />
+                            </svg>
+                        </button>
+                        <div class="faq-answer">
+                            <p class="section-text">Tu peux t'inscrire, mais la priorité sera donnée aux étudiant·e·s qui débutent à l'EPFL lors des acceptations.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="events">
+        <div class="events-inner">
+            <h2 class="events-title">S4S c'est toute l'année!</h2>
+            <div class="events-stage">
+                <img class="events-line" src="assets/line.svg" alt="">
+                <a class="event-node" href="/" style="left:19%;top:30%">
+                    <div class="event-hex event-hex--purple">
+                        <img src="assets/s4s-logo/logo-circle.svg" alt="">
+                    </div>
+                    <span class="event-label">Semaine S4S</span>
+                </a>
+                <a class="event-node" href="/peb.html" style="left:50%;top:70%">
+                    <div class="event-hex event-hex--purple">
+                        <img src="assets/logos/peb.png" alt="">
+                    </div>
+                    <span class="event-label">Philip's Exam Boost</span>
+                </a>
+                <a class="event-node" href="/intbee.html" style="left:87%;top:37%">
+                    <div class="event-hex event-hex--yellow">
+                        <img src="assets/logos/intbee.png" alt="">
+                    </div>
+                    <span class="event-label">Integration Bee</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        (function () {
+            const items = Array.from(document.querySelectorAll('.faq-item'));
+            let activeItem = null;
+            const animMap = new WeakMap();
+
+            function cancelAnim(answer) {
+                const a = animMap.get(answer);
+                if (a) { a.cancel(); animMap.delete(answer); }
+            }
+
+            function animateOpen(item) {
+                const answer = item.querySelector('.faq-answer');
+                const btn = item.querySelector('.faq-question');
+                if (!answer) return;
+
+                if (activeItem && activeItem !== item) animateClose(activeItem);
+
+                cancelAnim(answer);
+                item.classList.add('open');
+                if (btn) btn.setAttribute('aria-expanded', 'true');
+
+                const from = answer.getBoundingClientRect().height || 0;
+                const to = answer.scrollHeight;
+                answer.style.height = from + 'px';
+
+                const anim = answer.animate([
+                    { height: from + 'px', opacity: 0 },
+                    { height: to + 'px', opacity: 1 }
+                ], { duration: Math.min(480, 180 + to * 0.8), easing: 'ease', fill: 'forwards' });
+
+                anim.onfinish = () => { answer.style.height = 'auto'; animMap.delete(answer); };
+                anim.oncancel = () => { answer.style.height = ''; animMap.delete(answer); };
+                animMap.set(answer, anim);
+                activeItem = item;
+            }
+
+            function animateClose(item) {
+                const answer = item.querySelector('.faq-answer');
+                const btn = item.querySelector('.faq-question');
+                if (!answer) return;
+
+                cancelAnim(answer);
+                const from = answer.getBoundingClientRect().height || answer.scrollHeight || 0;
+                answer.style.height = from + 'px';
+
+                const anim = answer.animate([
+                    { height: from + 'px', opacity: 1 },
+                    { height: '0px', opacity: 0 }
+                ], { duration: Math.min(420, 160 + from * 0.6), easing: 'ease', fill: 'forwards' });
+
+                anim.onfinish = () => {
+                    answer.style.height = '0px';
+                    item.classList.remove('open');
+                    if (btn) btn.setAttribute('aria-expanded', 'false');
+                    animMap.delete(answer);
+                };
+                anim.oncancel = () => { answer.style.height = ''; animMap.delete(answer); };
+                animMap.set(answer, anim);
+                if (activeItem === item) activeItem = null;
+            }
+
+            items.forEach(item => {
+                const btn = item.querySelector('.faq-question');
+                const answer = item.querySelector('.faq-answer');
+                if (!btn || !answer) return;
+
+                answer.style.height = '0px';
+                item.classList.remove('open');
+                btn.setAttribute('aria-expanded', 'false');
+
+                btn.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    if (item.classList.contains('open')) animateClose(item);
+                    else animateOpen(item);
+                });
+            });
+        })();
+    </script>
 </body>
 </html>
