@@ -653,3 +653,174 @@ h2 {
   color: var(--primary-purple-dark);
   white-space: nowrap;
 }
+
+/**********************************************************************************************************************/
+/* Footer */
+/**********************************************************************************************************************/
+
+.footer-theme {
+    --background: #515582;
+    --headings: #eed4f1;
+    --text: #ffffff;
+    --muted: #d9dae3;
+}
+
+.section-footer {
+    position: relative;
+    background: var(--background);
+    color: var(--text);
+    padding-top: 4rem;
+    padding-bottom: 6.4rem;
+}
+
+/*@media screen and (min-width: 992px) {*/
+/*    .section-footer {*/
+/*        padding-top: 6rem;*/
+/*        padding-bottom: 8rem;*/
+/*    }*/
+/*}*/
+
+.footer-partners {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+@media screen and (min-width: 576px) {
+    .footer-partners {
+        gap: 4rem;
+    }
+}
+
+.footer-partner {
+    transition: .2s ease-in-out transform;
+}
+
+.footer-partner:hover {
+    transform: scale(1.1);
+}
+
+/*.partner-epfl {*/
+/*    width: 12rem;*/
+/*}*/
+
+/*.partner-agepoly {*/
+/*    width: 13rem;*/
+/*}*/
+
+/*.partner-eltonymate {*/
+/*    width: 7rem;*/
+/*}*/
+
+/*.partner-together {*/
+/*    width: 8rem;*/
+/*}*/
+
+/*.partner-talendo {*/
+/*    width: 11rem;*/
+/*}*/
+
+/*.partner-arcanite {*/
+/*    width: 12rem;*/
+/*}*/
+
+/*.partner-bic {*/
+/*    width: 12rem;*/
+/*}*/
+
+/*.partner-andros {*/
+/*    width: 12rem;*/
+/*}*/
+
+/*.partner-holycow {*/
+/*    width: 16rem;*/
+/*}*/
+
+/*.partner-activfitness {*/
+/*    width: 12rem;*/
+/*}*/
+
+/*.partner-payot {*/
+/*    width: 14rem;*/
+/*}*/
+
+/*.partner-chezmario {*/
+/*    width: 13rem;*/
+/*}*/
+
+/*.partner-nonstop_gym {*/
+/*    width: 12rem;*/
+/*}*/
+
+/*.partner-grimper-ch {*/
+/*    width: 15rem;*/
+/*}*/
+
+/*.partner-lecube {*/
+/*    width: 13rem;*/
+/*}*/
+
+/*.partner-rivella {*/
+/*    width: 10rem;*/
+/*}*/
+
+/*.partner-refyl {*/
+/*    width: 12rem;*/
+/*}*/
+
+/*.partner-novae {*/
+/*    width: 12rem;*/
+/*}*/
+
+/*.partner-totem {*/
+/*    width: 12rem;*/
+/*}*/
+
+.footer-partner {
+    text-decoration: none;
+}
+
+.footer-contact {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 3em 0;
+    gap: 18px 36px;
+}
+
+.footer-contact a {
+    display: flex;
+    align-items: center;
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.footer-contact-icon {
+    background: #444669;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    margin-right: .5em;
+    transition: .15s ease-in-out background-color;
+}
+
+.footer-contact a:hover .footer-contact-icon {
+    background: #3d3f5b;
+}
+
+/* Removed a var that would cause an error but was present in main*/
+.footer-credits {
+    text-align: center;
+    font-size: 1.8rem;
+    font-style: italic;
+}
+
+.footer-credits a {
+}
+
