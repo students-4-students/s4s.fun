@@ -702,81 +702,41 @@ h2 {
     transform: scale(1.1);
 }
 
-/*.partner-epfl {*/
-/*    width: 12rem;*/
-/*}*/
+.partner-epfl {
+    width: 12rem;
+}
 
-/*.partner-agepoly {*/
-/*    width: 13rem;*/
-/*}*/
+.partner-agepoly {
+    width: 13rem;
+}
 
-/*.partner-eltonymate {*/
-/*    width: 7rem;*/
-/*}*/
+.partner-eltonymate {
+    width: 7rem;
+}
 
-/*.partner-together {*/
-/*    width: 8rem;*/
-/*}*/
+.partner-talendo {
+    width: 11rem;
+}
 
-/*.partner-talendo {*/
-/*    width: 11rem;*/
-/*}*/
+.partner-arcanite {
+    width: 12rem;
+}
 
-/*.partner-arcanite {*/
-/*    width: 12rem;*/
-/*}*/
+.partner-bic {
+    width: 12rem;
+}
 
-/*.partner-bic {*/
-/*    width: 12rem;*/
-/*}*/
+.partner-grimper-ch {
+    width: 15rem;
+}
 
-/*.partner-andros {*/
-/*    width: 12rem;*/
-/*}*/
+.partner-rivella {
+    width: 10rem;
+}
 
-/*.partner-holycow {*/
-/*    width: 16rem;*/
-/*}*/
-
-/*.partner-activfitness {*/
-/*    width: 12rem;*/
-/*}*/
-
-/*.partner-payot {*/
-/*    width: 14rem;*/
-/*}*/
-
-/*.partner-chezmario {*/
-/*    width: 13rem;*/
-/*}*/
-
-/*.partner-nonstop_gym {*/
-/*    width: 12rem;*/
-/*}*/
-
-/*.partner-grimper-ch {*/
-/*    width: 15rem;*/
-/*}*/
-
-/*.partner-lecube {*/
-/*    width: 13rem;*/
-/*}*/
-
-/*.partner-rivella {*/
-/*    width: 10rem;*/
-/*}*/
-
-/*.partner-refyl {*/
-/*    width: 12rem;*/
-/*}*/
-
-/*.partner-novae {*/
-/*    width: 12rem;*/
-/*}*/
-
-/*.partner-totem {*/
-/*    width: 12rem;*/
-/*}*/
+.partner-novae {
+    width: 12rem;
+}
 
 .footer-partner {
     text-decoration: none;
