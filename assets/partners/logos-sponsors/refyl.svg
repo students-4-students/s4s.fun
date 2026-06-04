@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="10cm"
+   height="10cm"
+   viewBox="0 0 100 100"
+   version="1.1"
+   id="svg1"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+   <defs>
+   <style>
+   .cls-1{
+      fill:#eed4f1
+   }
+   </style>
+   </defs>
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm">
+    <inkscape:page
+       x="0"
+       y="0"
+       width="100"
+       height="100"
+       id="page2"
+       margin="0"
+       bleed="0" />
+  </sodipodi:namedview>
+  <defs
+     id="defs1" />
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <text
+       xml:space="preserve"
+       class="cls-1"
+       style="font-weight:600;font-size:26.4583px;line-height:20;font-family:'General Sans';-inkscape-font-specification:'General Sans, Semi-Bold';text-align:center;letter-spacing:2.39713px;word-spacing:0.00529167px;writing-mode:lr-tb;direction:ltr;text-anchor:middle;stroke:none;stroke-width:0.17;stroke-linecap:square;stroke-miterlimit:0"
+       x="49.854473"
+       y="57.090824"
+       id="text1"><tspan
+         sodipodi:role="line"
+         id="tspan1"
+         class="cls-1"
+         style="stroke:none;stroke-width:0.17"
+         x="51.053036"
+         y="57.090824">Refyl</tspan></text>
+  </g>
+</svg>
