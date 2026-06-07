@@ -671,40 +671,24 @@ h2 {
     color: var(--text);
     padding-top: 4rem;
     padding-bottom: 6.4rem;
-    scroll-snap-align: start;
+    scroll-snap-align: end;
+    display: flex;  
+    flex-direction: column;
+    align-items: center;
 }
-
-/*@media screen and (min-width: 992px) {*/
-/*    .section-footer {*/
-/*        padding-top: 6rem;*/
-/*        padding-bottom: 8rem;*/
-/*    }*/
-/*}*/
 
 .footer-partners {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    gap: 2rem;
+    gap: 1rem;
 }
 
 @media screen and (min-width: 576px) {
     .footer-partners {
         gap: 4rem;
     }
-}
-
-/*.footer-partner {*/
-/*    transition: .2s ease-in-out transform;*/
-/*}*/
-
-/*.footer-partner:hover {*/
-/*    transform: scale(1.1);*/
-/*}*/
-
-.partner-arcanite {
-    fill: cadetblue;
 }
 
 .footer-contact {
@@ -739,18 +723,16 @@ h2 {
     background: #3d3f5b;
 }
 
-/* Removed a var that would cause an error but was present in main*/
 .footer-credits {
     text-align: center;
-    font-size: 1.8rem;
     font-style: italic;
 }
 
 /* Footer grid style */
 .partners-grid {
+    width: 80%;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    border-radius: 12px;
     overflow: hidden;
 }
 .partner-cell {
