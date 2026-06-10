@@ -41,6 +41,11 @@
                     <img src="assets/s4s-logo/logo-text.svg" alt="Logo Students4Students" class="logo">
                 </a>
             </div>
+            <button class="nav-toggle" aria-label="Ouvrir le menu" aria-expanded="false">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+                </svg>
+            </button>
         </nav>
     </header>
 
@@ -453,6 +458,43 @@
     </footer>
 
     <script>
+        // Mobile nav toggle
+        (function () {
+            const toggle = document.querySelector('.nav-toggle');
+            const nav = document.querySelector('nav');
+            if (!toggle || !nav) return;
+
+            toggle.addEventListener('click', () => {
+                const isOpen = nav.classList.toggle('nav-open');
+                toggle.setAttribute('aria-expanded', String(isOpen));
+            });
+
+            nav.querySelectorAll('.nav-container.left a').forEach(link => {
+                link.addEventListener('click', () => {
+                    nav.classList.remove('nav-open');
+                    nav.querySelectorAll('.dropdown').forEach(d => d.classList.remove('dropdown-open'));
+                    toggle.setAttribute('aria-expanded', 'false');
+                });
+            });
+
+            // Mobile dropdown toggle
+            nav.querySelectorAll('.dropdown-toggle').forEach(btn => {
+                btn.addEventListener('click', (e) => {
+                    e.stopPropagation();
+                    const dropdown = btn.closest('.dropdown');
+                    dropdown.classList.toggle('dropdown-open');
+                });
+            });
+
+            document.addEventListener('click', (e) => {
+                if (!nav.contains(e.target)) {
+                    nav.classList.remove('nav-open');
+                    nav.querySelectorAll('.dropdown').forEach(d => d.classList.remove('dropdown-open'));
+                    toggle.setAttribute('aria-expanded', 'false');
+                }
+            });
+        })();
+
         (function () {
             const items = Array.from(document.querySelectorAll('.faq-item'));
             let activeItem = null;
