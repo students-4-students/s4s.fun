@@ -433,7 +433,7 @@ h2 {
 }
 
 .temoignage-container::before {
-  content: '"';
+  content: '“';
   position: absolute;
   top: 0.4rem;
   left: 1rem;
@@ -504,13 +504,12 @@ h2 {
 }
 
 .faq-group-title {
-  font-size: 0.8rem;
   font-weight: 600;
   color: var(--primary-purple);
   padding: 0.5rem 1.5rem 0.25rem;
   text-transform: uppercase;
   letter-spacing: 0.08em;
-  opacity: 0.5;
+  text-align: center;
 }
 
 .faq-item {
