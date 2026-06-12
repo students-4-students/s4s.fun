@@ -774,6 +774,20 @@ h2 {
 /* Responsive ≤ 768px   */
 /* ==================== */
 
+@media (max-width: 1024px) {
+  html {
+    scroll-snap-type: none;
+  }
+
+  section {
+    scroll-snap-align: none;
+  }
+
+  .section-footer {
+    scroll-snap-align: none;
+  }
+}
+
 @media (max-width: 768px) {
   html {
     scroll-snap-type: none;
@@ -1068,12 +1082,12 @@ h2 {
 
   .hero-logos {
     flex-direction: column;
-    align-items: flex-start;
-    gap: 0.75rem;
+    align-items: center;
+    gap: 1.25rem;
   }
 
-  .hero-logos img:first-child { height: 3rem; }
-  .hero-logos img:last-child  { height: 2rem; }
+  .hero-logos img:first-child { height: 5rem; }
+  .hero-logos img:last-child  { height: 3.5rem; }
 
   .event-hex {
     width: 4rem;
