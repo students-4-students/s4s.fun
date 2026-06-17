@@ -211,7 +211,7 @@ nav {
 /* ==================== */
 
 .hero {
-  background-image: url('../assets/img/header.png');
+  background-image: url('../assets/img/header.webp');
 }
 
 .section-content {
@@ -320,7 +320,7 @@ nav {
 /* ==================== */
 
 .principe {
-  background-image: url('../assets/img/bg1.png');
+  background-image: url('../assets/img/bg1.webp');
 }
 
 h2 {
@@ -418,7 +418,7 @@ h2 {
 /* ==================== */
 
 .temoignages {
-  background-image: url('../assets/img/bg2.png');
+  background-image: url('../assets/img/bg2.webp');
 }
 
 .temoignages .section-content {
@@ -485,7 +485,7 @@ h2 {
 
 .faq {
   background-color: var(--primary-pink-light);
-  background-image: url('../assets/img/bg3.png');
+  background-image: url('../assets/img/bg3.webp');
 }
 
 .faq .section-content {
@@ -1037,10 +1037,10 @@ h2 {
     background-position: center;
   }
 
-  .hero::before        { background-image: url('../assets/img/header.png'); }
-  .principe::before    { background-image: url('../assets/img/bg1.png'); }
-  .temoignages::before { background-image: url('../assets/img/bg2.png'); }
-  .faq::before         { background-image: url('../assets/img/bg3.png'); }
+  .hero::before        { background-image: url('../assets/img/header.webp'); }
+  .principe::before    { background-image: url('../assets/img/bg1.webp'); }
+  .temoignages::before { background-image: url('../assets/img/bg2.webp'); }
+  .faq::before         { background-image: url('../assets/img/bg3.webp'); }
 
   .hero .section-content,
   .principe .section-content,
