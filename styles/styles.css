@@ -355,20 +355,21 @@ h2 {
 }
 
 .workshop-grid {
+  --ws-gap: 0.75rem;
   display: grid;
   grid-auto-flow: column;
   grid-template-rows: repeat(2, minmax(0, 1fr));
-  grid-auto-columns: minmax(5rem, 1fr);
-  gap: 0.75rem;
+  grid-auto-columns: auto;
+  gap: var(--ws-gap);
+  height: 100%;
   width: max-content;
-  align-content: center;
   animation: workshop-slide 28s linear infinite;
   will-change: transform;
 }
 
 .workshop-grid img {
-  width: 100%;
-  min-width: 4.75rem;
+  height: 100%;
+  width: auto;
   aspect-ratio: 1 / 1;
   object-fit: cover;
   border-radius: 0.5rem;
@@ -383,17 +384,13 @@ h2 {
 }
 
 @keyframes workshop-slide {
-  from { transform: translateX(0); }
-  to   { transform: translateX(-50%); }
+  from { transform: translate3d(0, 0, 0); }
+  to   { transform: translate3d(calc(-50% - var(--ws-gap) / 2), 0, 0); }
 }
 
 @media (max-width: 900px) {
   .workshop-outer {
     transform: rotate(-5deg) scale(0.98);
-  }
-
-  .workshop-grid {
-    grid-auto-columns: minmax(4rem, 1fr);
   }
 }
 
@@ -404,8 +401,7 @@ h2 {
   }
 
   .workshop-grid {
-    gap: 0.5rem;
-    grid-auto-columns: minmax(3rem, 1fr);
+    --ws-gap: 0.5rem;
   }
 
   .workshop-grid img {
@@ -1064,20 +1060,27 @@ h2 {
 
   .workshop-outer {
     position: static;
-    height: 160px;
+    height: 300px;
     overflow: hidden;
     transform: none;
     flex-shrink: 0;
   }
+
+  .workshop-grid {
+    height: 300px;
+    grid-template-rows: 1fr;
+    width: calc(20 * 300px + 19 * var(--ws-gap));
+  }
+
   .workshop-grid > img {
     border-radius: 0;
-    height: 70%;
+    height: 100%;
   }
 
   .workshops .section-content {
     flex: 1;
     max-width: 100%;
-    margin: -1.5rem 0 0;
+    margin: -2.5rem 0 0;
     border-radius: 1.25rem 1.25rem 0 0;
     padding: 1.75rem 1.25rem 0 2rem;
   }

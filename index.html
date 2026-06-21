@@ -114,26 +114,26 @@
     <section class="workshops">
         <div class="workshop-outer" aria-hidden="true">
             <div class="workshop-grid">
-                <img src="assets/img/workshop1.webp" alt="" loading="lazy">
-                <img src="assets/img/workshop2.webp" alt="" loading="lazy">
-                <img src="assets/img/workshop3.webp" alt="" loading="lazy">
-                <img src="assets/img/workshop4.webp" alt="" loading="lazy">
-                <img src="assets/img/workshop5.webp" alt="" loading="lazy">
-                <img src="assets/img/workshop6.webp" alt="" loading="lazy">
-                <img src="assets/img/workshop7.webp" alt="" loading="lazy">
-                <img src="assets/img/workshop8.webp" alt="" loading="lazy">
-                <img src="assets/img/workshop9.webp" alt="" loading="lazy">
-                <img src="assets/img/workshop10.webp" alt="" loading="lazy">
-                <img src="assets/img/workshop1.webp" alt="" loading="lazy">
-                <img src="assets/img/workshop2.webp" alt="" loading="lazy">
-                <img src="assets/img/workshop3.webp" alt="" loading="lazy">
-                <img src="assets/img/workshop4.webp" alt="" loading="lazy">
-                <img src="assets/img/workshop5.webp" alt="" loading="lazy">
-                <img src="assets/img/workshop6.webp" alt="" loading="lazy">
-                <img src="assets/img/workshop7.webp" alt="" loading="lazy">
-                <img src="assets/img/workshop8.webp" alt="" loading="lazy">
-                <img src="assets/img/workshop9.webp" alt="" loading="lazy">
-                <img src="assets/img/workshop10.webp" alt="" loading="lazy">
+                <img src="assets/img/workshop1.webp" alt="">
+                <img src="assets/img/workshop2.webp" alt="">
+                <img src="assets/img/workshop3.webp" alt="">
+                <img src="assets/img/workshop4.webp" alt="">
+                <img src="assets/img/workshop5.webp" alt="">
+                <img src="assets/img/workshop6.webp" alt="">
+                <img src="assets/img/workshop7.webp" alt="">
+                <img src="assets/img/workshop8.webp" alt="">
+                <img src="assets/img/workshop9.webp" alt="">
+                <img src="assets/img/workshop10.webp" alt="">
+                <img src="assets/img/workshop1.webp" alt="" aria-hidden="true">
+                <img src="assets/img/workshop2.webp" alt="" aria-hidden="true">
+                <img src="assets/img/workshop3.webp" alt="" aria-hidden="true">
+                <img src="assets/img/workshop4.webp" alt="" aria-hidden="true">
+                <img src="assets/img/workshop5.webp" alt="" aria-hidden="true">
+                <img src="assets/img/workshop6.webp" alt="" aria-hidden="true">
+                <img src="assets/img/workshop7.webp" alt="" aria-hidden="true">
+                <img src="assets/img/workshop8.webp" alt="" aria-hidden="true">
+                <img src="assets/img/workshop9.webp" alt="" aria-hidden="true">
+                <img src="assets/img/workshop10.webp" alt="" aria-hidden="true">
             </div>
         </div>
         <div class="section-content">
@@ -483,6 +483,47 @@
                     toggle.setAttribute('aria-expanded', 'false');
                 }
             });
+        })();
+
+        // Mobile workshop carousel – seamless infinite scroll via rAF
+        (function () {
+            const grid = document.querySelector('.workshop-grid');
+            if (!grid || window.innerWidth > 768) return;
+            if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+
+            const images = grid.querySelectorAll('img');
+            if (images.length < 11) return;
+
+            function init() {
+                // Kill CSS animation and reset to origin so measurements are clean
+                grid.style.animation = 'none';
+                grid.style.transform = 'translateX(0)';
+                grid.getBoundingClientRect(); // force reflow
+
+                // Exact distance from image 0 to its duplicate (image 10)
+                const r0  = images[0].getBoundingClientRect();
+                const r10 = images[10].getBoundingClientRect();
+                const loopDist = r10.left - r0.left;
+                if (loopDist <= 0) return;
+
+                const speed = loopDist / 28000; // px per ms — matches the 28s CSS duration
+                let x = 0;
+                let prevTs = null;
+
+                function step(ts) {
+                    if (prevTs === null) prevTs = ts;
+                    x -= speed * (ts - prevTs);
+                    prevTs = ts;
+                    if (x <= -loopDist) x += loopDist; // seamless instant reset
+                    grid.style.transform = `translateX(${x}px)`;
+                    requestAnimationFrame(step);
+                }
+
+                requestAnimationFrame(step);
+            }
+
+            if (document.readyState === 'complete') init();
+            else window.addEventListener('load', init);
         })();
 
         (function () {
