@@ -919,6 +919,11 @@ h2 {
     pointer-events: auto;
   }
 
+  .dropdown:hover .dropdown-toggle > svg,
+  .dropdown:focus-within .dropdown-toggle > svg {
+    transform: none;
+  }
+
   .dropdown.dropdown-open .dropdown-toggle > svg {
     transform: rotate(180deg);
   }

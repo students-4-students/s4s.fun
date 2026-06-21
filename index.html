@@ -137,7 +137,7 @@
             </div>
         </div>
         <div class="section-content">
-            <h2>S4S, c'est pas que des cours !</h2>
+            <h2>S4S, c'est pas que des cours&nbsp;!</h2>
             <p class="section-text">
                 Après l'effort, place à la vie de campus ! Fais le plein d'inspiration lors de nos <b>tables rondes et
                     conférences</b>, ou détends-toi en participant aux <b>workshops</b> animés par les associations
@@ -472,7 +472,8 @@
                 btn.addEventListener('click', (e) => {
                     e.stopPropagation();
                     const dropdown = btn.closest('.dropdown');
-                    dropdown.classList.toggle('dropdown-open');
+                    const isOpen = dropdown.classList.toggle('dropdown-open');
+                    if (!isOpen) btn.blur();
                 });
             });
 
