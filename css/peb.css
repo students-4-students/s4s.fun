@@ -166,7 +166,6 @@
     border: none;
     background-color: var(--primary);
     min-width: 450px;
-    justify-content: center;
 }
 
 .hero-registration-button-1 {
@@ -428,7 +427,6 @@
     box-shadow: 0 4px 6px rgba(0,0,0,0.1);
     transition: transform 0.2s, background-color 0.2s;
     min-width: 130px;
-    /* Use Primary Pink for card borders */
     border: 1px solid var(--primary);
 }
 
@@ -453,7 +451,7 @@
     display: block;
     font-size: 1rem;
     margin-top: 4px;
-    color: var(--thirdary); /* Light pink for sub-text */
+    color: var(--thirdary);
     font-style: italic;
 }
 

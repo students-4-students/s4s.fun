@@ -15,17 +15,17 @@
 }
 
 @font-face {
-    font-family: 'Bukhari Script';
-    src: url('../fonts/Bukhari_Script.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
+  font-family: 'Bukhari Script';
+  src: url('../fonts/Bukhari_Script.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
-    font-family: 'lazy dog';
-    src: url('../fonts/Lazy_Dog.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
+  font-family: 'lazy dog';
+  src: url('../fonts/Lazy_Dog.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
 }

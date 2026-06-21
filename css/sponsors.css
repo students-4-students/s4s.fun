@@ -598,7 +598,7 @@ h3 {
   background: none;
   border-radius: 1.2rem;
   box-shadow: none;
-  padding: 2rem 2rem 1.6rem 2rem; /* slightly larger padding */
+  padding: 2rem 2rem 1.6rem 2rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -662,17 +662,17 @@ h3 {
   justify-content: center;
   gap: 0.4em 0.5em;
   margin-bottom: 0.7rem;
-    width: 100%; /* let tags span the card width */
+    width: 100%;
 }
 
 
 .sponsor-logo {
-    width: 200px; /* was 180px */
-    height: 200px; /* was 180px */
-  object-fit: contain;
+    width: 200px;
+    height: 200px;
+    object-fit: contain;
     margin-bottom: 1.4rem;
     margin-top: 0.3rem;
-  transition: .2s ease-in-out transform;
+    transition: .2s ease-in-out transform;
 }
 
 .sponsor-logo:hover {
@@ -684,9 +684,9 @@ h3 {
   align-items: center;
   background: var(--tag-color, #e0e0e0);
   color: #fff;
-  font-size: 1.05rem; /* was 0.93rem */
+  font-size: 1.05rem;
   font-weight: 600;
-  padding: 0.3em 1.1em 0.3em 0.9em; /* slightly larger */
+  padding: 0.3em 1.1em 0.3em 0.9em;
   border-radius: 999px;
   margin-bottom: 0.2rem;
   box-shadow: 0 1px 4px 0 rgba(0,0,0,0.04);
@@ -698,8 +698,8 @@ h3 {
 .sponsor-tag::before {
   content: "";
   display: inline-block;
-  width: 0.8em; /* was 0.7em */
-  height: 0.8em; /* was 0.7em */
+  width: 0.8em;
+  height: 0.8em;
   border-radius: 50%;
   background: #888;
   margin-right: 0.6em;
@@ -732,7 +732,7 @@ h3 {
 .sponsor-desc {
   color: #444;
   text-align: center;
-  font-size: 1.5rem; 
+  font-size: 1.5rem;
   margin-top: 0.4rem;
   opacity: 0.85;
 }
@@ -751,7 +751,6 @@ h3 {
     color: var(--headings, #434569);
 }
 
-/* Thin divider between tags and description */
 .sponsor-tags-row + .sponsor-desc {
     border-top: 1px solid var(--separator);
     padding-top: 0.8rem;
@@ -775,7 +774,7 @@ h3 {
 
 .section-footer {
     display: flex;
-    justify-content:space-evenly;
+    justify-content: space-evenly;
     padding: 4% 5% 4% 5%;
 }
 
@@ -817,8 +816,8 @@ h3 {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    width: 40px; /* smaller */
-    height: 40px; /* smaller */
+    width: 40px;
+    height: 40px;
     border-radius: 50%;
     margin-right: .5em;
     transition: .15s ease-in-out background-color;
@@ -827,9 +826,9 @@ h3 {
 .footer-div-title {
     color: var(--headings);
     font-weight: 700;
-    margin-bottom: 2.9rem; /* more space to separate */
-    font-size: 2.1rem; /* a bit bigger */
-    text-align: left; /* centered */
+    margin-bottom: 2.9rem;
+    font-size: 2.1rem;
+    text-align: left;
 }
 
 .footer-div a:hover .footer-contact-icon {

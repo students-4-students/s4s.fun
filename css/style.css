@@ -670,33 +670,33 @@ h3 {
 
 @media (min-width: 1200px) {
     .section-forms::after {
-      height: 500px; /* adjust the height for large screens */
+        height: 500px;
     }
-  }
-  
-  @media (max-width: 992px) {
+}
+
+@media (max-width: 992px) {
     .section-forms::after {
-      height: 400px; /* adjust the height for medium screens */
+        height: 400px;
     }
-  }
-  
-  @media (max-width: 768px) {
+}
+
+@media (max-width: 768px) {
     .section-forms::after {
-      height: 300px; /* adjust the height for small screens */
+        height: 300px;
     }
-  }
-  
-  @media (max-width: 480px) {
+}
+
+@media (max-width: 480px) {
     .section-forms::after {
-      height: 200px; /* adjust the height for extra small screens */
+        height: 200px;
     }
-  }
-  
-  @media (max-width: 320px) {
+}
+
+@media (max-width: 320px) {
     .section-forms::after {
-      height: 150px; /* adjust the height for very small screens */
+        height: 150px;
     }
-  }
+}
 
 .hero-registration-button svg {
     color: #6368A2;
