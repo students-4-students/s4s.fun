@@ -388,6 +388,12 @@ h2 {
   to   { transform: translate3d(calc(-50% - var(--ws-gap) / 2), 0, 0); }
 }
 
+@media (min-aspect-ratio: 5/2) {
+  .workshop-grid {
+    grid-template-rows: 1fr;
+  }
+}
+
 @media (max-width: 900px) {
   .workshop-outer {
     transform: rotate(-5deg) scale(0.98);
