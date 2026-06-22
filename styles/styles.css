@@ -773,14 +773,23 @@ h2 {
 /* Responsive ≤ height  */
 /* ==================== */
 
-@media (max-height: 750px) and (min-width: 769px) {
+@media (max-height: 900px) and (min-width: 769px) {
   html {
     scroll-snap-type: none;
   }
 
   section {
     height: auto;
+    min-height: 100vh;
     scroll-snap-align: none;
+  }
+
+  .hero,
+  .principe,
+  .temoignages,
+  .faq {
+    align-items: flex-start;
+    padding-top: 5.5rem;
   }
 
   .section-footer {
