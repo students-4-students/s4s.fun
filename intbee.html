@@ -11,13 +11,13 @@ permalink: /intbee
 
     <title>Students 4 Students - Integration Bee</title>
 
-    <link rel="stylesheet" href="assets/css/normalize.css">
-    <link rel="stylesheet" href="assets/css/intbee.css">
-    <link rel="stylesheet" href="assets/css/navbar.css">
+    <link rel="stylesheet" href="/css/normalize.css">
+    <link rel="stylesheet" href="/css/intbee.css">
+    <link rel="stylesheet" href="/css/navbar.css">
 
     <meta name="theme-color" content="#FEEE3B">
-    <link rel="icon" href="assets/icons/intbee-favicon.png">
-    <link rel="apple-touch-icon" href="assets/icons/intbee-favicon.png">
+    <link rel="icon" href="assets/logos/intbee.png">
+    <link rel="apple-touch-icon" href="assets/logos/intbee.png">
 
     <meta name="description" content="Concours d'intégrale inspiré de celui du MIT, organisé par S4S.">
     <meta name="twitter:card" content="summary_large_image">
@@ -52,9 +52,6 @@ permalink: /intbee
             <a style="background-color: rgba(255, 193, 5, 0.3);border-radius: 5px;" href="intbee.html">IntBee</a>
         </div>
         </div>
-        <a href="workshops.html">Workshops</a>
-        <a href="sponsors.html">Sponsors</a>
-        <!--<a href="about.html">À propos</a>-->
     </div>
     <div class="menu-right">
         <div class="hamburger" onclick="toggleMobileMenu()">
@@ -65,7 +62,6 @@ permalink: /intbee
     </div>
 </nav>
 <div id="mobileMenu" class="mobile-menu">
-    <a href="#" class="closebtn" onclick="toggleMobileMenu()">&times;</a>
     <a href="index.html">Accueil</a>
     <div class="mobile-dropdown">
         <a href="#" class="mobile-dropdown-toggle" onclick="toggleMobileDropdown(event)">Événements <span class="mobile-caret">▼</span></a>
@@ -75,9 +71,6 @@ permalink: /intbee
         <a href="intbee.html">IntBee</a>
         </div>
     </div>
-    <a href="workshops.html">Workshops</a>
-    <a href="sponsors.html">Sponsors</a>
-    <!--<a href="about.html">À propos</a>-->
 </div>
 <script>
     function toggleMobileMenu() {
@@ -96,14 +89,6 @@ permalink: /intbee
         dropdown.classList.toggle('open');
         toggle.querySelector('.mobile-caret').classList.toggle('open');
     }
-    function toggleMobileMenu() {
-        const menu = document.getElementById("mobileMenu");
-        if (menu.style.width === "100%") {
-        menu.style.width = "0";
-        } else {
-        menu.style.width = "100%";
-        }
-    }
 </script>
 <section class="section section-hero theme-primary">
     <div>
@@ -111,10 +96,11 @@ permalink: /intbee
             <div class="hero-drop-shadow" role="presentation"></div>
             <div class="hero-contents">
                 <header class="hero-logo">
-                    <img src="assets/icons/intbee-logo.png" alt="">
+                    <img src="assets/logos/intbee.png" alt="">
                     <span class="hero-wordmark">Integration <span>Bee</span></span>
                     <p class="hero-subtitle">
                         <a href="https://students4students.ch/" rel="noopener"><strong>Students4Students</strong></a>
+                </p>
                 </header>
 
                 <h1>
@@ -148,8 +134,7 @@ permalink: /intbee
                 </div>
 
                 <div class="hero-buttons">
-                    <!--<a class="hero-registration-button" href="https://go.epfl.ch/intbee-live" rel="noopener">-->
-                    <a class="hero-registration-button hero-registration-button-1" href="https://docs.google.com/forms/d/e/1FAIpQLScAlYqn21qzWyYI7FA5-Y1tkjeIuNlh0Rh_kowecuC76-NsHQ/viewform?usp=dialog">
+                    <!-- <a class="hero-registration-button hero-registration-button-1" href="https://docs.google.com/forms/d/e/1FAIpQLScAlYqn21qzWyYI7FA5-Y1tkjeIuNlh0Rh_kowecuC76-NsHQ/viewform?usp=dialog">
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true">
                             <path stroke-linecap="round" stroke-linejoin="round" d="M13 9l3 3m0 0l-3 3m3-3H8m13 0a9 9 0 11-18 0 9 9 0 0118 0z" />
                         </svg>
@@ -160,7 +145,7 @@ permalink: /intbee
                             <path stroke-linecap="round" stroke-linejoin="round" d="M13 9l3 3m0 0l-3 3m3-3H8m13 0a9 9 0 11-18 0 9 9 0 0118 0z" />
                         </svg>
                         <p>Inscription staff</p>
-                    </a>
+                    </a> -->
                     <a class="hero-registration-button hero-see-integrals" href="https://go.epfl.ch/intbee-live-2026"
                        style="background: #fd8022">
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
@@ -168,7 +153,7 @@ permalink: /intbee
                             <path stroke-linecap="round" stroke-linejoin="round"
                                   d="m15.75 10.5 4.72-4.72a.75.75 0 0 1 1.28.53v11.38a.75.75 0 0 1-1.28.53l-4.72-4.72M4.5 18.75h9a2.25 2.25 0 0 0 2.25-2.25v-9a2.25 2.25 0 0 0-2.25-2.25h-9A2.25 2.25 0 0 0 2.25 7.5v9a2.25 2.25 0 0 0 2.25 2.25Z"/>
                         </svg>
-                        <p>Watch the live !</p>
+                        <p>Watch the live&nbsp;!</p>
                     </a>
                     <a class="hero-registration-button hero-see-integrals" href="https://go.epfl.ch/drive-intbee">
                         <p>See last year integrals</p>
@@ -265,7 +250,7 @@ permalink: /intbee
 <!--            </div>-->
 <!--        </div>-->
 
-        <h3 class="footer-partners-title">Merci à nos partenaires!</h3>
+        <h3 class="footer-partners-title">Merci à nos partenaires&nbsp;!</h3>
         <div class="footer-partners">
             <a class="footer-partner" href="https://www.epfl.ch/fr/">
                 <img class="partner-epfl" src="assets/partners/intbee/epfl.svg" alt="Une association reconnue par l'EPFL">
@@ -288,7 +273,7 @@ permalink: /intbee
         </div>
 
         <div class="footer-contact">
-            <a href="https://instagram.com/s4s.epfl" rel="noopener">
+            <a href="https://instagram.com/s4s.epfl" rel="noopener" target="_blank">
                     <span class="footer-contact-icon">
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24" role="img">
                             <title>Instagram</title>

@@ -1,0 +1,31 @@
+@font-face {
+  font-family: 'GeneralSans/GeneralSans-Variable';
+  src: url('../fonts/GeneralSans/GeneralSans-Variable.woff2') format('woff2');
+  font-weight: 200 700;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Lobster';
+  src: url('../fonts/Lobster.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Bukhari Script';
+  src: url('../fonts/Bukhari_Script.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'lazy dog';
+  src: url('../fonts/Lazy_Dog.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
