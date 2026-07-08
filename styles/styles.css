@@ -704,10 +704,13 @@ h2 {
 
 /* Footer grid style */
 .partners-grid {
-  width: 80%;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
   overflow: hidden;
+  margin: 0 auto;
 }
 .partner-cell {
   background: var(--primary-pink);
@@ -1011,8 +1014,7 @@ h2 {
   }
 
   .partners-grid {
-    width: 95%;
-    grid-template-columns: repeat(2, 1fr);
+    width: 70%;
   }
 
   /* --- Image sections: banner at top, card below --- */
@@ -1113,9 +1115,5 @@ h2 {
   .event-hex {
     width: 4rem;
     height: 3.5rem;
-  }
-
-  .partners-grid {
-    grid-template-columns: repeat(2, 1fr);
   }
 }
