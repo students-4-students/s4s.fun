@@ -1098,7 +1098,11 @@ h2 {
 /* Responsive ≤ 480px   */
 /* ==================== */
 
-@media (max-width: 480px) {
+@media (max-width: 500px) {
+  .partners-grid{
+    width: 90%;
+  }
+
   section {
     padding: 5.5rem 1rem 2rem;
   }
