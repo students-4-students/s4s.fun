@@ -30,6 +30,6 @@ Ce dépôt et son contenu, à l’exception des ressources graphiques, sont publ
 ## Crédits
 
 Ce site utilise les ressources graphiques suivantes :
-* Des photos prises par [Adrien Buttier](https://www.instagram.com/adrienbtr.photo/) pour Students 4 Students.
+* Des photos prises par [Adrien Barmaz](https://www.instagram.com/adrienb.photo/) pour Students 4 Students.
 * Les icônes [Heroicons](https://heroicons.com) conçues par [Steve Schoger](https://twitter.com/steveschoger) et publiées sous licence MIT
 * La police de caractères [General Sans](https://www.fontshare.com/fonts/general-sans) par [Indian Type Foundry](https://www.indiantypefoundry.com) et publiée sous licence ITF Free Font License.

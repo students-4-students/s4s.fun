@@ -7,10 +7,10 @@
 
     <title>Students 4 Students - PEB</title>
 
-    <link rel="stylesheet" href="assets/css/normalize.css">
-    <link rel="stylesheet" href="assets/css/intbee.css">
-    <link rel="stylesheet" href="assets/css/peb.css">
-    <link rel="stylesheet" href="assets/css/navbar.css">
+    <link rel="stylesheet" href="/css/normalize.css">
+    <link rel="stylesheet" href="/css/intbee.css">
+    <link rel="stylesheet" href="/css/peb.css">
+    <link rel="stylesheet" href="/css/navbar.css">
 
     <meta name="theme-color" content="#FF4081">
     <link rel="icon" href="assets/illustrations/philip_sunglasses.png">
@@ -40,18 +40,16 @@
 <body>
 <nav class="navbar theme-primary">
     <div class="menu-left">
-    <a href="index.html">Accueil</a>
+        <a href="index.html">Accueil</a>
         <div class="dropdown">
-        <a style="background-color: rgba(0, 0, 0, 0.3);border-radius: 5px;" href="#" class="dropdown-toggle">Événements <span class="dropdown-caret">&#9660;</span></a>
-        <div class="dropdown-menu">
-            <a href="index.html">Semaine S4S</a>
-            <a style="background-color: rgba(0, 0, 0, 0.3);border-radius: 5px;" href="peb.html">PEB</a>
-            <a href="intbee.html">IntBee</a>
+            <a style="background-color: rgba(0, 0, 0, 0.3);border-radius: 5px;" href="#" class="dropdown-toggle">Événements <span class="dropdown-caret">&#9660;</span></a>
+            <div class="dropdown-menu">
+                <a href="index.html">Semaine S4S</a>
+                <a style="background-color: rgba(0, 0, 0, 0.3);border-radius: 5px;" href="peb.html">PEB</a>
+                <a href="intbee.html">IntBee</a>
+            </div>
         </div>
-        </div>
-        <a href="workshops.html">Workshops</a>
         <a href="sponsors.html">Sponsors</a>
-    <!--<a href="about.html">À propos</a>-->
     </div>
     <div class="menu-right">
         <div class="hamburger" onclick="toggleMobileMenu()">
@@ -62,19 +60,16 @@
     </div>
 </nav>
 <div id="mobileMenu" class="mobile-menu">
-    <a href="#" class="closebtn" onclick="toggleMobileMenu()">&times;</a>
     <a href="index.html">Accueil</a>
     <div class="mobile-dropdown">
         <a href="#" class="mobile-dropdown-toggle" onclick="toggleMobileDropdown(event)">Événements <span class="mobile-caret">▼</span></a>
         <div class="mobile-dropdown-menu">
-        <a href="index.html">Semaine S4S</a>
-        <a href="peb.html">PEB</a>
-        <a href="intbee.html">IntBee</a>
+            <a href="index.html">Semaine S4S</a>
+            <a href="peb.html">PEB</a>
+            <a href="intbee.html">IntBee</a>
         </div>
     </div>
-    <a href="workshops.html">Workshops</a>
     <a href="sponsors.html">Sponsors</a>
-    <!--<a href="about.html">À propos</a>-->
 </div>
 <script>
     function toggleMobileMenu() {
@@ -93,16 +88,6 @@
     dropdown.classList.toggle('open');
     toggle.querySelector('.mobile-caret').classList.toggle('open');
     }
-</script>
-<script>
-function toggleMobileMenu() {
-    const menu = document.getElementById("mobileMenu");
-    if (menu.style.width === "100%") {
-    menu.style.width = "0";
-    } else {
-    menu.style.width = "100%";
-    }
-}
 </script>
 <section class="section section-hero theme-primary">
     <div>
@@ -144,14 +129,14 @@ function toggleMobileMenu() {
                     </div>
                 </div>
 
-                <div class="hero-buttons">
+                <!-- <div class="hero-buttons">
                     <a class="hero-registration-button hero-registration-button-2" href="https://go.epfl.ch/peb-2026" target="_blank" rel="noopener">
                         <svg class="hero-icon 2" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true">
                             <path stroke-linecap="round" stroke-linejoin="round" d="M13 9l3 3m0 0l-3 3m3-3H8m13 0a9 9 0 11-18 0 9 9 0 0118 0z" />
                         </svg>
                         <p class="button-register">S'inscrire</p>
                     </a>
-                </div>        
+                </div>         -->
                 <div class="warning-box">
                     <svg fill="#FFC105" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 478.125 478.125" xml:space="preserve" class="warning-icon">
                         <g>
@@ -261,12 +246,12 @@ function toggleMobileMenu() {
                 <img class="partner-redbull" src="assets/partners/PEB/HYRO.svg" alt="Hyro maté">
             </a>
             <a class="footer-partner" href="https://andros.ch/fr/">
-                <img class="partner-andros" src="assets/partners/PEB//andros.svg" alt="Andros">
+                <img class="partner-andros" src="assets/partners/PEB/andros.svg" alt="Andros">
             </a>
         </div>
 
         <div class="footer-contact">
-            <a href="https://instagram.com/s4s.epfl" rel="noopener">
+            <a href="https://instagram.com/s4s.epfl" rel="noopener" target="_blank">
                     <span class="footer-contact-icon">
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24" role="img">
                             <title>Instagram</title>
